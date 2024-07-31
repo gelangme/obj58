@@ -1,20 +1,21 @@
 import { iSentence } from "@/common/types";
-import { Card } from "antd";
 import Word from "./Word";
-const str_space = " ";
+const ignor_words = [".", ",", "?", "!", ":"]; // Array of symbols and words which are not higlighted
 
 export default function Sentence({ sentence }: { sentence: iSentence }) {
   return (
     <div className="mb-4">
       <div>
-        {sentence.words.map((item) => (
-          <>
-            <Word word={item} />
-            <span>{str_space}</span>
-          </>
-        ))}
+        {sentence.words.map((item, item_index) => {
+          const isIgnored = ignor_words.includes(item.inf);
+          return (
+            <span key={item_index}>
+              <Word word={item} noTooltip={isIgnored} whiteSpace={item_index !== 0 && !isIgnored} />
+            </span>
+          );
+        })}
       </div>
-      <span className="opacity-60" title="Translation">
+      <span className="opacity-10 hover:opacity-50 transition-opacity duration-300" title="Translation">
         {sentence.translation}
       </span>
     </div>

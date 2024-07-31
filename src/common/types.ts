@@ -1,13 +1,14 @@
 export interface iWord {
-  difficulty: number;
-  translation: string;
-  wordPosition: number | number[];
+  t: string;
+  pos: number | number[];
   original: string;
-  original_short: string;
+  inf: string;
+  difficulty?: number;
 }
 
 export interface iSentence {
-  original: string;
   translation: string;
   words: iWord[];
+  original?: string;
+  type?: string;
 }
