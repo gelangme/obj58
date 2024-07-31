@@ -13,7 +13,7 @@ export default function Word({ word, noTooltip, whiteSpace }: iWordComponent) {
     <span>{word.original}</span>
   ) : (
     <Tooltip title={word.t} mouseEnterDelay={0}>
-      <span className="hover:bg-slate-400 cursor-pointer">{whiteSpace && " "}{word.original}</span>
+      {whiteSpace && " "}<span className="hover:bg-slate-400 cursor-pointer">{word.original}</span>
     </Tooltip>
   );
 }
