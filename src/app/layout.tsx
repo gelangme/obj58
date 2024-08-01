@@ -4,15 +4,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import type { MenuProps } from "antd";
-import {
-  App,
-  ConfigProvider,
-  Breadcrumb,
-  Layout,
-  Menu,
-  theme,
-  Head,
-} from "antd";
+import { App, ConfigProvider, Breadcrumb, Layout, Menu, theme } from "antd";
 import {
   LaptopOutlined,
   NotificationOutlined,
