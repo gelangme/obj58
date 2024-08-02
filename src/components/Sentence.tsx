@@ -1,7 +1,7 @@
 import { iSentence } from "@/common/types";
 import Word from "./Word";
 import { Button } from "antd";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 const ignor_words = [".", ",", "?", "!", ":", ")"]; // Array of symbols and words which are not higlighted
 import { PlayCircleOutlined, PauseCircleOutlined } from "@ant-design/icons";
 
@@ -10,26 +10,69 @@ export default function Sentence({ sentence }: { sentence: iSentence }) {
   const pauseIcon = React.createElement(PauseCircleOutlined);
   const [isPlaying, setIsPlaying] = useState(false);
   const sentenceString = sentence.words.reduce(
-    (accumulator, currentValue) => accumulator + currentValue.original,
+    (accumulator, currentValue) => accumulator + currentValue.original + " ",
     ""
   );
 
-  const playSentence = () => {
-    console.log("uttarance");
-    console.log(sentence.original);
+  const [voices, setVoices] = useState<SpeechSynthesisVoice[]>();
 
+  useEffect(() => {
+    console.log("Voices: ", voices);
+  }, [voices]);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setVoices(window.speechSynthesis.getVoices());
+    }, 200);
+  }, []);
+
+  const handlePlay = async () => {
+    // speechSynthesis.cancel();
+    // setIsPlaying(true);
+    // await playSentence();
+    // setIsPlaying(false);
+  };
+
+  const playSentence = () => {
+    speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(sentenceString);
+    if (voices) {
+      utterance.voice = voices[3];
+    }
     speechSynthesis.speak(utterance);
+
+    return new Promise((resolve) => {
+      utterance.onend = resolve;
+    });
   };
 
   const pauseSentence = () => {
-    // speechSynthesis.speak();
+    speechSynthesis.cancel();
+    setIsPlaying(false);
   };
 
   return (
-    <div className="mb-4 flex flex-row">
-      <div className="flex flex-col justify-center items-center mr-2">
-        <Button type="text" onClick={playSentence}></Button>
+    <div className="mb-4 flex flex-row [&_button]:opacity-0 [&_button]:hover:opacity-100">
+      <div className="flex flex-col justify-center items-center mr-3">
+        {isPlaying ? (
+          <Button
+            className="text-6xl"
+            onClick={() => {
+              pauseSentence();
+            }}
+          >
+            {pauseIcon}
+          </Button>
+        ) : (
+          <Button
+            className="text-6xl"
+            onClick={() => {
+              handlePlay();
+            }}
+          >
+            {playIcon}
+          </Button>
+        )}
       </div>
       <div className="flex flex-col">
         {sentence.type === "h2" ? (
