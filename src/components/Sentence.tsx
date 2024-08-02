@@ -22,28 +22,26 @@ export default function Sentence({ sentence }: { sentence: iSentence }) {
 
   useEffect(() => {
     setTimeout(() => {
-      setVoices(window.speechSynthesis.getVoices());
+      setVoices(
+        window.speechSynthesis.getVoices().filter((x) => x.lang == "de-DE")
+      );
     }, 200);
   }, []);
 
-  const handlePlay = async () => {
-    // speechSynthesis.cancel();
-    // setIsPlaying(true);
-    // await playSentence();
-    // setIsPlaying(false);
-  };
+  // const handlePlay = async () => {
+  //   speechSynthesis.cancel();
+  //   setIsPlaying(true);
+  //   await playSentence();
+  //   setIsPlaying(false);
+  // };
 
   const playSentence = () => {
     speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(sentenceString);
     if (voices) {
-      utterance.voice = voices[3];
+      utterance.voice = voices[0];
     }
     speechSynthesis.speak(utterance);
-
-    return new Promise((resolve) => {
-      utterance.onend = resolve;
-    });
   };
 
   const pauseSentence = () => {
@@ -67,7 +65,7 @@ export default function Sentence({ sentence }: { sentence: iSentence }) {
           <Button
             className="text-6xl"
             onClick={() => {
-              handlePlay();
+              playSentence();
             }}
           >
             {playIcon}
