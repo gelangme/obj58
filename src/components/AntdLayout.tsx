@@ -37,7 +37,12 @@ export default function AntdLayout({
     {
       key: `generate-new-text`,
       icon: React.createElement(PlayCircleOutlined),
-      label: `Generate new text`,
+      label: <Link href={"/generate-new-text"}>Generate new text</Link>,
+    },
+    {
+      key: `vocabulary`,
+      icon: React.createElement(FileTextOutlined),
+      label: <Link href={"/vocabulary"}>Your vocabulary</Link>,
     },
     {
       key: `texts`,

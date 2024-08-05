@@ -5,9 +5,10 @@ import React, { useEffect, useState } from "react";
 const ignor_words = [".", ",", "?", "!", ":", ")"]; // Array of symbols and words which are not higlighted
 import { PlayCircleOutlined, PauseCircleOutlined } from "@ant-design/icons";
 
+const playIcon = React.createElement(PlayCircleOutlined);
+const pauseIcon = React.createElement(PauseCircleOutlined);
+
 export default function Sentence({ sentence }: { sentence: iSentence }) {
-  const playIcon = React.createElement(PlayCircleOutlined);
-  const pauseIcon = React.createElement(PauseCircleOutlined);
   const [isPlaying, setIsPlaying] = useState(false);
   const sentenceString = sentence.words.reduce(
     (accumulator, currentValue) => accumulator + currentValue.original + " ",
