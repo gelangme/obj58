@@ -20,7 +20,7 @@ export default function Word({ word, noTooltip, whiteSpace }: iWordComponent) {
     console.log("Vocab: ", vocab);
     if (vocab) {
       const filteredVocab = JSON.parse(vocab).filter(
-        (item: any) => item === word.inf
+        (item: iWord) => item.inf === word.inf
       );
       if (filteredVocab.length !== 0) {
         return true;
@@ -41,12 +41,12 @@ export default function Word({ word, noTooltip, whiteSpace }: iWordComponent) {
 
     if (vocab) {
       const newVocab = JSON.parse(vocab);
-      newVocab.push(word.inf);
+      newVocab.push(word);
 
       return localStorage.setItem("vocab", JSON.stringify(newVocab));
     }
 
-    const newVocab = [word.inf];
+    const newVocab = [word];
     localStorage.setItem("vocab", JSON.stringify(newVocab));
   };
 
