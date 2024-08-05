@@ -13,6 +13,8 @@ import {
   PlayCircleOutlined,
 } from "@ant-design/icons";
 import { StyleProvider } from "@ant-design/cssinjs";
+import { readdirSync } from "fs";
+import path from "path";
 const { defaultAlgorithm, darkAlgorithm } = theme;
 
 const { Header, Content, Sider } = Layout;
@@ -41,6 +43,16 @@ const items2: MenuProps["items"] = [
     ],
   },
 ];
+
+// const generateLinks = () => {
+//   const directoryPath = path.join(__dirname, "/data/");
+//   console.log(directoryPath);
+//   const fileNames = [];
+//   const files = readdirSync(directoryPath);
+//   files.forEach(function (file) {
+//     fileNames.push(file.substring(0, file.indexOf(".")));
+//   });
+// };
 
 export default function RootLayout({
   children,
