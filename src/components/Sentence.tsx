@@ -36,12 +36,14 @@ export default function Sentence({ sentence }: { sentence: iSentence }) {
   // };
 
   const playSentence = () => {
+    setIsPlaying(true);
     speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(sentenceString);
     if (voices) {
       utterance.voice = voices[0];
     }
     speechSynthesis.speak(utterance);
+    utterance.onend = (event) => setIsPlaying(false);
   };
 
   const pauseSentence = () => {
