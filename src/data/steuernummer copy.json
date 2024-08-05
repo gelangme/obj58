@@ -1,0 +1,515 @@
+{
+  "Text": [
+    {
+      "translation": "Difference between tax number and tax identification number",
+      "type": "h2",
+      "words": [
+        {"t": "difference", "original": "Unterschied", "inf": "Unterschied", "pos": [0]},
+        {"t": "tax number", "original": "Steuernummer", "inf": "Steuernummer", "pos": [1]},
+        {"t": "and", "original": "und", "inf": "und", "pos": [2]},
+        {"t": "tax identification number", "original": "Steuer-Identifikationsnummer", "inf": "Steuer-Identifikationsnummer", "pos": [3]}
+      ]
+    },
+    {
+      "translation": "As if you didn’t already have to look up and enter enough numbers for the tax return, there are also two numbers you have to look up every time: the tax number and the tax identification number. Why are these needed at all and how do they differ?",
+      "words": [
+        {"t": "as", "original": "Als", "inf": "als", "pos": [0]},
+        {"t": "if", "original": "müsste", "inf": "müssen", "pos": [1]},
+        {"t": "one", "original": "man", "inf": "man", "pos": [2]},
+        {"t": "for", "original": "für", "inf": "für", "pos": [3]},
+        {"t": "the", "original": "die", "inf": "die", "pos": [4]},
+        {"t": "tax return", "original": "Steuererklärung", "inf": "Steuererklärung", "pos": [5]},
+        {"t": "not", "original": "nicht", "inf": "nicht", "pos": [6]},
+        {"t": "already", "original": "ohnehin", "inf": "ohnehin", "pos": [7]},
+        {"t": "enough", "original": "schon", "inf": "schon", "pos": [8]},
+        {"t": "numbers", "original": "Zahlen", "inf": "Zahl", "pos": [9]},
+        {"t": "look up", "original": "nachschlagen", "inf": "nachschlagen", "pos": [10, 11]},
+        {"t": "and", "original": "und", "inf": "und", "pos": [12]},
+        {"t": "enter", "original": "eintragen", "inf": "eintragen", "pos": [13, 14]},
+        {"t": "give", "original": "gibt", "inf": "geben", "pos": [15]},
+        {"t": "it", "original": "es", "inf": "es", "pos": [16]},
+        {"t": "also", "original": "auch", "inf": "auch", "pos": [17]},
+        {"t": "still", "original": "noch", "inf": "noch", "pos": [18]},
+        {"t": "two", "original": "zwei", "inf": "zwei", "pos": [19]},
+        {"t": "numbers", "original": "Nummern", "inf": "Nummer", "pos": [20]},
+        {"t": "which", "original": "die", "inf": "die", "pos": [21]},
+        {"t": "one", "original": "man", "inf": "man", "pos": [22]},
+        {"t": "every", "original": "jedes", "inf": "jeder", "pos": [23]},
+        {"t": "time", "original": "Mal", "inf": "Mal", "pos": [24]},
+        {"t": "look up", "original": "raussuchen", "inf": "raussuchen", "pos": [25, 26]},
+        {"t": "must", "original": "muss", "inf": "müssen", "pos": [27]},
+        {"t": ":", "original": ":", "inf": ":", "pos": [28]},
+        {"t": "the", "original": "die", "inf": "die", "pos": [29]},
+        {"t": "tax number", "original": "Steuernummer", "inf": "Steuernummer", "pos": [30]},
+        {"t": "and", "original": "und", "inf": "und", "pos": [31]},
+        {"t": "the", "original": "die", "inf": "die", "pos": [32]},
+        {"t": "tax identification number", "original": "Steuer-Identifikationsnummer", "inf": "Steuer-Identifikationsnummer", "pos": [33]},
+        {"t": ".", "original": ".", "inf": ".", "pos": [34]},
+        {"t": "why", "original": "Wozu", "inf": "wozu", "pos": [35]},
+        {"t": "need", "original": "braucht", "inf": "brauchen", "pos": [36]},
+        {"t": "it", "original": "es", "inf": "es", "pos": [37]},
+        {"t": "these", "original": "diese", "inf": "diese", "pos": [38]},
+        {"t": "at all", "original": "überhaupt", "inf": "überhaupt", "pos": [39]},
+        {"t": "and", "original": "und", "inf": "und", "pos": [40]},
+        {"t": "wherein", "original": "worin", "inf": "worin", "pos": [41]},
+        {"t": "differ", "original": "unterscheiden", "inf": "unterscheiden", "pos": [42]},
+        {"t": "they", "original": "sie", "inf": "sie", "pos": [43]},
+        {"t": "?", "original": "?", "inf": "?", "pos": [44]}
+      ]
+    },
+    {
+      "translation": "The tax number is an important sorting criterion: only in this way can the tax office recognize who you are and which clerk in the tax office is responsible for checking your income tax return.",
+      "words": [
+        {"t": "the", "original": "Die", "inf": "die", "pos": [0]},
+        {"t": "tax number", "original": "Steuernummer", "inf": "Steuernummer", "pos": [1]},
+        {"t": "is", "original": "ist", "inf": "sein", "pos": [2]},
+        {"t": "an", "original": "ein", "inf": "ein", "pos": [3]},
+        {"t": "important", "original": "wichtiges", "inf": "wichtig", "pos": [4]},
+        {"t": "sorting criterion", "original": "Ordnungskriterium", "inf": "Ordnungskriterium", "pos": [5]},
+        {"t": ":", "original": ":", "inf": ":", "pos": [6]},
+        {"t": "only", "original": "Nur", "inf": "nur", "pos": [7]},
+        {"t": "so", "original": "so", "inf": "so", "pos": [8]},
+        {"t": "can", "original": "kann", "inf": "können", "pos": [9]},
+        {"t": "the", "original": "das", "inf": "das", "pos": [10]},
+        {"t": "tax office", "original": "Finanzamt", "inf": "Finanzamt", "pos": [11]},
+        {"t": "recognize", "original": "erkennen", "inf": "erkennen", "pos": [12]},
+        {"t": "who", "original": "wer", "inf": "wer", "pos": [13]},
+        {"t": "you", "original": "Sie", "inf": "Sie", "pos": [14]},
+        {"t": "are", "original": "sind", "inf": "sein", "pos": [15]},
+        {"t": "and", "original": "und", "inf": "und", "pos": [16]},
+        {"t": "which", "original": "welche:r", "inf": "welche", "pos": [17]},
+        {"t": "clerk", "original": "Sachbearbeiter:in", "inf": "Sachbearbeiter", "pos": [18]},
+        {"t": "in the tax office", "original": "im Finanzamt", "inf": "im Finanzamt", "pos": [19]},
+        {"t": "for", "original": "für", "inf": "für", "pos": [20]},
+        {"t": "the", "original": "die", "inf": "die", "pos": [21]},
+        {"t": "checking", "original": "Überprüfung", "inf": "Überprüfung", "pos": [22]},
+        {"t": "your", "original": "Ihrer", "inf": "Ihr", "pos": [23]},
+        {"t": "income tax return", "original": "Einkommensteuererklärung", "inf": "Einkommensteuererklärung", "pos": [24]},
+        {"t": "responsible", "original": "zuständig", "inf": "zuständig", "pos": [25]},
+        {"t": "is", "original": "ist", "inf": "sein", "pos": [26]},
+        {"t": ".", "original": ".", "inf": ".", "pos": [27]}
+      ]
+    },
+    {
+      "translation": "The tax number consists of information about your federal state, the responsible tax office, and a personal number. The tax number can change if you, for example, move.",
+      "words": [
+        {"t": "the", "original": "Die", "inf": "die", "pos": [0]},
+        {"t": "tax number", "original": "Steuernummer", "inf": "Steuernummer", "pos": [1]},
+        {"t": "consists of", "original": "setzt sich aus", "inf": "sich zusammensetzen", "pos": [2, 3, 4]},
+        {"t": "information", "original": "Informationen", "inf": "Information", "pos": [5]},
+        {"t": "about", "original": "zu", "inf": "zu", "pos": [6]},
+        {"t": "your", "original": "Ihrem", "inf": "Ihr", "pos": [7]},
+        {"t": "federal state", "original": "Bundesland", "inf": "Bundesland", "pos": [8]},
+        {"t": ",", "original": ",", "inf": ",", "pos": [9]},
+        {"t": "the", "original": "dem", "inf": "der", "pos": [10]},
+        {"t": "responsible", "original": "zuständigen", "inf": "zuständig", "pos": [11]},
+        {"t": "tax office", "original": "Finanzamt", "inf": "Finanzamt", "pos": [12]},
+        {"t": "and", "original": "und", "inf": "und", "pos": [13]},
+        {"t": "a", "original": "einer", "inf": "ein", "pos": [14]},
+        {"t": "personal number", "original": "persönlichen Nummer", "inf": "persönliche Nummer", "pos": [15]},
+        {"t": ".", "original": ".", "inf": ".", "pos": [16]},
+        {"t": "the", "original": "Die", "inf": "die", "pos": [17]},
+        {"t": "tax number", "original": "Steuernummer", "inf": "Steuernummer", "pos": [18]},
+        {"t": "can", "original": "kann", "inf": "können", "pos": [19]},
+        {"t": "change", "original": "sich ändern", "inf": "ändern", "pos": [20, 21]},
+        {"t": "if", "original": "wenn", "inf": "wenn", "pos": [22]},
+        {"t": "you", "original": "Sie", "inf": "Sie", "pos": [23]},
+        {"t": "e.g.", "original": "z. B.", "inf": "zum Beispiel", "pos": [24]},
+        {"t": "move", "original": "umziehen", "inf": "umziehen", "pos": [25, 26]},
+        {"t": ".", "original": ".", "inf": ".", "pos": [27]}
+      ]
+    },
+    {
+      "translation": "The tax identification number (also: identification number, tax ID, tax IdNr or IdNr.) is an eleven-digit number issued by the Federal Central Tax Office. It is valid permanently and does not change.",
+      "words": [
+        {"t": "the", "original": "Die", "inf": "die", "pos": [0]},
+        {"t": "tax identification number", "original": "Steuer-Identifikationsnummer", "inf": "Steuer-Identifikationsnummer", "pos": [1]},
+        {"t": "(", "original": "(", "inf": "(", "pos": [2]},
+        {"t": "also", "original": "auch", "inf": "auch", "pos": [3]},
+        {"t": ":", "original": ":", "inf": ":", "pos": [4]},
+        {"t": "identification number", "original": "Identifikationsnummer", "inf": "Identifikationsnummer", "pos": [5]},
+        {"t": ",", "original": ",", "inf": ",", "pos": [6]},
+        {"t": "tax ID", "original": "Steuer-ID", "inf": "Steuer-ID", "pos": [7]},
+        {"t": ",", "original": ",", "inf": ",", "pos": [8]},
+        {"t": "tax IdNr", "original": "Steuer-IdNr", "inf": "Steuer-IdNr", "pos": [9]},
+        {"t": "or", "original": "oder", "inf": "oder", "pos": [10]},
+        {"t": "IdNr.", "original": "IdNr.", "inf": "IdNr.", "pos": [11]},
+        {"t": ")", "original": ")", "inf": ")", "pos": [12]},
+        {"t": "is", "original": "ist", "inf": "sein", "pos": [13]},
+        {"t": "an", "original": "eine", "inf": "ein", "pos": [14]},
+        {"t": "eleven-digit number", "original": "elf-stellige Ziffer", "inf": "elf-stellige Ziffer", "pos": [15]},
+        {"t": "issued", "original": "vergeben", "inf": "vergeben", "pos": [16]},
+        {"t": "by", "original": "durch", "inf": "durch", "pos": [17]},
+        {"t": "the", "original": "das", "inf": "das", "pos": [18]},
+        {"t": "Federal Central Tax Office", "original": "Bundeszentralamt für Steuern", "inf": "Bundeszentralamt für Steuern", "pos": [19]},
+        {"t": ".", "original": ".", "inf": ".", "pos": [20]},
+        {"t": "it", "original": "Sie", "inf": "Sie", "pos": [21]},
+        {"t": "is", "original": "ist", "inf": "sein", "pos": [22]},
+        {"t": "valid", "original": "dauerhaft gültig", "inf": "dauerhaft gültig", "pos": [23, 24]},
+        {"t": "permanently", "original": "dauerhaft", "inf": "dauerhaft", "pos": [25]},
+        {"t": "and", "original": "und", "inf": "und", "pos": [26]},
+        {"t": "does not change", "original": "ändert sich nicht", "inf": "sich ändern", "pos": [27, 28]},
+        {"t": ".", "original": ".", "inf": ".", "pos": [29]}
+      ]
+    },
+    {
+      "translation": "How do I get a tax number for the first time?",
+      "type": "h2",
+      "words": [
+        {"t": "how", "original": "Wie", "inf": "wie", "pos": [0]},
+        {"t": "do", "original": "bekomme", "inf": "bekommen", "pos": [1]},
+        {"t": "I", "original": "ich", "inf": "ich", "pos": [2]},
+        {"t": "for the first time", "original": "erstmals", "inf": "erstmals", "pos": [3]},
+        {"t": "a", "original": "eine", "inf": "ein", "pos": [4]},
+        {"t": "tax number", "original": "Steuernummer", "inf": "Steuernummer", "pos": [5]},
+        {"t": "?", "original": "?", "inf": "?", "pos": [6]}
+      ]
+    },
+    {
+      "translation": "If you enter new tax territory and file an income tax return with the tax office for the first time, enter your identification number in your tax return and leave the field for your tax number blank.",
+      "words": [
+        {"t": "enter", "original": "Betreten", "inf": "betreten", "pos": [0]},
+        {"t": "you", "original": "Sie", "inf": "Sie", "pos": [1]},
+        {"t": "tax territory", "original": "steuerliches Neuland", "inf": "steuerliches Neuland", "pos": [2, 3]},
+        {"t": "and", "original": "und", "inf": "und", "pos": [4]},
+        {"t": "file", "original": "geben", "inf": "geben", "pos": [5]},
+        {"t": "an", "original": "eine", "inf": "ein", "pos": [6]},
+        {"t": "income tax return", "original": "Einkommensteuererklärung", "inf": "Einkommensteuererklärung", "pos": [7]},
+        {"t": "with the tax office", "original": "beim Finanzamt", "inf": "bei dem Finanzamt", "pos": [8, 9]},
+        {"t": "for the first time", "original": "erstmals", "inf": "erstmals", "pos": [10]},
+        {"t": "enter", "original": "tragen", "inf": "eintragen", "pos": [11, 13]},
+        {"t": "you", "original": "Sie", "inf": "Sie", "pos": [12]},
+        {"t": "in", "original": "in", "inf": "in", "pos": [14]},
+        {"t": "your", "original": "Ihre", "inf": "Ihr", "pos": [15]},
+        {"t": "tax return", "original": "Steuererklärung", "inf": "Steuererklärung", "pos": [16]},
+        {"t": "your", "original": "Ihre", "inf": "Ihr", "pos": [17]},
+        {"t": "identification number", "original": "Identifikationsnummer", "inf": "Identifikationsnummer", "pos": [18]},
+        {"t": "and", "original": "und", "inf": "und", "pos": [19]},
+        {"t": "leave", "original": "lassen", "inf": "lassen", "pos": [20]},
+        {"t": "the", "original": "das", "inf": "das", "pos": [21]},
+        {"t": "field", "original": "Feld", "inf": "Feld", "pos": [22]},
+        {"t": "for", "original": "bei", "inf": "bei", "pos": [23]},
+        {"t": "the question", "original": "der Frage", "inf": "Frage", "pos": [24]},
+        {"t": "about", "original": "nach", "inf": "nach", "pos": [25]},
+        {"t": "your", "original": "Ihrer", "inf": "Ihr", "pos": [26]},
+        {"t": "tax number", "original": "Steuernummer", "inf": "Steuernummer", "pos": [27]},
+        {"t": "blank", "original": "frei", "inf": "frei", "pos": [28]},
+        {"t": ".", "original": ".", "inf": ".", "pos": [29]}
+      ]
+    },
+    {
+      "translation": "The tax office will then automatically assign you a tax number. You will find this tax number in the future in the top left of your income tax assessment notice.",
+      "words": [
+        {"t": "the", "original": "Das", "inf": "das", "pos": [0]},
+        {"t": "tax office", "original": "Finanzamt", "inf": "Finanzamt", "pos": [1]},
+        {"t": "will", "original": "wird", "inf": "werden", "pos": [2]},
+        {"t": "you", "original": "Ihnen", "inf": "Ihnen", "pos": [3]},
+        {"t": "then", "original": "dann", "inf": "dann", "pos": [4]},
+        {"t": "automatically", "original": "automatisch", "inf": "automatisch", "pos": [5]},
+        {"t": "assign", "original": "zuteilen", "inf": "zuteilen", "pos": [6, 7]},
+        {"t": "a", "original": "eine", "inf": "ein", "pos": [8]},
+        {"t": "tax number", "original": "Steuernummer", "inf": "Steuernummer", "pos": [9]},
+        {"t": ".", "original": ".", "inf": ".", "pos": [10]},
+        {"t": "this", "original": "Diese", "inf": "diese", "pos": [11]},
+        {"t": "tax number", "original": "Steuernummer", "inf": "Steuernummer", "pos": [12]},
+        {"t": "find", "original": "finden", "inf": "finden", "pos": [13]},
+        {"t": "you", "original": "Sie", "inf": "Sie", "pos": [14]},
+        {"t": "in the future", "original": "zukünftig", "inf": "zukünftig", "pos": [15]},
+        {"t": "in", "original": "in", "inf": "in", "pos": [16]},
+        {"t": "your", "original": "Ihrem", "inf": "Ihr", "pos": [17]},
+        {"t": "income tax assessment notice", "original": "Einkommensteuerbescheid", "inf": "Einkommensteuerbescheid", "pos": [18]},
+        {"t": "left", "original": "links", "inf": "links", "pos": [19]},
+        {"t": "top", "original": "oben", "inf": "oben", "pos": [20]},
+        {"t": ".", "original": ".", "inf": ".", "pos": [21]}
+      ]
+    },
+    {
+      "translation": "If you cannot find your tax number at all, ask your responsible tax office.",
+      "words": [
+        {"t": "if", "original": "Finden", "inf": "finden", "pos": [0]},
+        {"t": "you", "original": "Sie", "inf": "Sie", "pos": [1]},
+        {"t": "your", "original": "Ihre", "inf": "Ihr", "pos": [2]},
+        {"t": "tax number", "original": "Steuernummer", "inf": "Steuernummer", "pos": [3]},
+        {"t": "at all", "original": "partout", "inf": "partout", "pos": [4]},
+        {"t": "not", "original": "nicht", "inf": "nicht", "pos": [5]},
+        {"t": "more", "original": "mehr", "inf": "mehr", "pos": [6]},
+        {"t": "ask", "original": "fragen", "inf": "fragen", "pos": [7]},
+        {"t": "at", "original": "bei", "inf": "bei", "pos": [8]},
+        {"t": "your", "original": "Ihrem", "inf": "Ihr", "pos": [9]},
+        {"t": "responsible", "original": "zuständigen", "inf": "zuständig", "pos": [10]},
+        {"t": "tax office", "original": "Finanzamt", "inf": "Finanzamt", "pos": [11]},
+        {"t": ".", "original": ".", "inf": ".", "pos": [12]}
+      ]
+    },
+    {
+      "translation": "But: If you move to another tax office district, you will be assigned a new tax number by this tax office. Only the tax identification number does not change throughout your life.",
+      "words": [
+        {"t": "but", "original": "Aber", "inf": "aber", "pos": [0]},
+        {"t": ":", "original": ":", "inf": ":", "pos": [1]},
+        {"t": "if", "original": "Ziehen", "inf": "ziehen", "pos": [2]},
+        {"t": "you", "original": "Sie", "inf": "Sie", "pos": [3]},
+        {"t": "to", "original": "in", "inf": "in", "pos": [4]},
+        {"t": "another", "original": "einen anderen", "inf": "ein anderer", "pos": [5, 6]},
+        {"t": "tax office district", "original": "Finanzamtsbezirk", "inf": "Finanzamtsbezirk", "pos": [7]},
+        {"t": ",", "original": ",", "inf": ",", "pos": [8]},
+        {"t": "you", "original": "bekommen", "inf": "bekommen", "pos": [9]},
+        {"t": "from", "original": "von", "inf": "von", "pos": [10]},
+        {"t": "this", "original": "diesem", "inf": "dieser", "pos": [11]},
+        {"t": "tax office", "original": "Finanzamt", "inf": "Finanzamt", "pos": [12]},
+        {"t": "a", "original": "eine", "inf": "ein", "pos": [13]},
+        {"t": "new", "original": "neue", "inf": "neu", "pos": [14]},
+        {"t": "tax number", "original": "Steuernummer", "inf": "Steuernummer", "pos": [15]},
+        {"t": "assign", "original": "zuteilen", "inf": "zuteilen", "pos": [16, 17]},
+        {"t": ".", "original": ".", "inf": ".", "pos": [18]},
+        {"t": "only", "original": "Nur", "inf": "nur", "pos": [19]},
+        {"t": "the", "original": "die", "inf": "die", "pos": [20]},
+        {"t": "tax identification number", "original": "Steuer-Identifikationsnummer", "inf": "Steuer-Identifikationsnummer", "pos": [21]},
+        {"t": "does not change", "original": "ändert sich nicht", "inf": "sich ändern", "pos": [22, 23]},
+        {"t": "throughout your life", "original": "ein Leben lang", "inf": "ein Leben lang", "pos": [24, 25]},
+        {"t": ".", "original": ".", "inf": ".", "pos": [26]}
+      ]
+    },
+    {
+      "translation": "How do I get a tax identification number?",
+      "type": "h2",
+      "words": [
+        {"t": "how", "original": "Wie", "inf": "wie", "pos": [0]},
+        {"t": "get", "original": "bekomme", "inf": "bekommen", "pos": [1]},
+        {"t": "I", "original": "ich", "inf": "ich", "pos": [2]},
+        {"t": "a", "original": "eine", "inf": "ein", "pos": [3]},
+        {"t": "tax identification number", "original": "Steuer-Identifikationsnummer", "inf": "Steuer-Identifikationsnummer", "pos": [4]}
+      ]
+    },
+    {
+      "translation": "The Federal Central Tax Office sent your tax identification number to all citizens by mail in 2008.",
+      "words": [
+        {"t": "the", "original": "Das", "inf": "das", "pos": [0]},
+        {"t": "Federal Central Tax Office", "original": "Bundeszentralamt für Steuern", "inf": "Bundeszentralamt für Steuern", "pos": [1]},
+        {"t": "has", "original": "hat", "inf": "haben", "pos": [2]},
+        {"t": "in the year", "original": "im Jahr", "inf": "im Jahr", "pos": [3, 4]},
+        {"t": "2008", "original": "2008", "inf": "2008", "pos": [5]},
+        {"t": "to all", "original": "allen", "inf": "alle", "pos": [6]},
+        {"t": "citizens", "original": "Bürger:innen", "inf": "Bürger", "pos": [7]},
+        {"t": "by mail", "original": "per Post", "inf": "per Post", "pos": [8, 9]},
+        {"t": "your", "original": "Ihre", "inf": "ihr", "pos": [10]},
+        {"t": "tax identification number", "original": "Steuer-Identifikationsnummer", "inf": "Steuer-Identifikationsnummer", "pos": [11]},
+        {"t": "sent", "original": "zugeschickt", "inf": "zuschicken", "pos": [12]}
+      ]
+    },
+    {
+      "translation": "If you did not receive a letter, you will find your tax ID:",
+      "words": [
+        {"t": "if", "original": "Sollten", "inf": "sollen", "pos": [0]},
+        {"t": "you", "original": "Sie", "inf": "sie", "pos": [1]},
+        {"t": "no", "original": "keinen", "inf": "kein", "pos": [2]},
+        {"t": "letter", "original": "Brief", "inf": "Brief", "pos": [3]},
+        {"t": "received", "original": "erhalten", "inf": "erhalten", "pos": [4]},
+        {"t": "have", "original": "haben", "inf": "haben", "pos": [5]},
+        {"t": "find", "original": "finden", "inf": "finden", "pos": [6]},
+        {"t": "you", "original": "Sie", "inf": "sie", "pos": [7]},
+        {"t": "your", "original": "Ihre", "inf": "ihr", "pos": [8]},
+        {"t": "tax ID", "original": "Steuer-Id", "inf": "Steuer-Id", "pos": [9]}
+      ]
+    },
+    {
+      "translation": "1) on your income tax notice (first page) and",
+      "words": [
+        {"t": "1)", "original": "1)", "inf": "1)", "pos": [0]},
+        {"t": "on", "original": "auf", "inf": "auf", "pos": [1]},
+        {"t": "your", "original": "Ihrem", "inf": "ihr", "pos": [2]},
+        {"t": "income tax notice", "original": "Einkommensteuerbescheid", "inf": "Einkommensteuerbescheid", "pos": [3]},
+        {"t": "first", "original": "erste", "inf": "erste", "pos": [4]},
+        {"t": "page", "original": "Seite", "inf": "Seite", "pos": [5]},
+        {"t": "and", "original": "und", "inf": "und", "pos": [6]}
+      ]
+    },
+    {
+      "translation": "2) on your payroll statement",
+      "words": [
+        {"t": "2)", "original": "2)", "inf": "2)", "pos": [0]},
+        {"t": "on", "original": "auf", "inf": "auf", "pos": [1]},
+        {"t": "your", "original": "Ihrer", "inf": "ihr", "pos": [2]},
+        {"t": "payroll statement", "original": "Lohnsteuerabrechnung", "inf": "Lohnsteuerabrechnung", "pos": [3]}
+      ]
+    },
+    {
+      "translation": "Anyone who does not find their tax ID here can apply for it online at the Federal Central Tax Office (BZSt).",
+      "words": [
+        {"t": "anyone", "original": "Wer", "inf": "wer", "pos": [0]},
+        {"t": "his", "original": "seine", "inf": "sein", "pos": [1]},
+        {"t": "tax ID", "original": "Steuer-Id", "inf": "Steuer-Id", "pos": [2]},
+        {"t": "also", "original": "auch", "inf": "auch", "pos": [3]},
+        {"t": "here", "original": "hier", "inf": "hier", "pos": [4]},
+        {"t": "not", "original": "nicht", "inf": "nicht", "pos": [5]},
+        {"t": "find", "original": "findet", "inf": "finden", "pos": [6]},
+        {"t": "can", "original": "kann", "inf": "können", "pos": [7]},
+        {"t": "this", "original": "diese", "inf": "dieser", "pos": [8]},
+        {"t": "online", "original": "online", "inf": "online", "pos": [9]},
+        {"t": "at the Federal Central Tax Office", "original": "beim Bundeszentralamt für Steuern", "inf": "beim Bundeszentralamt für Steuern", "pos": [10, 11, 12, 13]},
+        {"t": "BZSt", "original": "BZSt", "inf": "BZSt", "pos": [14]},
+        {"t": "apply", "original": "beantragen", "inf": "beantragen", "pos": [15]}
+      ]
+    },
+    {
+      "translation": "The BZSt then sends your tax identification number to your registered address by mail, but this can sometimes take a while.",
+      "words": [
+        {"t": "the", "original": "Das", "inf": "das", "pos": [0]},
+        {"t": "BZSt", "original": "BZSt", "inf": "BZSt", "pos": [1]},
+        {"t": "sends", "original": "schickt", "inf": "schicken", "pos": [2]},
+        {"t": "your", "original": "Ihnen", "inf": "ihr", "pos": [3]},
+        {"t": "your", "original": "Ihre", "inf": "ihr", "pos": [4]},
+        {"t": "tax identification number", "original": "Steuer-Identifikationsnummer", "inf": "Steuer-Identifikationsnummer", "pos": [5]},
+        {"t": "then", "original": "anschließend", "inf": "anschließend", "pos": [6]},
+        {"t": "by mail", "original": "per Post", "inf": "per Post", "pos": [7, 8]},
+        {"t": "to your registered address", "original": "an Ihre Meldeadresse", "inf": "an Ihre Meldeadresse", "pos": [9, 10, 11]},
+        {"t": "this", "original": "das", "inf": "das", "pos": [12]},
+        {"t": "can", "original": "kann", "inf": "können", "pos": [13]},
+        {"t": "under circumstances", "original": "unter Umständen", "inf": "unter Umständen", "pos": [14, 15]},
+        {"t": "but", "original": "aber", "inf": "aber", "pos": [16]},
+        {"t": "a bit", "original": "ein bisschen", "inf": "ein bisschen", "pos": [17, 18]},
+        {"t": "take", "original": "dauern", "inf": "dauern", "pos": [19]}
+      ]
+    },
+    {
+      "translation": "VAT ID number: Special tax number for entrepreneurs",
+      "type": "h2",
+      "words": [
+        {"t": "VAT", "original": "USt", "inf": "USt", "pos": [0]},
+        {"t": "ID", "original": "IdNr", "inf": "IdNr", "pos": [1]},
+        {"t": "Special", "original": "Spezielle", "inf": "speziell", "pos": [2]},
+        {"t": "tax", "original": "Steuernummer", "inf": "Steuernummer", "pos": [3]},
+        {"t": "for", "original": "für", "inf": "für", "pos": [4]},
+        {"t": "entrepreneurs", "original": "Unternehmer", "inf": "Unternehmer", "pos": [5]}
+      ]
+    },
+    {
+      "translation": "And because two tax numbers are still not enough, there is another special tax number for entrepreneurs: the VAT identification number.",
+      "words": [
+        {"t": "And", "original": "Und", "inf": "und", "pos": [0]},
+        {"t": "because", "original": "weil", "inf": "weil", "pos": [1]},
+        {"t": "two", "original": "zwei", "inf": "zwei", "pos": [2]},
+        {"t": "tax", "original": "Steuernummern", "inf": "Steuernummer", "pos": [3]},
+        {"t": "are", "original": "sind", "inf": "sein", "pos": [4]},
+        {"t": "still", "original": "noch", "inf": "noch", "pos": [5]},
+        {"t": "not", "original": "nicht", "inf": "nicht", "pos": [6]},
+        {"t": "enough", "original": "genug", "inf": "genug", "pos": [7]},
+        {"t": "there", "original": "gibt", "inf": "geben", "pos": [8]},
+        {"t": "is", "original": "es", "inf": "es", "pos": [9]},
+        {"t": "another", "original": "noch", "inf": "noch", "pos": [10]},
+        {"t": "special", "original": "eine", "inf": "ein", "pos": [11]},
+        {"t": "tax", "original": "spezielle", "inf": "speziell", "pos": [12]},
+        {"t": "number", "original": "Steuernummer", "inf": "Steuernummer", "pos": [13]},
+        {"t": "for", "original": "für", "inf": "für", "pos": [14]},
+        {"t": "entrepreneurs", "original": "Unternehmer", "inf": "Unternehmer", "pos": [15]},
+        {"t": "the", "original": "die", "inf": "die", "pos": [16]},
+        {"t": "VAT", "original": "Umsatzsteuer", "inf": "Umsatzsteuer", "pos": [17]},
+        {"t": "identification", "original": "Identifikationsnummer", "inf": "Identifikationsnummer", "pos": [18]}
+      ]
+    },
+    {
+      "translation": "It is particularly relevant for the input tax deduction.",
+      "words": [
+        {"t": "It", "original": "Sie", "inf": "sie", "pos": [0]},
+        {"t": "is", "original": "ist", "inf": "sein", "pos": [1]},
+        {"t": "particularly", "original": "besonders", "inf": "besonders", "pos": [2]},
+        {"t": "for", "original": "für", "inf": "für", "pos": [3]},
+        {"t": "the", "original": "den", "inf": "der", "pos": [4]},
+        {"t": "input tax", "original": "Vorsteuerabzug", "inf": "Vorsteuerabzug", "pos": [5]},
+        {"t": "relevant", "original": "relevant", "inf": "relevant", "pos": [6]}
+      ]
+    },
+    {
+      "translation": "If you are an entrepreneur, you can apply for the allocation of a VAT identification number (VAT ID number).",
+      "words": [
+        {"t": "If", "original": "Sind", "inf": "sein", "pos": [0]},
+        {"t": "you", "original": "Sie", "inf": "sie", "pos": [1]},
+        {"t": "entrepreneur", "original": "Unternehmer", "inf": "Unternehmer", "pos": [2]},
+        {"t": "can", "original": "können", "inf": "können", "pos": [3]},
+        {"t": "you", "original": "Sie", "inf": "sie", "pos": [4]},
+        {"t": "apply for", "original": "beantragen", "inf": "beantragen", "pos": [5]},
+        {"t": "the", "original": "die", "inf": "die", "pos": [6]},
+        {"t": "allocation", "original": "Zuteilung", "inf": "Zuteilung", "pos": [7]},
+        {"t": "of", "original": "einer", "inf": "ein", "pos": [8]},
+        {"t": "a", "original": "Umsatzsteuer", "inf": "Umsatzsteuer", "pos": [9]},
+        {"t": "VAT", "original": "Identifikationsnummer", "inf": "Identifikationsnummer", "pos": [10]},
+        {"t": "(VAT ID number)", "original": "(USt-IdNr.)", "inf": "USt-IdNr.", "pos": [11]}
+      ]
+    },
+    {
+      "translation": "The VAT identification number can have the following uses:",
+      "words": [
+        {"t": "The", "original": "Die", "inf": "die", "pos": [0]},
+        {"t": "VAT", "original": "Umsatzsteuer", "inf": "Umsatzsteuer", "pos": [1]},
+        {"t": "identification", "original": "Identifikationsnummer", "inf": "Identifikationsnummer", "pos": [2]},
+        {"t": "number", "original": "kann", "inf": "können", "pos": [3]},
+        {"t": "can", "original": "folgende", "inf": "folgen", "pos": [4]},
+        {"t": "have", "original": "Verwendung", "inf": "Verwendung", "pos": [5]},
+        {"t": "the", "original": "haben", "inf": "haben", "pos": [6]},
+        {"t": "following", "original": "folgende", "inf": "folgen", "pos": [7]},
+        {"t": "uses", "original": "Verwendung", "inf": "Verwendung", "pos": [8]}
+      ]
+    },
+    {
+      "translation": "You have business relationships with companies based abroad and need the VAT ID number for the VAT handling of intra-Community supplies or intra-Community acquisitions.",
+      "words": [
+        {"t": "You", "original": "Sie", "inf": "sie", "pos": [0]},
+        {"t": "have", "original": "haben", "inf": "haben", "pos": [1]},
+        {"t": "business", "original": "Geschäftsbeziehungen", "inf": "Geschäftsbeziehung", "pos": [2]},
+        {"t": "relationships", "original": "zu", "inf": "zu", "pos": [3]},
+        {"t": "with", "original": "zu", "inf": "zu", "pos": [3]},
+        {"t": "companies", "original": "Unternehmen", "inf": "Unternehmen", "pos": [4]},
+        {"t": "based", "original": "ansässigen", "inf": "ansässig", "pos": [5]},
+        {"t": "abroad", "original": "im Ausland", "inf": "Ausland", "pos": [6, 7]},
+        {"t": "and", "original": "und", "inf": "und", "pos": [8]},
+        {"t": "need", "original": "benötigen", "inf": "benötigen", "pos": [9]},
+        {"t": "the", "original": "die", "inf": "die", "pos": [10]},
+        {"t": "VAT", "original": "USt-IdNr.", "inf": "USt-IdNr.", "pos": [11]},
+        {"t": "for", "original": "zur", "inf": "zur", "pos": [12]},
+        {"t": "the", "original": "die", "inf": "die", "pos": [13]},
+        {"t": "VAT",
+
+ "original": "umsatzsteuerlichen", "inf": "umsatzsteuerlich", "pos": [14]},
+        {"t": "handling", "original": "Abwicklung", "inf": "Abwicklung", "pos": [15]},
+        {"t": "of", "original": "von", "inf": "von", "pos": [16]},
+        {"t": "intra-Community", "original": "innergemeinschaftlichen", "inf": "innergemeinschaftlich", "pos": [17]},
+        {"t": "supplies", "original": "Lieferungen", "inf": "Lieferung", "pos": [18]},
+        {"t": "or", "original": "oder", "inf": "oder", "pos": [19]},
+        {"t": "intra-Community", "original": "innergemeinschaftlichen", "inf": "innergemeinschaftlich", "pos": [20]},
+        {"t": "acquisitions", "original": "Erwerben", "inf": "Erwerb", "pos": [21]}
+      ]
+    },
+    {
+      "translation": "You want to record only the VAT identification number in your outgoing invoices to customers and business partners, not your income tax number.",
+      "words": [
+        {"t": "You", "original": "Sie", "inf": "sie", "pos": [0]},
+        {"t": "want", "original": "möchten", "inf": "möchten", "pos": [1]},
+        {"t": "to", "original": "in", "inf": "in", "pos": [2]},
+        {"t": "record", "original": "Ihren", "inf": "ihr", "pos": [3]},
+        {"t": "only", "original": "nur", "inf": "nur", "pos": [4]},
+        {"t": "the", "original": "die", "inf": "die", "pos": [5]},
+        {"t": "VAT", "original": "Umsatzsteuer", "inf": "Umsatzsteuer", "pos": [6]},
+        {"t": "identification", "original": "Identifikationsnummer", "inf": "Identifikationsnummer", "pos": [7]},
+        {"t": "number", "original": "erfassen", "inf": "erfassen", "pos": [8]},
+        {"t": "in", "original": "in", "inf": "in", "pos": [9]},
+        {"t": "your", "original": "Ihren", "inf": "ihr", "pos": [10]},
+        {"t": "outgoing", "original": "Ausgangsrechnungen", "inf": "Ausgangsrechnung", "pos": [11]},
+        {"t": "invoices", "original": "an", "inf": "an", "pos": [12]},
+        {"t": "to", "original": "an", "inf": "an", "pos": [13]},
+        {"t": "customers", "original": "Kunden", "inf": "Kunde", "pos": [14]},
+        {"t": "and", "original": "und", "inf": "und", "pos": [15]},
+        {"t": "business", "original": "Geschäftspartner", "inf": "Geschäftspartner", "pos": [16]},
+        {"t": "partners", "original": "Geschäftspartner", "inf": "Geschäftspartner", "pos": [16]},
+        {"t": "not", "original": "nicht", "inf": "nicht", "pos": [17]},
+        {"t": "your", "original": "Ihre", "inf": "ihr", "pos": [18]},
+        {"t": "income tax", "original": "Einkommensteuernummer", "inf": "Einkommensteuernummer", "pos": [19]},
+        {"t": "number", "original": "sondern", "inf": "sondern", "pos": [20]},
+        {"t": "but", "original": "nur", "inf": "nur", "pos": [21]},
+        {"t": "only", "original": "die", "inf": "die", "pos": [22]},
+        {"t": "the", "original": "Umsatzsteuer", "inf": "Umsatzsteuer", "pos": [23]},
+        {"t": "VAT", "original": "Identifikationsnummer", "inf": "Identifikationsnummer", "pos": [24]},
+        {"t": "identification", "original": "Identifikationsnummer", "inf": "Identifikationsnummer", "pos": [24]},
+        {"t": "number", "original": "erfassen", "inf": "erfassen", "pos": [25]}
+      ]
+    }
+  ]
+}

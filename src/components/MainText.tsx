@@ -1,3 +1,4 @@
+"use client";
 import { iSentence } from "@/common/types";
 import Sentence from "./Sentence";
 import { Card } from "antd";

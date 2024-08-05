@@ -12,6 +12,6 @@ export default function Home() {
     console.log(text)
   }, [])
   return (
-      <MainText text={text.Text}></MainText>
+      <h1>Home</h1>
   );
 }
