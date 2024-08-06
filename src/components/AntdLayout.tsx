@@ -10,56 +10,84 @@ import {
 } from "@ant-design/icons";
 import { StyleProvider } from "@ant-design/cssinjs";
 import Link from "next/link";
+import { Directory } from "@/utils/readFileData";
 
 const { defaultAlgorithm, darkAlgorithm } = theme;
 const { Header, Content, Sider } = Layout;
 
 export default function AntdLayout({
   children,
-  filenames,
-  testfiles,
+  directory,
 }: {
   children: React.ReactNode;
-  filenames: string[];
-  testfiles: string[];
+  directory: Directory;
 }) {
   const {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
 
-  console.log("FILES FileNames: ", filenames);
-  console.log("FILES TestFiles: ", testfiles);
+  console.log("Directory: ", directory);
 
   const pathname = usePathname();
   console.log("pathname: ", pathname);
 
+  const mapDirectoryToMenuItems = (
+    directory: Directory,
+    parentPath: string = ""
+  ): MenuProps["items"] => {
+    const currentPath = parentPath
+      ? `${parentPath}/${directory.dirName}`
+      : directory.dirName;
+
+    const subDirectories = directory.directories
+      .map((subDir) => ({
+        key: subDir.dirName,
+        icon: React.createElement(FileTextOutlined),
+        label: subDir.dirName,
+        children: mapDirectoryToMenuItems(subDir, currentPath),
+      }))
+      .filter((subDir) => subDir.children && subDir.children.length > 0);
+
+    const files = directory.files.map((file) => {
+      const filePath = `${currentPath}/${file}`;
+      return {
+        key: file.replace(".json", ""),
+        icon: React.createElement(FileTextOutlined),
+        label: (
+          <Link
+            href={`/texts/[...filePath]`}
+            as={`/texts/${encodeURIComponent(filePath)}`}
+          >
+            {file.replace(".json", "")}
+          </Link>
+        ),
+      };
+    });
+
+    return [...subDirectories, ...files];
+  };
+
   const [menuItems, setMenuItems] = useState<MenuProps["items"]>([
     {
-      key: `home`,
+      key: "home",
       icon: React.createElement(HomeOutlined),
-      label: <Link href={"/"}>Home</Link>,
+      label: <Link href="/">Home</Link>,
     },
     {
-      key: `generate-new-text`,
+      key: "generate-new-text",
       icon: React.createElement(PlayCircleOutlined),
-      label: <Link href={"/generate-new-text"}>Generate new text</Link>,
+      label: <Link href="/generate-new-text">Generate new text</Link>,
     },
     {
-      key: `vocabulary`,
+      key: "vocabulary",
       icon: React.createElement(FileTextOutlined),
-      label: <Link href={"/vocabulary"}>Your vocabulary</Link>,
+      label: <Link href="/vocabulary">Your vocabulary</Link>,
     },
     {
-      key: `texts`,
+      key: "texts",
       icon: React.createElement(FileTextOutlined),
-      label: `Available texts`,
-      children: filenames.map((item) => {
-        const itemName = item.replace(".json", "");
-        return {
-          key: itemName,
-          label: <Link href={`/texts/${itemName}`}>{itemName}</Link>,
-        };
-      }),
+      label: "Available texts",
+      children: mapDirectoryToMenuItems(directory),
     },
   ]);
 

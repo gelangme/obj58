@@ -20,16 +20,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const filenames = getJsonFilenames();
-  const testfiles = getJsonFiles();
+  const directory = getJsonFiles();
 
   return (
     <html lang="en">
       <body className={inter.className + " flex min-h-screen flex-col"}>
         <AntdRegistry>
-          <AntdLayout testfiles={testfiles} filenames={filenames}>
-            {children}
-          </AntdLayout>
+          <AntdLayout directory={directory}>{children}</AntdLayout>
         </AntdRegistry>
       </body>
     </html>
