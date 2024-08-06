@@ -61,7 +61,7 @@ export default function Word({ word, noTooltip, whiteSpace }: iWordComponent) {
           ) : (
             <PlusOutlined onClick={addToVocab} />
           )}
-          <span>{word.t}</span>
+          <span>{word.eng}</span>
         </div>
       }
       mouseEnterDelay={0}
