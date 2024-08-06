@@ -17,7 +17,7 @@ const checkIcon = React.createElement(CheckOutlined);
 export default function Word({ word, noTooltip, whiteSpace }: iWordComponent) {
   const checkIfAddedToVocab = () => {
     const vocab = localStorage.getItem("vocab");
-    console.log("Vocab: ", vocab);
+    // console.log("Vocab: ", vocab);
     if (vocab) {
       const filteredVocab = JSON.parse(vocab).filter(
         (item: iWord) => item.inf === word.inf

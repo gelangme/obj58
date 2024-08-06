@@ -17,13 +17,18 @@ const { Header, Content, Sider } = Layout;
 export default function AntdLayout({
   children,
   filenames,
+  testfiles,
 }: {
   children: React.ReactNode;
   filenames: string[];
+  testfiles: string[];
 }) {
   const {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
+
+  console.log("FILES FileNames: ", filenames);
+  console.log("FILES TestFiles: ", testfiles);
 
   const pathname = usePathname();
   console.log("pathname: ", pathname);

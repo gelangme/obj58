@@ -8,7 +8,7 @@ import { AntdRegistry } from "@ant-design/nextjs-registry";
 import { FileTextOutlined, PlayCircleOutlined } from "@ant-design/icons";
 import { StyleProvider } from "@ant-design/cssinjs";
 import AntdLayout from "@/components/AntdLayout";
-import { getJsonFilenames } from "@/utils/readFileData";
+import { getJsonFilenames, getJsonFiles } from "@/utils/readFileData";
 
 const { defaultAlgorithm, darkAlgorithm } = theme;
 
@@ -21,12 +21,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const filenames = getJsonFilenames();
+  const testfiles = getJsonFiles();
 
   return (
     <html lang="en">
       <body className={inter.className + " flex min-h-screen flex-col"}>
         <AntdRegistry>
-          <AntdLayout filenames={filenames}>{children}</AntdLayout>
+          <AntdLayout testfiles={testfiles} filenames={filenames}>
+            {children}
+          </AntdLayout>
         </AntdRegistry>
       </body>
     </html>
