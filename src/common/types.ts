@@ -1,9 +1,10 @@
 export interface iWord {
-  t: string;
-  pos: number | number[];
+  en?: string;
+  ua?: string;
+  ru?: string;
   original: string;
   inf: string;
-  difficulty?: number;
+  pos: number[];
 }
 
 export interface iSentence {
