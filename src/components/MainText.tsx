@@ -34,10 +34,10 @@ export default function MainText({ text }: { text: iSentence[] }) {
           setTextLocale(value);
           localStorage.setItem("textLocale", value);
         }}
-        isInterfaceLocale
+        isInterfaceLocale={false}
       />
       {text.map((item) => (
-        <Sentence sentence={item} />
+        <Sentence textLocale={textLocale} sentence={item} />
       ))}
     </>
   );

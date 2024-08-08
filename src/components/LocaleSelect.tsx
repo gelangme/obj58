@@ -1,3 +1,4 @@
+"use client";
 import { Select } from "antd";
 
 const interfacelLocaleOptions = [
@@ -8,7 +9,6 @@ const interfacelLocaleOptions = [
 
 const textLocaleOptions = [
   { value: "en", label: "english" },
-  { value: "de", label: "deutsch" },
   { value: "uk", label: "українська" },
   { value: "default", label: "default" },
 ];

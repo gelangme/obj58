@@ -98,11 +98,6 @@ export default function AntdLayout({
 
   console.log(isDark);
 
-  // const changeLanguage = (lng) => {
-  //   // i18n.changeLanguage(lng);
-  //   router.push(router.pathname, router.asPath, { locale: lng });
-  // };
-
   const handleLocaleChange = useCallback(
     (value: string) => {
       const currentLocale = i18n.language;
@@ -112,17 +107,21 @@ export default function AntdLayout({
         currentPathname.replace(`/${currentLocale}`, `/${value}`)
       );
 
-      // router.push()
-
-      // console.log(
-      //   "Router Push: ",
-      //   router.push(currentPathname.replace(`/${currentLocale}`, `/${value}`))
-      // );
-
       router.push(currentPathname.replace(`/${currentLocale}`, `/${value}`));
     },
     [i18n.language, currentPathname]
   );
+
+  // const handleLocaleChange = (value: string) => {
+  //   const currentLocale = i18n.language;
+  //   console.log("currentPathname: ", currentPathname);
+  //   console.log(
+  //     "currentPathname.replace: ",
+  //     currentPathname.replace(`/${currentLocale}`, `/${value}`)
+  //   );
+
+  //   router.push(currentPathname.replace(`/${currentLocale}`, `/${value}`));
+  // };
 
   const [menuItems, setMenuItems] = useState<MenuProps["items"]>([
     {

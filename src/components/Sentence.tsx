@@ -10,7 +10,13 @@ import { useTranslation } from "react-i18next";
 const playIcon = React.createElement(PlayCircleOutlined);
 const pauseIcon = React.createElement(PauseCircleOutlined);
 
-export default function Sentence({ sentence }: { sentence: iSentence }) {
+export default function Sentence({
+  sentence,
+  textLocale,
+}: {
+  sentence: iSentence;
+  textLocale: string;
+}) {
   const { i18n } = useTranslation();
 
   const [isPlaying, setIsPlaying] = useState(false);
@@ -57,7 +63,9 @@ export default function Sentence({ sentence }: { sentence: iSentence }) {
   };
 
   const getTranslation = () => {
-    switch (i18n.language) {
+    console.log("getTranslation textLocale:", textLocale);
+
+    switch (textLocale === "default" ? i18n.language : textLocale) {
       case "en":
         return sentence.enTranslation;
       case "uk":
