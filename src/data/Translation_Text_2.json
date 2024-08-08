@@ -1,0 +1,64 @@
+{
+  "Text": [
+    {
+      "enTranslation": "The stars shine brightly at night.",
+      "ukTranslation": "Зірки яскраво світять вночі.",
+      "words": [
+        {
+          "en": "the",
+          "original": "die",
+          "inf": "die",
+          "pos": [
+            0
+          ],
+          "uk": "це"
+        },
+        {
+          "en": "stars",
+          "original": "Sterne",
+          "inf": "Stern",
+          "pos": [
+            1
+          ],
+          "uk": "зірки"
+        },
+        {
+          "en": "shine",
+          "original": "leuchten",
+          "inf": "leuchten",
+          "pos": [
+            2
+          ],
+          "uk": "світити"
+        },
+        {
+          "en": "brightly",
+          "original": "hell",
+          "inf": "hell",
+          "pos": [
+            3
+          ],
+          "uk": "яскраво"
+        },
+        {
+          "en": "at",
+          "original": "bei",
+          "inf": "bei",
+          "pos": [
+            4
+          ],
+          "uk": "в"
+        },
+        {
+          "en": "night",
+          "original": "Nacht",
+          "inf": "Nacht",
+          "pos": [
+            5
+          ],
+          "uk": "ніч"
+        }
+      ]
+    }
+  ]
+}

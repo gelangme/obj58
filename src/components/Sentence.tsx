@@ -1,14 +1,18 @@
+"use client";
 import { iSentence } from "@/common/types";
 import Word from "./Word";
 import { Button } from "antd";
 import React, { useEffect, useState } from "react";
 const ignor_words = [".", ",", "?", "!", ":", ")"]; // Array of symbols and words which are not higlighted
 import { PlayCircleOutlined, PauseCircleOutlined } from "@ant-design/icons";
+import { useTranslation } from "react-i18next";
 
 const playIcon = React.createElement(PlayCircleOutlined);
 const pauseIcon = React.createElement(PauseCircleOutlined);
 
 export default function Sentence({ sentence }: { sentence: iSentence }) {
+  const { i18n } = useTranslation();
+
   const [isPlaying, setIsPlaying] = useState(false);
   const sentenceString = sentence.words.reduce(
     (accumulator, currentValue) => accumulator + currentValue.original + " ",
@@ -50,6 +54,17 @@ export default function Sentence({ sentence }: { sentence: iSentence }) {
   const pauseSentence = () => {
     speechSynthesis.cancel();
     setIsPlaying(false);
+  };
+
+  const getTranslation = () => {
+    switch (i18n.language) {
+      case "en":
+        return sentence.enTranslation;
+      case "uk":
+        return sentence.ukTranslation;
+      default:
+        return sentence.enTranslation;
+    }
   };
 
   return (
@@ -111,7 +126,7 @@ export default function Sentence({ sentence }: { sentence: iSentence }) {
           className="opacity-10 hover:opacity-50 transition-opacity duration-300"
           title="Translation"
         >
-          {sentence.translation}
+          {getTranslation()}
         </div>
       </div>
     </div>

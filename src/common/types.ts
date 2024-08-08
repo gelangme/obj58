@@ -1,6 +1,6 @@
 export interface iWord {
   en?: string;
-  ua?: string;
+  uk?: string;
   ru?: string;
   original: string;
   inf: string;
@@ -8,7 +8,8 @@ export interface iWord {
 }
 
 export interface iSentence {
-  translation: string;
+  enTranslation: string;
+  ukTranslation: string;
   words: iWord[];
   original?: string;
   type?: string;

@@ -19,10 +19,7 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  const { t, resources } = await initTranslations(
-    params.locale,
-    i18nNamespaces
-  );
+  const { resources } = await initTranslations(params.locale, i18nNamespaces);
   const directory = getJsonFiles();
 
   return (

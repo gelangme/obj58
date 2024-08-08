@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import type { MenuProps } from "antd";
 import {
   ConfigProvider,
@@ -24,6 +24,7 @@ import { Directory } from "@/utils/readFileData";
 import { useTranslation } from "react-i18next";
 import { usePathname, useRouter } from "next/navigation";
 import i18nConfig from "../../i18nConfig";
+import LocaleSelect from "./LocaleSelect";
 
 const { defaultAlgorithm, darkAlgorithm } = theme;
 const { Header, Content, Sider } = Layout;
@@ -43,6 +44,7 @@ export default function AntdLayout({
 
   const router = useRouter();
   const currentPathname = usePathname();
+  console.log("currentPathname LOG: ", currentPathname);
 
   const mapDirectoryToMenuItems = (
     directory: Directory,
@@ -101,13 +103,26 @@ export default function AntdLayout({
   //   router.push(router.pathname, router.asPath, { locale: lng });
   // };
 
-  const handleLocaleChange = (value: any) => {
-    const currentLocale = i18n.language;
+  const handleLocaleChange = useCallback(
+    (value: string) => {
+      const currentLocale = i18n.language;
+      console.log("currentPathname: ", currentPathname);
+      console.log(
+        "currentPathname.replace: ",
+        currentPathname.replace(`/${currentLocale}`, `/${value}`)
+      );
 
-    router.push(currentPathname.replace(`/${currentLocale}`, `/${value}`));
+      // router.push()
 
-    router.refresh();
-  };
+      // console.log(
+      //   "Router Push: ",
+      //   router.push(currentPathname.replace(`/${currentLocale}`, `/${value}`))
+      // );
+
+      router.push(currentPathname.replace(`/${currentLocale}`, `/${value}`));
+    },
+    [i18n.language, currentPathname]
+  );
 
   const [menuItems, setMenuItems] = useState<MenuProps["items"]>([
     {
@@ -140,7 +155,7 @@ export default function AntdLayout({
           key: "interface-language",
           label: (
             <div className="flex flex-row items-center justify-start gap-3">
-              <Select
+              {/* <Select
                 className="w-full"
                 defaultValue={i18n.language}
                 onChange={handleLocaleChange}
@@ -149,6 +164,12 @@ export default function AntdLayout({
                   { value: "de", label: "deutsch" },
                   { value: "uk", label: "українська" },
                 ]}
+              /> */}
+              <LocaleSelect
+                className="w-full"
+                value={i18n.language}
+                onChange={handleLocaleChange}
+                isInterfaceLocale
               />
             </div>
           ),
@@ -205,7 +226,7 @@ export default function AntdLayout({
                 onClick={handleMenuClick}
               />
             </Sider>
-            <Layout style={{ padding: "0 24px 24px" }}>
+            <Layout style={{ padding: "24px 24px" }}>
               {/* <Breadcrumb style={{ margin: "16px 0" }}>
                 <Breadcrumb.Item>Home</Breadcrumb.Item>
                 <Breadcrumb.Item>Texts</Breadcrumb.Item>
@@ -213,7 +234,6 @@ export default function AntdLayout({
               </Breadcrumb> */}
               <Card
                 style={{
-                  padding: 24,
                   margin: 0,
                   minHeight: 280,
                   borderRadius: borderRadiusLG,

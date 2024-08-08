@@ -4,6 +4,7 @@ import { Button, Tooltip } from "antd";
 import React, { useEffect, useState } from "react";
 import { PlusOutlined, CheckOutlined } from "@ant-design/icons";
 import { json } from "stream/consumers";
+import { useTranslation } from "react-i18next";
 
 interface iWordComponent {
   word: iWord;
@@ -15,6 +16,8 @@ const plusIcon = React.createElement(PlusOutlined);
 const checkIcon = React.createElement(CheckOutlined);
 
 export default function Word({ word, noTooltip, whiteSpace }: iWordComponent) {
+  const { i18n } = useTranslation();
+
   const checkIfAddedToVocab = () => {
     const vocab = localStorage.getItem("vocab");
     // console.log("Vocab: ", vocab);
@@ -54,6 +57,17 @@ export default function Word({ word, noTooltip, whiteSpace }: iWordComponent) {
     localStorage.setItem("vocab", JSON.stringify(newVocab));
   };
 
+  const getTranslation = () => {
+    switch (i18n.language) {
+      case "en":
+        return word.en;
+      case "uk":
+        return word.uk;
+      default:
+        return word.en;
+    }
+  };
+
   return noTooltip ? (
     <span>{word.original}</span>
   ) : (
@@ -65,7 +79,7 @@ export default function Word({ word, noTooltip, whiteSpace }: iWordComponent) {
           ) : (
             <PlusOutlined onClick={addToVocab} />
           )}
-          <span>{word.en}</span>
+          <span>{getTranslation()}</span>
         </div>
       }
       mouseEnterDelay={0}
