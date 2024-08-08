@@ -1,7 +1,15 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import type { MenuProps } from "antd";
-import { ConfigProvider, Layout, Menu, theme, Select, Switch } from "antd";
+import {
+  ConfigProvider,
+  Layout,
+  Menu,
+  theme,
+  Select,
+  Switch,
+  Card,
+} from "antd";
 import {
   FileTextOutlined,
   PlayCircleOutlined,
@@ -55,16 +63,19 @@ export default function AntdLayout({
 
     const files = directory.files.map((file) => {
       const filePath = `${currentPath}/${file}`;
+      const encodedFilePath = encodeURIComponent(filePath);
+      console.log(encodedFilePath);
+      console.log(`Navigating to /texts/${encodeURIComponent(filePath)}`);
       return {
         key: file.replace(".json", ""),
         icon: React.createElement(FileTextOutlined),
         label: (
           <Link
-            href={`/texts/[...filePath]`}
-            as={`/texts/${encodeURIComponent(filePath)}`}
+            href={`/texts/${encodeURIComponent(filePath).replace(".json", "")}`}
           >
             {file.replace(".json", "")}
           </Link>
+          // <Link href={`/texts/kek`}>{file.replace(".json", "")}</Link>
         ),
       };
     });
@@ -81,7 +92,7 @@ export default function AntdLayout({
     }
   };
 
-  const [isDark, setIsDark] = useState<boolean>(getIsDarkTheme());
+  const [isDark, setIsDark] = useState<boolean>();
 
   console.log(isDark);
 
@@ -93,11 +104,7 @@ export default function AntdLayout({
   const handleLocaleChange = (value: any) => {
     const currentLocale = i18n.language;
 
-    if (currentLocale === i18nConfig.defaultLocale) {
-      router.push("/" + value + currentPathname);
-    } else {
-      router.push(currentPathname.replace(`/${currentLocale}`, `/${value}`));
-    }
+    router.push(currentPathname.replace(`/${currentLocale}`, `/${value}`));
 
     router.refresh();
   };
@@ -151,18 +158,6 @@ export default function AntdLayout({
           key: "interface-theme",
           label: (
             <div className="flex flex-row items-center justify-start gap-3">
-              {/* <Select
-                className="w-full"
-                value={isDark}
-                onChange={(value) => {
-                  setIsDark(value);
-                  localStorage.setItem("isDarkTheme", JSON.stringify(value));
-                }}
-                options={[
-                  { value: true, label: "Dark" },
-                  { value: false, label: "Light" },
-                ]}
-              /> */}
               <span>{t("interface-theme")}</span>
               <Switch
                 checkedChildren={<MoonOutlined />}
@@ -184,6 +179,10 @@ export default function AntdLayout({
   const handleMenuClick = ({ keyPath }: { keyPath: string[] }) => {
     console.log("handleMenuClick: ", { keyPath });
   };
+
+  useEffect(() => {
+    setIsDark(getIsDarkTheme);
+  }, []);
 
   return (
     <ConfigProvider
@@ -212,7 +211,16 @@ export default function AntdLayout({
                 <Breadcrumb.Item>Texts</Breadcrumb.Item>
                 <Breadcrumb.Item>Text 1</Breadcrumb.Item>
               </Breadcrumb> */}
-              <Content>{children}</Content>
+              <Card
+                style={{
+                  padding: 24,
+                  margin: 0,
+                  minHeight: 280,
+                  borderRadius: borderRadiusLG,
+                }}
+              >
+                {children}
+              </Card>
             </Layout>
           </Layout>
         </Layout>

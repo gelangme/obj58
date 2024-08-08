@@ -3,7 +3,9 @@ import MainText from "@/components/MainText";
 import { getJsonFilenames, getJsonContent } from "@/utils/readFileData";
 
 export default function FilePage({ params }: { params: { fileName: string } }) {
-  const fileContent = getJsonContent(decodeURIComponent(`${params.fileName}`));
+  const fileContent = getJsonContent(
+    `${decodeURIComponent(params.fileName)}.json`
+  );
 
   return <MainText text={fileContent.Text}></MainText>;
 }

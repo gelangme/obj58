@@ -1,7 +1,7 @@
 "use client";
 import { iWord } from "@/common/types";
 import { Button, Tooltip } from "antd";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { PlusOutlined, CheckOutlined } from "@ant-design/icons";
 import { json } from "stream/consumers";
 
@@ -32,7 +32,11 @@ export default function Word({ word, noTooltip, whiteSpace }: iWordComponent) {
     }
   };
 
-  const [isAddedToVocab, setIsAddedToVocab] = useState(checkIfAddedToVocab());
+  const [isAddedToVocab, setIsAddedToVocab] = useState<boolean>();
+
+  useEffect(() => {
+    setIsAddedToVocab(checkIfAddedToVocab());
+  }, []);
 
   const addToVocab = () => {
     setIsAddedToVocab(true);
