@@ -46,7 +46,7 @@ export default function VocabularyPage() {
         key: i.toString(),
         word: item.original,
         inf: item.inf,
-        translation: item.t,
+        translation: item["textLo"],
       }));
       setData(data);
     }

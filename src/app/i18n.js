@@ -24,12 +24,12 @@ export default async function initTranslations(
   await i18nInstance.init({
     lng: locale,
     resources,
-    fallbackLng: i18nConfig.defaultLocale,
-    supportedLngs: i18nConfig.locales,
+    fallbackLng: "en",
+    supportedLngs: ["en", "uk", "de"],
     defaultNS: namespaces[0],
     fallbackNS: namespaces[0],
     ns: namespaces,
-    preload: resources ? [] : i18nConfig.locales,
+    preload: resources ? [] : ["en", "uk", "de"],
   });
 
   return {

@@ -1,15 +1,7 @@
 "use client";
 import React, { useCallback, useEffect, useState } from "react";
 import type { MenuProps } from "antd";
-import {
-  ConfigProvider,
-  Layout,
-  Menu,
-  theme,
-  Select,
-  Switch,
-  Card,
-} from "antd";
+import { ConfigProvider, Layout, Menu, theme, Switch, Card } from "antd";
 import {
   FileTextOutlined,
   PlayCircleOutlined,
@@ -23,11 +15,10 @@ import Link from "next/link";
 import { Directory } from "@/utils/readFileData";
 import { useTranslation } from "react-i18next";
 import { usePathname, useRouter } from "next/navigation";
-import i18nConfig from "../../i18nConfig";
 import LocaleSelect from "./LocaleSelect";
 
 const { defaultAlgorithm, darkAlgorithm } = theme;
-const { Header, Content, Sider } = Layout;
+const { Sider } = Layout;
 
 export default function AntdLayout({
   children,
@@ -102,10 +93,10 @@ export default function AntdLayout({
     (value: string) => {
       const currentLocale = i18n.language;
       console.log("currentPathname: ", currentPathname);
-      console.log(
-        "currentPathname.replace: ",
-        currentPathname.replace(`/${currentLocale}`, `/${value}`)
-      );
+      // console.log(
+      //   "currentPathname.replace: ",
+      //   currentPathname.replace(`/${currentLocale}`, `/${value}`)
+      // );
 
       router.push(currentPathname.replace(`/${currentLocale}`, `/${value}`));
     },
