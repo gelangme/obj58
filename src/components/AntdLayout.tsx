@@ -20,11 +20,9 @@ const { Sider } = Layout;
 
 export const isDarkModeAtom = atom(readStorageState("isDarkMode", true, false));
 export const interfaceLocaleAtom = atom(
-  readStorageState("interfaceLocale", true, "en")
+  readStorageState("interfaceLocale", false, "en")
 );
-export const textLocaleAtom = atom(
-  readStorageState("interfaceLocale", true, "en")
-);
+export const textLocaleAtom = atom(readStorageState("textLocale", false, "en"));
 
 export default function AntdLayout({
   children,
@@ -36,8 +34,9 @@ export default function AntdLayout({
   const {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
-
   const { t } = useTranslation();
+  const isDarkMode = useAtomValue(isDarkModeAtom);
+  const textLocale = useAtomValue(textLocaleAtom);
 
   const mapDirectoryToMenuItems = (
     directory: Directory,
@@ -66,7 +65,10 @@ export default function AntdLayout({
         icon: React.createElement(FileTextOutlined),
         label: (
           <Link
-            href={`/texts/${}/${encodeURIComponent(filePath).replace(".json", "")}`}
+            href={`/texts/${textLocale}/${encodeURIComponent(filePath).replace(
+              ".json",
+              ""
+            )}`}
           >
             {file.replace(".json", "")}
           </Link>
@@ -78,9 +80,36 @@ export default function AntdLayout({
     return [...subDirectories, ...files];
   };
 
-  const isDarkMode = useAtomValue(isDarkModeAtom);
+  // const [menuItems, setMenuItems] = useState<MenuProps["items"]>([
+  //   {
+  //     key: "home",
+  //     icon: React.createElement(HomeOutlined),
+  //     label: <Link href="/">{t("home")}</Link>,
+  //   },
+  //   {
+  //     key: "generate-new-text",
+  //     icon: React.createElement(PlayCircleOutlined),
+  //     label: <Link href="/generate-new-text">{t("generate-new-text")}</Link>,
+  //   },
+  //   {
+  //     key: "vocabulary",
+  //     icon: React.createElement(FileTextOutlined),
+  //     label: <Link href="/vocabulary">{t("vocabulary")}</Link>,
+  //   },
+  //   {
+  //     key: "texts",
+  //     icon: React.createElement(FileTextOutlined),
+  //     label: t("texts"),
+  //     children: mapDirectoryToMenuItems(directory),
+  //   },
+  //   {
+  //     key: t("settings"),
+  //     label: <Link href="/settings">{t("settings")}</Link>,
+  //     icon: React.createElement(SettingFilled),
+  //   },
+  // ]);
 
-  const [menuItems, setMenuItems] = useState<MenuProps["items"]>([
+  const menuItems: MenuProps["items"] = [
     {
       key: "home",
       icon: React.createElement(HomeOutlined),
@@ -107,7 +136,11 @@ export default function AntdLayout({
       label: <Link href="/settings">{t("settings")}</Link>,
       icon: React.createElement(SettingFilled),
     },
-  ]);
+  ];
+
+  useEffect(() => {
+    console.log("TEXT_LOCALE: ", textLocale);
+  }, [textLocale]);
 
   const handleMenuClick = ({ keyPath }: { keyPath: string[] }) => {
     console.log("handleMenuClick: ", { keyPath });

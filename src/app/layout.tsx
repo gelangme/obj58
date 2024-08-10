@@ -3,12 +3,11 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
-import AntdLayout from "@/components/AntdLayout";
+import AntdLayout, { interfaceLocaleAtom } from "@/components/AntdLayout";
 import { getJsonFiles } from "@/utils/readFileData";
 import TranslationsProvider from "@/components/TranslationsProvider";
 import initTranslations from "./i18n";
 import { useAtomValue } from "jotai";
-import { interfaceLocaleAtom } from "./settings/page";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,16 +20,11 @@ export default async function RootLayout({
 }) {
   const { resources } = await initTranslations("en", i18nNamespaces);
   const directory = getJsonFiles();
-  const interfaceLocale = useAtomValue(interfaceLocaleAtom);
 
   return (
     <html lang="en">
       <body className={inter.className + " flex min-h-screen flex-col"}>
-        <TranslationsProvider
-          namespaces={i18nNamespaces}
-          locale={interfaceLocale}
-          resources={resources}
-        >
+        <TranslationsProvider namespaces={i18nNamespaces} resources={resources}>
           <AntdRegistry>
             <AntdLayout directory={directory}>{children}</AntdLayout>
           </AntdRegistry>
