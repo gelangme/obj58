@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import { PlusOutlined, CheckOutlined } from "@ant-design/icons";
 import { json } from "stream/consumers";
 import { useTranslation } from "react-i18next";
+import { useParams } from "next/navigation";
 
 interface iWordComponent {
   word: iWord;
@@ -16,7 +17,7 @@ const plusIcon = React.createElement(PlusOutlined);
 const checkIcon = React.createElement(CheckOutlined);
 
 export default function Word({ word, noTooltip, whiteSpace }: iWordComponent) {
-  const { i18n } = useTranslation();
+  const params = useParams<{ textLocale: string }>();
 
   const checkIfAddedToVocab = () => {
     const vocab = localStorage.getItem("vocab");
@@ -58,13 +59,14 @@ export default function Word({ word, noTooltip, whiteSpace }: iWordComponent) {
   };
 
   const getTranslation = () => {
-    switch (i18n.language) {
+    console.log("WORD: ", word);
+    switch (params.textLocale) {
       case "en":
         return word.en;
       case "uk":
         return word.uk;
       default:
-        return word.en;
+        break;
     }
   };
 

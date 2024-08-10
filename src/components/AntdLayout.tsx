@@ -6,19 +6,25 @@ import {
   FileTextOutlined,
   PlayCircleOutlined,
   HomeOutlined,
-  GlobalOutlined,
-  SunOutlined,
-  MoonOutlined,
+  SettingFilled,
 } from "@ant-design/icons";
 import { StyleProvider } from "@ant-design/cssinjs";
 import Link from "next/link";
 import { Directory } from "@/utils/readFileData";
 import { useTranslation } from "react-i18next";
-import { usePathname, useRouter } from "next/navigation";
-import LocaleSelect from "./LocaleSelect";
+import { atom, useAtomValue } from "jotai";
+import { readStorageState } from "@/utils/localStorageHelper";
 
 const { defaultAlgorithm, darkAlgorithm } = theme;
 const { Sider } = Layout;
+
+export const isDarkModeAtom = atom(readStorageState("isDarkMode", true, false));
+export const interfaceLocaleAtom = atom(
+  readStorageState("interfaceLocale", true, "en")
+);
+export const textLocaleAtom = atom(
+  readStorageState("interfaceLocale", true, "en")
+);
 
 export default function AntdLayout({
   children,
@@ -31,11 +37,7 @@ export default function AntdLayout({
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
 
-  const { t, i18n } = useTranslation();
-
-  const router = useRouter();
-  const currentPathname = usePathname();
-  console.log("currentPathname LOG: ", currentPathname);
+  const { t } = useTranslation();
 
   const mapDirectoryToMenuItems = (
     directory: Directory,
@@ -64,7 +66,7 @@ export default function AntdLayout({
         icon: React.createElement(FileTextOutlined),
         label: (
           <Link
-            href={`/texts/${encodeURIComponent(filePath).replace(".json", "")}`}
+            href={`/texts/${}/${encodeURIComponent(filePath).replace(".json", "")}`}
           >
             {file.replace(".json", "")}
           </Link>
@@ -76,43 +78,7 @@ export default function AntdLayout({
     return [...subDirectories, ...files];
   };
 
-  const getIsDarkTheme = () => {
-    const isDarkTheme = localStorage.getItem("isDarkTheme");
-    if (isDarkTheme === null) {
-      return false;
-    } else {
-      return JSON.parse(isDarkTheme);
-    }
-  };
-
-  const [isDark, setIsDark] = useState<boolean>();
-
-  console.log(isDark);
-
-  const handleLocaleChange = useCallback(
-    (value: string) => {
-      const currentLocale = i18n.language;
-      console.log("currentPathname: ", currentPathname);
-      // console.log(
-      //   "currentPathname.replace: ",
-      //   currentPathname.replace(`/${currentLocale}`, `/${value}`)
-      // );
-
-      router.push(currentPathname.replace(`/${currentLocale}`, `/${value}`));
-    },
-    [i18n.language, currentPathname]
-  );
-
-  // const handleLocaleChange = (value: string) => {
-  //   const currentLocale = i18n.language;
-  //   console.log("currentPathname: ", currentPathname);
-  //   console.log(
-  //     "currentPathname.replace: ",
-  //     currentPathname.replace(`/${currentLocale}`, `/${value}`)
-  //   );
-
-  //   router.push(currentPathname.replace(`/${currentLocale}`, `/${value}`));
-  // };
+  const isDarkMode = useAtomValue(isDarkModeAtom);
 
   const [menuItems, setMenuItems] = useState<MenuProps["items"]>([
     {
@@ -137,63 +103,15 @@ export default function AntdLayout({
       children: mapDirectoryToMenuItems(directory),
     },
     {
-      key: "settings",
-      label: t("settings"),
-      type: "group",
-      children: [
-        {
-          key: "interface-language",
-          label: (
-            <div className="flex flex-row items-center justify-start gap-3">
-              {/* <Select
-                className="w-full"
-                defaultValue={i18n.language}
-                onChange={handleLocaleChange}
-                options={[
-                  { value: "en", label: "english" },
-                  { value: "de", label: "deutsch" },
-                  { value: "uk", label: "українська" },
-                ]}
-              /> */}
-              <LocaleSelect
-                className="w-full"
-                value={i18n.language}
-                onChange={handleLocaleChange}
-                isInterfaceLocale
-              />
-            </div>
-          ),
-          icon: <GlobalOutlined />,
-        },
-        {
-          key: "interface-theme",
-          label: (
-            <div className="flex flex-row items-center justify-start gap-3">
-              <span>{t("interface-theme")}</span>
-              <Switch
-                checkedChildren={<MoonOutlined />}
-                unCheckedChildren={<SunOutlined />}
-                defaultChecked={isDark}
-                onChange={(value) => {
-                  console.log("Checked?: ", value);
-                  setIsDark(value);
-                  localStorage.setItem("isDarkTheme", JSON.stringify(value));
-                }}
-              />
-            </div>
-          ),
-        },
-      ],
+      key: t("settings"),
+      label: <Link href="/settings">{t("settings")}</Link>,
+      icon: React.createElement(SettingFilled),
     },
   ]);
 
   const handleMenuClick = ({ keyPath }: { keyPath: string[] }) => {
     console.log("handleMenuClick: ", { keyPath });
   };
-
-  useEffect(() => {
-    setIsDark(getIsDarkTheme);
-  }, []);
 
   return (
     <ConfigProvider
@@ -202,7 +120,7 @@ export default function AntdLayout({
           colorPrimary: "#009688",
           colorInfo: "#009688",
         },
-        algorithm: isDark ? darkAlgorithm : defaultAlgorithm,
+        algorithm: isDarkMode ? darkAlgorithm : defaultAlgorithm,
       }}
     >
       <StyleProvider hashPriority="high">

@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -8,6 +7,8 @@ import AntdLayout from "@/components/AntdLayout";
 import { getJsonFiles } from "@/utils/readFileData";
 import TranslationsProvider from "@/components/TranslationsProvider";
 import initTranslations from "./i18n";
+import { useAtomValue } from "jotai";
+import { interfaceLocaleAtom } from "./settings/page";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,15 +19,16 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const { resources } = await initTranslations(params.locale, i18nNamespaces);
+  const { resources } = await initTranslations("en", i18nNamespaces);
   const directory = getJsonFiles();
+  const interfaceLocale = useAtomValue(interfaceLocaleAtom);
 
   return (
     <html lang="en">
       <body className={inter.className + " flex min-h-screen flex-col"}>
         <TranslationsProvider
           namespaces={i18nNamespaces}
-          locale={locale}
+          locale={interfaceLocale}
           resources={resources}
         >
           <AntdRegistry>

@@ -10,23 +10,21 @@ const interfacelLocaleOptions = [
 const textLocaleOptions = [
   { value: "en", label: "english" },
   { value: "uk", label: "українська" },
-  { value: "default", label: "default" },
 ];
 
 export default function LocaleSelect({
-  className,
+  className = "",
   value,
   onChange,
-  isInterfaceLocale,
+  isInterfaceLocale = false,
 }: {
-  className: string;
+  className?: string;
   value: string;
   onChange: (value: string) => void;
-  isInterfaceLocale: boolean;
+  isInterfaceLocale?: boolean;
 }) {
   return (
     <Select
-      //   className="absolute top-0 left-0 min-w-4"
       className={className}
       value={value}
       onChange={onChange}
