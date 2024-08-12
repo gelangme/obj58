@@ -1,1 +1,9 @@
-{"boat":"Boat","generate-new-text":"Generate new text","home":"Home","interface-theme":"Theme","settings":"Settings","texts":"Available texts","vocabulary":"Vocabulary"}
+{
+  "boat": "Boat",
+  "generate-new-text": "Generate new text",
+  "home": "Home",
+  "interface-theme": "Theme",
+  "settings": "Settings",
+  "texts": "Available texts",
+  "vocabulary": "Vocabulary"
+}

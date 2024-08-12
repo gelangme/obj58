@@ -29,6 +29,16 @@ const columns: TableProps<DataType>["columns"] = [
   },
 ];
 
+// const getTranslationByLocale = () => {
+//   switch (locale) {
+//     case value:
+//       return
+
+//     default:
+//       break;
+//   }
+// }
+
 export default function VocabularyPage() {
   const [vocab, setVocab] = useState<iWord[] | undefined | null>();
   const [data, setData] = useState<DataType[] | undefined>();
@@ -46,7 +56,7 @@ export default function VocabularyPage() {
         key: i.toString(),
         word: item.original,
         inf: item.inf,
-        translation: item.t,
+        translation: item.en as string,
       }));
       setData(data);
     }
