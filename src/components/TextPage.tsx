@@ -7,8 +7,6 @@ import LocaleSelect from "./LocaleSelect";
 import { useParams, usePathname, useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useAtom } from "jotai";
-import { textLocaleAtom } from "./AntdLayout";
 
 export default function TextPage({ text }: { text: iSentence[] }) {
   const router = useRouter();
@@ -17,26 +15,11 @@ export default function TextPage({ text }: { text: iSentence[] }) {
   const { t } = useTranslation();
 
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [textLocale, setTextLocale] = useAtom(textLocaleAtom);
 
   const handleTextLocaleChange = (value: string) => {
     localStorage.setItem("textLocale", value);
     router.push(pathname.replace(`/${params.textLocale}`, `/${value}`));
   };
-
-  //todo: decide if i need to replace users textLocale if he visited a url with a locale different from users locale
-  // useEffect(() => {
-  //   if (params.textLocale === textLocale) {
-  //     return;
-  //   } else {
-  //     const isSupportedLocale = ["en", "uk"].some(
-  //       (value) => value === textLocale
-  //     );
-  //     if (isSupportedLocale) {
-  //       setTextLocale(params.textLocale);
-  //     }
-  //   }
-  // });
 
   return (
     <>
