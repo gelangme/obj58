@@ -1,7 +1,7 @@
 "use client";
 import { iSentence } from "@/common/types";
 import Word from "./Word";
-import { Button } from "antd";
+import { Button, Modal } from "antd";
 import React, { useEffect, useState } from "react";
 const ignor_words = [".", ",", "?", "!", ":", ")"]; // Array of symbols and words which are not higlighted
 import { PlayCircleOutlined, PauseCircleOutlined } from "@ant-design/icons";
@@ -26,6 +26,7 @@ export default function Sentence({
   );
 
   const [voices, setVoices] = useState<SpeechSynthesisVoice[]>();
+  const [modal, contextHolder] = Modal.useModal();
 
   useEffect(() => {
     console.log("Voices: ", voices);
@@ -33,9 +34,25 @@ export default function Sentence({
 
   useEffect(() => {
     setTimeout(() => {
-      setVoices(
-        window.speechSynthesis.getVoices().filter((x) => x.lang == "de-DE")
+      const germanVoices = window.speechSynthesis
+        .getVoices()
+        .filter((x) => x.lang == "de-DE");
+
+      const localGermanVoices = germanVoices.filter(
+        (x) => x.localService === true
       );
+      if (localGermanVoices.length !== 0) {
+        setVoices(localGermanVoices);
+      } else {
+        /* todo: add new string to i18nexus */
+        Modal.destroyAll();
+        modal.warning({
+          title: "Warning",
+          content:
+            "We found no local speech synthesis voices, this may lead to problems with the access, operation or functionality of the text-to-speech service.",
+        });
+        setVoices(germanVoices);
+      }
     }, 200);
   }, []);
 
@@ -77,6 +94,7 @@ export default function Sentence({
 
   return (
     <div className="mb-4 flex flex-row [&_button]:opacity-0 [&_button]:hover:opacity-100">
+      {contextHolder}
       <div className="flex flex-col justify-center items-center mr-3">
         {isPlaying ? (
           <Button
