@@ -7,6 +7,7 @@ import LocaleSelect from "./LocaleSelect";
 import { useParams, usePathname, useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import YouTubeVideo from "./YouTubeVideo";
 
 export default function TextPage({ text }: { text: iSentence[] }) {
   const router = useRouter();
@@ -59,14 +60,18 @@ export default function TextPage({ text }: { text: iSentence[] }) {
         icon={React.createElement(SettingFilled)}
         onClick={() => setIsModalOpen(true)}
       />
-
-      {text.map((item) => (
-        <Sentence
-          key={item.original}
-          textLocale={params.textLocale}
-          sentence={item}
-        />
-      ))}
+      <div className="flex flex:col-reverse lg:flex-row lg:justify-between gap-4">
+        <div className="flex flex-col">
+          {text.map((item) => (
+            <Sentence
+              key={item.original}
+              textLocale={params.textLocale}
+              sentence={item}
+            />
+          ))}
+        </div>
+        <YouTubeVideo />
+      </div>
       {/* todo: add new string to i18nexus */}
       <Tooltip title="Number of unique words in the text">
         <div className="flex justify-center items-center w-[32px] h-[32px]">
