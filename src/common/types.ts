@@ -1,10 +1,10 @@
 export interface iWord {
   en?: string;
   uk?: string;
-  ru?: string;
   original: string;
   inf: string;
   pos: number[];
+  type: string;
 }
 
 export interface iSentence {

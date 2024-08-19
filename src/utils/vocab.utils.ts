@@ -1,8 +1,58 @@
 import axios, { AxiosResponse } from "axios";
+import moby from "moby";
 
-interface TranslationResponse {
-  translations: Translation[] | null; // Adjust based on actual API response
+interface Term {
+  term: string;
+  level?: string; // Optional, as not all terms have this property
 }
+
+// Interface for each synset
+interface Synset {
+  id: number;
+  categories: string[]; // Array of categories, could be empty
+  terms: Term[]; // Array of terms
+}
+
+// Interface for the metadata
+interface MetaData {
+  apiVersion: string;
+  warning: string;
+  copyright: string;
+  license: string;
+  source: string;
+  date: string;
+}
+
+// Interface for the full JSON response
+export interface OpenThesaurusResponse {
+  metaData: MetaData;
+  synsets: Synset[];
+  similarterms: { distance: number; term: string }[];
+}
+
+export interface SynonymResponse {
+  word: string;
+  data: {
+    license: string;
+    synsets: Array<{
+      lemma: string;
+      // other fields can be added here
+    }>;
+  };
+}
+
+export interface DatamuseResponse {
+  word: string;
+  score?: number;
+  tags?: string[];
+  [key: string]: any;
+}
+
+interface ProcessedWordData {
+  synonyms: (OpenThesaurusResponse | null)[];
+  translations: (string | null)[];
+}
+
 export const translateText = async (text: string, targetLanguage: string) => {
   const apiKey = process.env.NEXT_PUBLIC_GOOGLE_TRANSLATE_API_KEY;
   const url = `https://translation.googleapis.com/language/translate/v2?key=${apiKey}`;
@@ -19,39 +69,40 @@ export const translateText = async (text: string, targetLanguage: string) => {
     return null;
   }
 };
-async function translateWords(
+
+export async function translateWords(
   words: string[],
   targetLanguage: string
-): Promise<Map<string, Translation[] | null>> {
-  const promises = words.map(
-    (word) =>
-      axios
-        .post<TranslationResponse>(
-          "https://example-translation-api.com/translate",
-          {
-            q: word,
-            target: targetLanguage,
-          }
-        )
-        .then((response) => ({ word, data: response.data.translations || [] })) // Ensure `data` is always an array
+): Promise<(string | null)[]> {
+  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_TRANSLATE_API_KEY;
+  const url = `https://translation.googleapis.com/language/translate/v2?key=${apiKey}`;
+
+  // Map each word to a promise that resolves to its translation data
+  const promises = words.map((word) =>
+    axios
+      .post(url, {
+        q: word,
+        target: targetLanguage,
+      })
+      .then((response) => response.data.data.translations[0].translatedText)
+      .catch((error) => {
+        console.error(`Error translating word "${word}":`, error);
+        return null;
+      })
   );
 
   try {
-    const results = await Promise.all(promises);
-    const resultMap = new Map<string, Translation[] | null>();
-
-    results.forEach(({ word, data }) => {
-      resultMap.set(word, data.length > 0 ? data : null); // Use `null` if array is empty
-    });
-
-    return resultMap;
+    // Await all promises and collect results into an array
+    return await Promise.all(promises);
   } catch (error) {
     console.error("Error translating words:", error);
     throw error;
   }
 }
 
-async function fetchSynonyms(query: string): Promise<SynonymResponse> {
+async function fetchSynonyms(
+  query: string
+): Promise<OpenThesaurusResponse | null> {
   try {
     // Construct the URL with the query parameter
     const url = `https://www.openthesaurus.de/synonyme/search?q=${encodeURIComponent(
@@ -59,7 +110,8 @@ async function fetchSynonyms(query: string): Promise<SynonymResponse> {
     )}&format=application/json&similar=true`;
 
     // Make the GET request
-    const response: AxiosResponse<SynonymResponse> = await axios.get(url);
+    const response: AxiosResponse<OpenThesaurusResponse | null> =
+      await axios.get(url);
 
     // Return the response dataå
     return response.data;
@@ -70,75 +122,92 @@ async function fetchSynonyms(query: string): Promise<SynonymResponse> {
   }
 }
 
-async function fetchSynonymsForMultipleWords(
+async function fetchSynonymsForMultipleWordsDe(
   words: string[]
-): Promise<Map<string, SynonymResponse>> {
-  const results = new Map<string, SynonymResponse>();
+): Promise<(OpenThesaurusResponse | null)[]> {
+  const results: (OpenThesaurusResponse | null)[] = [];
 
   for (const word of words) {
     try {
       const data = await fetchSynonyms(word);
-      results.set(word, data);
+      results.push(data);
     } catch (error) {
       console.error("Error fetching synonyms for", word, ":", error);
+      // Push an object with `word` and `synonyms` set to null or empty response
+      results.push(null);
     }
   }
 
   return results;
 }
 
-export interface SynonymResponse {
-  word: string;
-  data: {
-    license: string;
-    synsets: Array<{
-      lemma: string;
-      // other fields can be added here
-    }>;
-  };
+// Function to fetch synonyms or related words from Datamuse API
+async function fetchSynonymsFromDatamuse(
+  query: string
+): Promise<DatamuseResponse[] | null> {
+  try {
+    // Construct the URL with the query parameter
+    const url = `https://api.datamuse.com/words?rel_syn=${encodeURIComponent(
+      query
+    )}`;
+
+    // Make the GET request
+    const response: AxiosResponse<DatamuseResponse[]> = await axios.get(url);
+
+    // Return the response data
+    return response.data;
+  } catch (error) {
+    // Handle errors
+    console.error("Error fetching data from Datamuse:", error);
+    throw error;
+  }
 }
 
-export interface Translation {
-  word: string;
-  translatedText: string;
-}
+async function fetchSynonymsForMultipleWordsEn(
+  words: (string | null)[]
+): Promise<(DatamuseResponse[] | null)[]> {
+  const results: (DatamuseResponse[] | null)[] = [];
 
-interface ProcessedWordData {
-  synonyms: SynonymResponse[];
-  translations: Translation[];
+  for (const word of words) {
+    try {
+      if (word === null) {
+        results.push(null);
+      } else {
+        const data = await fetchSynonymsFromDatamuse(word);
+        if (Array.isArray(data)) {
+          results.push(data?.slice(0, 5));
+        }
+      }
+    } catch (error) {
+      console.error("Error fetching synonyms for", word, ":", error);
+      // Push an object with `word` and `synonyms` set to null or empty response
+      results.push(null);
+    }
+  }
+
+  return results;
 }
 
 export async function processWords(
   words: string[],
   targetLanguage: string
-): Promise<ProcessedWordData> {
+): Promise<{
+  synonyms: (DatamuseResponse[] | null)[];
+  translations: (string | null)[];
+}> {
   try {
-    const synonyms: SynonymResponse[] = [];
-    const translations: Translation[] = [];
+    //targetLanguage = "de" ? Fetch synonyms for each word from OpenThesaurus
 
-    // Simulate processing by adding dummy data
-    words.forEach((word) => {
-      synonyms.push({
-        word,
-        data: {
-          license: "example-license",
-          synsets: [{ lemma: word }],
-        },
-      });
+    // Fetch translations for each word
+    const translations = await translateWords(words, targetLanguage);
 
-      translations.push({
-        word,
-        translatedText: `${word} in ${targetLanguage}`,
-      });
-    });
+    // Fetch translations for each word
+    const synonyms = await fetchSynonymsForMultipleWordsEn(translations);
 
-    // Return the result as an object with arrays of synonyms and translations
-    return {
-      synonyms,
-      translations,
-    };
+    // Return the combined result
+    return { synonyms, translations };
   } catch (error) {
-    console.error("Error in processWords:", error);
-    throw error; // Re-throw the error to be handled by the caller
+    console.error("Error fetching data:", error);
+    throw error;
   }
 }

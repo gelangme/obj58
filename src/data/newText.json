@@ -1,0 +1,161 @@
+{
+  "Text": [
+    {
+      "enTranslation": "At the airport",
+      "ukTranslation": "В аеропорту",
+      "words": [
+        {
+          "en": "at",
+          "uk": "в",
+          "original": "Am",
+          "inf": "am",
+          "type": "preposition",
+          "pos": [1]
+        },
+        {
+          "en": "airport",
+          "uk": "аеропорт",
+          "original": "Flughafen",
+          "inf": "Flughafen",
+          "type": "noun",
+          "pos": [2]
+        }
+      ],
+      "type": "h2"
+    },
+    {
+      "enTranslation": "The Müller family is planning their vacation.",
+      "ukTranslation": "Сім'я Мюллер планує свою відпустку.",
+      "words": [
+        {
+          "en": "family",
+          "uk": "сім'я",
+          "original": "Familie",
+          "inf": "Familie",
+          "type": "noun",
+          "pos": [1]
+        },
+        {
+          "en": "Müller",
+          "uk": "Мюллер",
+          "original": "Müller",
+          "inf": "Müller",
+          "type": "proper noun",
+          "pos": [2]
+        },
+        {
+          "en": "is planning",
+          "uk": "планує",
+          "original": "plant",
+          "inf": "planen",
+          "type": "verb",
+          "pos": [3]
+        },
+        {
+          "en": "their",
+          "uk": "свою",
+          "original": "ihren",
+          "inf": "ihr",
+          "type": "possessive pronoun",
+          "pos": [4]
+        },
+        {
+          "en": "vacation",
+          "uk": "відпустка",
+          "original": "Urlaub",
+          "inf": "Urlaub",
+          "type": "noun",
+          "pos": [5]
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "enTranslation": "They go to a travel agency and get advice from an employee.",
+      "ukTranslation": "Вона йде до туристичного агентства і отримує консультацію від працівника.",
+      "words": [
+        {
+          "en": "they",
+          "uk": "вона",
+          "original": "Sie",
+          "inf": "sie",
+          "type": "pronoun",
+          "pos": [1]
+        },
+        {
+          "en": "go",
+          "uk": "йде",
+          "original": "geht",
+          "inf": "gehen",
+          "type": "verb",
+          "pos": [2]
+        },
+        {
+          "en": "to",
+          "uk": "до",
+          "original": "in",
+          "inf": "in",
+          "type": "preposition",
+          "pos": [3]
+        },
+        {
+          "en": "a",
+          "uk": "одне",
+          "original": "ein",
+          "inf": "ein",
+          "type": "article",
+          "pos": [4]
+        },
+        {
+          "en": "travel agency",
+          "uk": "туристичне агентство",
+          "original": "Reisebüro",
+          "inf": "Reisebüro",
+          "type": "noun",
+          "pos": [5]
+        },
+        {
+          "en": "and",
+          "uk": "і",
+          "original": "und",
+          "inf": "und",
+          "type": "conjunction",
+          "pos": [6]
+        },
+        {
+          "en": "get advice",
+          "uk": "отримує консультацію",
+          "original": "lässt sich beraten",
+          "inf": "beraten",
+          "type": "verb",
+          "pos": [7, 8, 9]
+        },
+        {
+          "en": "from",
+          "uk": "від",
+          "original": "von",
+          "inf": "von",
+          "type": "preposition",
+          "pos": [10]
+        },
+        {
+          "en": "an",
+          "uk": "одного",
+          "original": "einem",
+          "inf": "ein",
+          "type": "article",
+          "pos": [11]
+        },
+        {
+          "en": "employee",
+          "uk": "працівник",
+          "original": "Angestellten",
+          "inf": "Angestellter",
+          "type": "noun",
+          "pos": [12]
+        }
+      ],
+      "type": "text"
+    }
+  ]
+}

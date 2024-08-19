@@ -7,7 +7,6 @@ import AntdLayout, { interfaceLocaleAtom } from "@/components/AntdLayout";
 import { getJsonFiles } from "@/utils/readFileData";
 import TranslationsProvider from "@/components/TranslationsProvider";
 import initTranslations from "./i18n";
-import { useAtomValue } from "jotai";
 
 const inter = Inter({ subsets: ["latin"] });
 
