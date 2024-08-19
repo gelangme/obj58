@@ -83,6 +83,7 @@ export async function translateWords(
       .post(url, {
         q: word,
         target: targetLanguage,
+        source: "de",
       })
       .then((response) => response.data.data.translations[0].translatedText)
       .catch((error) => {
