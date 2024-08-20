@@ -20,6 +20,7 @@
     "openai": "^4.53.2",
     "openthesaurus": "^1.0.2",
     "react": "^18",
+    "react-csv": "^2.2.2",
     "react-dom": "^18",
     "react-i18next": "^15.0.1",
     "react-youtube": "^10.1.0"
@@ -28,6 +29,7 @@
     "@types/i18next": "^13.0.0",
     "@types/node": "^20",
     "@types/react": "^18",
+    "@types/react-csv": "^1.1.10",
     "@types/react-dom": "^18",
     "@types/react-i18next": "^8.1.0",
     "eslint": "^8",

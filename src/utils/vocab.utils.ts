@@ -1,5 +1,4 @@
 import axios, { AxiosResponse } from "axios";
-import moby from "moby";
 
 interface Term {
   term: string;

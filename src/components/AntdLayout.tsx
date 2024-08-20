@@ -136,11 +136,6 @@ export default function AntdLayout({
       label: <Link href="/settings">{t("settings")}</Link>,
       icon: React.createElement(SettingFilled),
     },
-    {
-      key: t("synonyms"),
-      label: <Link href="/synonyms">{t("synonyms")}</Link>,
-      icon: React.createElement(SettingFilled),
-    },
   ];
 
   useEffect(() => {

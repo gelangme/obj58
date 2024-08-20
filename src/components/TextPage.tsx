@@ -70,7 +70,8 @@ export default function TextPage({ text }: { text: iSentence[] }) {
             />
           ))}
         </div>
-        <YouTubeVideo />
+
+        {/* <YouTubeVideo /> */}
       </div>
       {/* todo: add new string to i18nexus */}
       <Tooltip title="Number of unique words in the text">
