@@ -9,7 +9,13 @@ import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import YouTubeVideo from "./YouTubeVideo";
 
-export default function TextPage({ text }: { text: iSentence[] }) {
+export default function TextPage({
+  text,
+  videoLink,
+}: {
+  text: iSentence[];
+  videoLink: string;
+}) {
   const router = useRouter();
   const params = useParams<{ textLocale: string }>();
   const pathname = usePathname();
@@ -70,8 +76,7 @@ export default function TextPage({ text }: { text: iSentence[] }) {
             />
           ))}
         </div>
-
-        {/* <YouTubeVideo /> */}
+        {!!videoLink ? <YouTubeVideo videoLink={videoLink} /> : null}
       </div>
       {/* todo: add new string to i18nexus */}
       <Tooltip title="Number of unique words in the text">

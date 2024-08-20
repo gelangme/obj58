@@ -17,7 +17,12 @@ export default async function FilePage({
 
   console.log("PARAMS: ", params);
 
-  return <MainText text={fileContent.Text}></MainText>;
+  return (
+    <MainText
+      text={fileContent.Text}
+      videoLink={fileContent.videoLink ? fileContent.videoLink : null}
+    ></MainText>
+  );
 }
 
 export async function generateStaticParams() {
