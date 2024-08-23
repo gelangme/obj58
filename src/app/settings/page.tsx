@@ -5,14 +5,20 @@ import { Switch } from "antd";
 import { GlobalOutlined, MoonOutlined, SunOutlined } from "@ant-design/icons";
 import { useTranslation } from "react-i18next";
 import { atom, useAtom } from "jotai";
-import { readStorageState } from "@/utils/localStorageHelper";
-import { interfaceLocaleAtom, isDarkModeAtom } from "@/components/AntdLayout";
+import {
+  interfaceLocaleAtom,
+  isDarkModeAtom,
+  translationLocaleAtom,
+} from "@/state/atoms";
 
 export default function SettingsPage() {
   const { t, i18n } = useTranslation();
 
   const [isDarkMode, setIsDarkMode] = useAtom(isDarkModeAtom);
   const [interfaceLocale, setInterfaceLocale] = useAtom(interfaceLocaleAtom);
+  const [translationLocale, setTranslationLocale] = useAtom(
+    translationLocaleAtom
+  );
 
   return (
     <div className="flex flex-col gap-4">
@@ -20,11 +26,21 @@ export default function SettingsPage() {
         <span>{t("interface-lang")}</span>
         <LocaleSelect
           value={interfaceLocale}
-          onChange={(lang: string) => {
+          onChange={(lang: any) => {
             setInterfaceLocale(lang);
             i18n.changeLanguage(lang);
           }}
           isInterfaceLocale
+        />
+      </div>
+      <div className="flex flex-row items-center justify-start gap-3">
+        <span>{t("translation-lang")}</span>
+        <LocaleSelect
+          value={translationLocale}
+          onChange={(lang: any) => {
+            setTranslationLocale(lang);
+          }}
+          isInterfaceLocale={false}
         />
       </div>
       <div className="flex flex-row items-center justify-start gap-3">

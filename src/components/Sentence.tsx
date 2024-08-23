@@ -6,17 +6,14 @@ import React, { useEffect, useState } from "react";
 const ignor_words = [".", ",", "?", "!", ":", ")"]; // Array of symbols and words which are not higlighted
 import { PlayCircleOutlined, PauseCircleOutlined } from "@ant-design/icons";
 import { useTranslation } from "react-i18next";
+import { useSearchParams } from "next/navigation";
+import { useAtomValue } from "jotai";
+import { translationLocaleAtom } from "@/state/atoms";
 
 const playIcon = React.createElement(PlayCircleOutlined);
 const pauseIcon = React.createElement(PauseCircleOutlined);
 
-export default function Sentence({
-  sentence,
-  textLocale,
-}: {
-  sentence: iSentence;
-  textLocale: string;
-}) {
+export default function Sentence({ sentence }: { sentence: iSentence }) {
   const { i18n } = useTranslation();
 
   const [isPlaying, setIsPlaying] = useState(false);
@@ -27,10 +24,43 @@ export default function Sentence({
 
   const [voices, setVoices] = useState<SpeechSynthesisVoice[]>();
   const [modal, contextHolder] = Modal.useModal();
+  const [translation, setTranslation] = useState<string | null>(null);
+  const searchParams = useSearchParams();
+  const translationLocale = useAtomValue(translationLocaleAtom);
 
   useEffect(() => {
     console.log("Voices: ", voices);
   }, [voices]);
+
+  const initTranslation = () => {
+    const lang = searchParams.get("lang");
+    // console.log("LOCALES: ", {
+    //   lang: lang,
+    //   translationLocale: translationLocale,
+    //   i18n: i18n.language,
+    // });
+
+    if (lang) {
+      return setTranslation(getTranslation(lang));
+    }
+
+    if (translationLocale === "default") {
+      return setTranslation(getTranslation(i18n.language));
+    } else {
+      return setTranslation(getTranslation(translationLocale));
+    }
+  };
+
+  const getTranslation = (language: string) => {
+    switch (language) {
+      case "en":
+        return sentence.enTranslation;
+      case "uk":
+        return sentence.ukTranslation;
+      default:
+        return sentence.enTranslation;
+    }
+  };
 
   useEffect(() => {
     setTimeout(() => {
@@ -56,6 +86,10 @@ export default function Sentence({
     }, 200);
   }, []);
 
+  useEffect(() => {
+    initTranslation();
+  }, [translationLocale, i18n]);
+
   // const handlePlay = async () => {
   //   speechSynthesis.cancel();
   //   setIsPlaying(true);
@@ -77,19 +111,6 @@ export default function Sentence({
   const pauseSentence = () => {
     speechSynthesis.cancel();
     setIsPlaying(false);
-  };
-
-  const getTranslation = () => {
-    console.log("getTranslation textLocale:", textLocale);
-
-    switch (textLocale === "default" ? i18n.language : textLocale) {
-      case "en":
-        return sentence.enTranslation;
-      case "uk":
-        return sentence.ukTranslation;
-      default:
-        return sentence.enTranslation;
-    }
   };
 
   return (
@@ -152,7 +173,7 @@ export default function Sentence({
           className="opacity-10 hover:opacity-50 transition-opacity duration-300"
           title="Translation"
         >
-          {getTranslation()}
+          {translation}
         </div>
       </div>
     </div>

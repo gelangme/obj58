@@ -1,12 +1,14 @@
 "use client";
 
 import { iWord } from "@/common/types";
+import { interfaceLocaleAtom, translationLocaleAtom } from "@/state/atoms";
 import {
   DatamuseResponse,
   processWords,
   translateWords,
 } from "@/utils/vocab.utils";
 import { Button, Form, Input, Select, Table, TableProps, Tooltip } from "antd";
+import { useAtomValue } from "jotai";
 import { ReactNode, useEffect, useState } from "react";
 import { CSVLink } from "react-csv";
 
@@ -16,6 +18,18 @@ interface DataType {
   searchType: string;
   inf: any;
   translation: any;
+}
+
+export interface VocabWord {
+  inf: string;
+  type: string;
+  en?: TranslationData;
+  uk?: TranslationData;
+}
+
+export interface TranslationData {
+  translation?: string | null;
+  synonyms?: DatamuseResponse[] | null;
 }
 
 const columns: TableProps<DataType>["columns"] = [
@@ -37,24 +51,120 @@ export type SearchFormProps = {
 };
 
 export default function VocabularyPage() {
+  const interfaceLocale = useAtomValue(interfaceLocaleAtom);
+  const translationLocale = useAtomValue(translationLocaleAtom);
+
   const [searchForm] = Form.useForm<SearchFormProps>();
 
-  const [vocab, setVocab] = useState<iWord[] | undefined | null>();
+  const [vocab, setVocab] = useState<VocabWord[] | undefined | null>();
   const [data, setData] = useState<DataType[] | undefined>();
   const [dataAfterSearch, setDataAfterSearch] = useState<
     DataType[] | undefined
   >();
-  const [csvData, setCsvData] = useState<(string | null)[][] | undefined>();
+  const [csvData, setCsvData] = useState<
+    (string | null | undefined)[][] | undefined
+  >();
   const [processedWordData, setProcessedWordData] = useState<{
     synonyms: (DatamuseResponse[] | null)[];
     translations: (string | null)[];
   }>();
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
-  const [searchValue, setSearchValue] = useState("");
+  function getTranslationData(
+    word: VocabWord,
+    locale: keyof VocabWord
+  ): TranslationData {
+    return word[locale] as TranslationData;
+  }
 
   const fetchData = async () => {
     if (vocab) {
+      switch (
+        translationLocale === "default" ? interfaceLocale : translationLocale
+      ) {
+        case "en":
+          try {
+            console.log("API OldVocab", vocab);
+
+            let wordsToTranslate: any = [];
+            for (let index = 0; index < vocab.length; index++) {
+              if (!("en" in vocab[index])) {
+                wordsToTranslate.push({
+                  inf: vocab[index].inf,
+                  vocabIndex: index,
+                });
+              }
+            }
+            console.log("API wordsToTranslate: ", wordsToTranslate);
+
+            if (wordsToTranslate.length === 0) {
+              setIsLoading(false);
+              return;
+            }
+
+            console.log("API wordsToTranslate: ", wordsToTranslate);
+            const result = await processWords(
+              wordsToTranslate.map((item: any) => item.inf),
+              "en"
+            );
+            console.log("Fetch Data Result: ", { result });
+
+            for (let index = 0; index < wordsToTranslate.length; index++) {
+              const vocabIndex = wordsToTranslate[index].vocabIndex;
+              vocab[vocabIndex].en = {
+                translation: result.translations[index],
+                synonyms: result.synonyms[index],
+              };
+            }
+
+            const stringifiedOldVocab = JSON.stringify(vocab);
+
+            const newVocab = JSON.parse(stringifiedOldVocab);
+            setVocab(newVocab);
+
+            console.log("API NewVocab", vocab);
+
+            localStorage.setItem("vocab", JSON.stringify(newVocab));
+          } catch (error) {
+            console.error("Error fetching processed words:", error);
+          }
+          break;
+        case "uk":
+          try {
+            const words = vocab.map((vocab) => vocab.inf);
+            const result = await translateWords(words, "uk");
+
+            console.log("Fetch Data Result: ", { result });
+
+            setProcessedWordData({
+              translations: result,
+              synonyms: new Array(result.length).fill(null),
+            });
+            setIsLoading(false);
+          } catch (error) {
+            console.error("Error fetching processed words:", error);
+            setProcessedWordData(undefined);
+            setIsLoading(false);
+          }
+          break;
+
+        default:
+          try {
+            const words = vocab.map((vocab) => vocab.inf);
+            const result = await processWords(words, "en");
+
+            console.log("Fetch Data Result: ", { result });
+
+            setProcessedWordData(result);
+            setIsLoading(false);
+          } catch (error) {
+            console.error("Error fetching processed words:", error);
+            setProcessedWordData(undefined);
+            setIsLoading(false);
+          }
+          break;
+      }
+
       try {
         const words = vocab.map((vocab) => vocab.inf);
         const result = await processWords(words, "en");
@@ -86,8 +196,8 @@ export default function VocabularyPage() {
   }, []);
 
   useEffect(() => {
-    if (vocab && processedWordData) {
-      const data: DataType[] = vocab.map((item: iWord, i) => ({
+    if (vocab && !isLoading) {
+      const data: DataType[] = vocab.map((item, i) => ({
         key: i.toString(),
         searchInf: item.inf,
         searchType: item.type,
@@ -97,10 +207,32 @@ export default function VocabularyPage() {
             <span>{item.inf}</span>
           </div>
         ),
-        // translation: processedWordData.translations[i],
+        // translation:
+        //   processedWordData.synonyms[i] !== null &&
+        // processedWordData.synonyms[i].length !== 0 ? (
+        //   <Tooltip
+        //     title={
+        //       <div className="flex flex-row gap-4">
+        //         {
+        //           <div className="flex flex-col gap-1">
+        //             <span className="font-bold text-lg opacity-60">
+        //               Synonyms
+        //             </span>
+        //             {processedWordData.synonyms[i].map((item) => (
+        //               <span>{item.word}</span>
+        //             ))}
+        //           </div>
+        //         }
+        //       </div>
+        //     }
+        //   >
+        //     {processedWordData.translations[i]}
+        //   </Tooltip>
+        // ) : (
+        //   processedWordData.translations[i]
+        // ),
         translation:
-          processedWordData.synonyms[i] !== null &&
-          processedWordData.synonyms[i].length !== 0 ? (
+          item.en?.synonyms !== null && item.en?.synonyms?.length !== 0 ? (
             <Tooltip
               title={
                 <div className="flex flex-row gap-4">
@@ -109,7 +241,7 @@ export default function VocabularyPage() {
                       <span className="font-bold text-lg opacity-60">
                         Synonyms
                       </span>
-                      {processedWordData.synonyms[i].map((item) => (
+                      {item.en?.synonyms?.map((item) => (
                         <span>{item.word}</span>
                       ))}
                     </div>
@@ -117,23 +249,30 @@ export default function VocabularyPage() {
                 </div>
               }
             >
-              {processedWordData.translations[i]}
+              {item.en?.translation}
             </Tooltip>
           ) : (
-            processedWordData.translations[i]
+            item.en.translation
           ),
       }));
       setData(data);
 
       const csvData = vocab.map((item, i) => [
         item.inf,
-        processedWordData.translations[i],
+        getTranslationData(
+          item,
+          translationLocale === "default"
+            ? interfaceLocale === "de"
+              ? "en"
+              : interfaceLocale
+            : translationLocale
+        ).translation,
       ]);
       csvData.unshift(["infinitive", "translation"]);
       setCsvData(csvData);
       console.log("CSV_DATA: ", csvData);
     }
-  }, [vocab, processedWordData]);
+  }, [vocab, isLoading]);
 
   const executeSearch = (values: SearchFormProps) => {
     console.log("Received values of form: ", values);

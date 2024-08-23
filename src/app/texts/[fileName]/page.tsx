@@ -1,6 +1,6 @@
 import initTranslations from "@/app/i18n";
 import { iSentence } from "@/common/types";
-import MainText from "@/components/TextPage";
+import FilePageClient from "@/components/TextPage";
 import { getJsonFilenames, getJsonContent } from "@/utils/readFileData";
 import { Select } from "antd";
 
@@ -9,7 +9,7 @@ const i18nNamespaces = ["main"];
 export default async function FilePage({
   params,
 }: {
-  params: { fileName: string; locale: string };
+  params: { fileName: string };
 }) {
   const fileContent = getJsonContent(
     `${decodeURIComponent(params.fileName)}.json`
@@ -18,10 +18,10 @@ export default async function FilePage({
   console.log("PARAMS: ", params);
 
   return (
-    <MainText
+    <FilePageClient
       text={fileContent.Text}
       videoLink={fileContent.videoLink ? fileContent.videoLink : null}
-    ></MainText>
+    ></FilePageClient>
   );
 }
 

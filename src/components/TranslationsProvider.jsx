@@ -4,7 +4,7 @@ import { I18nextProvider } from "react-i18next";
 import initTranslations from "@/app/i18n";
 import { createInstance } from "i18next";
 import { useAtomValue } from "jotai";
-import { interfaceLocaleAtom } from "./AntdLayout";
+import { interfaceLocaleAtom } from "@/state/atoms";
 
 export default function TranslationsProvider({
   children,

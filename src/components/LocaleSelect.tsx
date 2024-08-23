@@ -7,9 +7,10 @@ const interfacelLocaleOptions = [
   { value: "uk", label: "українська" },
 ];
 
-const textLocaleOptions = [
+const translationLocaleOptions = [
   { value: "en", label: "english" },
   { value: "uk", label: "українська" },
+  { value: "default", label: "default" },
 ];
 
 export default function LocaleSelect({
@@ -28,7 +29,9 @@ export default function LocaleSelect({
       className={className}
       value={value}
       onChange={onChange}
-      options={isInterfaceLocale ? interfacelLocaleOptions : textLocaleOptions}
+      options={
+        isInterfaceLocale ? interfacelLocaleOptions : translationLocaleOptions
+      }
     />
   );
 }

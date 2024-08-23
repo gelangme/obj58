@@ -12,17 +12,11 @@ import { StyleProvider } from "@ant-design/cssinjs";
 import Link from "next/link";
 import { Directory } from "@/utils/readFileData";
 import { useTranslation } from "react-i18next";
-import { atom, useAtomValue } from "jotai";
-import { readStorageState } from "@/utils/localStorageHelper";
+import { useAtomValue } from "jotai";
+import { isDarkModeAtom } from "@/state/atoms";
 
 const { defaultAlgorithm, darkAlgorithm } = theme;
 const { Sider } = Layout;
-
-export const isDarkModeAtom = atom(readStorageState("isDarkMode", true, false));
-export const interfaceLocaleAtom = atom(
-  readStorageState("interfaceLocale", false, "en")
-);
-export const textLocaleAtom = atom(readStorageState("textLocale", false, "en"));
 
 export default function AntdLayout({
   children,
@@ -36,7 +30,6 @@ export default function AntdLayout({
   } = theme.useToken();
   const { t } = useTranslation();
   const isDarkMode = useAtomValue(isDarkModeAtom);
-  const textLocale = useAtomValue(textLocaleAtom);
 
   const mapDirectoryToMenuItems = (
     directory: Directory,
@@ -65,10 +58,7 @@ export default function AntdLayout({
         icon: React.createElement(FileTextOutlined),
         label: (
           <Link
-            href={`/texts/${textLocale}/${encodeURIComponent(filePath).replace(
-              ".json",
-              ""
-            )}`}
+            href={`/texts/${encodeURIComponent(filePath).replace(".json", "")}`}
           >
             {file.replace(".json", "")}
           </Link>
@@ -137,10 +127,6 @@ export default function AntdLayout({
       icon: React.createElement(SettingFilled),
     },
   ];
-
-  useEffect(() => {
-    console.log("TEXT_LOCALE: ", textLocale);
-  }, [textLocale]);
 
   const handleMenuClick = ({ keyPath }: { keyPath: string[] }) => {
     console.log("handleMenuClick: ", { keyPath });

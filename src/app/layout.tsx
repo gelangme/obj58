@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
-import AntdLayout, { interfaceLocaleAtom } from "@/components/AntdLayout";
+import AntdLayout from "@/components/AntdLayout";
 import { getJsonFiles } from "@/utils/readFileData";
 import TranslationsProvider from "@/components/TranslationsProvider";
 import initTranslations from "./i18n";

@@ -5,7 +5,10 @@ import React, { useEffect, useState } from "react";
 import { PlusOutlined, CheckOutlined } from "@ant-design/icons";
 import { json } from "stream/consumers";
 import { useTranslation } from "react-i18next";
-import { useParams } from "next/navigation";
+import { useParams, useSearchParams } from "next/navigation";
+import { useAtomValue } from "jotai";
+import { translationLocaleAtom } from "@/state/atoms";
+import { VocabWord } from "@/app/vocabulary/page";
 
 interface iWordComponent {
   word: iWord;
@@ -17,14 +20,12 @@ const plusIcon = React.createElement(PlusOutlined);
 const checkIcon = React.createElement(CheckOutlined);
 
 export default function Word({ word, noTooltip, whiteSpace }: iWordComponent) {
-  const params = useParams<{ textLocale: string }>();
-
+  const { i18n } = useTranslation();
   const checkIfAddedToVocab = () => {
     const vocab = localStorage.getItem("vocab");
-    // console.log("Vocab: ", vocab);
     if (vocab) {
       const filteredVocab = JSON.parse(vocab).filter(
-        (item: iWord) => item.inf === word.inf
+        (item: VocabWord) => item.inf === word.inf
       );
       if (filteredVocab.length !== 0) {
         return true;
@@ -37,6 +38,9 @@ export default function Word({ word, noTooltip, whiteSpace }: iWordComponent) {
   };
 
   const [isAddedToVocab, setIsAddedToVocab] = useState<boolean>();
+  const [translation, setTranslation] = useState<string | null>(null);
+  const searchParams = useSearchParams();
+  const translationLocale = useAtomValue(translationLocaleAtom);
 
   useEffect(() => {
     setIsAddedToVocab(checkIfAddedToVocab());
@@ -49,26 +53,48 @@ export default function Word({ word, noTooltip, whiteSpace }: iWordComponent) {
 
     if (vocab) {
       const newVocab = JSON.parse(vocab);
-      newVocab.push(word);
+      newVocab.push({ inf: word.inf, type: word.type });
 
       return localStorage.setItem("vocab", JSON.stringify(newVocab));
     }
 
-    const newVocab = [word];
+    const newVocab = [{ inf: word.inf, type: word.type }];
     localStorage.setItem("vocab", JSON.stringify(newVocab));
   };
 
-  const getTranslation = () => {
-    console.log("WORD: ", word);
-    switch (params.textLocale) {
+  const initTranslation = () => {
+    const lang = searchParams.get("lang");
+    // console.log("LOCALES: ", {
+    //   lang: lang,
+    //   translationLocale: translationLocale,
+    //   i18n: i18n.language,
+    // });
+
+    if (lang) {
+      return setTranslation(getTranslation(lang) as string);
+    }
+
+    if (translationLocale === "default") {
+      return setTranslation(getTranslation(i18n.language) as string);
+    } else {
+      return setTranslation(getTranslation(translationLocale) as string);
+    }
+  };
+
+  const getTranslation = (language: string) => {
+    switch (language) {
       case "en":
         return word.en;
       case "uk":
         return word.uk;
       default:
-        break;
+        return word.en;
     }
   };
+
+  useEffect(() => {
+    initTranslation();
+  }, [translationLocale, i18n]);
 
   return noTooltip ? (
     <span>{word.original}</span>
@@ -81,7 +107,7 @@ export default function Word({ word, noTooltip, whiteSpace }: iWordComponent) {
           ) : (
             <PlusOutlined onClick={addToVocab} />
           )}
-          <span>{getTranslation()}</span>
+          <span>{translation}</span>
         </div>
       }
       mouseEnterDelay={0}

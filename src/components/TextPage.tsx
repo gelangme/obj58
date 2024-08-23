@@ -8,8 +8,10 @@ import { useParams, usePathname, useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import YouTubeVideo from "./YouTubeVideo";
+import { useAtom } from "jotai";
+import { translationLocaleAtom } from "@/state/atoms";
 
-export default function TextPage({
+export default function FilePageClient({
   text,
   videoLink,
 }: {
@@ -21,6 +23,9 @@ export default function TextPage({
   const pathname = usePathname();
   const { t } = useTranslation();
 
+  const [translationLocale, setTranslationLocale] = useAtom(
+    translationLocaleAtom
+  );
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [numOfUniqueWords, setNumOfUniqueWords] = useState<number>();
 
@@ -52,11 +57,13 @@ export default function TextPage({
         footer={null}
       >
         <div className="flex flex-row items-center justify-start gap-3">
-          {/* todo: add new string to i18nexus */}
-          <span>Translated text language</span>
+          <span>{t("translation-lang")}</span>
           <LocaleSelect
-            value={params.textLocale}
-            onChange={handleTextLocaleChange}
+            value={translationLocale}
+            onChange={(lang: any) => {
+              setTranslationLocale(lang);
+            }}
+            isInterfaceLocale={false}
           />
         </div>
       </Modal>
@@ -69,11 +76,7 @@ export default function TextPage({
       <div className="flex flex:col-reverse lg:flex-row lg:justify-between gap-4">
         <div className="flex flex-col">
           {text.map((item) => (
-            <Sentence
-              key={item.original}
-              textLocale={params.textLocale}
-              sentence={item}
-            />
+            <Sentence key={item.original} sentence={item} />
           ))}
         </div>
         {!!videoLink ? <YouTubeVideo videoLink={videoLink} /> : null}
