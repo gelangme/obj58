@@ -54,6 +54,15 @@ export default function VocabularyPage() {
   const interfaceLocale = useAtomValue(interfaceLocaleAtom);
   const translationLocale = useAtomValue(translationLocaleAtom);
 
+  const currentLocale =
+    translationLocale === "default"
+      ? interfaceLocale === "de"
+        ? "en"
+        : interfaceLocale
+      : translationLocale;
+
+  console.log("currentLocale: ", currentLocale);
+
   const [searchForm] = Form.useForm<SearchFormProps>();
 
   const [vocab, setVocab] = useState<VocabWord[] | undefined | null>();
@@ -232,7 +241,8 @@ export default function VocabularyPage() {
         //   processedWordData.translations[i]
         // ),
         translation:
-          item.en?.synonyms !== null && item.en?.synonyms?.length !== 0 ? (
+          getTranslationData(item, currentLocale)?.synonyms !== null &&
+          getTranslationData(item, currentLocale)?.synonyms?.length !== 0 ? (
             <Tooltip
               title={
                 <div className="flex flex-row gap-4">
@@ -241,8 +251,10 @@ export default function VocabularyPage() {
                       <span className="font-bold text-lg opacity-60">
                         Synonyms
                       </span>
-                      {item.en?.synonyms?.map((item) => (
-                        <span>{item.word}</span>
+                      {item.en?.synonyms?.map((item, index) => (
+                        <span key={`${item.word}-${index}-synonym`}>
+                          {item.word}
+                        </span>
                       ))}
                     </div>
                   }
@@ -252,21 +264,14 @@ export default function VocabularyPage() {
               {item.en?.translation}
             </Tooltip>
           ) : (
-            item.en.translation
+            getTranslationData(item, currentLocale)?.translation
           ),
       }));
       setData(data);
 
       const csvData = vocab.map((item, i) => [
         item.inf,
-        getTranslationData(
-          item,
-          translationLocale === "default"
-            ? interfaceLocale === "de"
-              ? "en"
-              : interfaceLocale
-            : translationLocale
-        ).translation,
+        getTranslationData(item, currentLocale)?.translation,
       ]);
       csvData.unshift(["infinitive", "translation"]);
       setCsvData(csvData);
