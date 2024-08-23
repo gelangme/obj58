@@ -197,7 +197,7 @@ export async function processWords(
 }> {
   try {
     //targetLanguage = "de" ? Fetch synonyms for each word from OpenThesaurus
-
+    console.log("PROCESSING WORDS: ", { words, targetLanguage });
     // Fetch translations for each word
     const translations = await translateWords(words, targetLanguage);
 

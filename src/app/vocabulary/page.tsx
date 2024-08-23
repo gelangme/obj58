@@ -88,9 +88,7 @@ export default function VocabularyPage() {
 
   const fetchData = async () => {
     if (vocab) {
-      switch (
-        translationLocale === "default" ? interfaceLocale : translationLocale
-      ) {
+      switch (currentLocale) {
         case "en":
           try {
             console.log("API OldVocab", vocab);
@@ -111,7 +109,11 @@ export default function VocabularyPage() {
               return;
             }
 
-            console.log("API wordsToTranslate: ", wordsToTranslate);
+            console.log(
+              "API wordsToTranslate: ",
+              wordsToTranslate.map((item: any) => item.inf)
+            );
+
             const result = await processWords(
               wordsToTranslate.map((item: any) => item.inf),
               "en"
@@ -139,53 +141,10 @@ export default function VocabularyPage() {
           }
           break;
         case "uk":
-          try {
-            const words = vocab.map((vocab) => vocab.inf);
-            const result = await translateWords(words, "uk");
-
-            console.log("Fetch Data Result: ", { result });
-
-            setProcessedWordData({
-              translations: result,
-              synonyms: new Array(result.length).fill(null),
-            });
-            setIsLoading(false);
-          } catch (error) {
-            console.error("Error fetching processed words:", error);
-            setProcessedWordData(undefined);
-            setIsLoading(false);
-          }
           break;
 
         default:
-          try {
-            const words = vocab.map((vocab) => vocab.inf);
-            const result = await processWords(words, "en");
-
-            console.log("Fetch Data Result: ", { result });
-
-            setProcessedWordData(result);
-            setIsLoading(false);
-          } catch (error) {
-            console.error("Error fetching processed words:", error);
-            setProcessedWordData(undefined);
-            setIsLoading(false);
-          }
           break;
-      }
-
-      try {
-        const words = vocab.map((vocab) => vocab.inf);
-        const result = await processWords(words, "en");
-
-        console.log("Fetch Data Result: ", { result });
-
-        setProcessedWordData(result);
-        setIsLoading(false);
-      } catch (error) {
-        console.error("Error fetching processed words:", error);
-        setProcessedWordData(undefined);
-        setIsLoading(false);
       }
     }
   };
