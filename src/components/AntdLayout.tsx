@@ -14,6 +14,7 @@ import { Directory } from "@/utils/readFileData";
 import { useTranslation } from "react-i18next";
 import { useAtomValue } from "jotai";
 import { isDarkModeAtom } from "@/state/atoms";
+import { useMediaQuery } from "react-responsive";
 
 const { defaultAlgorithm, darkAlgorithm } = theme;
 const { Sider } = Layout;
@@ -25,6 +26,8 @@ export default function AntdLayout({
   children: React.ReactNode;
   directory: Directory;
 }) {
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+
   const {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
@@ -145,7 +148,11 @@ export default function AntdLayout({
       <StyleProvider hashPriority="high">
         <Layout>
           <Layout>
-            <Sider width={225} style={{ background: colorBgContainer }}>
+            <Sider
+              style={{ background: colorBgContainer }}
+              collapsedWidth={0}
+              collapsible
+            >
               <Menu
                 mode="inline"
                 style={{ height: "100%", borderRight: 0 }}

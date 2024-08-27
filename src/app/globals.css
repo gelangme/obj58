@@ -6,9 +6,11 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --adm-color-fill-content: var(--adm-color-box);
+  --adm-color-box: #f5f5f5;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
@@ -30,4 +32,21 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.adm-side-bar {
+  --height: 100%;
+  --width: 105px;
+  --item-border-radius: 8px;
+  --background-color: var(--adm-color-fill-content);
+  width: var(--width);
+  height: var(--height);
+  box-sizing: border-box;
+  font-size: var(--adm-font-size-main);
+  overflow-y: auto;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
 }
