@@ -151,7 +151,8 @@ export default function AntdLayout({
             <Sider
               style={{ background: colorBgContainer }}
               collapsedWidth={0}
-              collapsible
+              collapsible={isMobile}
+              className={isMobile ? "!absolute !left-0 !z-50 h-full" : ""}
             >
               <Menu
                 mode="inline"
