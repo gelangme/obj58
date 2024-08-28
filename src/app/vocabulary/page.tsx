@@ -3,11 +3,23 @@
 import { iWord } from "@/common/types";
 import { interfaceLocaleAtom, translationLocaleAtom } from "@/state/atoms";
 import { DatamuseResponse, processWords } from "@/utils/vocab.utils";
-import { Button, Form, Input, Select, Table, TableProps, Tooltip } from "antd";
+import {
+  Button,
+  Checkbox,
+  Divider,
+  Form,
+  Input,
+  Select,
+  Table,
+  TableProps,
+  Tooltip,
+} from "antd";
 import { useAtomValue } from "jotai";
 import { ReactNode, useEffect, useState } from "react";
 import { CSVLink } from "react-csv";
 import { useMediaQuery } from "react-responsive";
+import { DeleteOutlined } from "@ant-design/icons";
+import React from "react";
 
 interface DataType {
   key: any;
@@ -47,6 +59,8 @@ export type SearchFormProps = {
   partOfSpeech: string;
 };
 
+const DeleteOutlinedIcon = React.createElement(DeleteOutlined);
+
 export default function VocabularyPage() {
   const interfaceLocale = useAtomValue(interfaceLocaleAtom);
   const translationLocale = useAtomValue(translationLocaleAtom);
@@ -75,7 +89,9 @@ export default function VocabularyPage() {
     translations: (string | null)[];
   }>();
   const [isLoading, setIsLoading] = useState<boolean>(true);
-  const isMobile = useMediaQuery({ maxWidth: 960 });
+  const isMobile = useMediaQuery({ maxWidth: 970 });
+  const [deleteModeEnabled, setDeleteModeEnabled] = useState(false);
+  const [idsForDeletion, setIdsForDeletion] = useState<number[]>([]);
 
   function getTranslationData(
     word: VocabWord,
@@ -160,34 +176,24 @@ export default function VocabularyPage() {
         searchType: item.type,
         inf: (
           <div className="flex flex-row items-center justify-start gap-2">
+            {deleteModeEnabled ? (
+              <Checkbox
+                onChange={(e) => {
+                  if (e.target.checked) {
+                    setIdsForDeletion([...idsForDeletion, i]);
+                  } else {
+                    const newIdsForDeleteion = [...idsForDeletion];
+                    const index = newIdsForDeleteion.indexOf(i);
+                    newIdsForDeleteion.splice(index, 1);
+                    setIdsForDeletion(newIdsForDeleteion);
+                  }
+                }}
+              />
+            ) : null}
             <span className="opacity-70 text-sm">({item.type})</span>
             <span>{item.inf}</span>
           </div>
         ),
-        // translation:
-        //   processedWordData.synonyms[i] !== null &&
-        // processedWordData.synonyms[i].length !== 0 ? (
-        //   <Tooltip
-        //     title={
-        //       <div className="flex flex-row gap-4">
-        //         {
-        //           <div className="flex flex-col gap-1">
-        //             <span className="font-bold text-lg opacity-60">
-        //               Synonyms
-        //             </span>
-        //             {processedWordData.synonyms[i].map((item) => (
-        //               <span>{item.word}</span>
-        //             ))}
-        //           </div>
-        //         }
-        //       </div>
-        //     }
-        //   >
-        //     {processedWordData.translations[i]}
-        //   </Tooltip>
-        // ) : (
-        //   processedWordData.translations[i]
-        // ),
         translation:
           getTranslationData(item, currentLocale)?.synonyms !== null &&
           getTranslationData(item, currentLocale)?.synonyms?.length !== 0 ? (
@@ -225,7 +231,7 @@ export default function VocabularyPage() {
       setCsvData(csvData);
       console.log("CSV_DATA: ", csvData);
     }
-  }, [vocab, isLoading]);
+  }, [vocab, isLoading, deleteModeEnabled]);
 
   const executeSearch = (values: SearchFormProps) => {
     console.log("Received values of form: ", values);
@@ -303,11 +309,45 @@ export default function VocabularyPage() {
             }}
             type="text"
             danger
+            className="ml-2"
           >
             Clear
           </Button>
         </Form.Item>
       </Form>
+      <Divider />
+      {deleteModeEnabled ? (
+        <div className="flex flex-row gap-2">
+          <Button onClick={() => setDeleteModeEnabled(false)}>
+            {DeleteOutlinedIcon} Cancel
+          </Button>
+          {idsForDeletion.length !== 0 ? (
+            <Button
+              danger
+              onClick={() => {
+                const newVocab = JSON.parse(JSON.stringify(vocab));
+                // Step 1: Sort the indexesToDelete array in descending order
+                idsForDeletion.sort((a, b) => b - a);
+
+                // Step 2: Iterate through the sorted array and delete the elements
+                idsForDeletion.forEach((index) => {
+                  newVocab.splice(index, 1); // Splice removes 1 element at the specified index
+                });
+                setDeleteModeEnabled(false);
+                setIdsForDeletion([]);
+                setVocab(newVocab);
+                localStorage.setItem("vocab", JSON.stringify(newVocab));
+              }}
+            >
+              {DeleteOutlinedIcon} Delete Selected
+            </Button>
+          ) : null}
+        </div>
+      ) : (
+        <Button onClick={() => setDeleteModeEnabled(true)}>
+          {DeleteOutlinedIcon} Delete items
+        </Button>
+      )}
       <Table
         loading={isLoading}
         columns={columns}
