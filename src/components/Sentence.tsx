@@ -121,6 +121,7 @@ export default function Sentence({ sentence }: { sentence: iSentence }) {
       <div className="flex flex-col justify-center items-center mr-3">
         {isPlaying ? (
           <Button
+            size={isMobile ? "small" : "middle"}
             type={isMobile ? "text" : "default"}
             onClick={() => {
               pauseSentence();
@@ -130,6 +131,7 @@ export default function Sentence({ sentence }: { sentence: iSentence }) {
           </Button>
         ) : (
           <Button
+            size={isMobile ? "small" : "middle"}
             type={isMobile ? "text" : "default"}
             onClick={() => {
               playSentence();

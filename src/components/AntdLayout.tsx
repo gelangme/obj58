@@ -33,6 +33,7 @@ export default function AntdLayout({
   } = theme.useToken();
   const { t } = useTranslation();
   const isDarkMode = useAtomValue(isDarkModeAtom);
+  const [isMobileSiderCollapsed, setIsMobileSiderCollapsed] = useState(true);
 
   const mapDirectoryToMenuItems = (
     directory: Directory,
@@ -108,11 +109,11 @@ export default function AntdLayout({
       icon: React.createElement(HomeOutlined),
       label: <Link href="/">{t("home")}</Link>,
     },
-    {
-      key: "generate-new-text",
-      icon: React.createElement(PlayCircleOutlined),
-      label: <Link href="/generate-new-text">{t("generate-new-text")}</Link>,
-    },
+    // {
+    //   key: "generate-new-text",
+    //   icon: React.createElement(PlayCircleOutlined),
+    //   label: <Link href="/generate-new-text">{t("generate-new-text")}</Link>,
+    // },
     {
       key: "vocabulary",
       icon: React.createElement(FileTextOutlined),
@@ -153,8 +154,12 @@ export default function AntdLayout({
                 style={{ background: colorBgContainer }}
                 collapsedWidth={0}
                 collapsible={true}
+                collapsed={isMobileSiderCollapsed}
+                onCollapse={() =>
+                  setIsMobileSiderCollapsed(!isMobileSiderCollapsed)
+                }
                 className={
-                  "!absolute !left-0 !z-50 h-full !transition-none border-r-[1px] border-solid border-x-gray-400"
+                  "!fixed !left-0 !top-0 !z-[1000] h-[100vh] !transition-none border-r-[1px] border-solid border-x-gray-400 noselect"
                 }
               >
                 <Menu
@@ -166,7 +171,11 @@ export default function AntdLayout({
                 />
               </Sider>
             ) : (
-              <Sider collapsed={false} style={{ background: colorBgContainer }}>
+              <Sider
+                collapsed={false}
+                style={{ background: colorBgContainer }}
+                className="noselect"
+              >
                 <Menu
                   mode="inline"
                   style={{ height: "100%", borderRight: 0 }}
@@ -175,7 +184,9 @@ export default function AntdLayout({
                 />
               </Sider>
             )}
-            <Layout style={{ padding: "24px 24px" }}>
+            <Layout
+              style={isMobile ? { padding: "12px" } : { padding: "24px" }}
+            >
               {/* <Breadcrumb style={{ margin: "16px 0" }}>
                 <Breadcrumb.Item>Home</Breadcrumb.Item>
                 <Breadcrumb.Item>Texts</Breadcrumb.Item>

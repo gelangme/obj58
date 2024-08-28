@@ -2,15 +2,12 @@
 
 import { iWord } from "@/common/types";
 import { interfaceLocaleAtom, translationLocaleAtom } from "@/state/atoms";
-import {
-  DatamuseResponse,
-  processWords,
-  translateWords,
-} from "@/utils/vocab.utils";
+import { DatamuseResponse, processWords } from "@/utils/vocab.utils";
 import { Button, Form, Input, Select, Table, TableProps, Tooltip } from "antd";
 import { useAtomValue } from "jotai";
 import { ReactNode, useEffect, useState } from "react";
 import { CSVLink } from "react-csv";
+import { useMediaQuery } from "react-responsive";
 
 interface DataType {
   key: any;
@@ -78,6 +75,7 @@ export default function VocabularyPage() {
     translations: (string | null)[];
   }>();
   const [isLoading, setIsLoading] = useState<boolean>(true);
+  const isMobile = useMediaQuery({ maxWidth: 960 });
 
   function getTranslationData(
     word: VocabWord,
@@ -88,63 +86,54 @@ export default function VocabularyPage() {
 
   const fetchData = async () => {
     if (vocab) {
-      switch (currentLocale) {
-        case "en":
-          try {
-            console.log("API OldVocab", vocab);
+      try {
+        console.log("API OldVocab", vocab);
 
-            let wordsToTranslate: any = [];
-            for (let index = 0; index < vocab.length; index++) {
-              if (!("en" in vocab[index])) {
-                wordsToTranslate.push({
-                  inf: vocab[index].inf,
-                  vocabIndex: index,
-                });
-              }
-            }
-            console.log("API wordsToTranslate: ", wordsToTranslate);
-
-            if (wordsToTranslate.length === 0) {
-              setIsLoading(false);
-              return;
-            }
-
-            console.log(
-              "API wordsToTranslate: ",
-              wordsToTranslate.map((item: any) => item.inf)
-            );
-
-            const result = await processWords(
-              wordsToTranslate.map((item: any) => item.inf),
-              "en"
-            );
-            console.log("Fetch Data Result: ", { result });
-
-            for (let index = 0; index < wordsToTranslate.length; index++) {
-              const vocabIndex = wordsToTranslate[index].vocabIndex;
-              vocab[vocabIndex].en = {
-                translation: result.translations[index],
-                synonyms: result.synonyms[index],
-              };
-            }
-
-            const stringifiedOldVocab = JSON.stringify(vocab);
-
-            const newVocab = JSON.parse(stringifiedOldVocab);
-            setVocab(newVocab);
-
-            console.log("API NewVocab", vocab);
-
-            localStorage.setItem("vocab", JSON.stringify(newVocab));
-          } catch (error) {
-            console.error("Error fetching processed words:", error);
+        let wordsToTranslate: any = [];
+        for (let index = 0; index < vocab.length; index++) {
+          if (!(currentLocale in vocab[index])) {
+            wordsToTranslate.push({
+              inf: vocab[index].inf,
+              vocabIndex: index,
+            });
           }
-          break;
-        case "uk":
-          break;
+        }
+        console.log("API wordsToTranslate: ", wordsToTranslate);
 
-        default:
-          break;
+        if (wordsToTranslate.length === 0) {
+          setIsLoading(false);
+          return;
+        }
+
+        console.log(
+          "API wordsToTranslate: ",
+          wordsToTranslate.map((item: any) => item.inf)
+        );
+
+        const result = await processWords(
+          wordsToTranslate.map((item: any) => item.inf),
+          currentLocale
+        );
+        console.log("Fetch Data Result: ", { result });
+
+        for (let index = 0; index < wordsToTranslate.length; index++) {
+          const vocabIndex = wordsToTranslate[index].vocabIndex;
+          vocab[vocabIndex][currentLocale] = {
+            translation: result.translations[index],
+            synonyms: result.synonyms[index],
+          };
+        }
+
+        const stringifiedOldVocab = JSON.stringify(vocab);
+
+        const newVocab = JSON.parse(stringifiedOldVocab);
+        setVocab(newVocab);
+
+        console.log("API NewVocab", vocab);
+
+        localStorage.setItem("vocab", JSON.stringify(newVocab));
+      } catch (error) {
+        console.error("Error fetching processed words:", error);
       }
     }
   };
@@ -268,7 +257,7 @@ export default function VocabularyPage() {
   return (
     <>
       <Form
-        layout="inline"
+        layout={isMobile ? "vertical" : "inline"}
         form={searchForm}
         initialValues={{ search: "", partOfSpeech: "" }}
         onFinish={executeSearch}
@@ -303,12 +292,10 @@ export default function VocabularyPage() {
             ]}
           />
         </Form.Item>
-        <Form.Item>
+        <Form.Item layout="horizontal">
           <Button type="default" htmlType="submit">
             Submit
           </Button>
-        </Form.Item>
-        <Form.Item>
           <Button
             onClick={() => {
               searchForm.resetFields();
