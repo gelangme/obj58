@@ -33,3 +33,7 @@ body {
     text-wrap: balance;
   }
 }
+
+.card-padding .ant-card-body {
+  @apply !p-[12px] lg:p-0;
+}

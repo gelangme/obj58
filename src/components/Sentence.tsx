@@ -9,12 +9,14 @@ import { useTranslation } from "react-i18next";
 import { useSearchParams } from "next/navigation";
 import { useAtomValue } from "jotai";
 import { translationLocaleAtom } from "@/state/atoms";
+import { useMediaQuery } from "react-responsive";
 
 const playIcon = React.createElement(PlayCircleOutlined);
 const pauseIcon = React.createElement(PauseCircleOutlined);
 
 export default function Sentence({ sentence }: { sentence: iSentence }) {
   const { i18n } = useTranslation();
+  const isMobile = useMediaQuery({ maxWidth: 768 });
 
   const [isPlaying, setIsPlaying] = useState(false);
   const sentenceString = sentence.words.reduce(
@@ -114,12 +116,12 @@ export default function Sentence({ sentence }: { sentence: iSentence }) {
   };
 
   return (
-    <div className="mb-4 flex flex-row [&_button]:opacity-0 [&_button]:hover:opacity-100">
+    <div className="mb-4 flex flex-row [&_button]:opacity-100 md:[&_button]:opacity-0 md:[&_button]:hover:opacity-100">
       {contextHolder}
       <div className="flex flex-col justify-center items-center mr-3">
         {isPlaying ? (
           <Button
-            className="text-6xl"
+            type={isMobile ? "text" : "default"}
             onClick={() => {
               pauseSentence();
             }}
@@ -128,7 +130,7 @@ export default function Sentence({ sentence }: { sentence: iSentence }) {
           </Button>
         ) : (
           <Button
-            className="text-6xl"
+            type={isMobile ? "text" : "default"}
             onClick={() => {
               playSentence();
             }}
@@ -139,7 +141,7 @@ export default function Sentence({ sentence }: { sentence: iSentence }) {
       </div>
       <div className="flex flex-col">
         {sentence.type === "h2" ? (
-          <h2 className="text-2xl font-bold">
+          <h2>
             {sentence.words.map((item, item_index) => {
               const isIgnored = ignor_words.includes(item.inf);
               return (
@@ -148,6 +150,7 @@ export default function Sentence({ sentence }: { sentence: iSentence }) {
                     word={item}
                     noTooltip={isIgnored}
                     whiteSpace={item_index !== 0 && !isIgnored}
+                    className="text-2xl font-bold"
                   />
                 </span>
               );
@@ -163,6 +166,7 @@ export default function Sentence({ sentence }: { sentence: iSentence }) {
                     word={item}
                     noTooltip={isIgnored}
                     whiteSpace={item_index !== 0 && !isIgnored}
+                    className="text-base"
                   />
                 </span>
               );

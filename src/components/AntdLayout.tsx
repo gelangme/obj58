@@ -148,19 +148,33 @@ export default function AntdLayout({
       <StyleProvider hashPriority="high">
         <Layout>
           <Layout>
-            <Sider
-              style={{ background: colorBgContainer }}
-              collapsedWidth={0}
-              collapsible={isMobile}
-              className={isMobile ? "!absolute !left-0 !z-50 h-full" : ""}
-            >
-              <Menu
-                mode="inline"
-                style={{ height: "100%", borderRight: 0 }}
-                items={menuItems}
-                onClick={handleMenuClick}
-              />
-            </Sider>
+            {isMobile ? (
+              <Sider
+                style={{ background: colorBgContainer }}
+                collapsedWidth={0}
+                collapsible={true}
+                className={
+                  "!absolute !left-0 !z-50 h-full !transition-none border-r-[1px] border-solid border-x-gray-400"
+                }
+              >
+                <Menu
+                  mode="inline"
+                  style={{ height: "100%", borderRight: 0 }}
+                  items={menuItems}
+                  onClick={handleMenuClick}
+                  className="!transition-none"
+                />
+              </Sider>
+            ) : (
+              <Sider collapsed={false} style={{ background: colorBgContainer }}>
+                <Menu
+                  mode="inline"
+                  style={{ height: "100%", borderRight: 0 }}
+                  items={menuItems}
+                  onClick={handleMenuClick}
+                />
+              </Sider>
+            )}
             <Layout style={{ padding: "24px 24px" }}>
               {/* <Breadcrumb style={{ margin: "16px 0" }}>
                 <Breadcrumb.Item>Home</Breadcrumb.Item>
@@ -173,6 +187,7 @@ export default function AntdLayout({
                   minHeight: 280,
                   borderRadius: borderRadiusLG,
                 }}
+                className="card-padding"
               >
                 {children}
               </Card>

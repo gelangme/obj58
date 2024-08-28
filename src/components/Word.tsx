@@ -14,12 +14,18 @@ interface iWordComponent {
   word: iWord;
   noTooltip?: boolean;
   whiteSpace?: boolean;
+  className?: string;
 }
 
 const plusIcon = React.createElement(PlusOutlined);
 const checkIcon = React.createElement(CheckOutlined);
 
-export default function Word({ word, noTooltip, whiteSpace }: iWordComponent) {
+export default function Word({
+  word,
+  noTooltip,
+  whiteSpace,
+  className = "",
+}: iWordComponent) {
   const { i18n } = useTranslation();
   const checkIfAddedToVocab = () => {
     const vocab = localStorage.getItem("vocab");
@@ -97,7 +103,7 @@ export default function Word({ word, noTooltip, whiteSpace }: iWordComponent) {
   }, [translationLocale, i18n]);
 
   return noTooltip ? (
-    <span>{word.original}</span>
+    <span className={className}>{word.original}</span>
   ) : (
     <Tooltip
       title={
@@ -113,7 +119,9 @@ export default function Word({ word, noTooltip, whiteSpace }: iWordComponent) {
       mouseEnterDelay={0}
     >
       {whiteSpace && " "}
-      <span className="hover:bg-slate-400 cursor-pointer">{word.original}</span>
+      <span className={"hover:bg-slate-400 cursor-pointer " + className}>
+        {word.original}
+      </span>
     </Tooltip>
   );
 }
