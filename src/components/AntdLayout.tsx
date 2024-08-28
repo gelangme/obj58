@@ -159,7 +159,7 @@ export default function AntdLayout({
                   setIsMobileSiderCollapsed(!isMobileSiderCollapsed)
                 }
                 className={
-                  "!fixed !left-0 !top-0 !z-[1000] h-[100vh] !transition-none border-r-[1px] border-solid border-x-gray-400 noselect"
+                  "!fixed !left-0 !top-0 !z-[1000] h-[100vh] !transition-none border-r-[1px] border-solid box-border border-x-gray-400 noselect"
                 }
               >
                 <Menu
