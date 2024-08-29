@@ -1,5 +1,5 @@
 "use client";
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import type { MenuProps } from "antd";
 import {
   ConfigProvider,
@@ -9,6 +9,7 @@ import {
   Switch,
   Card,
   Button,
+  notification,
 } from "antd";
 import {
   FileTextOutlined,
@@ -47,6 +48,28 @@ export default function AntdLayout({
   const { t } = useTranslation();
   const isDarkMode = useAtomValue(isDarkModeAtom);
   const [isMobileSiderCollapsed, setIsMobileSiderCollapsed] = useState(true);
+  const [api, contextHolder] = notification.useNotification();
+  const [isNotifShown, setIsNotifShown] = useState(false);
+  let effectCounter = 0;
+
+  const openNotification = () => {
+    api.info({
+      message: `How We Use LocalStorage`,
+      description:
+        "This site uses LocalStorage to remember your preferences and ensure the best experience. We do not use this data for tracking or advertising.",
+      placement: isMobile ? "bottom" : "bottomLeft",
+      btn: (
+        <Button
+          onClick={() => {
+            localStorage.setItem("localStorageConsent", JSON.stringify(true));
+          }}
+          type="primary"
+        >
+          Accept
+        </Button>
+      ),
+    });
+  };
 
   const mapDirectoryToMenuItems = (
     directory: Directory,
@@ -87,35 +110,6 @@ export default function AntdLayout({
     return [...subDirectories, ...files];
   };
 
-  // const [menuItems, setMenuItems] = useState<MenuProps["items"]>([
-  //   {
-  //     key: "home",
-  //     icon: React.createElement(HomeOutlined),
-  //     label: <Link href="/">{t("home")}</Link>,
-  //   },
-  //   {
-  //     key: "generate-new-text",
-  //     icon: React.createElement(PlayCircleOutlined),
-  //     label: <Link href="/generate-new-text">{t("generate-new-text")}</Link>,
-  //   },
-  //   {
-  //     key: "vocabulary",
-  //     icon: React.createElement(FileTextOutlined),
-  //     label: <Link href="/vocabulary">{t("vocabulary")}</Link>,
-  //   },
-  //   {
-  //     key: "texts",
-  //     icon: React.createElement(FileTextOutlined),
-  //     label: t("texts"),
-  //     children: mapDirectoryToMenuItems(directory),
-  //   },
-  //   {
-  //     key: t("settings"),
-  //     label: <Link href="/settings">{t("settings")}</Link>,
-  //     icon: React.createElement(SettingFilled),
-  //   },
-  // ]);
-
   const menuItems: MenuProps["items"] = [
     {
       key: "home",
@@ -148,6 +142,24 @@ export default function AntdLayout({
   const handleMenuClick = ({ keyPath }: { keyPath: string[] }) => {
     console.log("handleMenuClick: ", { keyPath });
   };
+
+  useEffect(() => {
+    if (effectCounter === 0) {
+      effectCounter = effectCounter + 1;
+      return;
+    }
+    const localStorageConsentString = localStorage.getItem(
+      "localStorageConsent"
+    );
+    const localStorageConsentBoolean = localStorageConsentString
+      ? JSON.parse(localStorageConsentString)
+      : false;
+
+    if (!localStorageConsentBoolean && !isNotifShown) {
+      setIsNotifShown(true);
+      openNotification();
+    }
+  });
 
   const renderMobileLayout = () => {
     return (
@@ -188,7 +200,7 @@ export default function AntdLayout({
                 onClick={() =>
                   setIsMobileSiderCollapsed(!isMobileSiderCollapsed)
                 }
-                className="text-2xl p-2 ml-1"
+                className="text-2xl p-2 ml-1 cursor-pointer"
               >
                 {isMobileSiderCollapsed ? (
                   <MenuUnfoldOutlined />
@@ -242,7 +254,10 @@ export default function AntdLayout({
               onClick={handleMenuClick}
             />
           </Sider>
-          <Layout style={isMobile ? { padding: "12px" } : { padding: "24px" }}>
+          <Layout
+            className="justify-between"
+            style={isMobile ? { padding: "12px" } : { padding: "24px" }}
+          >
             {/* <Breadcrumb style={{ margin: "16px 0" }}>
           <Breadcrumb.Item>Home</Breadcrumb.Item>
           <Breadcrumb.Item>Texts</Breadcrumb.Item>
@@ -258,6 +273,9 @@ export default function AntdLayout({
             >
               {children}
             </Card>
+            <Layout.Footer className="h-10 bottom-0 opacity-70">
+              © {new Date().getFullYear()} gelang.me
+            </Layout.Footer>
           </Layout>
         </Layout>
       </Layout>
@@ -276,6 +294,7 @@ export default function AntdLayout({
     >
       <StyleProvider hashPriority="high">
         {isMobile ? renderMobileLayout() : renderDesktopLayout()}
+        {contextHolder}
       </StyleProvider>
     </ConfigProvider>
   );
