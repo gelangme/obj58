@@ -234,6 +234,8 @@ export default function VocabularyPage() {
   }, [vocab, isLoading, deleteModeEnabled]);
 
   const executeSearch = (values: SearchFormProps) => {
+    setDeleteModeEnabled(false);
+    setIdsForDeletion([]);
     console.log("Received values of form: ", values);
 
     if (values.partOfSpeech === "" && values.search === "") {
@@ -259,6 +261,14 @@ export default function VocabularyPage() {
       return setDataAfterSearch(dataAfterSearch);
     }
   };
+
+  useEffect(() => {
+    console.log("DELETION_LOG: ", {
+      idsForDeletion,
+      deleteModeEnabled,
+      dataAfterSearch,
+    });
+  }, [idsForDeletion, deleteModeEnabled, dataAfterSearch]);
 
   return (
     <>
@@ -316,38 +326,40 @@ export default function VocabularyPage() {
         </Form.Item>
       </Form>
       <Divider />
-      {deleteModeEnabled ? (
-        <div className="flex flex-row gap-2">
-          <Button onClick={() => setDeleteModeEnabled(false)}>
-            {DeleteOutlinedIcon} Cancel
-          </Button>
-          {idsForDeletion.length !== 0 ? (
-            <Button
-              danger
-              onClick={() => {
-                const newVocab = JSON.parse(JSON.stringify(vocab));
-                // Step 1: Sort the indexesToDelete array in descending order
-                idsForDeletion.sort((a, b) => b - a);
-
-                // Step 2: Iterate through the sorted array and delete the elements
-                idsForDeletion.forEach((index) => {
-                  newVocab.splice(index, 1); // Splice removes 1 element at the specified index
-                });
-                setDeleteModeEnabled(false);
-                setIdsForDeletion([]);
-                setVocab(newVocab);
-                localStorage.setItem("vocab", JSON.stringify(newVocab));
-              }}
-            >
-              {DeleteOutlinedIcon} Delete Selected
+      {!dataAfterSearch ? (
+        deleteModeEnabled ? (
+          <div className="flex flex-row gap-2">
+            <Button onClick={() => setDeleteModeEnabled(false)}>
+              {DeleteOutlinedIcon} Cancel
             </Button>
-          ) : null}
-        </div>
-      ) : (
-        <Button onClick={() => setDeleteModeEnabled(true)}>
-          {DeleteOutlinedIcon} Delete items
-        </Button>
-      )}
+            {idsForDeletion.length !== 0 ? (
+              <Button
+                danger
+                onClick={() => {
+                  const newVocab = JSON.parse(JSON.stringify(vocab));
+                  // Step 1: Sort the indexesToDelete array in descending order
+                  idsForDeletion.sort((a, b) => b - a);
+
+                  // Step 2: Iterate through the sorted array and delete the elements
+                  idsForDeletion.forEach((index) => {
+                    newVocab.splice(index, 1); // Splice removes 1 element at the specified index
+                  });
+                  setDeleteModeEnabled(false);
+                  setIdsForDeletion([]);
+                  setVocab(newVocab);
+                  localStorage.setItem("vocab", JSON.stringify(newVocab));
+                }}
+              >
+                {DeleteOutlinedIcon} Delete Selected
+              </Button>
+            ) : null}
+          </div>
+        ) : (
+          <Button onClick={() => setDeleteModeEnabled(true)}>
+            {DeleteOutlinedIcon} Delete items
+          </Button>
+        )
+      ) : null}
       <Table
         loading={isLoading}
         columns={columns}
