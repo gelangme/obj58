@@ -234,8 +234,6 @@ export default function VocabularyPage() {
   }, [vocab, isLoading, deleteModeEnabled]);
 
   const executeSearch = (values: SearchFormProps) => {
-    setDeleteModeEnabled(false);
-    setIdsForDeletion([]);
     console.log("Received values of form: ", values);
 
     if (values.partOfSpeech === "" && values.search === "") {

@@ -1,12 +1,22 @@
 "use client";
 import React, { useCallback, useEffect, useState } from "react";
 import type { MenuProps } from "antd";
-import { ConfigProvider, Layout, Menu, theme, Switch, Card } from "antd";
+import {
+  ConfigProvider,
+  Layout,
+  Menu,
+  theme,
+  Switch,
+  Card,
+  Button,
+} from "antd";
 import {
   FileTextOutlined,
   PlayCircleOutlined,
   HomeOutlined,
   SettingFilled,
+  MenuUnfoldOutlined,
+  MenuFoldOutlined,
 } from "@ant-design/icons";
 import { StyleProvider } from "@ant-design/cssinjs";
 import Link from "next/link";
@@ -18,6 +28,9 @@ import { useMediaQuery } from "react-responsive";
 
 const { defaultAlgorithm, darkAlgorithm } = theme;
 const { Sider } = Layout;
+
+const MenuUnfoldIcon = React.createElement(MenuUnfoldOutlined);
+const MenuFoldIcon = React.createElement(MenuFoldOutlined);
 
 export default function AntdLayout({
   children,
@@ -136,62 +149,66 @@ export default function AntdLayout({
     console.log("handleMenuClick: ", { keyPath });
   };
 
-  return (
-    <ConfigProvider
-      theme={{
-        token: {
-          colorPrimary: "#009688",
-          colorInfo: "#009688",
-        },
-        algorithm: isDarkMode ? darkAlgorithm : defaultAlgorithm,
-      }}
-    >
-      <StyleProvider hashPriority="high">
-        <Layout>
+  const renderMobileLayout = () => {
+    return (
+      <>
+        <Layout className="absolute z-[1500] h-[100vh]">
+          <Sider
+            style={{ background: colorBgContainer }}
+            width={isMobileSiderCollapsed ? 280 : 200}
+            collapsed={isMobileSiderCollapsed}
+            onCollapse={() =>
+              setIsMobileSiderCollapsed(!isMobileSiderCollapsed)
+            }
+            className={
+              "!transition-none border-r-[1px] border-solid box-border border-x-gray-400 noselect !after:content-none"
+            }
+          >
+            <Menu
+              mode="inline"
+              style={{ height: "100%", borderRight: 0 }}
+              items={menuItems}
+              onClick={handleMenuClick}
+              className="!transition-none"
+            />
+          </Sider>
           <Layout>
-            {isMobile ? (
-              <Sider
-                style={{ background: colorBgContainer }}
-                collapsedWidth={0}
-                collapsible={true}
-                collapsed={isMobileSiderCollapsed}
-                onCollapse={() =>
+            <Layout.Header className="!bg-transparent !p-0">
+              {/* <Button
+                onClick={() =>
                   setIsMobileSiderCollapsed(!isMobileSiderCollapsed)
                 }
-                className={
-                  "!fixed !left-0 !top-0 !z-[1000] h-[100vh] !transition-none border-r-[1px] border-solid box-border border-x-gray-400 noselect"
+                size="large"
+                type="text"
+                // className="[&>div>svg]:w-[20px] [&>div>svg]:h-[20px]"
+              >
+                {isMobileSiderCollapsed ? MenuUnfoldIcon : MenuFoldIcon}
+              </Button> */}
+              <div
+                onClick={() =>
+                  setIsMobileSiderCollapsed(!isMobileSiderCollapsed)
                 }
+                className="text-2xl p-2 ml-1"
               >
-                <Menu
-                  mode="inline"
-                  style={{ height: "100%", borderRight: 0 }}
-                  items={menuItems}
-                  onClick={handleMenuClick}
-                  className="!transition-none"
-                />
-              </Sider>
-            ) : (
-              <Sider
-                collapsed={false}
-                style={{ background: colorBgContainer }}
-                className="noselect"
-              >
-                <Menu
-                  mode="inline"
-                  style={{ height: "100%", borderRight: 0 }}
-                  items={menuItems}
-                  onClick={handleMenuClick}
-                />
-              </Sider>
-            )}
+                {isMobileSiderCollapsed ? (
+                  <MenuUnfoldOutlined />
+                ) : (
+                  <MenuFoldOutlined />
+                )}
+              </div>
+            </Layout.Header>
+          </Layout>
+        </Layout>
+        <Layout className="ml-[80px] pt-[40px]">
+          <Layout>
             <Layout
               style={isMobile ? { padding: "12px" } : { padding: "24px" }}
             >
               {/* <Breadcrumb style={{ margin: "16px 0" }}>
-                <Breadcrumb.Item>Home</Breadcrumb.Item>
-                <Breadcrumb.Item>Texts</Breadcrumb.Item>
-                <Breadcrumb.Item>Text 1</Breadcrumb.Item>
-              </Breadcrumb> */}
+          <Breadcrumb.Item>Home</Breadcrumb.Item>
+          <Breadcrumb.Item>Texts</Breadcrumb.Item>
+          <Breadcrumb.Item>Text 1</Breadcrumb.Item>
+        </Breadcrumb> */}
               <Card
                 style={{
                   margin: 0,
@@ -205,6 +222,60 @@ export default function AntdLayout({
             </Layout>
           </Layout>
         </Layout>
+      </>
+    );
+  };
+
+  const renderDesktopLayout = () => {
+    return (
+      <Layout>
+        <Layout>
+          <Sider
+            collapsed={false}
+            style={{ background: colorBgContainer }}
+            className="noselect"
+          >
+            <Menu
+              mode="inline"
+              style={{ height: "100%", borderRight: 0 }}
+              items={menuItems}
+              onClick={handleMenuClick}
+            />
+          </Sider>
+          <Layout style={isMobile ? { padding: "12px" } : { padding: "24px" }}>
+            {/* <Breadcrumb style={{ margin: "16px 0" }}>
+          <Breadcrumb.Item>Home</Breadcrumb.Item>
+          <Breadcrumb.Item>Texts</Breadcrumb.Item>
+          <Breadcrumb.Item>Text 1</Breadcrumb.Item>
+        </Breadcrumb> */}
+            <Card
+              style={{
+                margin: 0,
+                minHeight: 280,
+                borderRadius: borderRadiusLG,
+              }}
+              className="card-padding"
+            >
+              {children}
+            </Card>
+          </Layout>
+        </Layout>
+      </Layout>
+    );
+  };
+
+  return (
+    <ConfigProvider
+      theme={{
+        token: {
+          colorPrimary: "#009688",
+          colorInfo: "#009688",
+        },
+        algorithm: isDarkMode ? darkAlgorithm : defaultAlgorithm,
+      }}
+    >
+      <StyleProvider hashPriority="high">
+        {isMobile ? renderMobileLayout() : renderDesktopLayout()}
       </StyleProvider>
     </ConfigProvider>
   );
