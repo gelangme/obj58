@@ -58,13 +58,19 @@ export default function Word({
     const vocab = localStorage.getItem("vocab");
 
     if (vocab) {
-      const newVocab = JSON.parse(vocab);
-      newVocab.push({ inf: word.inf, type: word.type });
+      const newVocab: VocabWord[] = JSON.parse(vocab);
+      newVocab.push({
+        inf: word.inf,
+        type: word.type,
+        index: newVocab.length,
+      });
 
       return localStorage.setItem("vocab", JSON.stringify(newVocab));
     }
 
-    const newVocab = [{ inf: word.inf, type: word.type }];
+    const newVocab: VocabWord[] = [
+      { inf: word.inf, type: word.type, index: 0 },
+    ];
     localStorage.setItem("vocab", JSON.stringify(newVocab));
   };
 
