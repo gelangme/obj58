@@ -26,6 +26,7 @@ import { DeleteOutlined } from "@ant-design/icons";
 import React from "react";
 import Link from "next/link";
 import { generatePDF } from "@/utils/pdfUtils";
+import { useTranslation } from "react-i18next";
 
 interface DataType {
   key: any;
@@ -48,19 +49,6 @@ export interface TranslationData {
   synonyms?: DatamuseResponse[] | null;
 }
 
-const columns: TableProps<DataType>["columns"] = [
-  {
-    title: "Inf",
-    dataIndex: "inf",
-    key: "inf",
-  },
-  {
-    title: "Translation",
-    dataIndex: "translation",
-    key: "translation",
-  },
-];
-
 export type SearchFormProps = {
   search: string;
   partOfSpeech: string;
@@ -69,6 +57,21 @@ export type SearchFormProps = {
 const DeleteOutlinedIcon = React.createElement(DeleteOutlined);
 
 export default function VocabularyPage() {
+  const { t } = useTranslation();
+
+  const columns: TableProps<DataType>["columns"] = [
+    {
+      title: t("inf"),
+      dataIndex: "inf",
+      key: "inf",
+    },
+    {
+      title: t("translation"),
+      dataIndex: "translation",
+      key: "translation",
+    },
+  ];
+
   const interfaceLocale = useAtomValue(interfaceLocaleAtom);
   const translationLocale = useAtomValue(translationLocaleAtom);
 
@@ -190,7 +193,7 @@ export default function VocabularyPage() {
                 }}
               />
             ) : null}
-            <span className="opacity-70 text-sm">({item.type})</span>
+            <span className="opacity-70 text-sm">({t(item.type)})</span>
             <span>{item.inf}</span>
           </div>
         ),
@@ -203,7 +206,7 @@ export default function VocabularyPage() {
                   {
                     <div className="flex flex-col gap-1">
                       <span className="font-bold text-lg opacity-60">
-                        Synonyms
+                        {t("synonyms")}
                       </span>
                       {item.en?.synonyms?.map((item, index) => (
                         <span key={`${item.word}-${index}-synonym`}>
@@ -256,7 +259,7 @@ export default function VocabularyPage() {
                 }}
               />
             ) : null}
-            <span className="opacity-70 text-sm">({item.type})</span>
+            <span className="opacity-70 text-sm">({t(item.type)})</span>
             <span>{item.inf}</span>
           </div>
         ),
@@ -350,37 +353,50 @@ export default function VocabularyPage() {
         autoComplete="off"
         style={{ maxWidth: "none" }}
       >
-        <Form.Item label="Includes" name="search" colon={false}>
-          <Input placeholder="Search for a word" />
+        <Form.Item label={t("includes")} name="search" colon={false}>
+          <Input placeholder={t("search-placeholder")} />
         </Form.Item>
-        <Form.Item label="Part of speech" name="partOfSpeech" colon={false}>
+        <Form.Item
+          label={t("part-of-speech")}
+          name="partOfSpeech"
+          colon={false}
+        >
           <Select
             style={{ minWidth: 150 }} // Set the minimum width here
             options={[
-              { value: "noun", label: <span>Noun (Nomen)</span> },
-              { value: "pronoun", label: <span>Pronoun (Pronomen)</span> },
-              { value: "verb", label: <span>Verb (Verb)</span> },
-              { value: "adjective", label: <span>Adjective (Adjektiv)</span> },
-              { value: "adverb", label: <span>Adverb (Adverb)</span> },
+              { value: "noun", label: <span>{t("noun")} (Nomen)</span> },
+              {
+                value: "pronoun",
+                label: <span>{t("pronoun")} (Pronomen)</span>,
+              },
+              { value: "verb", label: <span>{t("verb")} (Verb)</span> },
+              {
+                value: "adjective",
+                label: <span>{t("adjective")} (Adjektiv)</span>,
+              },
+              { value: "adverb", label: <span>{t("adverb")} (Adverb)</span> },
               {
                 value: "preposition",
-                label: <span>Preposition (Präposition)</span>,
+                label: <span>{t("preposition")} (Präposition)</span>,
               },
               {
                 value: "conjunction",
-                label: <span>Conjunction (Konjunktion)</span>,
+                label: <span>{t("conjunction")} (Konjunktion)</span>,
               },
               {
                 value: "interjection",
-                label: <span>Interjection (Interjektion)</span>,
+                label: <span>{t("interjection")} (Interjektion)</span>,
               },
-              { value: "article", label: <span>Article (Artikel)</span> },
+              {
+                value: "article",
+                label: <span>{t("article")} (Artikel)</span>,
+              },
             ]}
           />
         </Form.Item>
         <Form.Item layout="horizontal">
           <Button type="default" htmlType="submit">
-            Submit
+            {t("apply")}
           </Button>
           <Button
             onClick={() => {
@@ -392,7 +408,7 @@ export default function VocabularyPage() {
             danger
             className="ml-2"
           >
-            Clear
+            {t("clear")}
           </Button>
         </Form.Item>
       </Form>
@@ -405,7 +421,7 @@ export default function VocabularyPage() {
               setDeleteModeEnabled(false);
             }}
           >
-            {DeleteOutlinedIcon} Cancel
+            {DeleteOutlinedIcon} {t("cancel")}
           </Button>
           {idsForDeletion.length !== 0 ? (
             <Button
@@ -440,33 +456,37 @@ export default function VocabularyPage() {
                 localStorage.setItem("vocab", JSON.stringify(newVocab));
               }}
             >
-              {DeleteOutlinedIcon} Delete Selected
+              {DeleteOutlinedIcon} {t("del-selected")}
             </Button>
           ) : null}
         </div>
-      ) : (
+      ) : vocab && vocab.length !== 0 ? (
         <Button onClick={() => setDeleteModeEnabled(true)}>
-          {DeleteOutlinedIcon} Delete items
+          {DeleteOutlinedIcon} {t("del-items")}
         </Button>
-      )}
+      ) : null}
       <Table
         loading={isLoading}
         columns={columns}
         className="mt-4"
         dataSource={!!dataAfterSearch ? dataAfterSearch : data}
       />
-      <div className="flex flex-col gap-4 md:flex-row">
-        {csvData ? <CSVLink data={csvData}>Download CSV</CSVLink> : null}
-        {vocab && !isLoading ? (
-          <Link
-            className="!text-red-600 hover:!text-red-400"
-            href="#"
-            onClick={() => generatePDF(vocab, currentLocale)}
-          >
-            Download PDF
-          </Link>
-        ) : null}
-      </div>
+      {vocab && vocab.length !== 0 ? (
+        <div className="flex flex-col gap-4 md:flex-row">
+          {csvData ? (
+            <CSVLink data={csvData}>{t("download")} CSV</CSVLink>
+          ) : null}
+          {vocab && !isLoading ? (
+            <Link
+              className="!text-red-600 hover:!text-red-400"
+              href="#"
+              onClick={() => generatePDF(vocab, currentLocale)}
+            >
+              {t("download")} PDF
+            </Link>
+          ) : null}
+        </div>
+      ) : null}
     </>
   );
 }

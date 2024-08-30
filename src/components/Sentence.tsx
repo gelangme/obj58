@@ -15,7 +15,7 @@ const playIcon = React.createElement(PlayCircleOutlined);
 const pauseIcon = React.createElement(PauseCircleOutlined);
 
 export default function Sentence({ sentence }: { sentence: iSentence }) {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   const isMobile = useMediaQuery({ maxWidth: 768 });
 
   const [isPlaying, setIsPlaying] = useState(false);
@@ -79,9 +79,8 @@ export default function Sentence({ sentence }: { sentence: iSentence }) {
         /* todo: add new string to i18nexus */
         Modal.destroyAll();
         modal.warning({
-          title: "Warning",
-          content:
-            "We found no local speech synthesis voices, this may lead to problems with the access, operation or functionality of the text-to-speech service.",
+          title: t("warning"),
+          content: t("warning-speech"),
         });
         setVoices(germanVoices);
       }

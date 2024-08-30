@@ -54,9 +54,8 @@ export default function AntdLayout({
 
   const openNotification = () => {
     api.info({
-      message: `How We Use LocalStorage`,
-      description:
-        "This site uses LocalStorage to remember your preferences and ensure the best experience. We do not use this data for tracking or advertising.",
+      message: t("cookies-title"),
+      description: t("cookies-body"),
       placement: isMobile ? "bottom" : "bottomLeft",
       btn: (
         <Button
