@@ -2,7 +2,11 @@
 
 import { iWord } from "@/common/types";
 import { interfaceLocaleAtom, translationLocaleAtom } from "@/state/atoms";
-import { DatamuseResponse, processWords } from "@/utils/vocab.utils";
+import {
+  DatamuseResponse,
+  getTranslationData,
+  processWords,
+} from "@/utils/vocab.utils";
 import {
   Button,
   Checkbox,
@@ -20,6 +24,8 @@ import { CSVLink } from "react-csv";
 import { useMediaQuery } from "react-responsive";
 import { DeleteOutlined } from "@ant-design/icons";
 import React from "react";
+import Link from "next/link";
+import { generatePDF } from "@/utils/pdfUtils";
 
 interface DataType {
   key: any;
@@ -92,13 +98,6 @@ export default function VocabularyPage() {
   const isMobile = useMediaQuery({ maxWidth: 970 });
   const [deleteModeEnabled, setDeleteModeEnabled] = useState(false);
   const [idsForDeletion, setIdsForDeletion] = useState<number[]>([]);
-
-  function getTranslationData(
-    word: VocabWord,
-    locale: keyof VocabWord
-  ): TranslationData {
-    return word[locale] as TranslationData;
-  }
 
   const fetchData = async () => {
     if (vocab) {
@@ -456,7 +455,18 @@ export default function VocabularyPage() {
         className="mt-4"
         dataSource={!!dataAfterSearch ? dataAfterSearch : data}
       />
-      {csvData ? <CSVLink data={csvData}>Download CSV</CSVLink> : null}
+      <div className="flex flex-col gap-4 md:flex-row">
+        {csvData ? <CSVLink data={csvData}>Download CSV</CSVLink> : null}
+        {vocab && !isLoading ? (
+          <Link
+            className="!text-red-600 hover:!text-red-400"
+            href="#"
+            onClick={() => generatePDF(vocab, currentLocale)}
+          >
+            Download PDF
+          </Link>
+        ) : null}
+      </div>
     </>
   );
 }

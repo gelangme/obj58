@@ -1,3 +1,4 @@
+import { TranslationData, VocabWord } from "@/app/vocabulary/page";
 import axios, { AxiosResponse } from "axios";
 
 interface Term {
@@ -211,4 +212,11 @@ export async function processWords(
     console.error("Error fetching data:", error);
     throw error;
   }
+}
+
+export function getTranslationData(
+  word: VocabWord,
+  locale: keyof VocabWord
+): TranslationData {
+  return word[locale] as TranslationData;
 }
