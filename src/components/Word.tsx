@@ -14,12 +14,18 @@ interface iWordComponent {
   word: iWord;
   noTooltip?: boolean;
   whiteSpace?: boolean;
+  className?: string;
 }
 
 const plusIcon = React.createElement(PlusOutlined);
 const checkIcon = React.createElement(CheckOutlined);
 
-export default function Word({ word, noTooltip, whiteSpace }: iWordComponent) {
+export default function Word({
+  word,
+  noTooltip,
+  whiteSpace,
+  className = "",
+}: iWordComponent) {
   const { i18n } = useTranslation();
   const checkIfAddedToVocab = () => {
     const vocab = localStorage.getItem("vocab");
@@ -52,13 +58,19 @@ export default function Word({ word, noTooltip, whiteSpace }: iWordComponent) {
     const vocab = localStorage.getItem("vocab");
 
     if (vocab) {
-      const newVocab = JSON.parse(vocab);
-      newVocab.push({ inf: word.inf, type: word.type });
+      const newVocab: VocabWord[] = JSON.parse(vocab);
+      newVocab.push({
+        inf: word.inf,
+        type: word.type,
+        index: newVocab.length,
+      });
 
       return localStorage.setItem("vocab", JSON.stringify(newVocab));
     }
 
-    const newVocab = [{ inf: word.inf, type: word.type }];
+    const newVocab: VocabWord[] = [
+      { inf: word.inf, type: word.type, index: 0 },
+    ];
     localStorage.setItem("vocab", JSON.stringify(newVocab));
   };
 
@@ -97,9 +109,10 @@ export default function Word({ word, noTooltip, whiteSpace }: iWordComponent) {
   }, [translationLocale, i18n]);
 
   return noTooltip ? (
-    <span>{word.original}</span>
+    <span className={className}>{word.original}</span>
   ) : (
     <Tooltip
+      className="z-[1501]"
       title={
         <div className="flex flex-row gap-1 items-center">
           {isAddedToVocab ? (
@@ -113,7 +126,9 @@ export default function Word({ word, noTooltip, whiteSpace }: iWordComponent) {
       mouseEnterDelay={0}
     >
       {whiteSpace && " "}
-      <span className="hover:bg-slate-400 cursor-pointer">{word.original}</span>
+      <span className={"hover:bg-slate-400 cursor-pointer " + className}>
+        {word.original}
+      </span>
     </Tooltip>
   );
 }

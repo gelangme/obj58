@@ -1,16 +1,11 @@
 "use client";
 import { Select } from "antd";
+import { useTranslation } from "react-i18next";
 
 const interfacelLocaleOptions = [
   { value: "en", label: "english" },
   { value: "de", label: "deutsch" },
   { value: "uk", label: "українська" },
-];
-
-const translationLocaleOptions = [
-  { value: "en", label: "english" },
-  { value: "uk", label: "українська" },
-  { value: "default", label: "default" },
 ];
 
 export default function LocaleSelect({
@@ -24,6 +19,14 @@ export default function LocaleSelect({
   onChange: (value: string) => void;
   isInterfaceLocale?: boolean;
 }) {
+  const { t } = useTranslation();
+
+  const translationLocaleOptions = [
+    { value: "en", label: "english" },
+    { value: "uk", label: "українська" },
+    { value: "default", label: t("same-as-interface") },
+  ];
+
   return (
     <Select
       className={className}

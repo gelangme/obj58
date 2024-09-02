@@ -51,7 +51,7 @@ export default function FilePageClient({
   return (
     <>
       <Modal
-        title={t("Text Settings")}
+        title={t("text-settings")}
         open={isModalOpen}
         onCancel={() => setIsModalOpen(false)}
         footer={null}
@@ -82,7 +82,7 @@ export default function FilePageClient({
         {!!videoLink ? <YouTubeVideo videoLink={videoLink} /> : null}
       </div>
       {/* todo: add new string to i18nexus */}
-      <Tooltip title="Number of unique words in the text">
+      <Tooltip title={t("num-unique-words")}>
         <div className="flex justify-center items-center w-[32px] h-[32px]">
           <span className="opacity-10 hover:opacity-50 transition-opacity duration-300 cursor-default text-center grow">
             {numOfUniqueWords}

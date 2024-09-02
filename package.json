@@ -11,10 +11,13 @@
   "dependencies": {
     "@ant-design/nextjs-registry": "^1.0.0",
     "antd": "^5.19.4",
+    "antd-mobile": "^5.37.1",
     "axios": "^1.7.4",
     "i18next": "^23.12.2",
     "i18next-resources-to-backend": "^1.2.1",
     "jotai": "^2.9.2",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.8.3",
     "next": "14.2.5",
     "next-i18n-router": "^5.5.1",
     "openai": "^4.53.2",
@@ -23,6 +26,7 @@
     "react-csv": "^2.2.2",
     "react-dom": "^18",
     "react-i18next": "^15.0.1",
+    "react-responsive": "^10.0.0",
     "react-youtube": "^10.1.0"
   },
   "devDependencies": {

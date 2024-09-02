@@ -1,3 +1,4 @@
+import { TranslationData, VocabWord } from "@/app/vocabulary/page";
 import axios, { AxiosResponse } from "axios";
 
 interface Term {
@@ -83,6 +84,7 @@ export async function translateWords(
         q: word,
         target: targetLanguage,
         source: "de",
+        format: "text",
       })
       .then((response) => response.data.data.translations[0].translatedText)
       .catch((error) => {
@@ -210,4 +212,11 @@ export async function processWords(
     console.error("Error fetching data:", error);
     throw error;
   }
+}
+
+export function getTranslationData(
+  word: VocabWord,
+  locale: keyof VocabWord
+): TranslationData {
+  return word[locale] as TranslationData;
 }
