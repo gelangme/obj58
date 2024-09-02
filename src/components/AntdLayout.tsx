@@ -10,6 +10,8 @@ import {
   Card,
   Button,
   notification,
+  Drawer,
+  Space,
 } from "antd";
 import {
   FileTextOutlined,
@@ -48,6 +50,7 @@ export default function AntdLayout({
   const { t } = useTranslation();
   const isDarkMode = useAtomValue(isDarkModeAtom);
   const [isMobileSiderCollapsed, setIsMobileSiderCollapsed] = useState(true);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [api, contextHolder] = notification.useNotification();
   const [isNotifShown, setIsNotifShown] = useState(false);
   let effectCounter = 0;
@@ -155,9 +158,14 @@ export default function AntdLayout({
       ? JSON.parse(localStorageConsentString)
       : false;
 
-    if (!localStorageConsentBoolean && !isNotifShown) {
-      setIsNotifShown(true);
-      openNotification();
+    //todo: remove notification related code
+    // if (!localStorageConsentBoolean && !isNotifShown) {
+    //   setIsNotifShown(true);
+    //   openNotification();
+    // }
+
+    if (!localStorageConsentBoolean) {
+      setIsDrawerOpen(true);
     }
   });
 
@@ -294,9 +302,41 @@ export default function AntdLayout({
           colorInfo: "#009688",
         },
         algorithm: isDarkMode ? darkAlgorithm : defaultAlgorithm,
+        components: {
+          Drawer: {
+            zIndexPopupBase: 3000,
+          },
+        },
       }}
     >
       <StyleProvider hashPriority="high">
+        <Drawer
+          title={t("cookies-title")}
+          placement={"bottom"}
+          height={200}
+          onClose={() => setIsDrawerOpen(false)}
+          closable={false}
+          open={isDrawerOpen}
+          maskClosable={false}
+          extra={
+            <Space>
+              <Button
+                type="primary"
+                onClick={() => {
+                  localStorage.setItem(
+                    "localStorageConsent",
+                    JSON.stringify(true)
+                  );
+                  setIsDrawerOpen(false);
+                }}
+              >
+                OK
+              </Button>
+            </Space>
+          }
+        >
+          {t("cookies-body")}
+        </Drawer>
         {isMobile ? renderMobileLayout() : renderDesktopLayout()}
         {contextHolder}
       </StyleProvider>
