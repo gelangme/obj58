@@ -178,6 +178,15 @@ export default function AntdLayout({
             width={isMobileSiderCollapsed ? 280 : 200}
             collapsed={isMobileSiderCollapsed}
             collapsible={true}
+            trigger={
+              <div className="text-xl p-2 ml-1 cursor-pointer">
+                {isMobileSiderCollapsed ? (
+                  <MenuUnfoldOutlined />
+                ) : (
+                  <MenuFoldOutlined />
+                )}
+              </div>
+            }
             onCollapse={() =>
               setIsMobileSiderCollapsed(!isMobileSiderCollapsed)
             }
@@ -193,17 +202,7 @@ export default function AntdLayout({
             />
           </Sider>
           <Layout>
-            <Layout.Header className="!bg-transparent !p-0">
-              {/* <Button
-                onClick={() =>
-                  setIsMobileSiderCollapsed(!isMobileSiderCollapsed)
-                }
-                size="large"
-                type="text"
-                // className="[&>div>svg]:w-[20px] [&>div>svg]:h-[20px]"
-              >
-                {isMobileSiderCollapsed ? MenuUnfoldIcon : MenuFoldIcon}
-              </Button> */}
+            {/* <Layout.Header className="!bg-transparent !p-0">
               <div
                 onClick={() =>
                   setIsMobileSiderCollapsed(!isMobileSiderCollapsed)
@@ -216,7 +215,7 @@ export default function AntdLayout({
                   <MenuFoldOutlined />
                 )}
               </div>
-            </Layout.Header>
+            </Layout.Header> */}
           </Layout>
         </Layout>
         <Layout className="ml-[80px] pt-[40px]">
