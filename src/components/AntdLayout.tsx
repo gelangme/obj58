@@ -61,6 +61,7 @@ export default function AntdLayout({
         <Button
           onClick={() => {
             localStorage.setItem("localStorageConsent", JSON.stringify(true));
+            api.destroy();
           }}
           type="primary"
         >
@@ -168,11 +169,12 @@ export default function AntdLayout({
             style={{ background: colorBgContainer }}
             width={isMobileSiderCollapsed ? 280 : 200}
             collapsed={isMobileSiderCollapsed}
+            collapsible={true}
             onCollapse={() =>
               setIsMobileSiderCollapsed(!isMobileSiderCollapsed)
             }
             className={
-              "!transition-none border-r-[1px] border-solid box-border border-x-gray-400 noselect !after:content-none"
+              "border-r-[1px] border-solid box-border border-x-gray-400 noselect !after:content-none"
             }
           >
             <Menu
@@ -180,7 +182,6 @@ export default function AntdLayout({
               style={{ height: "100%", borderRight: 0 }}
               items={menuItems}
               onClick={handleMenuClick}
-              className="!transition-none"
             />
           </Sider>
           <Layout>
@@ -213,6 +214,7 @@ export default function AntdLayout({
         <Layout className="ml-[80px] pt-[40px]">
           <Layout>
             <Layout
+              className="justify-between"
               style={isMobile ? { padding: "12px" } : { padding: "24px" }}
             >
               {/* <Breadcrumb style={{ margin: "16px 0" }}>
@@ -230,6 +232,9 @@ export default function AntdLayout({
               >
                 {children}
               </Card>
+              <Layout.Footer className="h-10 bottom-0 opacity-70">
+                © {new Date().getFullYear()} gelang.me
+              </Layout.Footer>
             </Layout>
           </Layout>
         </Layout>

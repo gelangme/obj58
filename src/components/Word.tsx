@@ -112,6 +112,7 @@ export default function Word({
     <span className={className}>{word.original}</span>
   ) : (
     <Tooltip
+      className="z-[1501]"
       title={
         <div className="flex flex-row gap-1 items-center">
           {isAddedToVocab ? (
