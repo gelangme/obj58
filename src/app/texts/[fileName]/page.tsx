@@ -1,10 +1,18 @@
-import initTranslations from "@/app/i18n";
-import { iSentence } from "@/common/types";
 import FilePageClient from "@/components/TextPage";
-import { getJsonFilenames, getJsonContent } from "@/utils/readFileData";
-import { Select } from "antd";
+import { getJsonContent, getJsonFilenames } from "@/utils/readFileData";
 
-const i18nNamespaces = ["main"];
+export async function generateStaticParams() {
+  const fileNames = getJsonFilenames();
+  const updatedFileNames = fileNames.map((item) => ({
+    fileName: item.replace(".json", ""),
+  }));
+  console.log("UPDATED_FILE_NAMES: ", updatedFileNames);
+  return updatedFileNames;
+}
+
+// export async function generateStaticParams() {
+//   return [{ fileName: "1" }];
+// }
 
 export default async function FilePage({
   params,
@@ -12,7 +20,7 @@ export default async function FilePage({
   params: { fileName: string };
 }) {
   const fileContent = getJsonContent(
-    `${decodeURIComponent(params.fileName)}.json`
+    `${decodeURIComponent(`data%2F${params.fileName}`)}.json`
   );
 
   console.log("PARAMS: ", params);
@@ -23,11 +31,4 @@ export default async function FilePage({
       videoLink={fileContent.videoLink ? fileContent.videoLink : null}
     ></FilePageClient>
   );
-}
-
-export async function generateStaticParams() {
-  const fileNames = getJsonFilenames();
-  return fileNames.map((file) => ({
-    fileName: file.replace(".json", ""),
-  }));
 }

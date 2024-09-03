@@ -101,7 +101,9 @@ export default function AntdLayout({
         icon: React.createElement(FileTextOutlined),
         label: (
           <Link
-            href={`/texts/${encodeURIComponent(filePath).replace(".json", "")}`}
+            href={`/texts/${encodeURIComponent(filePath)
+              .replace(".json", "")
+              .replace("data%2F", "")}`}
           >
             {file.replace(".json", "")}
           </Link>
