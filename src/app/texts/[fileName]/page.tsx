@@ -28,6 +28,6 @@ export default async function FilePage({
 export async function generateStaticParams() {
   const fileNames = getJsonFilenames();
   return fileNames.map((file) => ({
-    file: file.replace(".json", ""),
+    fileNames: file.replace(".json", ""),
   }));
 }
