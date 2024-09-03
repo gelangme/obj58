@@ -27,7 +27,9 @@ export default async function RootLayout({
     <html lang="en">
       <body className={inter.className + " flex min-h-screen flex-col"}>
         <TranslationsProvider namespaces={i18nNamespaces} resources={resources}>
-          <LayoutSwitch directory={directory}>{children}</LayoutSwitch>
+          <AntdRegistry>
+            <AntdLayout directory={directory}>{children}</AntdLayout>
+          </AntdRegistry>
         </TranslationsProvider>
       </body>
     </html>

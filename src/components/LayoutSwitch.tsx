@@ -14,18 +14,6 @@ export default function LayoutSwitch({
   children: React.ReactNode;
   directory: Directory;
 }) {
-  const isMobile = useMediaQuery({ maxWidth: 768 });
-  const [isMounted, setIsMounted] = useState(false);
-  console.log("isMobile: ", isMobile);
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
-  if (!isMounted) {
-    return null;
-  }
-
   return false ? (
     <AntdLayoutMobile directory={directory}>{children}</AntdLayoutMobile>
   ) : (
