@@ -1,5 +1,4 @@
 import fs from "fs";
-import moby from "moby";
 import path from "path";
 
 export const getJsonFilenames = () => {
