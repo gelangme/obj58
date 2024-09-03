@@ -52,27 +52,7 @@ export default function AntdLayout({
   const [isMobileSiderCollapsed, setIsMobileSiderCollapsed] = useState(true);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [api, contextHolder] = notification.useNotification();
-  const [isNotifShown, setIsNotifShown] = useState(false);
   let effectCounter = 0;
-
-  const openNotification = () => {
-    api.info({
-      message: t("cookies-title"),
-      description: t("cookies-body"),
-      placement: isMobile ? "bottom" : "bottomLeft",
-      btn: (
-        <Button
-          onClick={() => {
-            localStorage.setItem("localStorageConsent", JSON.stringify(true));
-            api.destroy();
-          }}
-          type="primary"
-        >
-          Accept
-        </Button>
-      ),
-    });
-  };
 
   const mapDirectoryToMenuItems = (
     directory: Directory,
@@ -174,7 +154,7 @@ export default function AntdLayout({
   const renderMobileLayout = () => {
     return (
       <>
-        <Layout className="absolute z-[1500] h-[100vh]">
+        <Layout className="fixed z-[1500] h-[100vh]">
           <Sider
             style={{ background: colorBgContainer }}
             width={isMobileSiderCollapsed ? 280 : 200}
