@@ -35,7 +35,7 @@ body {
 }
 
 .card-padding .ant-card-body {
-  @apply !p-[12px] lg:p-0;
+  @apply !p-[12px];
 }
 
 .noselect {

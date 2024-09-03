@@ -279,8 +279,8 @@ export default function AntdLayout({
                 margin: 0,
                 minHeight: 280,
                 borderRadius: borderRadiusLG,
+                padding: 24,
               }}
-              className="card-padding"
             >
               {children}
             </Card>
