@@ -1,6 +1,3 @@
-import FilePageClient from "@/components/TextPage";
-import { getJsonContent } from "@/utils/readFileData";
-
 export async function generateStaticParams() {
   return [{ testSlug: "1" }];
 }
