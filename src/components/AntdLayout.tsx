@@ -124,6 +124,31 @@ export default function AntdLayout({
     },
   ];
 
+  const menuItemsMobile: MenuProps["items"] = [
+    {
+      key: "home",
+      label: <Link href="/">{React.createElement(HomeOutlined)}</Link>,
+    },
+    {
+      key: "vocabulary",
+      label: (
+        <Link href="/vocabulary">{React.createElement(FileTextOutlined)}</Link>
+      ),
+    },
+    {
+      key: "texts",
+      label: <Link href="/texts">{React.createElement(FileTextOutlined)}</Link>,
+    },
+    {
+      key: "settings",
+      label: (
+        <Link className="text-xl" href="/settings">
+          {React.createElement(SettingFilled)}
+        </Link>
+      ),
+    },
+  ];
+
   const handleMenuClick = ({ keyPath }: { keyPath: string[] }) => {
     console.log("handleMenuClick: ", { keyPath });
   };
@@ -154,58 +179,18 @@ export default function AntdLayout({
   const renderMobileLayout = () => {
     return (
       <>
-        <Layout className="fixed z-[1500] h-[100vh]">
-          <Sider
-            style={{ background: colorBgContainer }}
-            width={isMobileSiderCollapsed ? 280 : 200}
-            collapsed={isMobileSiderCollapsed}
-            collapsible={true}
-            trigger={
-              <div className="text-xl p-2 ml-1 cursor-pointer">
-                {isMobileSiderCollapsed ? (
-                  <MenuUnfoldOutlined />
-                ) : (
-                  <MenuFoldOutlined />
-                )}
-              </div>
-            }
-            onCollapse={() =>
-              setIsMobileSiderCollapsed(!isMobileSiderCollapsed)
-            }
-            className={
-              "border-r-[1px] border-solid box-border border-x-gray-400 noselect !after:content-none"
-            }
-          >
-            <Menu
-              mode="inline"
-              style={{ height: "100%", borderRight: 0 }}
-              items={menuItems}
-              onClick={handleMenuClick}
-            />
-          </Sider>
+        <div className="fixed z-[1500] w-[100vw] bottom-0 h-[3rem] border-t-[1px] border-solid box-border border-x-gray-400 noselect">
+          <Menu
+            mode="horizontal"
+            style={{ height: "100%" }}
+            className="flex flex-row justify-center"
+            items={menuItemsMobile}
+            onClick={handleMenuClick}
+          />
+        </div>
+        <Layout>
           <Layout>
-            {/* <Layout.Header className="!bg-transparent !p-0">
-              <div
-                onClick={() =>
-                  setIsMobileSiderCollapsed(!isMobileSiderCollapsed)
-                }
-                className="text-2xl p-2 ml-1 cursor-pointer"
-              >
-                {isMobileSiderCollapsed ? (
-                  <MenuUnfoldOutlined />
-                ) : (
-                  <MenuFoldOutlined />
-                )}
-              </div>
-            </Layout.Header> */}
-          </Layout>
-        </Layout>
-        <Layout className="ml-[80px] pt-[40px]">
-          <Layout>
-            <Layout
-              className="justify-between"
-              style={isMobile ? { padding: "12px" } : { padding: "24px" }}
-            >
+            <Layout className="justify-between" style={{ padding: "12px" }}>
               {/* <Breadcrumb style={{ margin: "16px 0" }}>
           <Breadcrumb.Item>Home</Breadcrumb.Item>
           <Breadcrumb.Item>Texts</Breadcrumb.Item>

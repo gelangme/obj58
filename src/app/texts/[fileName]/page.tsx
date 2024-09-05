@@ -1,4 +1,4 @@
-import FilePageClient from "@/components/TextPage";
+import FilePageClient from "@/components/FilePageClient";
 import { getJsonContent, getJsonFilenames } from "@/utils/readFileData";
 
 export async function generateStaticParams() {
