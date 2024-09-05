@@ -128,23 +128,45 @@ export default function AntdLayout({
   const menuItemsMobile: MenuProps["items"] = [
     {
       key: "home",
-      label: <Link href="/">{React.createElement(HomeOutlined)}</Link>,
+      label: (
+        <Link
+          className="flex items-center justify-center h-full w-full"
+          href="/"
+        >
+          <HomeOutlined style={{ fontSize: "20px" }} />
+        </Link>
+      ),
     },
     {
       key: "vocabulary",
       label: (
-        <Link href="/vocabulary">{React.createElement(BookOutlined)}</Link>
+        <Link
+          className="flex items-center justify-center h-full w-full"
+          href="/vocabulary"
+        >
+          <BookOutlined style={{ fontSize: "20px" }} />
+        </Link>
       ),
     },
     {
       key: "texts",
-      label: <Link href="/texts">{React.createElement(FileTextOutlined)}</Link>,
+      label: (
+        <Link
+          className="flex items-center justify-center h-full w-full"
+          href="/texts"
+        >
+          <FileTextOutlined style={{ fontSize: "20px" }} />
+        </Link>
+      ),
     },
     {
       key: "settings",
       label: (
-        <Link className="text-xl" href="/settings">
-          {React.createElement(SettingFilled)}
+        <Link
+          className="flex items-center justify-center h-full w-full"
+          href="/settings"
+        >
+          <SettingFilled style={{ fontSize: "20px" }} />
         </Link>
       ),
     },
@@ -186,7 +208,6 @@ export default function AntdLayout({
             style={{ height: "100%" }}
             className="flex flex-row justify-center"
             items={menuItemsMobile}
-            onClick={handleMenuClick}
           />
         </div>
         <Layout>
