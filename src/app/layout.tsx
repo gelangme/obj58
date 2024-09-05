@@ -13,7 +13,7 @@ import LayoutSwitch from "@/components/LayoutSwitch";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const i18nNamespaces = ["main"];
+const i18nNamespaces = ["main", "home"];
 
 export default async function RootLayout({
   children,

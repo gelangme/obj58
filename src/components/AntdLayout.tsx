@@ -20,6 +20,7 @@ import {
   SettingFilled,
   MenuUnfoldOutlined,
   MenuFoldOutlined,
+  BookOutlined,
 } from "@ant-design/icons";
 import { StyleProvider } from "@ant-design/cssinjs";
 import Link from "next/link";
@@ -108,7 +109,7 @@ export default function AntdLayout({
     // },
     {
       key: "vocabulary",
-      icon: React.createElement(FileTextOutlined),
+      icon: React.createElement(BookOutlined),
       label: <Link href="/vocabulary">{t("vocabulary")}</Link>,
     },
     {
@@ -132,7 +133,7 @@ export default function AntdLayout({
     {
       key: "vocabulary",
       label: (
-        <Link href="/vocabulary">{React.createElement(FileTextOutlined)}</Link>
+        <Link href="/vocabulary">{React.createElement(BookOutlined)}</Link>
       ),
     },
     {
