@@ -75,13 +75,13 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Log API Key (example for demonstration only)
         env:
-          NEXT_PUBLIC_GOOGLE_TRANSLATE_API_KEY: ${{ vars.NEXT_PUBLIC_GOOGLE_TRANSLATE_API_KEY }}
+          NEXT_PUBLIC_GOOGLE_TRANSLATE_API_KEY: ${{ vars.GOOGLE_TRANSLATE_API_KEY }}
         run: |
           echo "API Key: $NEXT_PUBLIC_GOOGLE_TRANSLATE_API_KEY"  # Log the value (Be careful with sensitive data)
 
       - name: Build with Next.js
         env:
-          NEXT_PUBLIC_GOOGLE_TRANSLATE_API_KEY: ${{ vars.NEXT_PUBLIC_GOOGLE_TRANSLATE_API_KEY }}
+          NEXT_PUBLIC_GOOGLE_TRANSLATE_API_KEY: ${{ vars.GOOGLE_TRANSLATE_API_KEY }}
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
