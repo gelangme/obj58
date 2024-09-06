@@ -76,6 +76,7 @@ export async function translateWords(
 ): Promise<(string | null)[]> {
   const apiKey = process.env.NEXT_PUBLIC_GOOGLE_TRANSLATE_API_KEY;
   const url = `https://translation.googleapis.com/language/translate/v2?key=${apiKey}`;
+  console.log("API_KEY: ", apiKey);
 
   // Map each word to a promise that resolves to its translation data
   const promises = words.map((word) =>
