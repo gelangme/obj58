@@ -1,11 +1,24 @@
-import { i18nRouter } from "next-i18n-router";
-import i18nConfig from "../i18nConfig";
-import { NextRequest } from "next/server";
+//todo: remove
 
-export function middleware(request: NextRequest) {
-  return i18nRouter(request, i18nConfig);
-}
+import { NextRequest, NextResponse, userAgent } from "next/server";
+import { getSelectorsByUserAgent } from "react-device-detect";
 
+export const middleware = async (request: NextRequest) => {
+  const ua = userAgent(request);
+  const { isMobileOnly, isTablet, isDesktop } = getSelectorsByUserAgent(ua.ua);
+  const agent = isMobileOnly
+    ? "phone"
+    : isTablet
+    ? "tablet"
+    : isDesktop
+    ? "desktop"
+    : "unknown";
+  const { nextUrl: url } = request;
+  url.searchParams.set("agent", agent);
+  return NextResponse.rewrite(url);
+};
+
+// Apply middleware to every route
 export const config = {
-  matcher: "/((?!api|static|.*\\..*|_next).*)",
+  matcher: "/:path*", // Match all routes
 };

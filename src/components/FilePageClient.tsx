@@ -8,8 +8,8 @@ import { useParams, usePathname, useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import YouTubeVideo from "./YouTubeVideo";
-import { useAtom } from "jotai";
-import { translationLocaleAtom } from "@/state/atoms";
+import { useAtom, useAtomValue } from "jotai";
+import { interfaceLocaleAtom, translationLocaleAtom } from "@/state/atoms";
 
 export default function FilePageClient({
   text,
@@ -23,9 +23,22 @@ export default function FilePageClient({
   const pathname = usePathname();
   const { t } = useTranslation();
 
+  const interfacelLocale = useAtomValue(interfaceLocaleAtom);
   const [translationLocale, setTranslationLocale] = useAtom(
     translationLocaleAtom
   );
+
+  const translationLocaleOptions = [
+    { value: "en", label: "english" },
+    { value: "uk", label: "українська" },
+    { value: "default", label: t("same-as-interface") },
+  ];
+
+  const translationLocaleOptionsNoDefault = [
+    { value: "en", label: "english" },
+    { value: "uk", label: "українська" },
+  ];
+
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [numOfUniqueWords, setNumOfUniqueWords] = useState<number>();
 
@@ -64,6 +77,11 @@ export default function FilePageClient({
               setTranslationLocale(lang);
             }}
             isInterfaceLocale={false}
+            customOptions={
+              interfacelLocale !== "de"
+                ? translationLocaleOptions
+                : translationLocaleOptionsNoDefault
+            }
           />
         </div>
       </Modal>
@@ -73,7 +91,7 @@ export default function FilePageClient({
         icon={React.createElement(SettingFilled)}
         onClick={() => setIsModalOpen(true)}
       />
-      <div className="flex flex:col-reverse lg:flex-row lg:justify-between gap-4">
+      <div className="flex flex:col-reverse lg:flex-row lg:justify-between gap-4 mt-3">
         <div className="flex flex-col">
           {text.map((item) => (
             <Sentence key={item.original} sentence={item} />
@@ -82,13 +100,11 @@ export default function FilePageClient({
         {!!videoLink ? <YouTubeVideo videoLink={videoLink} /> : null}
       </div>
       {/* todo: add new string to i18nexus */}
-      <Tooltip title={t("num-unique-words")}>
-        <div className="flex justify-center items-center w-[32px] h-[32px]">
-          <span className="opacity-10 hover:opacity-50 transition-opacity duration-300 cursor-default text-center grow">
-            {numOfUniqueWords}
-          </span>
-        </div>
-      </Tooltip>
+      <div className="flex justify-center items-center ">
+        <span className="opacity-70 transition-opacity duration-300 cursor-default text-center grow">
+          {t("num-unique-words")}: {numOfUniqueWords}
+        </span>
+      </div>
     </>
   );
 }

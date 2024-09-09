@@ -27,6 +27,8 @@ export default function Sentence({ sentence }: { sentence: iSentence }) {
   const [voices, setVoices] = useState<SpeechSynthesisVoice[]>();
   const [modal, contextHolder] = Modal.useModal();
   const [translation, setTranslation] = useState<string | null>(null);
+  const [isSpeechSynthAvailable, setIsSpeechSynthAvailable] =
+    useState<boolean>(false);
   const searchParams = useSearchParams();
   const translationLocale = useAtomValue(translationLocaleAtom);
 
@@ -75,6 +77,7 @@ export default function Sentence({ sentence }: { sentence: iSentence }) {
       );
       if (localGermanVoices.length !== 0) {
         setVoices(localGermanVoices);
+        setIsSpeechSynthAvailable(true);
       } else {
         /* todo: add new string to i18nexus */
         Modal.destroyAll();
@@ -83,6 +86,7 @@ export default function Sentence({ sentence }: { sentence: iSentence }) {
           content: t("warning-speech"),
         });
         setVoices(germanVoices);
+        setIsSpeechSynthAvailable(false);
       }
     }, 200);
   }, []);
@@ -118,27 +122,29 @@ export default function Sentence({ sentence }: { sentence: iSentence }) {
     <div className="mb-4 flex flex-row [&_button]:opacity-100 md:[&_button]:opacity-0 md:[&_button]:hover:opacity-100">
       {contextHolder}
       <div className="flex flex-col justify-center items-center mr-3">
-        {isPlaying ? (
-          <Button
-            size={isMobile ? "small" : "middle"}
-            type={isMobile ? "text" : "default"}
-            onClick={() => {
-              pauseSentence();
-            }}
-          >
-            {pauseIcon}
-          </Button>
-        ) : (
-          <Button
-            size={isMobile ? "small" : "middle"}
-            type={isMobile ? "text" : "default"}
-            onClick={() => {
-              playSentence();
-            }}
-          >
-            {playIcon}
-          </Button>
-        )}
+        {isSpeechSynthAvailable ? (
+          isPlaying ? (
+            <Button
+              size={isMobile ? "small" : "middle"}
+              type={isMobile ? "text" : "default"}
+              onClick={() => {
+                pauseSentence();
+              }}
+            >
+              {pauseIcon}
+            </Button>
+          ) : (
+            <Button
+              size={isMobile ? "small" : "middle"}
+              type={isMobile ? "text" : "default"}
+              onClick={() => {
+                playSentence();
+              }}
+            >
+              {playIcon}
+            </Button>
+          )
+        ) : null}
       </div>
       <div className="flex flex-col">
         {sentence.type === "h2" ? (

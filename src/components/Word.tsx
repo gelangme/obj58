@@ -17,9 +17,6 @@ interface iWordComponent {
   className?: string;
 }
 
-const plusIcon = React.createElement(PlusOutlined);
-const checkIcon = React.createElement(CheckOutlined);
-
 export default function Word({
   word,
   noTooltip,

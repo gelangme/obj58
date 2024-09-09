@@ -14,6 +14,17 @@ import {
 export default function SettingsPage() {
   const { t, i18n } = useTranslation();
 
+  const translationLocaleOptions = [
+    { value: "en", label: "english" },
+    { value: "uk", label: "українська" },
+    { value: "default", label: t("same-as-interface") },
+  ];
+
+  const translationLocaleOptionsNoDefault = [
+    { value: "en", label: "english" },
+    { value: "uk", label: "українська" },
+  ];
+
   const [isDarkMode, setIsDarkMode] = useAtom(isDarkModeAtom);
   const [interfaceLocale, setInterfaceLocale] = useAtom(interfaceLocaleAtom);
   const [translationLocale, setTranslationLocale] = useAtom(
@@ -29,6 +40,9 @@ export default function SettingsPage() {
           onChange={(lang: any) => {
             setInterfaceLocale(lang);
             i18n.changeLanguage(lang);
+            if (lang === "de") {
+              setTranslationLocale("en");
+            }
           }}
           isInterfaceLocale
         />
@@ -41,6 +55,11 @@ export default function SettingsPage() {
             setTranslationLocale(lang);
           }}
           isInterfaceLocale={false}
+          customOptions={
+            interfaceLocale !== "de"
+              ? translationLocaleOptions
+              : translationLocaleOptionsNoDefault
+          }
         />
       </div>
       <div className="flex flex-row items-center justify-start gap-3">

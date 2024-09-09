@@ -13,11 +13,18 @@ export default function LocaleSelect({
   value,
   onChange,
   isInterfaceLocale = false,
+  customOptions = undefined,
 }: {
   className?: string;
   value: string;
   onChange: (value: string) => void;
   isInterfaceLocale?: boolean;
+  customOptions?:
+    | {
+        value: string;
+        label: string;
+      }[]
+    | undefined;
 }) {
   const { t } = useTranslation();
 
@@ -27,14 +34,17 @@ export default function LocaleSelect({
     { value: "default", label: t("same-as-interface") },
   ];
 
+  const translationLocaleOptionsNoDefault = [
+    { value: "en", label: "english" },
+    { value: "uk", label: "українська" },
+  ];
+
   return (
     <Select
       className={className}
       value={value}
       onChange={onChange}
-      options={
-        isInterfaceLocale ? interfacelLocaleOptions : translationLocaleOptions
-      }
+      options={isInterfaceLocale ? interfacelLocaleOptions : customOptions}
     />
   );
 }

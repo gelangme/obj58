@@ -6,7 +6,6 @@ import {
   Layout,
   Menu,
   theme,
-  Switch,
   Card,
   Button,
   notification,
@@ -15,7 +14,6 @@ import {
 } from "antd";
 import {
   FileTextOutlined,
-  PlayCircleOutlined,
   HomeOutlined,
   SettingFilled,
   MenuUnfoldOutlined,
@@ -32,9 +30,6 @@ import { useMediaQuery } from "react-responsive";
 
 const { defaultAlgorithm, darkAlgorithm } = theme;
 const { Sider } = Layout;
-
-const MenuUnfoldIcon = React.createElement(MenuUnfoldOutlined);
-const MenuFoldIcon = React.createElement(MenuFoldOutlined);
 
 export default function AntdLayout({
   children,

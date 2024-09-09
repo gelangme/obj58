@@ -51,22 +51,17 @@ export default function TextsPageClient({
       itemLayout="horizontal"
       dataSource={listData}
       renderItem={(item, index) => (
-        <List.Item>
-          <List.Item.Meta
-            avatar={React.createElement(FileTextOutlined)}
-            title={
-              <Link
-                href={`/texts/${encodeURIComponent(item.title).replace(
-                  ".json",
-                  ""
-                )}`}
-              >
-                {item.title.replace(".json", "")}
-              </Link>
-            }
-            description="Placeholder for future text desctiptions"
-          />
-        </List.Item>
+        <Link
+          href={`/texts/${encodeURIComponent(item.title).replace(".json", "")}`}
+        >
+          <List.Item>
+            <List.Item.Meta
+              avatar={React.createElement(FileTextOutlined)}
+              title={item.title.replace(".json", "")}
+              description="Placeholder for future text desctiptions"
+            />
+          </List.Item>
+        </Link>
       )}
     />
   );

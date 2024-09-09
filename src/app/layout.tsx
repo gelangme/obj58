@@ -14,12 +14,11 @@ import LayoutSwitch from "@/components/LayoutSwitch";
 const inter = Inter({ subsets: ["latin"] });
 
 const i18nNamespaces = ["main", "home"];
-
-export default async function RootLayout({
-  children,
-}: {
+type PageProps = {
   children: React.ReactNode;
-}) {
+};
+
+export default async function RootLayout({ children }: PageProps) {
   const { resources } = await initTranslations("en", i18nNamespaces);
   const directory = getJsonFiles();
 
