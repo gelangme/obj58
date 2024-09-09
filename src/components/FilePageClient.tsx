@@ -100,8 +100,8 @@ export default function FilePageClient({
         {!!videoLink ? <YouTubeVideo videoLink={videoLink} /> : null}
       </div>
       {/* todo: add new string to i18nexus */}
-      <div className="flex justify-center items-center ">
-        <span className="opacity-70 transition-opacity duration-300 cursor-default text-center grow">
+      <div className="flex mt-3">
+        <span className="opacity-60 text-sm transition-opacity duration-300 cursor-default grow text-center lg:text-start">
           {t("num-unique-words")}: {numOfUniqueWords}
         </span>
       </div>
