@@ -14,3 +14,9 @@ export interface iSentence {
   original?: string;
   type?: string;
 }
+
+export interface TextMenuItem {
+  description: string;
+  title: string;
+  textID: string;
+}

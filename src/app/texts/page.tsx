@@ -1,12 +1,11 @@
 import TextsPageClient from "@/components/TextsPageClient";
-import {
-  getJsonContent,
-  getJsonFilenames,
-  getJsonFiles,
-} from "@/utils/readFileData";
+
+import axios from "axios";
 
 export default async function TextsPage() {
-  const directory = getJsonFiles();
+  const menuData = await axios.get("http://localhost:3001/menu");
+  const menuItems = await menuData.data;
+  console.log("menuItems: ", { menuItems });
 
-  return <TextsPageClient directory={directory} />;
+  return <TextsPageClient menuItems={menuItems} />;
 }

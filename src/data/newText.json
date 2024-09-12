@@ -1,5 +1,5 @@
 {
-  "Text": [
+  "text": [
     {
       "enTranslation": "At the airport",
       "ukTranslation": "В аеропорту",
@@ -158,5 +158,7 @@
       "type": "text"
     }
   ],
-  "videoLink": ""
+  "videoLink": "",
+  "title": "Test Title 1",
+  "description": "Test description 1"
 }

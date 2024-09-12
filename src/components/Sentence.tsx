@@ -38,11 +38,6 @@ export default function Sentence({ sentence }: { sentence: iSentence }) {
 
   const initTranslation = () => {
     const lang = searchParams.get("lang");
-    // console.log("LOCALES: ", {
-    //   lang: lang,
-    //   translationLocale: translationLocale,
-    //   i18n: i18n.language,
-    // });
 
     if (lang) {
       return setTranslation(getTranslation(lang));
