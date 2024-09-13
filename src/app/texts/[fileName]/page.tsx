@@ -11,6 +11,7 @@ export async function generateStaticParams() {
   // console.log("menuItems: ", { menuItems });
   // console.log("UPDATED_FILE_NAMES: ", updatedFileNames);
   // return updatedFileNames;
+
   return [
     { fileName: "66e1ef3124a0724c23648694" },
     { fileName: "66e1ef3424a0724c23648695" },

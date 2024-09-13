@@ -16,6 +16,11 @@ const LoginForm: React.FC = () => {
 
       message.success("Login successful");
       console.log("RESPONSE DATA: ", response.data);
+
+      const fetchedUserData = await fetch("http://localhost:3001/me", {
+        credentials: "include",
+      });
+      console.log("fetchedUserData: ", fetchedUserData);
     } catch (error: any) {
       message.error(error.response?.data?.message || "Login failed");
     } finally {
