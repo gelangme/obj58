@@ -1,6 +1,6 @@
 "use client";
 
-import { List } from "antd";
+import { Divider, List } from "antd";
 import { FileTextOutlined } from "@ant-design/icons";
 import React, { useEffect, useState } from "react";
 import { Directory } from "@/utils/readFileData";
@@ -17,15 +17,18 @@ export default function TextsPageClient({
       itemLayout="horizontal"
       dataSource={menuItems}
       renderItem={(item, index) => (
-        <Link href={`/texts/${encodeURIComponent(item.textID)}`}>
-          <List.Item>
-            <List.Item.Meta
-              avatar={React.createElement(FileTextOutlined)}
-              title={item.title}
-              description={item.description}
-            />
-          </List.Item>
-        </Link>
+        <>
+          <Link href={`/texts/${encodeURIComponent(item.textID)}`}>
+            <List.Item>
+              <List.Item.Meta
+                avatar={React.createElement(FileTextOutlined)}
+                title={item.title}
+                description={item.description}
+              />
+            </List.Item>
+          </Link>
+          <Divider />
+        </>
       )}
     />
   );

@@ -176,7 +176,7 @@ export default function Sentence({ sentence }: { sentence: iSentence }) {
           </span>
         )}
         <div
-          className="opacity-10 hover:opacity-50 transition-opacity duration-300"
+          className="mt-1 opacity-30 hover:opacity-50 transition-opacity duration-300"
           title="Translation"
         >
           {translation}

@@ -47,9 +47,16 @@ const LoginForm: React.FC = () => {
       </Form.Item>
 
       <Form.Item>
-        <Button type="primary" htmlType="submit" loading={loading}>
-          {t("log-in")}
-        </Button>
+        <div className="hidden md:flex">
+          <Button type="primary" htmlType="submit" loading={loading}>
+            {t("log-in")}
+          </Button>
+        </div>
+        <div className="flex md:hidden">
+          <Button block type="primary" htmlType="submit" loading={loading}>
+            {t("log-in")}
+          </Button>
+        </div>
       </Form.Item>
     </Form>
   );

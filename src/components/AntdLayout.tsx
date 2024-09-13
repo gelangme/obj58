@@ -71,13 +71,9 @@ export default function AntdLayout({
     {
       key: "texts",
       icon: React.createElement(FileTextOutlined),
-      label: t("texts"),
-      children: fetchedMenuItems?.map((item) => ({
-        key: item.textID,
-        icon: React.createElement(FileTextOutlined),
-        label: <Link href={`/texts/${item.textID}`}>{item.title}</Link>,
-      })),
+      label: <Link href="/texts">{t("texts")}</Link>,
     },
+
     {
       key: "settings",
       label: <Link href="/settings">{t("settings")}</Link>,
@@ -208,16 +204,16 @@ export default function AntdLayout({
           <Breadcrumb.Item>Texts</Breadcrumb.Item>
           <Breadcrumb.Item>Text 1</Breadcrumb.Item>
         </Breadcrumb> */}
-              <Card
-                style={{
-                  margin: 0,
-                  minHeight: 280,
-                  borderRadius: borderRadiusLG,
-                }}
-                className="card-padding"
+              <Layout.Content
+              // style={{
+              //   margin: 0,
+              //   minHeight: 280,
+              //   borderRadius: borderRadiusLG,
+              // }}
+              // className="card-padding"
               >
                 {children}
-              </Card>
+              </Layout.Content>
               <Layout.Footer className="h-10 bottom-0 opacity-70">
                 © {new Date().getFullYear()} gelang.me
               </Layout.Footer>
@@ -253,16 +249,16 @@ export default function AntdLayout({
           <Breadcrumb.Item>Texts</Breadcrumb.Item>
           <Breadcrumb.Item>Text 1</Breadcrumb.Item>
         </Breadcrumb> */}
-            <Card
-              style={{
-                margin: 0,
-                minHeight: 280,
-                borderRadius: borderRadiusLG,
-                padding: 24,
-              }}
+            <Layout.Content
+            // style={{
+            //   margin: 0,
+            //   minHeight: 280,
+            //   borderRadius: borderRadiusLG,
+            //   padding: 24,
+            // }}
             >
               {children}
-            </Card>
+            </Layout.Content>
             <Layout.Footer className="h-10 bottom-0 opacity-70">
               © {new Date().getFullYear()} gelang.me
             </Layout.Footer>
@@ -358,10 +354,13 @@ export default function AntdLayout({
         >
           {t("cookies-body")}
         </Drawer>
-        <UserProfile />
         {/* {isMobile ? renderMobileLayout() : renderDesktopLayout()} */}
-        <div className="hidden md:flex">{renderDesktopLayout()}</div>
-        <div className="flex md:hidden">{renderMobileLayout()}</div>
+        <div className="hidden md:flex min-h-[100vh] min-w-[100vw]">
+          {renderDesktopLayout()}
+        </div>
+        <div className="flex md:hidden min-h-[100vh] min-w-[100vw]">
+          {renderMobileLayout()}
+        </div>
         {contextHolder}
       </StyleProvider>
     </ConfigProvider>

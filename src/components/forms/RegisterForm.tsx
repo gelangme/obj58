@@ -53,9 +53,16 @@ const RegisterForm: React.FC = () => {
       </Form.Item>
 
       <Form.Item>
-        <Button type="primary" htmlType="submit" loading={loading}>
-          {t("sign-up")}
-        </Button>
+        <div className="hidden md:flex">
+          <Button type="primary" htmlType="submit" loading={loading}>
+            {t("sign-up")}
+          </Button>
+        </div>
+        <div className="flex md:hidden">
+          <Button block type="primary" htmlType="submit" loading={loading}>
+            {t("sign-up")}
+          </Button>
+        </div>
       </Form.Item>
     </Form>
   );

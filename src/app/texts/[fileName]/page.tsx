@@ -13,8 +13,8 @@ export async function generateStaticParams() {
   // return updatedFileNames;
 
   return [
-    { fileName: "66e1ef3124a0724c23648694" },
-    { fileName: "66e1ef3424a0724c23648695" },
+    { fileName: "66e338e80ed31be6ca900f46" },
+    { fileName: "66e338f00ed31be6ca900f47" },
   ];
 }
 
