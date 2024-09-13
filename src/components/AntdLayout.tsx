@@ -63,11 +63,6 @@ export default function AntdLayout({
       icon: React.createElement(HomeOutlined),
       label: <Link href="/">{t("home")}</Link>,
     },
-    // {
-    //   key: "generate-new-text",
-    //   icon: React.createElement(PlayCircleOutlined),
-    //   label: <Link href="/generate-new-text">{t("generate-new-text")}</Link>,
-    // },
     {
       key: "vocabulary",
       icon: React.createElement(BookOutlined),
@@ -364,7 +359,9 @@ export default function AntdLayout({
           {t("cookies-body")}
         </Drawer>
         <UserProfile />
-        {isMobile ? renderMobileLayout() : renderDesktopLayout()}
+        {/* {isMobile ? renderMobileLayout() : renderDesktopLayout()} */}
+        <div className="hidden md:flex">{renderDesktopLayout()}</div>
+        <div className="flex md:hidden">{renderMobileLayout()}</div>
         {contextHolder}
       </StyleProvider>
     </ConfigProvider>
