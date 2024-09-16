@@ -93,8 +93,11 @@ export default function FilePageClient({
       />
       <div className="flex flex:col-reverse lg:flex-row lg:justify-between gap-4 mt-3">
         <div className="flex flex-col">
-          {text.map((item) => (
-            <Sentence key={item.original} sentence={item} />
+          {text.map((item, i) => (
+            <Sentence
+              key={`${i.toString()}-${item.original}`}
+              sentence={item}
+            />
           ))}
         </div>
         {!!videoLink ? <YouTubeVideo videoLink={videoLink} /> : null}

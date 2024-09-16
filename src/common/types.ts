@@ -1,3 +1,11 @@
+export interface iSentence {
+  enTranslation: string; // translation to English
+  ukTranslation: string; // translation to Ukrainian
+  words: iWord[];
+  original?: string;
+  type?: "default" | "noTranslation" | "h2" | "space";
+}
+
 export interface iWord {
   en?: string;
   uk?: string;
@@ -5,12 +13,5 @@ export interface iWord {
   inf: string;
   pos: number[];
   type: string;
-}
-
-export interface iSentence {
-  enTranslation: string;
-  ukTranslation: string;
-  words: iWord[];
-  original?: string;
-  type?: string;
+  link: string;
 }

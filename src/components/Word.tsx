@@ -9,6 +9,7 @@ import { useParams, useSearchParams } from "next/navigation";
 import { useAtomValue } from "jotai";
 import { translationLocaleAtom } from "@/state/atoms";
 import { VocabWord } from "@/app/vocabulary/page";
+import Link from "next/link";
 
 interface iWordComponent {
   word: iWord;
@@ -105,8 +106,15 @@ export default function Word({
     initTranslation();
   }, [translationLocale, i18n]);
 
-  return noTooltip ? (
-    <span className={className}>{word.original}</span>
+  return noTooltip || !translation ? (
+    <>
+      {whiteSpace && " "}
+      {word.link ? (
+        <Link href={word.link}>{word.original}</Link>
+      ) : (
+        <span className={className + " cursor-pointer"}>{word.original}</span>
+      )}
+    </>
   ) : (
     <Tooltip
       className="z-[1501]"
@@ -123,9 +131,17 @@ export default function Word({
       mouseEnterDelay={0}
     >
       {whiteSpace && " "}
-      <span className={"hover:bg-slate-400 cursor-pointer " + className}>
-        {word.original}
-      </span>
+      {word.link ? (
+        <Link
+          target="_blank"
+          className={className + " cursor-pointer"}
+          href={word.link}
+        >
+          {word.original}
+        </Link>
+      ) : (
+        <span className={className + " cursor-pointer"}>{word.original}</span>
+      )}
     </Tooltip>
   );
 }

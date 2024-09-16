@@ -1,0 +1,323 @@
+{
+  "text": [
+    {
+      "enTranslation": "The dream here is from America",
+      "ukTranslation": "Мрія тут з Америки",
+      "words": [
+        {
+          "en": "The",
+          "uk": "Мрія",
+          "original": "Der",
+          "inf": "",
+          "type": "article",
+          "link": "",
+          "pos": [1]
+        },
+        {
+          "en": "dream",
+          "uk": "Мрія",
+          "original": "Traum",
+          "inf": "Traum",
+          "type": "noun",
+          "link": "",
+          "pos": [2]
+        },
+        {
+          "en": "here",
+          "uk": "тут",
+          "original": "hier",
+          "inf": "hier",
+          "type": "adverb",
+          "link": "",
+          "pos": [3]
+        },
+        {
+          "en": "is",
+          "uk": "є",
+          "original": "ist",
+          "inf": "sein",
+          "type": "verb",
+          "link": "",
+          "pos": [4]
+        },
+        {
+          "en": "from",
+          "uk": "з",
+          "original": "aus",
+          "inf": "aus",
+          "type": "preposition",
+          "link": "",
+          "pos": [5]
+        },
+        {
+          "en": "America",
+          "uk": "Америка",
+          "original": "Amerika",
+          "inf": "Amerika",
+          "type": "noun",
+          "link": "",
+          "pos": [6]
+        }
+      ],
+      "type": "h2"
+    },
+    {
+      "enTranslation": "Bourbon whiskey on ice",
+      "ukTranslation": "Бурбон на льоду",
+      "words": [
+        {
+          "en": "Bourbon",
+          "uk": "Бурбон",
+          "original": "Bourbon",
+          "inf": "Bourbon",
+          "type": "noun",
+          "link": "",
+          "pos": [1]
+        },
+        {
+          "en": "whiskey",
+          "uk": "віскі",
+          "original": "Whiskey",
+          "inf": "Whiskey",
+          "type": "noun",
+          "link": "",
+          "pos": [2]
+        },
+        {
+          "en": "on",
+          "uk": "на",
+          "original": "auf",
+          "inf": "auf",
+          "type": "preposition",
+          "link": "",
+          "pos": [3]
+        },
+        {
+          "en": "ice",
+          "uk": "лід",
+          "original": "Eis",
+          "inf": "Eis",
+          "type": "noun",
+          "link": "",
+          "pos": [4]
+        }
+      ],
+      "type": "default"
+    },
+    {
+      "enTranslation": "Hunt it until it becomes true",
+      "ukTranslation": "Полювати на нього, поки він не стане правдою",
+      "words": [
+        {
+          "en": "Hunt",
+          "uk": "Полювати",
+          "original": "Jagen",
+          "inf": "jagen",
+          "type": "verb",
+          "link": "",
+          "pos": [1]
+        },
+        {
+          "en": "it",
+          "uk": "його",
+          "original": "ihn",
+          "inf": "er",
+          "type": "pronoun",
+          "link": "",
+          "pos": [2]
+        },
+        {
+          "en": "until",
+          "uk": "поки",
+          "original": "bis",
+          "inf": "bis",
+          "type": "conjunction",
+          "link": "",
+          "pos": [3]
+        },
+        {
+          "en": "it becomes",
+          "uk": "не стане",
+          "original": "wird",
+          "inf": "werden",
+          "type": "verb",
+          "link": "",
+          "pos": [4]
+        },
+        {
+          "en": "true",
+          "uk": "правдою",
+          "original": "wahr",
+          "inf": "wahr",
+          "type": "adjective",
+          "link": "",
+          "pos": [5]
+        }
+      ],
+      "type": "default"
+    },
+    {
+      "enTranslation": "Or die doing it",
+      "ukTranslation": "Або померти, роблячи це",
+      "words": [
+        {
+          "en": "Or",
+          "uk": "Або",
+          "original": "Oder",
+          "inf": "oder",
+          "type": "conjunction",
+          "link": "",
+          "pos": [1]
+        },
+        {
+          "en": "die",
+          "uk": "померти",
+          "original": "sterben",
+          "inf": "sterben",
+          "type": "verb",
+          "link": "",
+          "pos": [2]
+        },
+        {
+          "en": "doing",
+          "uk": "роблячи",
+          "original": "dabei",
+          "inf": "dabei",
+          "type": "adverb",
+          "link": "",
+          "pos": [3]
+        }
+      ],
+      "type": "default"
+    },
+    {
+      "enTranslation": "The dream here is from America",
+      "ukTranslation": "Мрія тут з Америки",
+      "words": [
+        {
+          "en": "The",
+          "uk": "Мрія",
+          "original": "Der",
+          "inf": "",
+          "type": "article",
+          "link": "",
+          "pos": [1]
+        },
+        {
+          "en": "dream",
+          "uk": "Мрія",
+          "original": "Traum",
+          "inf": "Traum",
+          "type": "noun",
+          "link": "",
+          "pos": [2]
+        },
+        {
+          "en": "here",
+          "uk": "тут",
+          "original": "hier",
+          "inf": "hier",
+          "type": "adverb",
+          "link": "",
+          "pos": [3]
+        },
+        {
+          "en": "is",
+          "uk": "є",
+          "original": "ist",
+          "inf": "sein",
+          "type": "verb",
+          "link": "",
+          "pos": [4]
+        },
+        {
+          "en": "from",
+          "uk": "з",
+          "original": "aus",
+          "inf": "aus",
+          "type": "preposition",
+          "link": "",
+          "pos": [5]
+        },
+        {
+          "en": "America",
+          "uk": "Америка",
+          "original": "Amerika",
+          "inf": "Amerika",
+          "type": "noun",
+          "link": "",
+          "pos": [6]
+        }
+      ],
+      "type": "default"
+    },
+    {
+      "enTranslation": "",
+      "ukTranslation": "",
+      "words": [],
+      "type": "space"
+    },
+    {
+      "enTranslation": "The dream here is from America",
+      "ukTranslation": "Мрія тут з Америки",
+      "words": [
+        {
+          "en": "The",
+          "uk": "Мрія",
+          "original": "Der",
+          "inf": "",
+          "type": "article",
+          "link": "",
+          "pos": [1]
+        },
+        {
+          "en": "dream",
+          "uk": "Мрія",
+          "original": "Traum",
+          "inf": "Traum",
+          "type": "noun",
+          "link": "",
+          "pos": [2]
+        },
+        {
+          "en": "here",
+          "uk": "тут",
+          "original": "hier",
+          "inf": "hier",
+          "type": "adverb",
+          "link": "",
+          "pos": [3]
+        },
+        {
+          "en": "is",
+          "uk": "є",
+          "original": "ist",
+          "inf": "sein",
+          "type": "verb",
+          "link": "",
+          "pos": [4]
+        },
+        {
+          "en": "from",
+          "uk": "з",
+          "original": "aus",
+          "inf": "aus",
+          "type": "preposition",
+          "link": "",
+          "pos": [5]
+        },
+        {
+          "en": "America",
+          "uk": "Америка",
+          "original": "Amerika",
+          "inf": "Amerika",
+          "type": "noun",
+          "link": "kek",
+          "pos": [6]
+        }
+      ],
+      "type": "noTranslation"
+    }
+  ],
+  "videoLink": ""
+}

@@ -27,7 +27,7 @@ export default async function FilePage({
 
   return (
     <FilePageClient
-      text={fileContent.Text}
+      text={fileContent.text}
       videoLink={fileContent.videoLink ? fileContent.videoLink : null}
     ></FilePageClient>
   );
