@@ -1,389 +1,844 @@
 {
-    "Text": [
+  "text": [
+    {
+      "enTranslation": "Sometimes you stand in your own way, you can't shake the feeling",
+      "words": [
+        { "en": "Sometimes", "original": "Manchma'", "inf": "", "pos": [1] },
+        { "en": "you", "original": "du", "inf": "", "pos": [2] },
+        { "en": "stand", "original": "stehst", "inf": "stehen", "pos": [3] },
         {
-            "enTranslation": "Sometimes you stand in your own way, you can't shake the feeling",
-            "words": [
-                {"en": "Sometimes", "original": "Manchma'", "inf": "", "pos": [1]},
-                {"en": "you", "original": "du", "inf": "", "pos": [2]},
-                {"en": "stand", "original": "stehst", "inf": "stehen", "pos": [3]},
-                {"en": "in your own way", "original": "dir im Weg", "inf": "", "pos": [4, 5, 6]},
-                {"en": "you can't shake", "original": "wirst ... nicht los", "inf": "loswerden", "pos": [7, 8]},
-                {"en": "the feeling", "original": "das Gefühl", "inf": "", "pos": [9, 10]}
-            ]
+          "en": "in your own way",
+          "original": "dir im Weg",
+          "inf": "",
+          "pos": [4, 5, 6]
         },
         {
-            "enTranslation": "That no matter how long you walk, you won't overtake yourself",
-            "words": [
-                {"en": "That", "original": "Dass", "inf": "", "pos": [1]},
-                {"en": "no matter how long", "original": "ganz egal, wie lang", "inf": "", "pos": [2, 3, 4]},
-                {"en": "you walk", "original": "du gehst", "inf": "gehen", "pos": [5, 6]},
-                {"en": "you won't", "original": "du ... nicht", "inf": "", "pos": [7]},
-                {"en": "overtake", "original": "überholst", "inf": "überholen", "pos": [8]},
-                {"en": "yourself", "original": "dich", "inf": "", "pos": [9]}
-            ]
+          "en": "you can't shake",
+          "original": "wirst ... nicht los",
+          "inf": "loswerden",
+          "pos": [7, 8]
         },
         {
-            "enTranslation": "Don't listen to those voices doubting you",
-            "words": [
-                {"en": "Don't listen", "original": "Hör da nicht hin", "inf": "hören", "pos": [1, 2, 3]},
-                {"en": "to those voices", "original": "die ganzen Stimm'n", "inf": "", "pos": [4, 5]},
-                {"en": "doubting you", "original": "die an dir zweifel'n", "inf": "zweifeln", "pos": [6, 7, 8]}
-            ]
-        },
-        {
-            "enTranslation": "They're just too tired to stay awake for their dreams",
-            "words": [
-                {"en": "They're just", "original": "Sind nur", "inf": "sein", "pos": [1, 2]},
-                {"en": "too tired", "original": "zu müde", "inf": "", "pos": [3, 4]},
-                {"en": "to stay awake", "original": "um ... wachzubleiben", "inf": "wachbleiben", "pos": [5, 6]},
-                {"en": "for their dreams", "original": "für ihre Träume", "inf": "", "pos": [7, 8]}
-            ]
-        },
-        {
-            "enTranslation": "Don't let them tell you: 'You'll never achieve this'",
-            "words": [
-                {"en": "Don't let", "original": "Lass dir nicht", "inf": "lassen", "pos": [1, 2, 3]},
-                {"en": "them", "original": "von ihn'n", "inf": "", "pos": [4, 5]},
-                {"en": "tell you", "original": "sagen", "inf": "sagen", "pos": [6]},
-                {"en": "'You'll never achieve this'", "original": "„Das hier kriegst du niemals hin“", "inf": "", "pos": [7, 8, 9]}
-            ]
-        },
-        {
-            "enTranslation": "Not even in years will they be able to achieve what you do",
-            "words": [
-                {"en": "Not even", "original": "Nicht mal", "inf": "", "pos": [1, 2]},
-                {"en": "in years", "original": "in Jahr'n", "inf": "", "pos": [3, 4]},
-                {"en": "will they be able to", "original": "werden die schaffen könn'n", "inf": "können", "pos": [5, 6, 7]},
-                {"en": "achieve", "original": "schaffen", "inf": "schaffen", "pos": [8]},
-                {"en": "what you do", "original": "was dir gelingt", "inf": "gelingen", "pos": [9, 10]}
-            ]
-        },
-        {
-            "enTranslation": "And if it doesn't work out, losing isn't bad",
-            "words": [
-                {"en": "And if", "original": "Und wenn", "inf": "", "pos": [1, 2]},
-                {"en": "it doesn't work out", "original": "es ma' nicht klappen sollte", "inf": "klappen", "pos": [3, 4, 5, 6]},
-                {"en": "losing", "original": "verlier'n", "inf": "verlieren", "pos": [7]},
-                {"en": "isn't bad", "original": "ist nicht schlimm", "inf": "", "pos": [8, 9]}
-            ]
-        },
-        {
-            "enTranslation": "Because defeats are just parts of victories",
-            "words": [
-                {"en": "Because", "original": "Weil", "inf": "", "pos": [1]},
-                {"en": "defeats", "original": "Niederlagen", "inf": "", "pos": [2]},
-                {"en": "are just", "original": "nur", "inf": "", "pos": [3]},
-                {"en": "parts of victories", "original": "Bestandteile von Siegen", "inf": "", "pos": [4, 5, 6]}
-            ]
-        },
-        {
-            "enTranslation": "I know how you feel because sometimes it seems to you",
-            "words": [
-                {"en": "I", "original": "Ich", "inf": "", "pos": [1]},
-                {"en": "know", "original": "weiß", "inf": "wissen", "pos": [2]},
-                {"en": "how", "original": "wie", "inf": "", "pos": [3]},
-                {"en": "you feel", "original": "du dich fühlst", "inf": "fühlen", "pos": [4, 5, 6]},
-                {"en": "because", "original": "denn", "inf": "", "pos": [7]},
-                {"en": "sometimes", "original": "manchmal", "inf": "", "pos": [8]},
-                {"en": "it seems", "original": "kommt es dir so vor", "inf": "vorkommen", "pos": [9, 10, 11, 12]}
-            ]
-        },
-        {
-            "enTranslation": "As if everyone in the world has conspired against you",
-            "words": [
-                {"en": "As if", "original": "Als", "inf": "", "pos": [1]},
-                {"en": "everyone", "original": "jeder", "inf": "", "pos": [2]},
-                {"en": "in the world", "original": "auf der Welt", "inf": "", "pos": [3, 4, 5]},
-                {"en": "has conspired", "original": "hätte sich ... verschwor'n", "inf": "verschwören", "pos": [6, 7]},
-                {"en": "against you", "original": "gegen dich", "inf": "", "pos": [8, 9]}
-            ]
-        },
-        {
-            "enTranslation": "Sometimes you just have to blindly follow the stars ahead",
-            "words": [
-                {"en": "Sometimes", "original": "Manchma'", "inf": "", "pos": [1]},
-                {"en": "you", "original": "man", "inf": "", "pos": [2]},
-                {"en": "just", "original": "einfach", "inf": "", "pos": [3]},
-                {"en": "have to", "original": "muss", "inf": "müssen", "pos": [4]},
-                {"en": "blindly", "original": "blind", "inf": "", "pos": [5]},
-                {"en": "follow", "original": "nach vorn ... folgen", "inf": "folgen", "pos": [6, 7]},
-                {"en": "the stars", "original": "den Stern'n", "inf": "", "pos": [8, 9]}
-            ]
-        },
-        {
-            "enTranslation": "Don't run away from it, even if something goes wrong",
-            "words": [
-                {"en": "Don't", "original": "Nicht", "inf": "", "pos": [1]},
-                {"en": "run away", "original": "wegrenn'n", "inf": "wegrennen", "pos": [2]},
-                {"en": "from it", "original": "davor", "inf": "", "pos": [3]},
-                {"en": "even if", "original": "auch wenn", "inf": "", "pos": [4, 5]},
-                {"en": "something", "original": "irgendwas", "inf": "", "pos": [6]},
-                {"en": "goes wrong", "original": "verkehrt läuft", "inf": "laufen", "pos": [7, 8]}
-            ]
-        },
-        {
-            "enTranslation": "Take every step as if you were sure",
-            "words": [
-                {"en": "Take", "original": "Mach", "inf": "machen", "pos": [1]},
-                {"en": "every step", "original": "jeden Schritt", "inf": "", "pos": [2, 3]},
-                {"en": "as if", "original": "als würdest", "inf": "würden", "pos": [4]},
-                {"en": "you were sure", "original": "du dir sicher sein", "inf": "sein", "pos": [5, 6, 7]}
-            ]
-        },
-        {
-            "enTranslation": "That everything will work out, as if you could never fall again",
-            "words": [
-                {"en": "That", "original": "Dass", "inf": "", "pos": [1]},
-                {"en": "everything", "original": "alles", "inf": "", "pos": [2]},
-                {"en": "will work out", "original": "klappen wird", "inf": "klappen", "pos": [3, 4]},
-                {"en": "as if", "original": "als könntest", "inf": "können", "pos": [5]},
-                {"en": "you could", "original": "du ... könntest", "inf": "", "pos": [6]},
-                {"en": "never fall again", "original": "nie wieder fall'n", "inf": "fallen", "pos": [7, 8, 9]}
-            ]
-        },
-        {
-            "enTranslation": "Don't let them wait, start making your dreams come true",
-            "words": [
-                {"en": "Don't let", "original": "Lass sie nicht", "inf": "lassen", "pos": [1, 2, 3]},
-                {"en": "them", "original": "sie", "inf": "", "pos": [4]},
-                {"en": "wait", "original": "warten", "inf": "warten", "pos": [5]},
-                {"en": "start", "original": "fang an", "inf": "anfangen", "pos": [6, 7]},
-                {"en": "making your dreams come true", "original": "deine Träume wahrzumachen", "inf": "wahrmachen", "pos": [8, 9, 10]}
-            ]
-        },
-        {
-            "enTranslation": "I am sure you can achieve anything",
-            "words": [
-                {"en": "I", "original": "Ich", "inf": "", "pos": [1]},
-                {"en": "am sure", "original": "bin mir sicher", "inf": "sein", "pos": [2, 3]},
-                {"en": "you", "original": "du", "inf": "", "pos": [4]},
-                {"en": "can", "original": "kannst", "inf": "können", "pos": [5]},
-                {"en": "achieve anything", "original": "alles schaffen", "inf": "schaffen", "pos": [6, 7]}
-            ]
-        },
-        {
-            "enTranslation": "Sometimes things go wrong, and sometimes they go well",
-            "words": [
-                {"en": "Sometimes", "original": "Manchma'", "inf": "", "pos": [1]},
-                {"en": "things", "original": "es", "inf": "", "pos": [2]},
-                {"en": "go wrong", "original": "geht schief", "inf": "schiefgehen", "pos": [3, 4]},
-                {"en": "and", "original": "und", "inf": "", "pos": [5]},
-                {"en": "sometimes", "original": "manchma'", "inf": "", "pos": [6]},
-                {"en": "they", "original": "es", "inf": "", "pos": [7]},
-                {"en": "go well", "original": "geht gut", "inf": "gutgehen", "pos": [8, 9]}
-            ]
-        },
-        {
-            "enTranslation": "But whether it works, you’ll only see when you try",
-            "words": [
-                {"en": "But", "original": "Doch", "inf": "", "pos": [1]},
-                {"en": "whether", "original": "ob", "inf": "", "pos": [2]},
-                {"en": "it works", "original": "es klappt", "inf": "klappen", "pos": [3, 4]},
-                {"en": "you’ll only see", "original": "wirst du erst seh'n", "inf": "sehen", "pos": [5, 6, 7]},
-                {"en": "when", "original": "wenn", "inf": "", "pos": [8]},
-                {"en": "you try", "original": "du's versuchst", "inf": "versuchen", "pos": [9, 10]}
-            ]
-        },
-        {
-            "enTranslation": "Every now and then, you have to do instead of talking",
-            "words": [
-                {"en": "Every now and then", "original": "Hin und wieder", "inf": "", "pos": [1, 2]},
-                {"en": "you", "original": "du", "inf": "", "pos": [3]},
-                {"en": "have to", "original": "musst", "inf": "müssen", "pos": [4]},
-                {"en": "do", "original": "machen", "inf": "machen", "pos": [5]},
-                {"en": "instead of", "original": "statt", "inf": "", "pos": [6]},
-                {"en": "talking", "original": "reden", "inf": "reden", "pos": [7]}
-            ]
-        },
-        {
-            "enTranslation": "Just act because everything else is just theory and books",
-            "words": [
-                {"en": "Just", "original": "einfach", "inf": "", "pos": [1]},
-                {"en": "act", "original": "tun", "inf": "tun", "pos": [2]},
-                {"en": "because", "original": "Denn", "inf": "", "pos": [3]},
-                {"en": "everything else", "original": "alles andre", "inf": "", "pos": [4, 5]},
-                {"en": "is just", "original": "wär nur", "inf": "sein", "pos": [6, 7]},
-                {"en": "theory", "original": "Theorie", "inf": "", "pos": [8]},
-                {"en": "and", "original": "und", "inf": "", "pos": [9]},
-                {"en": "books", "original": "Buch", "inf": "", "pos": [10]}
-            ]
-        },
-        {
-            "enTranslation": "Don't look back, it doesn't matter how far others are",
-            "words": [
-                {"en": "Don't", "original": "Schau nicht", "inf": "schauen", "pos": [1, 2]},
-                {"en": "look back", "original": "zurück", "inf": "", "pos": [3]},
-                {"en": "it doesn't matter", "original": "ist ganz egal", "inf": "", "pos": [4, 5, 6]},
-                {"en": "how far", "original": "wie weit", "inf": "", "pos": [7, 8]},
-                {"en": "others", "original": "die andern", "inf": "", "pos": [9, 10]},
-                {"en": "are", "original": "sind", "inf": "sein", "pos": [11]}
-            ]
-        },
-        {
-            "enTranslation": "I don't want to hear you say: 'I can't do this'",
-            "words": [
-                {"en": "I", "original": "Ich", "inf": "", "pos": [1]},
-                {"en": "don't want", "original": "will nicht", "inf": "wollen", "pos": [2, 3]},
-                {"en": "to hear", "original": "hör'n", "inf": "hören", "pos": [4]},
-                {"en": "you", "original": "von dir", "inf": "", "pos": [5, 6]},
-                {"en": "say", "original": "sagst", "inf": "sagen", "pos": [7]},
-                {"en": "'I can't do this'", "original": "„Ich kann das nicht“", "inf": "", "pos": [8, 9, 10]}
-            ]
-        },
-        {
-            "enTranslation": "It's normal that some things don't work at first",
-            "words": [
-                {"en": "It's", "original": "Ist", "inf": "sein", "pos": [1]},
-                {"en": "normal", "original": "ganz normal", "inf": "", "pos": [2, 3]},
-                {"en": "that", "original": "dass", "inf": "", "pos": [4]},
-                {"en": "some things", "original": "manche Dinge", "inf": "", "pos": [5, 6]},
-                {"en": "don't work", "original": "nicht klappen", "inf": "klappen", "pos": [7, 8]},
-                {"en": "at first", "original": "auf Anhieb", "inf": "", "pos": [9, 10]}
-            ]
-        },
-        {
-            "enTranslation": "And sometimes it takes a few more scratches to make them come true",
-            "words": [
-                {"en": "And", "original": "Und", "inf": "", "pos": [1]},
-                {"en": "sometimes", "original": "es", "inf": "", "pos": [2]},
-                {"en": "takes", "original": "paar Kratzer mehr erfordert", "inf": "erfordern", "pos": [3, 4, 5]},
-                {"en": "a few more scratches", "original": "paar Kratzer mehr", "inf": "", "pos": [6, 7]},
-                {"en": "to make them come true", "original": "um sie wahrzumachen", "inf": "wahrmachen", "pos": [8, 9, 10]}
-            ]
-        },
-        {
-            "enTranslation": "Don't let your dreams get lost just because they want it",
-            "words": [
-                {"en": "Don't", "original": "Lass", "inf": "lassen", "pos": [1]},
-                {"en": "let", "original": "verlor'n geh'n", "inf": "verlorengehen", "pos": [2]},
-                {"en": "your dreams", "original": "deine Träume", "inf": "", "pos": [3, 4]},
-                {"en": "get lost", "original": "verlor'n geh'n", "inf": "verlorengehen", "pos": [5, 6]},
-                {"en": "just because", "original": "nur weil", "inf": "", "pos": [7, 8]},
-                {"en": "they want it", "original": "die das woll'n", "inf": "wollen", "pos": [9, 10]}
-            ]
-        },
-        {
-            "enTranslation": "And live your life the way you want, not how you're supposed to",
-            "words": [
-                {"en": "And", "original": "Und", "inf": "", "pos": [1]},
-                {"en": "live", "original": "leb", "inf": "leben", "pos": [2]},
-                {"en": "your life", "original": "dein Leben", "inf": "", "pos": [3, 4]},
-                {"en": "the way you want", "original": "wie du's möchtest", "inf": "möchten", "pos": [5, 6]},
-                {"en": "not", "original": "nicht", "inf": "", "pos": [7]},
-                {"en": "how you're supposed to", "original": "wie du sollst", "inf": "sollen", "pos": [8, 9]}
-            ]
-        },
-        {
-            "enTranslation": "The clouds want to tell you that the sky is the limit",
-            "words": [
-                {"en": "The clouds", "original": "Die Wolken", "inf": "", "pos": [1, 2]},
-                {"en": "want", "original": "woll'n", "inf": "wollen", "pos": [3]},
-                {"en": "to tell you", "original": "dir erzähl'n", "inf": "erzählen", "pos": [4, 5]},
-                {"en": "that", "original": "dass", "inf": "", "pos": [6]},
-                {"en": "the sky", "original": "der Himmel", "inf": "", "pos": [7, 8]},
-                {"en": "is the limit", "original": "wär das Limit", "inf": "sein", "pos": [9, 10]}
-            ]
-        },
-        {
-            "enTranslation": "Only because they can't get as high as you want to go",
-            "words": [
-                {"en": "Only", "original": "Nur", "inf": "", "pos": [1]},
-                {"en": "because", "original": "weil", "inf": "", "pos": [2]},
-                {"en": "they", "original": "sie", "inf": "", "pos": [3]},
-                {"en": "can't get", "original": "nicht so hoch komm'n", "inf": "kommen", "pos": [4, 5]},
-                {"en": "as high as", "original": "so hoch", "inf": "", "pos": [6, 7]},
-                {"en": "you want to go", "original": "dort, wo du hinwillst", "inf": "wollen", "pos": [8, 9]}
-            ]
-        },
-        {
-            "enTranslation": "What you can achieve is only up to you",
-            "words": [
-                {"en": "What", "original": "Was", "inf": "", "pos": [1]},
-                {"en": "you", "original": "du", "inf": "", "pos": [2]},
-                {"en": "can achieve", "original": "erreichen kannst", "inf": "erreichen", "pos": [3, 4]},
-                {"en": "is", "original": "liegt", "inf": "liegen", "pos": [5]},
-                {"en": "only", "original": "nur", "inf": "", "pos": [6]},
-                {"en": "up to", "original": "an", "inf": "", "pos": [7]},
-                {"en": "you", "original": "dir", "inf": "", "pos": [8]}
-            ]
-        },
-        {
-            "enTranslation": "How far your feet will carry you, you just have to try",
-            "words": [
-                {"en": "How far", "original": "Wie weit", "inf": "", "pos": [1, 2]},
-                {"en": "your feet", "original": "dich deine Füße", "inf": "", "pos": [3, 4, 5]},
-                {"en": "will carry", "original": "tragen", "inf": "tragen", "pos": [6]},
-                {"en": "you", "original": "dich", "inf": "", "pos": [7]},
-                {"en": "just", "original": "nur", "inf": "", "pos": [8]},
-                {"en": "have to", "original": "musst", "inf": "müssen", "pos": [9]},
-                {"en": "try", "original": "probier'n", "inf": "probieren", "pos": [10]}
-            ]
-        },
-        {
-            "enTranslation": "Because sometimes you just have to do and hope for the best",
-            "words": [
-                {"en": "Because", "original": "Denn", "inf": "", "pos": [1]},
-                {"en": "sometimes", "original": "manchma'", "inf": "", "pos": [2]},
-                {"en": "you", "original": "man", "inf": "", "pos": [3]},
-                {"en": "just", "original": "einfach", "inf": "", "pos": [4]},
-                {"en": "have to do", "original": "machen", "inf": "machen", "pos": [5]},
-                {"en": "and", "original": "und", "inf": "", "pos": [6]},
-                {"en": "hope for the best", "original": "das Beste hoffen", "inf": "hoffen", "pos": [7, 8, 9]}
-            ]
-        },
-        {
-            "enTranslation": "Even if you feel like you're made of cement",
-            "words": [
-                {"en": "Even if", "original": "Auch wenn", "inf": "", "pos": [1, 2]},
-                {"en": "you", "original": "man", "inf": "", "pos": [3]},
-                {"en": "feel", "original": "sich fühlt", "inf": "fühlen", "pos": [4, 5]},
-                {"en": "like", "original": "als", "inf": "", "pos": [6]},
-                {"en": "you're made of cement", "original": "wär man aus Zement gegossen", "inf": "gegossen", "pos": [7, 8, 9]}
-            ]
-        },
-        {
-            "enTranslation": "I know overcoming always costs more than you have",
-            "words": [
-                {"en": "I", "original": "Weiß", "inf": "", "pos": [1]},
-                {"en": "overcoming", "original": "Überwindung", "inf": "", "pos": [2]},
-                {"en": "always", "original": "immer", "inf": "", "pos": [3]},
-                {"en": "costs", "original": "kostet", "inf": "kosten", "pos": [4]},
-                {"en": "more", "original": "mehr", "inf": "", "pos": [5]},
-                {"en": "than", "original": "als", "inf": "", "pos": [6]},
-                {"en": "you", "original": "man", "inf": "", "pos": [7]},
-                {"en": "have", "original": "besitzt", "inf": "besitzen", "pos": [8]}
-            ]
-        },
-        {
-            "enTranslation": "But I also know how unbreakable and strong you are",
-            "words": [
-                {"en": "But", "original": "Doch", "inf": "", "pos": [1]},
-                {"en": "I", "original": "ich", "inf": "", "pos": [2]},
-                {"en": "also know", "original": "weiß auch", "inf": "wissen", "pos": [3, 4]},
-                {"en": "how", "original": "wie", "inf": "", "pos": [5]},
-                {"en": "unbreakable", "original": "unzerstörbar", "inf": "", "pos": [6]},
-                {"en": "and", "original": "und", "inf": "", "pos": [7]},
-                {"en": "strong", "original": "stark", "inf": "", "pos": [8]},
-                {"en": "you are", "original": "du bist", "inf": "sein", "pos": [9, 10]}
-            ]
-        },
-        {
-            "enTranslation": "Maybe all you need to start now is a dose of courage",
-            "words": [
-                {"en": "Maybe", "original": "Vielleicht", "inf": "", "pos": [1]},
-                {"en": "all you need", "original": "brauchst du", "inf": "brauchen", "pos": [2, 3]},
-                {"en": "to start", "original": "um jetzt zu starten", "inf": "starten", "pos": [4, 5, 6]},
-                {"en": "is", "original": "nur", "inf": "", "pos": [7]},
-                {"en": "a dose of courage", "original": "'ne Ladung Mut", "inf": "", "pos": [8, 9]}
-            ]
-        },
-        {
-            "enTranslation": "You can do it, what are you waiting for?",
-            "words": [
-                {"en": "You", "original": "Du", "inf": "", "pos": [1]},
-                {"en": "can do it", "original": "kannst es schaffen", "inf": "schaffen", "pos": [2, 3, 4]},
-                {"en": "what are you waiting for", "original": "worauf wartest du?", "inf": "warten", "pos": [5, 6, 7]}
-            ]
+          "en": "the feeling",
+          "original": "das Gefühl",
+          "inf": "",
+          "pos": [9, 10]
         }
-    ]
+      ]
+    },
+    {
+      "enTranslation": "That no matter how long you walk, you won't overtake yourself",
+      "words": [
+        { "en": "That", "original": "Dass", "inf": "", "pos": [1] },
+        {
+          "en": "no matter how long",
+          "original": "ganz egal, wie lang",
+          "inf": "",
+          "pos": [2, 3, 4]
+        },
+        {
+          "en": "you walk",
+          "original": "du gehst",
+          "inf": "gehen",
+          "pos": [5, 6]
+        },
+        {
+          "en": "you won't",
+          "original": "du ... nicht",
+          "inf": "",
+          "pos": [7]
+        },
+        {
+          "en": "overtake",
+          "original": "überholst",
+          "inf": "überholen",
+          "pos": [8]
+        },
+        { "en": "yourself", "original": "dich", "inf": "", "pos": [9] }
+      ]
+    },
+    {
+      "enTranslation": "Don't listen to those voices doubting you",
+      "words": [
+        {
+          "en": "Don't listen",
+          "original": "Hör da nicht hin",
+          "inf": "hören",
+          "pos": [1, 2, 3]
+        },
+        {
+          "en": "to those voices",
+          "original": "die ganzen Stimm'n",
+          "inf": "",
+          "pos": [4, 5]
+        },
+        {
+          "en": "doubting you",
+          "original": "die an dir zweifel'n",
+          "inf": "zweifeln",
+          "pos": [6, 7, 8]
+        }
+      ]
+    },
+    {
+      "enTranslation": "They're just too tired to stay awake for their dreams",
+      "words": [
+        {
+          "en": "They're just",
+          "original": "Sind nur",
+          "inf": "sein",
+          "pos": [1, 2]
+        },
+        { "en": "too tired", "original": "zu müde", "inf": "", "pos": [3, 4] },
+        {
+          "en": "to stay awake",
+          "original": "um ... wachzubleiben",
+          "inf": "wachbleiben",
+          "pos": [5, 6]
+        },
+        {
+          "en": "for their dreams",
+          "original": "für ihre Träume",
+          "inf": "",
+          "pos": [7, 8]
+        }
+      ]
+    },
+    {
+      "enTranslation": "Don't let them tell you: 'You'll never achieve this'",
+      "words": [
+        {
+          "en": "Don't let",
+          "original": "Lass dir nicht",
+          "inf": "lassen",
+          "pos": [1, 2, 3]
+        },
+        { "en": "them", "original": "von ihn'n", "inf": "", "pos": [4, 5] },
+        { "en": "tell you", "original": "sagen", "inf": "sagen", "pos": [6] },
+        {
+          "en": "'You'll never achieve this'",
+          "original": "„Das hier kriegst du niemals hin“",
+          "inf": "",
+          "pos": [7, 8, 9]
+        }
+      ]
+    },
+    {
+      "enTranslation": "Not even in years will they be able to achieve what you do",
+      "words": [
+        { "en": "Not even", "original": "Nicht mal", "inf": "", "pos": [1, 2] },
+        { "en": "in years", "original": "in Jahr'n", "inf": "", "pos": [3, 4] },
+        {
+          "en": "will they be able to",
+          "original": "werden die schaffen könn'n",
+          "inf": "können",
+          "pos": [5, 6, 7]
+        },
+        {
+          "en": "achieve",
+          "original": "schaffen",
+          "inf": "schaffen",
+          "pos": [8]
+        },
+        {
+          "en": "what you do",
+          "original": "was dir gelingt",
+          "inf": "gelingen",
+          "pos": [9, 10]
+        }
+      ]
+    },
+    {
+      "enTranslation": "And if it doesn't work out, losing isn't bad",
+      "words": [
+        { "en": "And if", "original": "Und wenn", "inf": "", "pos": [1, 2] },
+        {
+          "en": "it doesn't work out",
+          "original": "es ma' nicht klappen sollte",
+          "inf": "klappen",
+          "pos": [3, 4, 5, 6]
+        },
+        {
+          "en": "losing",
+          "original": "verlier'n",
+          "inf": "verlieren",
+          "pos": [7]
+        },
+        {
+          "en": "isn't bad",
+          "original": "ist nicht schlimm",
+          "inf": "",
+          "pos": [8, 9]
+        }
+      ]
+    },
+    {
+      "enTranslation": "Because defeats are just parts of victories",
+      "words": [
+        { "en": "Because", "original": "Weil", "inf": "", "pos": [1] },
+        { "en": "defeats", "original": "Niederlagen", "inf": "", "pos": [2] },
+        { "en": "are just", "original": "nur", "inf": "", "pos": [3] },
+        {
+          "en": "parts of victories",
+          "original": "Bestandteile von Siegen",
+          "inf": "",
+          "pos": [4, 5, 6]
+        }
+      ]
+    },
+    {
+      "enTranslation": "I know how you feel because sometimes it seems to you",
+      "words": [
+        { "en": "I", "original": "Ich", "inf": "", "pos": [1] },
+        { "en": "know", "original": "weiß", "inf": "wissen", "pos": [2] },
+        { "en": "how", "original": "wie", "inf": "", "pos": [3] },
+        {
+          "en": "you feel",
+          "original": "du dich fühlst",
+          "inf": "fühlen",
+          "pos": [4, 5, 6]
+        },
+        { "en": "because", "original": "denn", "inf": "", "pos": [7] },
+        { "en": "sometimes", "original": "manchmal", "inf": "", "pos": [8] },
+        {
+          "en": "it seems",
+          "original": "kommt es dir so vor",
+          "inf": "vorkommen",
+          "pos": [9, 10, 11, 12]
+        }
+      ]
+    },
+    {
+      "enTranslation": "As if everyone in the world has conspired against you",
+      "words": [
+        { "en": "As if", "original": "Als", "inf": "", "pos": [1] },
+        { "en": "everyone", "original": "jeder", "inf": "", "pos": [2] },
+        {
+          "en": "in the world",
+          "original": "auf der Welt",
+          "inf": "",
+          "pos": [3, 4, 5]
+        },
+        {
+          "en": "has conspired",
+          "original": "hätte sich ... verschwor'n",
+          "inf": "verschwören",
+          "pos": [6, 7]
+        },
+        {
+          "en": "against you",
+          "original": "gegen dich",
+          "inf": "",
+          "pos": [8, 9]
+        }
+      ]
+    },
+    {
+      "enTranslation": "Sometimes you just have to blindly follow the stars ahead",
+      "words": [
+        { "en": "Sometimes", "original": "Manchma'", "inf": "", "pos": [1] },
+        { "en": "you", "original": "man", "inf": "", "pos": [2] },
+        { "en": "just", "original": "einfach", "inf": "", "pos": [3] },
+        { "en": "have to", "original": "muss", "inf": "müssen", "pos": [4] },
+        { "en": "blindly", "original": "blind", "inf": "", "pos": [5] },
+        {
+          "en": "follow",
+          "original": "nach vorn ... folgen",
+          "inf": "folgen",
+          "pos": [6, 7]
+        },
+        {
+          "en": "the stars",
+          "original": "den Stern'n",
+          "inf": "",
+          "pos": [8, 9]
+        }
+      ]
+    },
+    {
+      "enTranslation": "Don't run away from it, even if something goes wrong",
+      "words": [
+        { "en": "Don't", "original": "Nicht", "inf": "", "pos": [1] },
+        {
+          "en": "run away",
+          "original": "wegrenn'n",
+          "inf": "wegrennen",
+          "pos": [2]
+        },
+        { "en": "from it", "original": "davor", "inf": "", "pos": [3] },
+        { "en": "even if", "original": "auch wenn", "inf": "", "pos": [4, 5] },
+        { "en": "something", "original": "irgendwas", "inf": "", "pos": [6] },
+        {
+          "en": "goes wrong",
+          "original": "verkehrt läuft",
+          "inf": "laufen",
+          "pos": [7, 8]
+        }
+      ]
+    },
+    {
+      "enTranslation": "Take every step as if you were sure",
+      "words": [
+        { "en": "Take", "original": "Mach", "inf": "machen", "pos": [1] },
+        {
+          "en": "every step",
+          "original": "jeden Schritt",
+          "inf": "",
+          "pos": [2, 3]
+        },
+        {
+          "en": "as if",
+          "original": "als würdest",
+          "inf": "würden",
+          "pos": [4]
+        },
+        {
+          "en": "you were sure",
+          "original": "du dir sicher sein",
+          "inf": "sein",
+          "pos": [5, 6, 7]
+        }
+      ]
+    },
+    {
+      "enTranslation": "That everything will work out, as if you could never fall again",
+      "words": [
+        { "en": "That", "original": "Dass", "inf": "", "pos": [1] },
+        { "en": "everything", "original": "alles", "inf": "", "pos": [2] },
+        {
+          "en": "will work out",
+          "original": "klappen wird",
+          "inf": "klappen",
+          "pos": [3, 4]
+        },
+        {
+          "en": "as if",
+          "original": "als könntest",
+          "inf": "können",
+          "pos": [5]
+        },
+        {
+          "en": "you could",
+          "original": "du ... könntest",
+          "inf": "",
+          "pos": [6]
+        },
+        {
+          "en": "never fall again",
+          "original": "nie wieder fall'n",
+          "inf": "fallen",
+          "pos": [7, 8, 9]
+        }
+      ]
+    },
+    {
+      "enTranslation": "Don't let them wait, start making your dreams come true",
+      "words": [
+        {
+          "en": "Don't let",
+          "original": "Lass sie nicht",
+          "inf": "lassen",
+          "pos": [1, 2, 3]
+        },
+        { "en": "them", "original": "sie", "inf": "", "pos": [4] },
+        { "en": "wait", "original": "warten", "inf": "warten", "pos": [5] },
+        {
+          "en": "start",
+          "original": "fang an",
+          "inf": "anfangen",
+          "pos": [6, 7]
+        },
+        {
+          "en": "making your dreams come true",
+          "original": "deine Träume wahrzumachen",
+          "inf": "wahrmachen",
+          "pos": [8, 9, 10]
+        }
+      ]
+    },
+    {
+      "enTranslation": "I am sure you can achieve anything",
+      "words": [
+        { "en": "I", "original": "Ich", "inf": "", "pos": [1] },
+        {
+          "en": "am sure",
+          "original": "bin mir sicher",
+          "inf": "sein",
+          "pos": [2, 3]
+        },
+        { "en": "you", "original": "du", "inf": "", "pos": [4] },
+        { "en": "can", "original": "kannst", "inf": "können", "pos": [5] },
+        {
+          "en": "achieve anything",
+          "original": "alles schaffen",
+          "inf": "schaffen",
+          "pos": [6, 7]
+        }
+      ]
+    },
+    {
+      "enTranslation": "Sometimes things go wrong, and sometimes they go well",
+      "words": [
+        { "en": "Sometimes", "original": "Manchma'", "inf": "", "pos": [1] },
+        { "en": "things", "original": "es", "inf": "", "pos": [2] },
+        {
+          "en": "go wrong",
+          "original": "geht schief",
+          "inf": "schiefgehen",
+          "pos": [3, 4]
+        },
+        { "en": "and", "original": "und", "inf": "", "pos": [5] },
+        { "en": "sometimes", "original": "manchma'", "inf": "", "pos": [6] },
+        { "en": "they", "original": "es", "inf": "", "pos": [7] },
+        {
+          "en": "go well",
+          "original": "geht gut",
+          "inf": "gutgehen",
+          "pos": [8, 9]
+        }
+      ]
+    },
+    {
+      "enTranslation": "But whether it works, you’ll only see when you try",
+      "words": [
+        { "en": "But", "original": "Doch", "inf": "", "pos": [1] },
+        { "en": "whether", "original": "ob", "inf": "", "pos": [2] },
+        {
+          "en": "it works",
+          "original": "es klappt",
+          "inf": "klappen",
+          "pos": [3, 4]
+        },
+        {
+          "en": "you’ll only see",
+          "original": "wirst du erst seh'n",
+          "inf": "sehen",
+          "pos": [5, 6, 7]
+        },
+        { "en": "when", "original": "wenn", "inf": "", "pos": [8] },
+        {
+          "en": "you try",
+          "original": "du's versuchst",
+          "inf": "versuchen",
+          "pos": [9, 10]
+        }
+      ]
+    },
+    {
+      "enTranslation": "Every now and then, you have to do instead of talking",
+      "words": [
+        {
+          "en": "Every now and then",
+          "original": "Hin und wieder",
+          "inf": "",
+          "pos": [1, 2]
+        },
+        { "en": "you", "original": "du", "inf": "", "pos": [3] },
+        { "en": "have to", "original": "musst", "inf": "müssen", "pos": [4] },
+        { "en": "do", "original": "machen", "inf": "machen", "pos": [5] },
+        { "en": "instead of", "original": "statt", "inf": "", "pos": [6] },
+        { "en": "talking", "original": "reden", "inf": "reden", "pos": [7] }
+      ]
+    },
+    {
+      "enTranslation": "Just act because everything else is just theory and books",
+      "words": [
+        { "en": "Just", "original": "einfach", "inf": "", "pos": [1] },
+        { "en": "act", "original": "tun", "inf": "tun", "pos": [2] },
+        { "en": "because", "original": "Denn", "inf": "", "pos": [3] },
+        {
+          "en": "everything else",
+          "original": "alles andre",
+          "inf": "",
+          "pos": [4, 5]
+        },
+        {
+          "en": "is just",
+          "original": "wär nur",
+          "inf": "sein",
+          "pos": [6, 7]
+        },
+        { "en": "theory", "original": "Theorie", "inf": "", "pos": [8] },
+        { "en": "and", "original": "und", "inf": "", "pos": [9] },
+        { "en": "books", "original": "Buch", "inf": "", "pos": [10] }
+      ]
+    },
+    {
+      "enTranslation": "Don't look back, it doesn't matter how far others are",
+      "words": [
+        {
+          "en": "Don't",
+          "original": "Schau nicht",
+          "inf": "schauen",
+          "pos": [1, 2]
+        },
+        { "en": "look back", "original": "zurück", "inf": "", "pos": [3] },
+        {
+          "en": "it doesn't matter",
+          "original": "ist ganz egal",
+          "inf": "",
+          "pos": [4, 5, 6]
+        },
+        { "en": "how far", "original": "wie weit", "inf": "", "pos": [7, 8] },
+        { "en": "others", "original": "die andern", "inf": "", "pos": [9, 10] },
+        { "en": "are", "original": "sind", "inf": "sein", "pos": [11] }
+      ]
+    },
+    {
+      "enTranslation": "I don't want to hear you say: 'I can't do this'",
+      "words": [
+        { "en": "I", "original": "Ich", "inf": "", "pos": [1] },
+        {
+          "en": "don't want",
+          "original": "will nicht",
+          "inf": "wollen",
+          "pos": [2, 3]
+        },
+        { "en": "to hear", "original": "hör'n", "inf": "hören", "pos": [4] },
+        { "en": "you", "original": "von dir", "inf": "", "pos": [5, 6] },
+        { "en": "say", "original": "sagst", "inf": "sagen", "pos": [7] },
+        {
+          "en": "'I can't do this'",
+          "original": "„Ich kann das nicht“",
+          "inf": "",
+          "pos": [8, 9, 10]
+        }
+      ]
+    },
+    {
+      "enTranslation": "It's normal that some things don't work at first",
+      "words": [
+        { "en": "It's", "original": "Ist", "inf": "sein", "pos": [1] },
+        { "en": "normal", "original": "ganz normal", "inf": "", "pos": [2, 3] },
+        { "en": "that", "original": "dass", "inf": "", "pos": [4] },
+        {
+          "en": "some things",
+          "original": "manche Dinge",
+          "inf": "",
+          "pos": [5, 6]
+        },
+        {
+          "en": "don't work",
+          "original": "nicht klappen",
+          "inf": "klappen",
+          "pos": [7, 8]
+        },
+        {
+          "en": "at first",
+          "original": "auf Anhieb",
+          "inf": "",
+          "pos": [9, 10]
+        }
+      ]
+    },
+    {
+      "enTranslation": "And sometimes it takes a few more scratches to make them come true",
+      "words": [
+        { "en": "And", "original": "Und", "inf": "", "pos": [1] },
+        { "en": "sometimes", "original": "es", "inf": "", "pos": [2] },
+        {
+          "en": "takes",
+          "original": "paar Kratzer mehr erfordert",
+          "inf": "erfordern",
+          "pos": [3, 4, 5]
+        },
+        {
+          "en": "a few more scratches",
+          "original": "paar Kratzer mehr",
+          "inf": "",
+          "pos": [6, 7]
+        },
+        {
+          "en": "to make them come true",
+          "original": "um sie wahrzumachen",
+          "inf": "wahrmachen",
+          "pos": [8, 9, 10]
+        }
+      ]
+    },
+    {
+      "enTranslation": "Don't let your dreams get lost just because they want it",
+      "words": [
+        { "en": "Don't", "original": "Lass", "inf": "lassen", "pos": [1] },
+        {
+          "en": "let",
+          "original": "verlor'n geh'n",
+          "inf": "verlorengehen",
+          "pos": [2]
+        },
+        {
+          "en": "your dreams",
+          "original": "deine Träume",
+          "inf": "",
+          "pos": [3, 4]
+        },
+        {
+          "en": "get lost",
+          "original": "verlor'n geh'n",
+          "inf": "verlorengehen",
+          "pos": [5, 6]
+        },
+        {
+          "en": "just because",
+          "original": "nur weil",
+          "inf": "",
+          "pos": [7, 8]
+        },
+        {
+          "en": "they want it",
+          "original": "die das woll'n",
+          "inf": "wollen",
+          "pos": [9, 10]
+        }
+      ]
+    },
+    {
+      "enTranslation": "And live your life the way you want, not how you're supposed to",
+      "words": [
+        { "en": "And", "original": "Und", "inf": "", "pos": [1] },
+        { "en": "live", "original": "leb", "inf": "leben", "pos": [2] },
+        {
+          "en": "your life",
+          "original": "dein Leben",
+          "inf": "",
+          "pos": [3, 4]
+        },
+        {
+          "en": "the way you want",
+          "original": "wie du's möchtest",
+          "inf": "möchten",
+          "pos": [5, 6]
+        },
+        { "en": "not", "original": "nicht", "inf": "", "pos": [7] },
+        {
+          "en": "how you're supposed to",
+          "original": "wie du sollst",
+          "inf": "sollen",
+          "pos": [8, 9]
+        }
+      ]
+    },
+    {
+      "enTranslation": "The clouds want to tell you that the sky is the limit",
+      "words": [
+        {
+          "en": "The clouds",
+          "original": "Die Wolken",
+          "inf": "",
+          "pos": [1, 2]
+        },
+        { "en": "want", "original": "woll'n", "inf": "wollen", "pos": [3] },
+        {
+          "en": "to tell you",
+          "original": "dir erzähl'n",
+          "inf": "erzählen",
+          "pos": [4, 5]
+        },
+        { "en": "that", "original": "dass", "inf": "", "pos": [6] },
+        { "en": "the sky", "original": "der Himmel", "inf": "", "pos": [7, 8] },
+        {
+          "en": "is the limit",
+          "original": "wär das Limit",
+          "inf": "sein",
+          "pos": [9, 10]
+        }
+      ]
+    },
+    {
+      "enTranslation": "Only because they can't get as high as you want to go",
+      "words": [
+        { "en": "Only", "original": "Nur", "inf": "", "pos": [1] },
+        { "en": "because", "original": "weil", "inf": "", "pos": [2] },
+        { "en": "they", "original": "sie", "inf": "", "pos": [3] },
+        {
+          "en": "can't get",
+          "original": "nicht so hoch komm'n",
+          "inf": "kommen",
+          "pos": [4, 5]
+        },
+        { "en": "as high as", "original": "so hoch", "inf": "", "pos": [6, 7] },
+        {
+          "en": "you want to go",
+          "original": "dort, wo du hinwillst",
+          "inf": "wollen",
+          "pos": [8, 9]
+        }
+      ]
+    },
+    {
+      "enTranslation": "What you can achieve is only up to you",
+      "words": [
+        { "en": "What", "original": "Was", "inf": "", "pos": [1] },
+        { "en": "you", "original": "du", "inf": "", "pos": [2] },
+        {
+          "en": "can achieve",
+          "original": "erreichen kannst",
+          "inf": "erreichen",
+          "pos": [3, 4]
+        },
+        { "en": "is", "original": "liegt", "inf": "liegen", "pos": [5] },
+        { "en": "only", "original": "nur", "inf": "", "pos": [6] },
+        { "en": "up to", "original": "an", "inf": "", "pos": [7] },
+        { "en": "you", "original": "dir", "inf": "", "pos": [8] }
+      ]
+    },
+    {
+      "enTranslation": "How far your feet will carry you, you just have to try",
+      "words": [
+        { "en": "How far", "original": "Wie weit", "inf": "", "pos": [1, 2] },
+        {
+          "en": "your feet",
+          "original": "dich deine Füße",
+          "inf": "",
+          "pos": [3, 4, 5]
+        },
+        {
+          "en": "will carry",
+          "original": "tragen",
+          "inf": "tragen",
+          "pos": [6]
+        },
+        { "en": "you", "original": "dich", "inf": "", "pos": [7] },
+        { "en": "just", "original": "nur", "inf": "", "pos": [8] },
+        { "en": "have to", "original": "musst", "inf": "müssen", "pos": [9] },
+        {
+          "en": "try",
+          "original": "probier'n",
+          "inf": "probieren",
+          "pos": [10]
+        }
+      ]
+    },
+    {
+      "enTranslation": "Because sometimes you just have to do and hope for the best",
+      "words": [
+        { "en": "Because", "original": "Denn", "inf": "", "pos": [1] },
+        { "en": "sometimes", "original": "manchma'", "inf": "", "pos": [2] },
+        { "en": "you", "original": "man", "inf": "", "pos": [3] },
+        { "en": "just", "original": "einfach", "inf": "", "pos": [4] },
+        {
+          "en": "have to do",
+          "original": "machen",
+          "inf": "machen",
+          "pos": [5]
+        },
+        { "en": "and", "original": "und", "inf": "", "pos": [6] },
+        {
+          "en": "hope for the best",
+          "original": "das Beste hoffen",
+          "inf": "hoffen",
+          "pos": [7, 8, 9]
+        }
+      ]
+    },
+    {
+      "enTranslation": "Even if you feel like you're made of cement",
+      "words": [
+        { "en": "Even if", "original": "Auch wenn", "inf": "", "pos": [1, 2] },
+        { "en": "you", "original": "man", "inf": "", "pos": [3] },
+        {
+          "en": "feel",
+          "original": "sich fühlt",
+          "inf": "fühlen",
+          "pos": [4, 5]
+        },
+        { "en": "like", "original": "als", "inf": "", "pos": [6] },
+        {
+          "en": "you're made of cement",
+          "original": "wär man aus Zement gegossen",
+          "inf": "gegossen",
+          "pos": [7, 8, 9]
+        }
+      ]
+    },
+    {
+      "enTranslation": "I know overcoming always costs more than you have",
+      "words": [
+        { "en": "I", "original": "Weiß", "inf": "", "pos": [1] },
+        {
+          "en": "overcoming",
+          "original": "Überwindung",
+          "inf": "",
+          "pos": [2]
+        },
+        { "en": "always", "original": "immer", "inf": "", "pos": [3] },
+        { "en": "costs", "original": "kostet", "inf": "kosten", "pos": [4] },
+        { "en": "more", "original": "mehr", "inf": "", "pos": [5] },
+        { "en": "than", "original": "als", "inf": "", "pos": [6] },
+        { "en": "you", "original": "man", "inf": "", "pos": [7] },
+        { "en": "have", "original": "besitzt", "inf": "besitzen", "pos": [8] }
+      ]
+    },
+    {
+      "enTranslation": "But I also know how unbreakable and strong you are",
+      "words": [
+        { "en": "But", "original": "Doch", "inf": "", "pos": [1] },
+        { "en": "I", "original": "ich", "inf": "", "pos": [2] },
+        {
+          "en": "also know",
+          "original": "weiß auch",
+          "inf": "wissen",
+          "pos": [3, 4]
+        },
+        { "en": "how", "original": "wie", "inf": "", "pos": [5] },
+        {
+          "en": "unbreakable",
+          "original": "unzerstörbar",
+          "inf": "",
+          "pos": [6]
+        },
+        { "en": "and", "original": "und", "inf": "", "pos": [7] },
+        { "en": "strong", "original": "stark", "inf": "", "pos": [8] },
+        {
+          "en": "you are",
+          "original": "du bist",
+          "inf": "sein",
+          "pos": [9, 10]
+        }
+      ]
+    },
+    {
+      "enTranslation": "Maybe all you need to start now is a dose of courage",
+      "words": [
+        { "en": "Maybe", "original": "Vielleicht", "inf": "", "pos": [1] },
+        {
+          "en": "all you need",
+          "original": "brauchst du",
+          "inf": "brauchen",
+          "pos": [2, 3]
+        },
+        {
+          "en": "to start",
+          "original": "um jetzt zu starten",
+          "inf": "starten",
+          "pos": [4, 5, 6]
+        },
+        { "en": "is", "original": "nur", "inf": "", "pos": [7] },
+        {
+          "en": "a dose of courage",
+          "original": "'ne Ladung Mut",
+          "inf": "",
+          "pos": [8, 9]
+        }
+      ]
+    },
+    {
+      "enTranslation": "You can do it, what are you waiting for?",
+      "words": [
+        { "en": "You", "original": "Du", "inf": "", "pos": [1] },
+        {
+          "en": "can do it",
+          "original": "kannst es schaffen",
+          "inf": "schaffen",
+          "pos": [2, 3, 4]
+        },
+        {
+          "en": "what are you waiting for",
+          "original": "worauf wartest du?",
+          "inf": "warten",
+          "pos": [5, 6, 7]
+        }
+      ]
+    }
+  ]
 }

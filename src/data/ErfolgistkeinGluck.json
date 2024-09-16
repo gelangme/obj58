@@ -1,539 +1,1114 @@
 {
-    "Text": [
+  "text": [
+    {
+      "enTranslation": "Where they fail, you must attack",
+      "words": [
+        { "en": "Where", "original": "Da", "inf": "", "pos": [1] },
+        { "en": "they", "original": "sie", "inf": "", "pos": [2] },
         {
-            "enTranslation": "Where they fail, you must attack",
-            "words": [
-                {"en": "Where", "original": "Da", "inf": "", "pos": [1]},
-                {"en": "they", "original": "sie", "inf": "", "pos": [2]},
-                {"en": "fail", "original": "scheitern", "inf": "scheitern", "pos": [3]},
-                {"en": "you", "original": "du", "inf": "", "pos": [4]},
-                {"en": "must", "original": "musst", "inf": "müssen", "pos": [5]},
-                {"en": "attack", "original": "angreifen", "inf": "angreifen", "pos": [6]}
-            ]
+          "en": "fail",
+          "original": "scheitern",
+          "inf": "scheitern",
+          "pos": [3]
+        },
+        { "en": "you", "original": "du", "inf": "", "pos": [4] },
+        { "en": "must", "original": "musst", "inf": "müssen", "pos": [5] },
+        {
+          "en": "attack",
+          "original": "angreifen",
+          "inf": "angreifen",
+          "pos": [6]
+        }
+      ]
+    },
+    {
+      "enTranslation": "Shift into a higher gear",
+      "words": [
+        { "en": "Shift", "original": "In", "inf": "", "pos": [1] },
+        { "en": "into", "original": "einen", "inf": "", "pos": [2] },
+        { "en": "higher", "original": "höheren", "inf": "", "pos": [3] },
+        { "en": "gear", "original": "Gang", "inf": "", "pos": [4] },
+        { "en": "shift", "original": "schalten", "inf": "schalten", "pos": [5] }
+      ]
+    },
+    {
+      "enTranslation": "Even when the rest gives up, you must hold on",
+      "words": [
+        {
+          "en": "Even when",
+          "original": "Und auch wenn",
+          "inf": "",
+          "pos": [1, 2]
+        },
+        { "en": "the rest", "original": "der Rest", "inf": "", "pos": [3, 4] },
+        {
+          "en": "gives up",
+          "original": "aufgibt",
+          "inf": "aufgeben",
+          "pos": [5]
+        },
+        { "en": "you", "original": "du", "inf": "", "pos": [6] },
+        {
+          "en": "must hold on",
+          "original": "heißt es festbeißen",
+          "inf": "festbeißen",
+          "pos": [7, 8]
+        }
+      ]
+    },
+    {
+      "enTranslation": "Stay determined, tense up, and endure",
+      "words": [
+        {
+          "en": "Stay determined",
+          "original": "Dranbleiben",
+          "inf": "dranbleiben",
+          "pos": [1]
         },
         {
-            "enTranslation": "Shift into a higher gear",
-            "words": [
-                {"en": "Shift", "original": "In", "inf": "", "pos": [1]},
-                {"en": "into", "original": "einen", "inf": "", "pos": [2]},
-                {"en": "higher", "original": "höheren", "inf": "", "pos": [3]},
-                {"en": "gear", "original": "Gang", "inf": "", "pos": [4]},
-                {"en": "shift", "original": "schalten", "inf": "schalten", "pos": [5]}
-            ]
+          "en": "tense up",
+          "original": "anspann'n",
+          "inf": "anspannen",
+          "pos": [2]
+        },
+        { "en": "and", "original": "und", "inf": "", "pos": [3] },
+        {
+          "en": "endure",
+          "original": "standhalten",
+          "inf": "standhalten",
+          "pos": [4]
+        }
+      ]
+    },
+    {
+      "enTranslation": "Don't confuse luck with skill, but never doubt your skill",
+      "words": [
+        {
+          "en": "Don't confuse",
+          "original": "Glück nicht verwechseln",
+          "inf": "verwechseln",
+          "pos": [1, 2]
+        },
+        { "en": "luck", "original": "Glück", "inf": "", "pos": [3] },
+        {
+          "en": "with skill",
+          "original": "mit Könn'n",
+          "inf": "können",
+          "pos": [4, 5]
+        },
+        { "en": "but", "original": "aber", "inf": "", "pos": [6] },
+        { "en": "never", "original": "niemals", "inf": "", "pos": [7] },
+        {
+          "en": "doubt",
+          "original": "anzweifeln",
+          "inf": "anzweifeln",
+          "pos": [8]
         },
         {
-            "enTranslation": "Even when the rest gives up, you must hold on",
-            "words": [
-                {"en": "Even when", "original": "Und auch wenn", "inf": "", "pos": [1, 2]},
-                {"en": "the rest", "original": "der Rest", "inf": "", "pos": [3, 4]},
-                {"en": "gives up", "original": "aufgibt", "inf": "aufgeben", "pos": [5]},
-                {"en": "you", "original": "du", "inf": "", "pos": [6]},
-                {"en": "must hold on", "original": "heißt es festbeißen", "inf": "festbeißen", "pos": [7, 8]}
-            ]
+          "en": "your skill",
+          "original": "dein Könn'n",
+          "inf": "können",
+          "pos": [9, 10]
+        }
+      ]
+    },
+    {
+      "enTranslation": "Never enough, but also never too big of goals",
+      "words": [
+        {
+          "en": "Never enough",
+          "original": "Nie genug",
+          "inf": "",
+          "pos": [1, 2]
+        },
+        { "en": "but", "original": "aber", "inf": "", "pos": [3] },
+        { "en": "also", "original": "auch", "inf": "", "pos": [4] },
+        { "en": "never", "original": "nie", "inf": "", "pos": [5] },
+        { "en": "too big", "original": "zu große", "inf": "", "pos": [6, 7] },
+        { "en": "goals", "original": "Ziele", "inf": "", "pos": [8] }
+      ]
+    },
+    {
+      "enTranslation": "Make the air in your lungs gasoline for the machine",
+      "words": [
+        { "en": "Make", "original": "Mach", "inf": "machen", "pos": [1] },
+        { "en": "the air", "original": "die Luft", "inf": "", "pos": [2, 3] },
+        {
+          "en": "in your lungs",
+          "original": "in deiner Lunge",
+          "inf": "",
+          "pos": [4, 5]
+        },
+        { "en": "gasoline", "original": "zu Benzin", "inf": "", "pos": [6, 7] },
+        {
+          "en": "for the machine",
+          "original": "für die Maschine",
+          "inf": "",
+          "pos": [8, 9]
+        }
+      ]
+    },
+    {
+      "enTranslation": "Turn the envy of many into oil for the gears",
+      "words": [
+        { "en": "Turn", "original": "Mach", "inf": "machen", "pos": [1] },
+        { "en": "the envy", "original": "den Neid", "inf": "", "pos": [2, 3] },
+        {
+          "en": "of many",
+          "original": "von so vielen",
+          "inf": "",
+          "pos": [4, 5]
+        },
+        { "en": "into oil", "original": "zu Öl", "inf": "", "pos": [6, 7] },
+        {
+          "en": "for the gears",
+          "original": "für das Getriebe",
+          "inf": "",
+          "pos": [8, 9]
+        }
+      ]
+    },
+    {
+      "enTranslation": "New day, new luck, new rules, new players",
+      "words": [
+        { "en": "New day", "original": "Neuer Tag", "inf": "", "pos": [1, 2] },
+        {
+          "en": "new luck",
+          "original": "neues Glück",
+          "inf": "",
+          "pos": [3, 4]
         },
         {
-            "enTranslation": "Stay determined, tense up, and endure",
-            "words": [
-                {"en": "Stay determined", "original": "Dranbleiben", "inf": "dranbleiben", "pos": [1]},
-                {"en": "tense up", "original": "anspann'n", "inf": "anspannen", "pos": [2]},
-                {"en": "and", "original": "und", "inf": "", "pos": [3]},
-                {"en": "endure", "original": "standhalten", "inf": "standhalten", "pos": [4]}
-            ]
+          "en": "new rules",
+          "original": "neue Regeln",
+          "inf": "",
+          "pos": [5, 6]
         },
         {
-            "enTranslation": "Don't confuse luck with skill, but never doubt your skill",
-            "words": [
-                {"en": "Don't confuse", "original": "Glück nicht verwechseln", "inf": "verwechseln", "pos": [1, 2]},
-                {"en": "luck", "original": "Glück", "inf": "", "pos": [3]},
-                {"en": "with skill", "original": "mit Könn'n", "inf": "können", "pos": [4, 5]},
-                {"en": "but", "original": "aber", "inf": "", "pos": [6]},
-                {"en": "never", "original": "niemals", "inf": "", "pos": [7]},
-                {"en": "doubt", "original": "anzweifeln", "inf": "anzweifeln", "pos": [8]},
-                {"en": "your skill", "original": "dein Könn'n", "inf": "können", "pos": [9, 10]}
-            ]
+          "en": "new players",
+          "original": "neue Spieler",
+          "inf": "",
+          "pos": [7, 8]
+        }
+      ]
+    },
+    {
+      "enTranslation": "Flying high means falling deep",
+      "words": [
+        {
+          "en": "Flying high",
+          "original": "Hoch fliegen",
+          "inf": "fliegen",
+          "pos": [1, 2]
+        },
+        { "en": "means", "original": "heißt", "inf": "heißen", "pos": [3] },
+        { "en": "falling", "original": "fall'n", "inf": "fallen", "pos": [4] },
+        {
+          "en": "deep",
+          "original": "in die Tiefe",
+          "inf": "",
+          "pos": [5, 6, 7]
+        }
+      ]
+    },
+    {
+      "enTranslation": "But without great sacrifices, there are no great victories",
+      "words": [
+        { "en": "But", "original": "Doch", "inf": "", "pos": [1] },
+        { "en": "without", "original": "ohne", "inf": "", "pos": [2] },
+        { "en": "great", "original": "große", "inf": "", "pos": [3] },
+        { "en": "sacrifices", "original": "Opfer", "inf": "", "pos": [4] },
+        {
+          "en": "there are",
+          "original": "gibt es",
+          "inf": "geben",
+          "pos": [5, 6]
+        },
+        { "en": "no", "original": "keine", "inf": "", "pos": [7] },
+        { "en": "great", "original": "große", "inf": "", "pos": [8] },
+        { "en": "victories", "original": "Siege", "inf": "", "pos": [9] }
+      ]
+    },
+    {
+      "enTranslation": "We don't hear 'No', 'That won't work', 'The road is too far'",
+      "words": [
+        { "en": "We", "original": "Wir", "inf": "", "pos": [1] },
+        {
+          "en": "don't hear",
+          "original": "hör'n kein",
+          "inf": "hören",
+          "pos": [2, 3]
+        },
+        { "en": "'No'", "original": "„Nein“", "inf": "", "pos": [4] },
+        {
+          "en": "'That won't work'",
+          "original": "„Das geht nicht“",
+          "inf": "",
+          "pos": [5, 6]
         },
         {
-            "enTranslation": "Never enough, but also never too big of goals",
-            "words": [
-                {"en": "Never enough", "original": "Nie genug", "inf": "", "pos": [1, 2]},
-                {"en": "but", "original": "aber", "inf": "", "pos": [3]},
-                {"en": "also", "original": "auch", "inf": "", "pos": [4]},
-                {"en": "never", "original": "nie", "inf": "", "pos": [5]},
-                {"en": "too big", "original": "zu große", "inf": "", "pos": [6, 7]},
-                {"en": "goals", "original": "Ziele", "inf": "", "pos": [8]}
-            ]
+          "en": "'The road is too far'",
+          "original": "„Der Weg ist zu weit“",
+          "inf": "",
+          "pos": [7, 8, 9]
+        }
+      ]
+    },
+    {
+      "enTranslation": "Because only with blood, sweat, and tears do you pay for infinity",
+      "words": [
+        { "en": "Because", "original": "Denn", "inf": "", "pos": [1] },
+        { "en": "only", "original": "nur", "inf": "", "pos": [2] },
+        {
+          "en": "with blood",
+          "original": "mit Blut",
+          "inf": "",
+          "pos": [3, 4]
+        },
+        { "en": "sweat", "original": "Schweiß", "inf": "", "pos": [5] },
+        { "en": "and", "original": "und", "inf": "", "pos": [6] },
+        { "en": "tears", "original": "Trän'n", "inf": "", "pos": [7] },
+        {
+          "en": "do you pay",
+          "original": "bezahlt man",
+          "inf": "bezahlen",
+          "pos": [8, 9]
         },
         {
-            "enTranslation": "Make the air in your lungs gasoline for the machine",
-            "words": [
-                {"en": "Make", "original": "Mach", "inf": "machen", "pos": [1]},
-                {"en": "the air", "original": "die Luft", "inf": "", "pos": [2, 3]},
-                {"en": "in your lungs", "original": "in deiner Lunge", "inf": "", "pos": [4, 5]},
-                {"en": "gasoline", "original": "zu Benzin", "inf": "", "pos": [6, 7]},
-                {"en": "for the machine", "original": "für die Maschine", "inf": "", "pos": [8, 9]}
-            ]
+          "en": "for infinity",
+          "original": "die Unendlichkeit",
+          "inf": "",
+          "pos": [10, 11]
+        }
+      ]
+    },
+    {
+      "enTranslation": "And I don't know any other way",
+      "words": [
+        { "en": "And", "original": "Und", "inf": "", "pos": [1] },
+        { "en": "I", "original": "ich", "inf": "", "pos": [2] },
+        {
+          "en": "don't know",
+          "original": "kenn' kein'n",
+          "inf": "kennen",
+          "pos": [3, 4]
         },
         {
-            "enTranslation": "Turn the envy of many into oil for the gears",
-            "words": [
-                {"en": "Turn", "original": "Mach", "inf": "machen", "pos": [1]},
-                {"en": "the envy", "original": "den Neid", "inf": "", "pos": [2, 3]},
-                {"en": "of many", "original": "von so vielen", "inf": "", "pos": [4, 5]},
-                {"en": "into oil", "original": "zu Öl", "inf": "", "pos": [6, 7]},
-                {"en": "for the gears", "original": "für das Getriebe", "inf": "", "pos": [8, 9]}
-            ]
+          "en": "any other way",
+          "original": "einen anderen Weg",
+          "inf": "",
+          "pos": [5, 6, 7]
+        }
+      ]
+    },
+    {
+      "enTranslation": "And even if there were, you only appreciate the value when you pay the real price",
+      "words": [
+        { "en": "And", "original": "Und", "inf": "", "pos": [1] },
+        {
+          "en": "even if",
+          "original": "selbst wenn",
+          "inf": "",
+          "pos": [2, 3]
         },
         {
-            "enTranslation": "New day, new luck, new rules, new players",
-            "words": [
-                {"en": "New day", "original": "Neuer Tag", "inf": "", "pos": [1, 2]},
-                {"en": "new luck", "original": "neues Glück", "inf": "", "pos": [3, 4]},
-                {"en": "new rules", "original": "neue Regeln", "inf": "", "pos": [5, 6]},
-                {"en": "new players", "original": "neue Spieler", "inf": "", "pos": [7, 8]}
-            ]
+          "en": "there were",
+          "original": "kenn' ich kein'n",
+          "inf": "kennen",
+          "pos": [4, 5]
+        },
+        { "en": "you", "original": "man", "inf": "", "pos": [6] },
+        { "en": "only", "original": "erst", "inf": "", "pos": [7] },
+        {
+          "en": "appreciate",
+          "original": "schätzt",
+          "inf": "schätzen",
+          "pos": [8]
         },
         {
-            "enTranslation": "Flying high means falling deep",
-            "words": [
-                {"en": "Flying high", "original": "Hoch fliegen", "inf": "fliegen", "pos": [1, 2]},
-                {"en": "means", "original": "heißt", "inf": "heißen", "pos": [3]},
-                {"en": "falling", "original": "fall'n", "inf": "fallen", "pos": [4]},
-                {"en": "deep", "original": "in die Tiefe", "inf": "", "pos": [5, 6, 7]}
-            ]
+          "en": "the value",
+          "original": "den Wert",
+          "inf": "",
+          "pos": [9, 10]
+        },
+        { "en": "when", "original": "wenn", "inf": "", "pos": [11] },
+        { "en": "you pay", "original": "zahlt", "inf": "zahlen", "pos": [12] },
+        {
+          "en": "the real price",
+          "original": "den echten Preis",
+          "inf": "",
+          "pos": [13, 14]
+        }
+      ]
+    },
+    {
+      "enTranslation": "You say you can't, then you don't want to, it's simple",
+      "words": [
+        {
+          "en": "You say",
+          "original": "Du sagst",
+          "inf": "sagen",
+          "pos": [1, 2]
         },
         {
-            "enTranslation": "But without great sacrifices, there are no great victories",
-            "words": [
-                {"en": "But", "original": "Doch", "inf": "", "pos": [1]},
-                {"en": "without", "original": "ohne", "inf": "", "pos": [2]},
-                {"en": "great", "original": "große", "inf": "", "pos": [3]},
-                {"en": "sacrifices", "original": "Opfer", "inf": "", "pos": [4]},
-                {"en": "there are", "original": "gibt es", "inf": "geben", "pos": [5, 6]},
-                {"en": "no", "original": "keine", "inf": "", "pos": [7]},
-                {"en": "great", "original": "große", "inf": "", "pos": [8]},
-                {"en": "victories", "original": "Siege", "inf": "", "pos": [9]}
-            ]
+          "en": "you can't",
+          "original": "du kannst nicht",
+          "inf": "können",
+          "pos": [3, 4, 5]
+        },
+        { "en": "then", "original": "dann", "inf": "", "pos": [6] },
+        {
+          "en": "you don't want to",
+          "original": "willst du nicht",
+          "inf": "wollen",
+          "pos": [7, 8, 9]
         },
         {
-            "enTranslation": "We don't hear 'No', 'That won't work', 'The road is too far'",
-            "words": [
-                {"en": "We", "original": "Wir", "inf": "", "pos": [1]},
-                {"en": "don't hear", "original": "hör'n kein", "inf": "hören", "pos": [2, 3]},
-                {"en": "'No'", "original": "„Nein“", "inf": "", "pos": [4]},
-                {"en": "'That won't work'", "original": "„Das geht nicht“", "inf": "", "pos": [5, 6]},
-                {"en": "'The road is too far'", "original": "„Der Weg ist zu weit“", "inf": "", "pos": [7, 8, 9]}
-            ]
+          "en": "it's simple",
+          "original": "ganz einfach",
+          "inf": "",
+          "pos": [10, 11]
+        }
+      ]
+    },
+    {
+      "enTranslation": "Talent is just practice, and practice makes perfect",
+      "words": [
+        { "en": "Talent", "original": "Talent", "inf": "", "pos": [1] },
+        {
+          "en": "is just",
+          "original": "ist nur",
+          "inf": "sein",
+          "pos": [2, 3]
+        },
+        { "en": "practice", "original": "Übung", "inf": "", "pos": [4] },
+        { "en": "and", "original": "und", "inf": "", "pos": [5] },
+        { "en": "practice", "original": "Übung", "inf": "", "pos": [6] },
+        {
+          "en": "makes perfect",
+          "original": "macht den Meister",
+          "inf": "machen",
+          "pos": [7, 8, 9]
+        }
+      ]
+    },
+    {
+      "enTranslation": "Success is not luck",
+      "words": [
+        { "en": "Success", "original": "Erfolg", "inf": "", "pos": [1] },
+        { "en": "is", "original": "ist", "inf": "sein", "pos": [2] },
+        { "en": "not", "original": "kein", "inf": "", "pos": [3] },
+        { "en": "luck", "original": "Glück", "inf": "", "pos": [4] }
+      ]
+    },
+    {
+      "enTranslation": "But only the result of blood, sweat, and tears",
+      "words": [
+        { "en": "But", "original": "Sondern", "inf": "", "pos": [1] },
+        { "en": "only", "original": "nur", "inf": "", "pos": [2] },
+        {
+          "en": "the result",
+          "original": "das Ergebnis",
+          "inf": "",
+          "pos": [3, 4]
+        },
+        { "en": "of blood", "original": "von Blut", "inf": "", "pos": [5, 6] },
+        { "en": "sweat", "original": "Schweiß", "inf": "", "pos": [7] },
+        { "en": "and", "original": "und", "inf": "", "pos": [8] },
+        { "en": "tears", "original": "Tränen", "inf": "", "pos": [9] }
+      ]
+    },
+    {
+      "enTranslation": "Life repays everything in time",
+      "words": [
+        { "en": "Life", "original": "Das Leben", "inf": "", "pos": [1, 2] },
+        {
+          "en": "repays",
+          "original": "zahlt ... zurück",
+          "inf": "zurückzahlen",
+          "pos": [3, 4]
+        },
+        { "en": "everything", "original": "alles", "inf": "", "pos": [5] },
+        { "en": "in time", "original": "mal", "inf": "", "pos": [6] }
+      ]
+    },
+    {
+      "enTranslation": "It just depends on what you are – shadow or light?",
+      "words": [
+        { "en": "It", "original": "Es", "inf": "", "pos": [1] },
+        { "en": "just", "original": "nur", "inf": "", "pos": [2] },
+        {
+          "en": "depends on",
+          "original": "kommt darauf an",
+          "inf": "ankommen",
+          "pos": [3, 4, 5]
+        },
+        { "en": "what", "original": "was", "inf": "", "pos": [6] },
+        {
+          "en": "you are",
+          "original": "du bist",
+          "inf": "sein",
+          "pos": [7, 8]
+        },
+        { "en": "shadow", "original": "Schatten", "inf": "", "pos": [9] },
+        { "en": "or", "original": "oder", "inf": "", "pos": [10] },
+        { "en": "light", "original": "Licht", "inf": "", "pos": [11] }
+      ]
+    },
+    {
+      "enTranslation": "Success is not luck",
+      "words": [
+        { "en": "Success", "original": "Erfolg", "inf": "", "pos": [1] },
+        { "en": "is", "original": "ist", "inf": "sein", "pos": [2] },
+        { "en": "not", "original": "kein", "inf": "", "pos": [3] },
+        { "en": "luck", "original": "Glück", "inf": "", "pos": [4] }
+      ]
+    },
+    {
+      "enTranslation": "But only the result of blood, sweat, and tears",
+      "words": [
+        { "en": "But", "original": "Sondern", "inf": "", "pos": [1] },
+        { "en": "only", "original": "nur", "inf": "", "pos": [2] },
+        {
+          "en": "the result",
+          "original": "das Ergebnis",
+          "inf": "",
+          "pos": [3, 4]
+        },
+        { "en": "of blood", "original": "von Blut", "inf": "", "pos": [5, 6] },
+        { "en": "sweat", "original": "Schweiß", "inf": "", "pos": [7] },
+        { "en": "and", "original": "und", "inf": "", "pos": [8] },
+        { "en": "tears", "original": "Tränen", "inf": "", "pos": [9] }
+      ]
+    },
+    {
+      "enTranslation": "Life repays everything in time",
+      "words": [
+        { "en": "Life", "original": "Das Leben", "inf": "", "pos": [1, 2] },
+        {
+          "en": "repays",
+          "original": "zahlt ... zurück",
+          "inf": "zurückzahlen",
+          "pos": [3, 4]
+        },
+        { "en": "everything", "original": "alles", "inf": "", "pos": [5] },
+        { "en": "in time", "original": "mal", "inf": "", "pos": [6] }
+      ]
+    },
+    {
+      "enTranslation": "It just depends on what you are – shadow or light?",
+      "words": [
+        { "en": "It", "original": "Es", "inf": "", "pos": [1] },
+        { "en": "just", "original": "nur", "inf": "", "pos": [2] },
+        {
+          "en": "depends on",
+          "original": "kommt darauf an",
+          "inf": "ankommen",
+          "pos": [3, 4, 5]
+        },
+        { "en": "what", "original": "was", "inf": "", "pos": [6] },
+        {
+          "en": "you are",
+          "original": "du bist",
+          "inf": "sein",
+          "pos": [7, 8]
+        },
+        { "en": "shadow", "original": "Schatten", "inf": "", "pos": [9] },
+        { "en": "or", "original": "oder", "inf": "", "pos": [10] },
+        { "en": "light", "original": "Licht", "inf": "", "pos": [11] }
+      ]
+    },
+    {
+      "enTranslation": "New attempt, new luck",
+      "words": [
+        { "en": "New", "original": "Neuer", "inf": "", "pos": [1] },
+        { "en": "attempt", "original": "Versuch", "inf": "", "pos": [2] },
+        { "en": "new", "original": "neues", "inf": "", "pos": [3] },
+        { "en": "luck", "original": "Glück", "inf": "", "pos": [4] }
+      ]
+    },
+    {
+      "enTranslation": "It's too late for nothing",
+      "words": [
+        { "en": "It's", "original": "Es", "inf": "", "pos": [1] },
+        { "en": "too late", "original": "zu spät", "inf": "", "pos": [2, 3] },
+        { "en": "for", "original": "für", "inf": "", "pos": [4] },
+        { "en": "nothing", "original": "noch nichts", "inf": "", "pos": [5, 6] }
+      ]
+    },
+    {
+      "enTranslation": "Because you only harvest as much as you give",
+      "words": [
+        { "en": "Because", "original": "Denn", "inf": "", "pos": [1] },
+        {
+          "en": "you only harvest",
+          "original": "man erntet nur",
+          "inf": "ernten",
+          "pos": [2, 3, 4]
         },
         {
-            "enTranslation": "Because only with blood, sweat, and tears do you pay for infinity",
-            "words": [
-                {"en": "Because", "original": "Denn", "inf": "", "pos": [1]},
-                {"en": "only", "original": "nur", "inf": "", "pos": [2]},
-                {"en": "with blood", "original": "mit Blut", "inf": "", "pos": [3, 4]},
-                {"en": "sweat", "original": "Schweiß", "inf": "", "pos": [5]},
-                {"en": "and", "original": "und", "inf": "", "pos": [6]},
-                {"en": "tears", "original": "Trän'n", "inf": "", "pos": [7]},
-                {"en": "do you pay", "original": "bezahlt man", "inf": "bezahlen", "pos": [8, 9]},
-                {"en": "for infinity", "original": "die Unendlichkeit", "inf": "", "pos": [10, 11]}
-            ]
+          "en": "as much as",
+          "original": "so viel wie",
+          "inf": "",
+          "pos": [5, 6, 7]
         },
         {
-            "enTranslation": "And I don't know any other way",
-            "words": [
-                {"en": "And", "original": "Und", "inf": "", "pos": [1]},
-                {"en": "I", "original": "ich", "inf": "", "pos": [2]},
-                {"en": "don't know", "original": "kenn' kein'n", "inf": "kennen", "pos": [3, 4]},
-                {"en": "any other way", "original": "einen anderen Weg", "inf": "", "pos": [5, 6, 7]}
-            ]
+          "en": "you give",
+          "original": "man gibt",
+          "inf": "geben",
+          "pos": [8, 9]
+        }
+      ]
+    },
+    {
+      "enTranslation": "And if your flame goes out, you were only a small light",
+      "words": [
+        { "en": "And if", "original": "Und wenn", "inf": "", "pos": [1, 2] },
+        {
+          "en": "your flame",
+          "original": "deine Flamme",
+          "inf": "",
+          "pos": [3, 4]
         },
         {
-            "enTranslation": "And even if there were, you only appreciate the value when you pay the real price",
-            "words": [
-                {"en": "And", "original": "Und", "inf": "", "pos": [1]},
-                {"en": "even if", "original": "selbst wenn", "inf": "", "pos": [2, 3]},
-                {"en": "there were", "original": "kenn' ich kein'n", "inf": "kennen", "pos": [4, 5]},
-                {"en": "you", "original": "man", "inf": "", "pos": [6]},
-                {"en": "only", "original": "erst", "inf": "", "pos": [7]},
-                {"en": "appreciate", "original": "schätzt", "inf": "schätzen", "pos": [8]},
-                {"en": "the value", "original": "den Wert", "inf": "", "pos": [9, 10]},
-                {"en": "when", "original": "wenn", "inf": "", "pos": [11]},
-                {"en": "you pay", "original": "zahlt", "inf": "zahlen", "pos": [12]},
-                {"en": "the real price", "original": "den echten Preis", "inf": "", "pos": [13, 14]}
-            ]
+          "en": "goes out",
+          "original": "erlischt",
+          "inf": "erlöschen",
+          "pos": [5]
         },
         {
-            "enTranslation": "You say you can't, then you don't want to, it's simple",
-            "words": [
-                {"en": "You say", "original": "Du sagst", "inf": "sagen", "pos": [1, 2]},
-                {"en": "you can't", "original": "du kannst nicht", "inf": "können", "pos": [3, 4, 5]},
-                {"en": "then", "original": "dann", "inf": "", "pos": [6]},
-                {"en": "you don't want to", "original": "willst du nicht", "inf": "wollen", "pos": [7, 8, 9]},
-                {"en": "it's simple", "original": "ganz einfach", "inf": "", "pos": [10, 11]}
-            ]
+          "en": "you were",
+          "original": "warst du",
+          "inf": "sein",
+          "pos": [6, 7]
+        },
+        { "en": "only", "original": "nur", "inf": "", "pos": [8] },
+        {
+          "en": "a small light",
+          "original": "ein kleines Licht",
+          "inf": "",
+          "pos": [9, 10, 11]
+        }
+      ]
+    },
+    {
+      "enTranslation": "Or a fire tall like houses, burning even in strong wind",
+      "words": [
+        { "en": "Or", "original": "Oder", "inf": "", "pos": [1] },
+        { "en": "a fire", "original": "ein Feuer", "inf": "", "pos": [2, 3] },
+        {
+          "en": "tall like houses",
+          "original": "hoch wie Häuser",
+          "inf": "",
+          "pos": [4, 5, 6]
         },
         {
-            "enTranslation": "Talent is just practice, and practice makes perfect",
-            "words": [
-                {"en": "Talent", "original": "Talent", "inf": "", "pos": [1]},
-                {"en": "is just", "original": "ist nur", "inf": "sein", "pos": [2, 3]},
-                {"en": "practice", "original": "Übung", "inf": "", "pos": [4]},
-                {"en": "and", "original": "und", "inf": "", "pos": [5]},
-                {"en": "practice", "original": "Übung", "inf": "", "pos": [6]},
-                {"en": "makes perfect", "original": "macht den Meister", "inf": "machen", "pos": [7, 8, 9]}
-            ]
+          "en": "burning",
+          "original": "das brennt",
+          "inf": "brennen",
+          "pos": [7, 8]
+        },
+        { "en": "even", "original": "auch", "inf": "", "pos": [9] },
+        {
+          "en": "in strong wind",
+          "original": "bei starkem Wind",
+          "inf": "",
+          "pos": [10, 11, 12]
+        }
+      ]
+    },
+    {
+      "enTranslation": "You have to want it like your lungs want air to breathe",
+      "words": [
+        { "en": "You", "original": "Du", "inf": "", "pos": [1] },
+        { "en": "have to", "original": "musst", "inf": "müssen", "pos": [2] },
+        {
+          "en": "want it",
+          "original": "es woll'n",
+          "inf": "wollen",
+          "pos": [3, 4]
+        },
+        { "en": "like", "original": "wie", "inf": "", "pos": [5] },
+        {
+          "en": "your lungs",
+          "original": "deine Lunge",
+          "inf": "",
+          "pos": [6, 7]
+        },
+        { "en": "want", "original": "will", "inf": "wollen", "pos": [8] },
+        { "en": "air", "original": "die Luft", "inf": "", "pos": [9, 10] },
+        {
+          "en": "to breathe",
+          "original": "zum Atmen",
+          "inf": "",
+          "pos": [11, 12]
+        }
+      ]
+    },
+    {
+      "enTranslation": "Because wings only grow when you have the courage and jump",
+      "words": [
+        { "en": "Because", "original": "Denn", "inf": "", "pos": [1] },
+        { "en": "wings", "original": "Flügel", "inf": "", "pos": [2] },
+        {
+          "en": "only grow",
+          "original": "wachsen einem nur",
+          "inf": "wachsen",
+          "pos": [3, 4, 5]
+        },
+        { "en": "when", "original": "wenn", "inf": "", "pos": [6] },
+        {
+          "en": "you have",
+          "original": "man den Mut hat",
+          "inf": "haben",
+          "pos": [7, 8, 9]
         },
         {
-            "enTranslation": "Success is not luck",
-            "words": [
-                {"en": "Success", "original": "Erfolg", "inf": "", "pos": [1]},
-                {"en": "is", "original": "ist", "inf": "sein", "pos": [2]},
-                {"en": "not", "original": "kein", "inf": "", "pos": [3]},
-                {"en": "luck", "original": "Glück", "inf": "", "pos": [4]}
-            ]
+          "en": "the courage",
+          "original": "den Mut",
+          "inf": "",
+          "pos": [10, 11]
+        },
+        { "en": "and", "original": "und", "inf": "", "pos": [12] },
+        { "en": "jump", "original": "springt", "inf": "springen", "pos": [13] }
+      ]
+    },
+    {
+      "enTranslation": "When I fall, I lie down, but I get up harder and fly",
+      "words": [
+        { "en": "When", "original": "Wenn", "inf": "", "pos": [1] },
+        { "en": "I", "original": "ich", "inf": "", "pos": [2] },
+        { "en": "fall", "original": "stürze", "inf": "stürzen", "pos": [3] },
+        { "en": "I", "original": "bleib'", "inf": "bleiben", "pos": [4] },
+        { "en": "lie down", "original": "liegen", "inf": "liegen", "pos": [5] },
+        { "en": "but", "original": "aber", "inf": "", "pos": [6] },
+        {
+          "en": "I get up",
+          "original": "steh' ich ... auf",
+          "inf": "aufstehen",
+          "pos": [7, 8]
+        },
+        { "en": "harder", "original": "härter", "inf": "", "pos": [9] },
+        { "en": "and", "original": "und", "inf": "", "pos": [10] },
+        { "en": "fly", "original": "fliege", "inf": "fliegen", "pos": [11] }
+      ]
+    },
+    {
+      "enTranslation": "Only those who fear falling must crawl their whole life",
+      "words": [
+        { "en": "Only", "original": "Nur", "inf": "", "pos": [1] },
+        { "en": "those who", "original": "wer", "inf": "", "pos": [2] },
+        {
+          "en": "fear",
+          "original": "Angst hat",
+          "inf": "haben",
+          "pos": [3, 4]
         },
         {
-            "enTranslation": "But only the result of blood, sweat, and tears",
-            "words": [
-                {"en": "But", "original": "Sondern", "inf": "", "pos": [1]},
-                {"en": "only", "original": "nur", "inf": "", "pos": [2]},
-                {"en": "the result", "original": "das Ergebnis", "inf": "", "pos": [3, 4]},
-                {"en": "of blood", "original": "von Blut", "inf": "", "pos": [5, 6]},
-                {"en": "sweat", "original": "Schweiß", "inf": "", "pos": [7]},
-                {"en": "and", "original": "und", "inf": "", "pos": [8]},
-                {"en": "tears", "original": "Tränen", "inf": "", "pos": [9]}
-            ]
+          "en": "falling",
+          "original": "vor dem Fall",
+          "inf": "",
+          "pos": [5, 6]
+        },
+        { "en": "must", "original": "muss", "inf": "müssen", "pos": [7] },
+        {
+          "en": "crawl",
+          "original": "kriechen",
+          "inf": "kriechen",
+          "pos": [8]
         },
         {
-            "enTranslation": "Life repays everything in time",
-            "words": [
-                {"en": "Life", "original": "Das Leben", "inf": "", "pos": [1, 2]},
-                {"en": "repays", "original": "zahlt ... zurück", "inf": "zurückzahlen", "pos": [3, 4]},
-                {"en": "everything", "original": "alles", "inf": "", "pos": [5]},
-                {"en": "in time", "original": "mal", "inf": "", "pos": [6]}
-            ]
+          "en": "their whole life",
+          "original": "ein ganzes Leben",
+          "inf": "",
+          "pos": [9, 10, 11]
+        }
+      ]
+    },
+    {
+      "enTranslation": "Never go on your knees, always keep your eyes towards the sun",
+      "words": [
+        { "en": "Never", "original": "Geh nie", "inf": "gehen", "pos": [1, 2] },
+        {
+          "en": "go on your knees",
+          "original": "auf die Knie",
+          "inf": "",
+          "pos": [3, 4]
+        },
+        { "en": "always", "original": "immer", "inf": "", "pos": [5] },
+        {
+          "en": "keep your eyes",
+          "original": "der Blick",
+          "inf": "",
+          "pos": [6]
         },
         {
-            "enTranslation": "It just depends on what you are – shadow or light?",
-            "words": [
-                {"en": "It", "original": "Es", "inf": "", "pos": [1]},
-                {"en": "just", "original": "nur", "inf": "", "pos": [2]},
-                {"en": "depends on", "original": "kommt darauf an", "inf": "ankommen", "pos": [3, 4, 5]},
-                {"en": "what", "original": "was", "inf": "", "pos": [6]},
-                {"en": "you are", "original": "du bist", "inf": "sein", "pos": [7, 8]},
-                {"en": "shadow", "original": "Schatten", "inf": "", "pos": [9]},
-                {"en": "or", "original": "oder", "inf": "", "pos": [10]},
-                {"en": "light", "original": "Licht", "inf": "", "pos": [11]}
-            ]
+          "en": "towards the sun",
+          "original": "Richtung Sonne",
+          "inf": "",
+          "pos": [7, 8]
+        }
+      ]
+    },
+    {
+      "enTranslation": "Save the sight for when it storms longer",
+      "words": [
+        {
+          "en": "Save",
+          "original": "Den Anblick speichern",
+          "inf": "speichern",
+          "pos": [1, 2]
         },
         {
-            "enTranslation": "Success is not luck",
-            "words": [
-                {"en": "Success", "original": "Erfolg", "inf": "", "pos": [1]},
-                {"en": "is", "original": "ist", "inf": "sein", "pos": [2]},
-                {"en": "not", "original": "kein", "inf": "", "pos": [3]},
-                {"en": "luck", "original": "Glück", "inf": "", "pos": [4]}
-            ]
+          "en": "the sight",
+          "original": "den Anblick",
+          "inf": "",
+          "pos": [3, 4]
         },
         {
-            "enTranslation": "But only the result of blood, sweat, and tears",
-            "words": [
-                {"en": "But", "original": "Sondern", "inf": "", "pos": [1]},
-                {"en": "only", "original": "nur", "inf": "", "pos": [2]},
-                {"en": "the result", "original": "das Ergebnis", "inf": "", "pos": [3, 4]},
-                {"en": "of blood", "original": "von Blut", "inf": "", "pos": [5, 6]},
-                {"en": "sweat", "original": "Schweiß", "inf": "", "pos": [7]},
-                {"en": "and", "original": "und", "inf": "", "pos": [8]},
-                {"en": "tears", "original": "Tränen", "inf": "", "pos": [9]}
-            ]
+          "en": "for when",
+          "original": "für den Fall, dass",
+          "inf": "",
+          "pos": [5, 6, 7]
         },
         {
-            "enTranslation": "Life repays everything in time",
-            "words": [
-                {"en": "Life", "original": "Das Leben", "inf": "", "pos": [1, 2]},
-                {"en": "repays", "original": "zahlt ... zurück", "inf": "zurückzahlen", "pos": [3, 4]},
-                {"en": "everything", "original": "alles", "inf": "", "pos": [5]},
-                {"en": "in time", "original": "mal", "inf": "", "pos": [6]}
-            ]
+          "en": "it storms longer",
+          "original": "es mal länger blitzt und donnert",
+          "inf": "blitzen",
+          "pos": [8, 9, 10, 11]
+        }
+      ]
+    },
+    {
+      "enTranslation": "Even if you lose, you have to come back stronger than when you left",
+      "words": [
+        { "en": "Even if", "original": "Auch wenn", "inf": "", "pos": [1, 2] },
+        {
+          "en": "you lose",
+          "original": "man dann ma' verliert",
+          "inf": "verlieren",
+          "pos": [3, 4, 5]
         },
         {
-            "enTranslation": "It just depends on what you are – shadow or light?",
-            "words": [
-                {"en": "It", "original": "Es", "inf": "", "pos": [1]},
-                {"en": "just", "original": "nur", "inf": "", "pos": [2]},
-                {"en": "depends on", "original": "kommt darauf an", "inf": "ankommen", "pos": [3, 4, 5]},
-                {"en": "what", "original": "was", "inf": "", "pos": [6]},
-                {"en": "you are", "original": "du bist", "inf": "sein", "pos": [7, 8]},
-                {"en": "shadow", "original": "Schatten", "inf": "", "pos": [9]},
-                {"en": "or", "original": "oder", "inf": "", "pos": [10]},
-                {"en": "light", "original": "Licht", "inf": "", "pos": [11]}
-            ]
+          "en": "you have to",
+          "original": "muss man",
+          "inf": "müssen",
+          "pos": [6, 7]
         },
         {
-            "enTranslation": "New attempt, new luck",
-            "words": [
-                {"en": "New", "original": "Neuer", "inf": "", "pos": [1]},
-                {"en": "attempt", "original": "Versuch", "inf": "", "pos": [2]},
-                {"en": "new", "original": "neues", "inf": "", "pos": [3]},
-                {"en": "luck", "original": "Glück", "inf": "", "pos": [4]}
-            ]
+          "en": "come back stronger",
+          "original": "besser zurückkomm'n",
+          "inf": "zurückkommen",
+          "pos": [8, 9]
         },
         {
-            "enTranslation": "It's too late for nothing",
-            "words": [
-                {"en": "It's", "original": "Es", "inf": "", "pos": [1]},
-                {"en": "too late", "original": "zu spät", "inf": "", "pos": [2, 3]},
-                {"en": "for", "original": "für", "inf": "", "pos": [4]},
-                {"en": "nothing", "original": "noch nichts", "inf": "", "pos": [5, 6]}
-            ]
+          "en": "than when you left",
+          "original": "als man ging",
+          "inf": "gehen",
+          "pos": [10, 11]
+        }
+      ]
+    },
+    {
+      "enTranslation": "The will turns the flesh on your bones into concrete",
+      "words": [
+        { "en": "The will", "original": "Der Wille", "inf": "", "pos": [1, 2] },
+        { "en": "turns", "original": "macht", "inf": "machen", "pos": [3] },
+        {
+          "en": "the flesh",
+          "original": "das Fleisch",
+          "inf": "",
+          "pos": [4, 5]
         },
         {
-            "enTranslation": "Because you only harvest as much as you give",
-            "words": [
-                {"en": "Because", "original": "Denn", "inf": "", "pos": [1]},
-                {"en": "you only harvest", "original": "man erntet nur", "inf": "ernten", "pos": [2, 3, 4]},
-                {"en": "as much as", "original": "so viel wie", "inf": "", "pos": [5, 6, 7]},
-                {"en": "you give", "original": "man gibt", "inf": "geben", "pos": [8, 9]}
-            ]
+          "en": "on your bones",
+          "original": "auf deinen Knochen",
+          "inf": "",
+          "pos": [6, 7, 8]
         },
         {
-            "enTranslation": "And if your flame goes out, you were only a small light",
-            "words": [
-                {"en": "And if", "original": "Und wenn", "inf": "", "pos": [1, 2]},
-                {"en": "your flame", "original": "deine Flamme", "inf": "", "pos": [3, 4]},
-                {"en": "goes out", "original": "erlischt", "inf": "erlöschen", "pos": [5]},
-                {"en": "you were", "original": "warst du", "inf": "sein", "pos": [6, 7]},
-                {"en": "only", "original": "nur", "inf": "", "pos": [8]},
-                {"en": "a small light", "original": "ein kleines Licht", "inf": "", "pos": [9, 10, 11]}
-            ]
+          "en": "into concrete",
+          "original": "zu Beton",
+          "inf": "",
+          "pos": [9, 10]
+        }
+      ]
+    },
+    {
+      "enTranslation": "Nothing is for free",
+      "words": [
+        { "en": "Nothing", "original": "Nix", "inf": "", "pos": [1] },
+        { "en": "is", "original": "ist", "inf": "sein", "pos": [2] },
+        { "en": "for free", "original": "umsonst", "inf": "", "pos": [3] }
+      ]
+    },
+    {
+      "enTranslation": "You have to walk every inch yourself because nothing comes on its own",
+      "words": [
+        {
+          "en": "You have to",
+          "original": "Jeden Zentimeter muss man",
+          "inf": "müssen",
+          "pos": [1, 2, 3]
         },
         {
-            "enTranslation": "Or a fire tall like houses, burning even in strong wind",
-            "words": [
-                {"en": "Or", "original": "Oder", "inf": "", "pos": [1]},
-                {"en": "a fire", "original": "ein Feuer", "inf": "", "pos": [2, 3]},
-                {"en": "tall like houses", "original": "hoch wie Häuser", "inf": "", "pos": [4, 5, 6]},
-                {"en": "burning", "original": "das brennt", "inf": "brennen", "pos": [7, 8]},
-                {"en": "even", "original": "auch", "inf": "", "pos": [9]},
-                {"en": "in strong wind", "original": "bei starkem Wind", "inf": "", "pos": [10, 11, 12]}
-            ]
+          "en": "walk",
+          "original": "selber gehen",
+          "inf": "gehen",
+          "pos": [4, 5]
         },
         {
-            "enTranslation": "You have to want it like your lungs want air to breathe",
-            "words": [
-                {"en": "You", "original": "Du", "inf": "", "pos": [1]},
-                {"en": "have to", "original": "musst", "inf": "müssen", "pos": [2]},
-                {"en": "want it", "original": "es woll'n", "inf": "wollen", "pos": [3, 4]},
-                {"en": "like", "original": "wie", "inf": "", "pos": [5]},
-                {"en": "your lungs", "original": "deine Lunge", "inf": "", "pos": [6, 7]},
-                {"en": "want", "original": "will", "inf": "wollen", "pos": [8]},
-                {"en": "air", "original": "die Luft", "inf": "", "pos": [9, 10]},
-                {"en": "to breathe", "original": "zum Atmen", "inf": "", "pos": [11, 12]}
-            ]
+          "en": "every inch",
+          "original": "Jeden Zentimeter",
+          "inf": "",
+          "pos": [6]
+        },
+        { "en": "because", "original": "denn", "inf": "", "pos": [7] },
+        { "en": "nothing", "original": "nichts", "inf": "", "pos": [8] },
+        {
+          "en": "comes on its own",
+          "original": "von alleine wird nichts komm'n",
+          "inf": "kommen",
+          "pos": [9, 10]
+        }
+      ]
+    },
+    {
+      "enTranslation": "Motivated, tunnel vision on the goal",
+      "words": [
+        { "en": "Motivated", "original": "Motiviert", "inf": "", "pos": [1] },
+        {
+          "en": "tunnel vision",
+          "original": "der Tunnelblick",
+          "inf": "",
+          "pos": [2, 3]
         },
         {
-            "enTranslation": "Because wings only grow when you have the courage and jump",
-            "words": [
-                {"en": "Because", "original": "Denn", "inf": "", "pos": [1]},
-                {"en": "wings", "original": "Flügel", "inf": "", "pos": [2]},
-                {"en": "only grow", "original": "wachsen einem nur", "inf": "wachsen", "pos": [3, 4, 5]},
-                {"en": "when", "original": "wenn", "inf": "", "pos": [6]},
-                {"en": "you have", "original": "man den Mut hat", "inf": "haben", "pos": [7, 8, 9]},
-                {"en": "the courage", "original": "den Mut", "inf": "", "pos": [10, 11]},
-                {"en": "and", "original": "und", "inf": "", "pos": [12]},
-                {"en": "jump", "original": "springt", "inf": "springen", "pos": [13]}
-            ]
+          "en": "on the goal",
+          "original": "ans Ziel",
+          "inf": "",
+          "pos": [4, 5]
+        }
+      ]
+    },
+    {
+      "enTranslation": "Because when, if not now? And who, if not us?",
+      "words": [
+        { "en": "Because", "original": "Denn", "inf": "", "pos": [1] },
+        { "en": "when", "original": "wann", "inf": "", "pos": [2] },
+        {
+          "en": "if not now",
+          "original": "wenn nicht jetzt?",
+          "inf": "",
+          "pos": [3]
+        },
+        { "en": "And", "original": "Und", "inf": "", "pos": [4] },
+        { "en": "who", "original": "wer", "inf": "", "pos": [5] },
+        {
+          "en": "if not us",
+          "original": "wenn nicht wir?",
+          "inf": "",
+          "pos": [6]
+        }
+      ]
+    },
+    {
+      "enTranslation": "No more time to wait, let the others sleep for me",
+      "words": [
+        {
+          "en": "No more time",
+          "original": "Keine Zeit mehr",
+          "inf": "",
+          "pos": [1, 2, 3]
         },
         {
-            "enTranslation": "When I fall, I lie down, but I get up harder and fly",
-            "words": [
-                {"en": "When", "original": "Wenn", "inf": "", "pos": [1]},
-                {"en": "I", "original": "ich", "inf": "", "pos": [2]},
-                {"en": "fall", "original": "stürze", "inf": "stürzen", "pos": [3]},
-                {"en": "I", "original": "bleib'", "inf": "bleiben", "pos": [4]},
-                {"en": "lie down", "original": "liegen", "inf": "liegen", "pos": [5]},
-                {"en": "but", "original": "aber", "inf": "", "pos": [6]},
-                {"en": "I get up", "original": "steh' ich ... auf", "inf": "aufstehen", "pos": [7, 8]},
-                {"en": "harder", "original": "härter", "inf": "", "pos": [9]},
-                {"en": "and", "original": "und", "inf": "", "pos": [10]},
-                {"en": "fly", "original": "fliege", "inf": "fliegen", "pos": [11]}
-            ]
+          "en": "to wait",
+          "original": "zu warten",
+          "inf": "warten",
+          "pos": [4, 5]
+        },
+        { "en": "let", "original": "lass'", "inf": "lassen", "pos": [6] },
+        {
+          "en": "the others",
+          "original": "die anderen",
+          "inf": "",
+          "pos": [7, 8]
         },
         {
-            "enTranslation": "Only those who fear falling must crawl their whole life",
-            "words": [
-                {"en": "Only", "original": "Nur", "inf": "", "pos": [1]},
-                {"en": "those who", "original": "wer", "inf": "", "pos": [2]},
-                {"en": "fear", "original": "Angst hat", "inf": "haben", "pos": [3, 4]},
-                {"en": "falling", "original": "vor dem Fall", "inf": "", "pos": [5, 6]},
-                {"en": "must", "original": "muss", "inf": "müssen", "pos": [7]},
-                {"en": "crawl", "original": "kriechen", "inf": "kriechen", "pos": [8]},
-                {"en": "their whole life", "original": "ein ganzes Leben", "inf": "", "pos": [9, 10, 11]}
-            ]
+          "en": "sleep",
+          "original": "schlafen",
+          "inf": "schlafen",
+          "pos": [9]
+        },
+        { "en": "for me", "original": "für mich", "inf": "", "pos": [10, 11] }
+      ]
+    },
+    {
+      "enTranslation": "They always dream of success, but I push through until it's there",
+      "words": [
+        { "en": "They", "original": "Die", "inf": "", "pos": [1] },
+        { "en": "always", "original": "immer", "inf": "", "pos": [2] },
+        { "en": "dream", "original": "träumen", "inf": "träumen", "pos": [3] },
+        {
+          "en": "of success",
+          "original": "vom Erfolg",
+          "inf": "",
+          "pos": [4, 5]
+        },
+        { "en": "but", "original": "doch", "inf": "", "pos": [6] },
+        { "en": "I", "original": "ich", "inf": "", "pos": [7] },
+        {
+          "en": "push through",
+          "original": "zieh' durch",
+          "inf": "durchziehen",
+          "pos": [8, 9]
+        },
+        { "en": "until", "original": "bis", "inf": "", "pos": [10] },
+        {
+          "en": "it's there",
+          "original": "er dann da ist",
+          "inf": "sein",
+          "pos": [11, 12, 13]
+        }
+      ]
+    },
+    {
+      "enTranslation": "Talent is hard work, perfection takes years",
+      "words": [
+        { "en": "Talent", "original": "Talent", "inf": "", "pos": [1] },
+        { "en": "is", "original": "ist", "inf": "sein", "pos": [2] },
+        {
+          "en": "hard work",
+          "original": "harte Arbeit",
+          "inf": "",
+          "pos": [3, 4]
+        },
+        { "en": "perfection", "original": "Perfektion", "inf": "", "pos": [5] },
+        {
+          "en": "takes years",
+          "original": "dauert Jahre",
+          "inf": "dauern",
+          "pos": [6, 7]
+        }
+      ]
+    },
+    {
+      "enTranslation": "When they scream, I have it easy, then they don't know anything",
+      "words": [
+        { "en": "When", "original": "Wenn", "inf": "", "pos": [1] },
+        {
+          "en": "they scream",
+          "original": "sie schrei'n",
+          "inf": "schreien",
+          "pos": [2, 3]
+        },
+        { "en": "I", "original": "ich", "inf": "", "pos": [4] },
+        {
+          "en": "have it easy",
+          "original": "hab' es leicht",
+          "inf": "haben",
+          "pos": [5, 6]
+        },
+        { "en": "then", "original": "dann", "inf": "", "pos": [7] },
+        {
+          "en": "they don't know anything",
+          "original": "habt ihr keine Ahnung",
+          "inf": "haben",
+          "pos": [8, 9, 10]
+        }
+      ]
+    },
+    {
+      "enTranslation": "We come from the deep darkness, against expectations",
+      "words": [
+        { "en": "We", "original": "Wir", "inf": "", "pos": [1] },
+        {
+          "en": "come from",
+          "original": "komm'n aus",
+          "inf": "kommen",
+          "pos": [2, 3]
         },
         {
-            "enTranslation": "Never go on your knees, always keep your eyes towards the sun",
-            "words": [
-                {"en": "Never", "original": "Geh nie", "inf": "gehen", "pos": [1, 2]},
-                {"en": "go on your knees", "original": "auf die Knie", "inf": "", "pos": [3, 4]},
-                {"en": "always", "original": "immer", "inf": "", "pos": [5]},
-                {"en": "keep your eyes", "original": "der Blick", "inf": "", "pos": [6]},
-                {"en": "towards the sun", "original": "Richtung Sonne", "inf": "", "pos": [7, 8]}
-            ]
+          "en": "the deep darkness",
+          "original": "dem Dunklen",
+          "inf": "",
+          "pos": [4]
+        },
+        { "en": "against", "original": "entgegen", "inf": "", "pos": [5] },
+        {
+          "en": "expectations",
+          "original": "der Erwartung",
+          "inf": "",
+          "pos": [6, 7]
+        }
+      ]
+    },
+    {
+      "enTranslation": "Hate and envy, blood and sweat just give more experience",
+      "words": [
+        { "en": "Hate", "original": "Hass", "inf": "", "pos": [1] },
+        { "en": "and", "original": "und", "inf": "", "pos": [2] },
+        { "en": "envy", "original": "Neid", "inf": "", "pos": [3] },
+        { "en": "blood", "original": "Blut", "inf": "", "pos": [4] },
+        { "en": "and", "original": "und", "inf": "", "pos": [5] },
+        { "en": "sweat", "original": "Schweiß", "inf": "", "pos": [6] },
+        {
+          "en": "just give",
+          "original": "gibt ... nur",
+          "inf": "geben",
+          "pos": [7, 8]
         },
         {
-            "enTranslation": "Save the sight for when it storms longer",
-            "words": [
-                {"en": "Save", "original": "Den Anblick speichern", "inf": "speichern", "pos": [1, 2]},
-                {"en": "the sight", "original": "den Anblick", "inf": "", "pos": [3, 4]},
-                {"en": "for when", "original": "für den Fall, dass", "inf": "", "pos": [5, 6, 7]},
-                {"en": "it storms longer", "original": "es mal länger blitzt und donnert", "inf": "blitzen", "pos": [8, 9, 10, 11]}
-            ]
+          "en": "more experience",
+          "original": "mehr Erfahrung",
+          "inf": "",
+          "pos": [9, 10]
+        }
+      ]
+    },
+    {
+      "enTranslation": "Endurance is the key to fame",
+      "words": [
+        { "en": "Endurance", "original": "Ausdauer", "inf": "", "pos": [1] },
+        { "en": "is", "original": "ist", "inf": "sein", "pos": [2] },
+        {
+          "en": "the key",
+          "original": "der Schlüssel",
+          "inf": "",
+          "pos": [3, 4]
         },
         {
-            "enTranslation": "Even if you lose, you have to come back stronger than when you left",
-            "words": [
-                {"en": "Even if", "original": "Auch wenn", "inf": "", "pos": [1, 2]},
-                {"en": "you lose", "original": "man dann ma' verliert", "inf": "verlieren", "pos": [3, 4, 5]},
-                {"en": "you have to", "original": "muss man", "inf": "müssen", "pos": [6, 7]},
-                {"en": "come back stronger", "original": "besser zurückkomm'n", "inf": "zurückkommen", "pos": [8, 9]},
-                {"en": "than when you left", "original": "als man ging", "inf": "gehen", "pos": [10, 11]}
-            ]
-        },
+          "en": "to fame",
+          "original": "für den Ruhm",
+          "inf": "",
+          "pos": [5, 6]
+        }
+      ]
+    },
+    {
+      "enTranslation": "There is a lot I lack, but I have enough of that",
+      "words": [
         {
-            "enTranslation": "The will turns the flesh on your bones into concrete",
-            "words": [
-                {"en": "The will", "original": "Der Wille", "inf": "", "pos": [1, 2]},
-                {"en": "turns", "original": "macht", "inf": "machen", "pos": [3]},
-                {"en": "the flesh", "original": "das Fleisch", "inf": "", "pos": [4, 5]},
-                {"en": "on your bones", "original": "auf deinen Knochen", "inf": "", "pos": [6, 7, 8]},
-                {"en": "into concrete", "original": "zu Beton", "inf": "", "pos": [9, 10]}
-            ]
+          "en": "There is",
+          "original": "Es gibt",
+          "inf": "geben",
+          "pos": [1, 2]
         },
+        { "en": "a lot", "original": "viel", "inf": "", "pos": [3] },
         {
-            "enTranslation": "Nothing is for free",
-            "words": [
-                {"en": "Nothing", "original": "Nix", "inf": "", "pos": [1]},
-                {"en": "is", "original": "ist", "inf": "sein", "pos": [2]},
-                {"en": "for free", "original": "umsonst", "inf": "", "pos": [3]}
-            ]
+          "en": "I lack",
+          "original": "was mir fehlt",
+          "inf": "fehlen",
+          "pos": [4, 5, 6]
         },
+        { "en": "but", "original": "aber", "inf": "", "pos": [7] },
         {
-            "enTranslation": "You have to walk every inch yourself because nothing comes on its own",
-            "words": [
-                {"en": "You have to", "original": "Jeden Zentimeter muss man", "inf": "müssen", "pos": [1, 2, 3]},
-                {"en": "walk", "original": "selber gehen", "inf": "gehen", "pos": [4, 5]},
-                {"en": "every inch", "original": "Jeden Zentimeter", "inf": "", "pos": [6]},
-                {"en": "because", "original": "denn", "inf": "", "pos": [7]},
-                {"en": "nothing", "original": "nichts", "inf": "", "pos": [8]},
-                {"en": "comes on its own", "original": "von alleine wird nichts komm'n", "inf": "kommen", "pos": [9, 10]}
-            ]
-        },
-        {
-            "enTranslation": "Motivated, tunnel vision on the goal",
-            "words": [
-                {"en": "Motivated", "original": "Motiviert", "inf": "", "pos": [1]},
-                {"en": "tunnel vision", "original": "der Tunnelblick", "inf": "", "pos": [2, 3]},
-                {"en": "on the goal", "original": "ans Ziel", "inf": "", "pos": [4, 5]}
-            ]
-        },
-        {
-            "enTranslation": "Because when, if not now? And who, if not us?",
-            "words": [
-                {"en": "Because", "original": "Denn", "inf": "", "pos": [1]},
-                {"en": "when", "original": "wann", "inf": "", "pos": [2]},
-                {"en": "if not now", "original": "wenn nicht jetzt?", "inf": "", "pos": [3]},
-                {"en": "And", "original": "Und", "inf": "", "pos": [4]},
-                {"en": "who", "original": "wer", "inf": "", "pos": [5]},
-                {"en": "if not us", "original": "wenn nicht wir?", "inf": "", "pos": [6]}
-            ]
-        },
-        {
-            "enTranslation": "No more time to wait, let the others sleep for me",
-            "words": [
-                {"en": "No more time", "original": "Keine Zeit mehr", "inf": "", "pos": [1, 2, 3]},
-                {"en": "to wait", "original": "zu warten", "inf": "warten", "pos": [4, 5]},
-                {"en": "let", "original": "lass'", "inf": "lassen", "pos": [6]},
-                {"en": "the others", "original": "die anderen", "inf": "", "pos": [7, 8]},
-                {"en": "sleep", "original": "schlafen", "inf": "schlafen", "pos": [9]},
-                {"en": "for me", "original": "für mich", "inf": "", "pos": [10, 11]}
-            ]
-        },
-        {
-            "enTranslation": "They always dream of success, but I push through until it's there",
-            "words": [
-                {"en": "They", "original": "Die", "inf": "", "pos": [1]},
-                {"en": "always", "original": "immer", "inf": "", "pos": [2]},
-                {"en": "dream", "original": "träumen", "inf": "träumen", "pos": [3]},
-                {"en": "of success", "original": "vom Erfolg", "inf": "", "pos": [4, 5]},
-                {"en": "but", "original": "doch", "inf": "", "pos": [6]},
-                {"en": "I", "original": "ich", "inf": "", "pos": [7]},
-                {"en": "push through", "original": "zieh' durch", "inf": "durchziehen", "pos": [8, 9]},
-                {"en": "until", "original": "bis", "inf": "", "pos": [10]},
-                {"en": "it's there", "original": "er dann da ist", "inf": "sein", "pos": [11, 12, 13]}
-            ]
-        },
-        {
-            "enTranslation": "Talent is hard work, perfection takes years",
-            "words": [
-                {"en": "Talent", "original": "Talent", "inf": "", "pos": [1]},
-                {"en": "is", "original": "ist", "inf": "sein", "pos": [2]},
-                {"en": "hard work", "original": "harte Arbeit", "inf": "", "pos": [3, 4]},
-                {"en": "perfection", "original": "Perfektion", "inf": "", "pos": [5]},
-                {"en": "takes years", "original": "dauert Jahre", "inf": "dauern", "pos": [6, 7]}
-            ]
-        },
-        {
-            "enTranslation": "When they scream, I have it easy, then they don't know anything",
-            "words": [
-                {"en": "When", "original": "Wenn", "inf": "", "pos": [1]},
-                {"en": "they scream", "original": "sie schrei'n", "inf": "schreien", "pos": [2, 3]},
-                {"en": "I", "original": "ich", "inf": "", "pos": [4]},
-                {"en": "have it easy", "original": "hab' es leicht", "inf": "haben", "pos": [5, 6]},
-                {"en": "then", "original": "dann", "inf": "", "pos": [7]},
-                {"en": "they don't know anything", "original": "habt ihr keine Ahnung", "inf": "haben", "pos": [8, 9, 10]}
-            ]
-        },
-        {
-            "enTranslation": "We come from the deep darkness, against expectations",
-            "words": [
-                {"en": "We", "original": "Wir", "inf": "", "pos": [1]},
-                {"en": "come from", "original": "komm'n aus", "inf": "kommen", "pos": [2, 3]},
-                {"en": "the deep darkness", "original": "dem Dunklen", "inf": "", "pos": [4]},
-                {"en": "against", "original": "entgegen", "inf": "", "pos": [5]},
-                {"en": "expectations", "original": "der Erwartung", "inf": "", "pos": [6, 7]}
-            ]
-        },
-        {
-            "enTranslation": "Hate and envy, blood and sweat just give more experience",
-            "words": [
-                {"en": "Hate", "original": "Hass", "inf": "", "pos": [1]},
-                {"en": "and", "original": "und", "inf": "", "pos": [2]},
-                {"en": "envy", "original": "Neid", "inf": "", "pos": [3]},
-                {"en": "blood", "original": "Blut", "inf": "", "pos": [4]},
-                {"en": "and", "original": "und", "inf": "", "pos": [5]},
-                {"en": "sweat", "original": "Schweiß", "inf": "", "pos": [6]},
-                {"en": "just give", "original": "gibt ... nur", "inf": "geben", "pos": [7, 8]},
-                {"en": "more experience", "original": "mehr Erfahrung", "inf": "", "pos": [9, 10]}
-            ]
-        },
-        {
-            "enTranslation": "Endurance is the key to fame",
-            "words": [
-                {"en": "Endurance", "original": "Ausdauer", "inf": "", "pos": [1]},
-                {"en": "is", "original": "ist", "inf": "sein", "pos": [2]},
-                {"en": "the key", "original": "der Schlüssel", "inf": "", "pos": [3, 4]},
-                {"en": "to fame", "original": "für den Ruhm", "inf": "", "pos": [5, 6]}
-            ]
-        },
-        {
-            "enTranslation": "There is a lot I lack, but I have enough of that",
-            "words": [
-                {"en": "There is", "original": "Es gibt", "inf": "geben", "pos": [1, 2]},
-                {"en": "a lot", "original": "viel", "inf": "", "pos": [3]},
-                {"en": "I lack", "original": "was mir fehlt", "inf": "fehlen", "pos": [4, 5, 6]},
-                {"en": "but", "original": "aber", "inf": "", "pos": [7]},
-                {"en": "I have enough", "original": "davon hab' ich genug", "inf": "haben", "pos": [8, 9, 10]}
-            ]
-        }    
-    ]
+          "en": "I have enough",
+          "original": "davon hab' ich genug",
+          "inf": "haben",
+          "pos": [8, 9, 10]
+        }
+      ]
+    }
+  ]
 }
