@@ -1,0 +1,1213 @@
+{
+    "Text": [
+        {
+            "enTranslation": "I want no 24/7 because of viruses to be at home",
+            "words": [
+                {
+                    "en": "I",
+                    "original": "Ich",
+                    "inf": "",
+                    "pos": [
+                        1
+                    ]
+                },
+                {
+                    "en": "want",
+                    "original": "will",
+                    "inf": "wollen",
+                    "pos": [
+                        2
+                    ]
+                },
+                {
+                    "en": "no",
+                    "original": "kein",
+                    "inf": "",
+                    "pos": [
+                        3
+                    ]
+                },
+                {
+                    "en": "24/7",
+                    "original": "24/7",
+                    "inf": "",
+                    "pos": [
+                        4
+                    ]
+                },
+                {
+                    "en": "because of",
+                    "original": "wegen",
+                    "inf": "",
+                    "pos": [
+                        5
+                    ]
+                },
+                {
+                    "en": "viruses",
+                    "original": "Vir'n",
+                    "inf": "",
+                    "pos": [
+                        6
+                    ]
+                },
+                {
+                    "en": "at home",
+                    "original": "zuhause",
+                    "inf": "",
+                    "pos": [
+                        7
+                    ]
+                },
+                {
+                    "en": "be",
+                    "original": "sein",
+                    "inf": "sein",
+                    "pos": [
+                        8
+                    ]
+                }
+            ]
+        },
+        {
+            "enTranslation": "No '23, give me '2 or 2003",
+            "words": [
+                {
+                    "en": "No",
+                    "original": "Kein",
+                    "inf": "",
+                    "pos": [
+                        1
+                    ]
+                },
+                {
+                    "en": "'23",
+                    "original": "'23",
+                    "inf": "",
+                    "pos": [
+                        2
+                    ]
+                },
+                {
+                    "en": "give",
+                    "original": "gib",
+                    "inf": "geben",
+                    "pos": [
+                        3
+                    ]
+                },
+                {
+                    "en": "me",
+                    "original": "mir",
+                    "inf": "",
+                    "pos": [
+                        4
+                    ]
+                },
+                {
+                    "en": "'2",
+                    "original": "'2",
+                    "inf": "",
+                    "pos": [
+                        5
+                    ]
+                },
+                {
+                    "en": "or",
+                    "original": "oder",
+                    "inf": "",
+                    "pos": [
+                        6
+                    ]
+                },
+                {
+                    "en": "2003",
+                    "original": "2003",
+                    "inf": "",
+                    "pos": [
+                        7
+                    ]
+                }
+            ]
+        },
+        {
+            "enTranslation": "Want dreams just for me and not in some feed",
+            "words": [
+                {
+                    "en": "Want",
+                    "original": "Will",
+                    "inf": "wollen",
+                    "pos": [
+                        1
+                    ]
+                },
+                {
+                    "en": "dreams",
+                    "original": "Träume",
+                    "inf": "",
+                    "pos": [
+                        2
+                    ]
+                },
+                {
+                    "en": "just",
+                    "original": "nur",
+                    "inf": "",
+                    "pos": [
+                        3
+                    ]
+                },
+                {
+                    "en": "for",
+                    "original": "für",
+                    "inf": "",
+                    "pos": [
+                        4
+                    ]
+                },
+                {
+                    "en": "me",
+                    "original": "mich",
+                    "inf": "",
+                    "pos": [
+                        5
+                    ]
+                },
+                {
+                    "en": "and",
+                    "original": "und",
+                    "inf": "",
+                    "pos": [
+                        6
+                    ]
+                },
+                {
+                    "en": "not",
+                    "original": "nicht",
+                    "inf": "",
+                    "pos": [
+                        7
+                    ]
+                },
+                {
+                    "en": "in",
+                    "original": "in",
+                    "inf": "",
+                    "pos": [
+                        8
+                    ]
+                },
+                {
+                    "en": "some",
+                    "original": "irgendeinem",
+                    "inf": "",
+                    "pos": [
+                        9
+                    ]
+                },
+                {
+                    "en": "feed",
+                    "original": "Feed",
+                    "inf": "",
+                    "pos": [
+                        10
+                    ]
+                }
+            ]
+        },
+        {
+            "enTranslation": "Want cars with gasoline and not with toy batteries",
+            "words": [
+                {
+                    "en": "Want",
+                    "original": "Will",
+                    "inf": "wollen",
+                    "pos": [
+                        1
+                    ]
+                },
+                {
+                    "en": "cars",
+                    "original": "Autos",
+                    "inf": "",
+                    "pos": [
+                        2
+                    ]
+                },
+                {
+                    "en": "with",
+                    "original": "mit",
+                    "inf": "",
+                    "pos": [
+                        3
+                    ]
+                },
+                {
+                    "en": "gasoline",
+                    "original": "Benzin",
+                    "inf": "",
+                    "pos": [
+                        4
+                    ]
+                },
+                {
+                    "en": "and",
+                    "original": "und",
+                    "inf": "",
+                    "pos": [
+                        5
+                    ]
+                },
+                {
+                    "en": "not",
+                    "original": "nicht",
+                    "inf": "",
+                    "pos": [
+                        6
+                    ]
+                },
+                {
+                    "en": "with",
+                    "original": "mit",
+                    "inf": "",
+                    "pos": [
+                        7
+                    ]
+                },
+                {
+                    "en": "toy batteries",
+                    "original": "Spielzeugbatterien",
+                    "inf": "",
+                    "pos": [
+                        8
+                    ]
+                }
+            ]
+        },
+        {
+            "enTranslation": "I want no iPhone and not hanging on the phone, want ICQ and MSN",
+            "words": [
+                {
+                    "en": "I",
+                    "original": "Ich",
+                    "inf": "",
+                    "pos": [
+                        1
+                    ]
+                },
+                {
+                    "en": "want",
+                    "original": "will",
+                    "inf": "wollen",
+                    "pos": [
+                        2
+                    ]
+                },
+                {
+                    "en": "no",
+                    "original": "kein",
+                    "inf": "",
+                    "pos": [
+                        3
+                    ]
+                },
+                {
+                    "en": "iPhone",
+                    "original": "iPhone",
+                    "inf": "",
+                    "pos": [
+                        4
+                    ]
+                },
+                {
+                    "en": "and",
+                    "original": "und",
+                    "inf": "",
+                    "pos": [
+                        5
+                    ]
+                },
+                {
+                    "en": "not",
+                    "original": "nicht",
+                    "inf": "",
+                    "pos": [
+                        6
+                    ]
+                },
+                {
+                    "en": "hanging",
+                    "original": "häng'n",
+                    "inf": "hängen",
+                    "pos": [
+                        7
+                    ]
+                },
+                {
+                    "en": "on the phone",
+                    "original": "am Handy",
+                    "inf": "",
+                    "pos": [
+                        8
+                    ]
+                },
+                {
+                    "en": "want",
+                    "original": "will",
+                    "inf": "wollen",
+                    "pos": [
+                        9
+                    ]
+                },
+                {
+                    "en": "ICQ",
+                    "original": "ICQ",
+                    "inf": "",
+                    "pos": [
+                        10
+                    ]
+                },
+                {
+                    "en": "and",
+                    "original": "und",
+                    "inf": "",
+                    "pos": [
+                        11
+                    ]
+                },
+                {
+                    "en": "MSN",
+                    "original": "MSN",
+                    "inf": "",
+                    "pos": [
+                        12
+                    ]
+                }
+            ]
+        },
+        {
+            "enTranslation": "Want jogging pants, and if not, then baggy pants",
+            "words": [
+                {
+                    "en": "Want",
+                    "original": "Will",
+                    "inf": "wollen",
+                    "pos": [
+                        1
+                    ]
+                },
+                {
+                    "en": "jogging pants",
+                    "original": "Jogginghose",
+                    "inf": "",
+                    "pos": [
+                        2
+                    ]
+                },
+                {
+                    "en": "and",
+                    "original": "und",
+                    "inf": "",
+                    "pos": [
+                        3
+                    ]
+                },
+                {
+                    "en": "if",
+                    "original": "wenn",
+                    "inf": "",
+                    "pos": [
+                        4
+                    ]
+                },
+                {
+                    "en": "not",
+                    "original": "nicht",
+                    "inf": "",
+                    "pos": [
+                        5
+                    ]
+                },
+                {
+                    "en": "then",
+                    "original": "dann",
+                    "inf": "",
+                    "pos": [
+                        6
+                    ]
+                },
+                {
+                    "en": "baggy pants",
+                    "original": "Baggy Pants",
+                    "inf": "",
+                    "pos": [
+                        7
+                    ]
+                }
+            ]
+        },
+        {
+            "enTranslation": "Want Quentin Tarantino, not on Netflix, but in the cinema",
+            "words": [
+                {
+                    "en": "Want",
+                    "original": "Will",
+                    "inf": "wollen",
+                    "pos": [
+                        1
+                    ]
+                },
+                {
+                    "en": "Quentin Tarantino",
+                    "original": "Quentin Tarantino",
+                    "inf": "",
+                    "pos": [
+                        2
+                    ]
+                },
+                {
+                    "en": "not",
+                    "original": "nicht",
+                    "inf": "",
+                    "pos": [
+                        3
+                    ]
+                },
+                {
+                    "en": "on",
+                    "original": "auf",
+                    "inf": "",
+                    "pos": [
+                        4
+                    ]
+                },
+                {
+                    "en": "Netflix",
+                    "original": "Netflix",
+                    "inf": "",
+                    "pos": [
+                        5
+                    ]
+                },
+                {
+                    "en": "but",
+                    "original": "sondern",
+                    "inf": "",
+                    "pos": [
+                        6
+                    ]
+                },
+                {
+                    "en": "in",
+                    "original": "Kino",
+                    "inf": "",
+                    "pos": [
+                        7
+                    ]
+                }
+            ]
+        },
+        {
+            "enTranslation": "Want no playback, I want rap live again, even without a mic",
+            "words": [
+                {
+                    "en": "Want",
+                    "original": "Will",
+                    "inf": "wollen",
+                    "pos": [
+                        1
+                    ]
+                },
+                {
+                    "en": "no",
+                    "original": "kein",
+                    "inf": "",
+                    "pos": [
+                        2
+                    ]
+                },
+                {
+                    "en": "playback",
+                    "original": "Playback",
+                    "inf": "",
+                    "pos": [
+                        3
+                    ]
+                },
+                {
+                    "en": "I",
+                    "original": "ich",
+                    "inf": "",
+                    "pos": [
+                        4
+                    ]
+                },
+                {
+                    "en": "want",
+                    "original": "will",
+                    "inf": "wollen",
+                    "pos": [
+                        5
+                    ]
+                },
+                {
+                    "en": "rap",
+                    "original": "Rap",
+                    "inf": "",
+                    "pos": [
+                        6
+                    ]
+                },
+                {
+                    "en": "live",
+                    "original": "wieder",
+                    "inf": "",
+                    "pos": [
+                        7
+                    ]
+                },
+                {
+                    "en": "even",
+                    "original": "direkt",
+                    "inf": "",
+                    "pos": [
+                        8
+                    ]
+                },
+                {
+                    "en": "without",
+                    "original": "ohne",
+                    "inf": "",
+                    "pos": [
+                        9
+                    ]
+                },
+                {
+                    "en": "mic",
+                    "original": "Mikro",
+                    "inf": "",
+                    "pos": [
+                        10
+                    ]
+                }
+            ]
+        },
+        {
+            "enTranslation": "I want football on the asphalt, even with scratches on my knees",
+            "words": [
+                {"en": "I", "original": "Ich", "inf": "", "pos": [1]},
+                {"en": "want", "original": "will", "inf": "wollen", "pos": [2]},
+                {"en": "football", "original": "Fußball", "inf": "", "pos": [3]},
+                {"en": "on", "original": "auf", "inf": "", "pos": [4]},
+                {"en": "the", "original": "dem", "inf": "", "pos": [5]},
+                {"en": "asphalt", "original": "Asphalt", "inf": "", "pos": [6]},
+                {"en": "even", "original": "auch", "inf": "", "pos": [7]},
+                {"en": "with", "original": "mit", "inf": "", "pos": [8]},
+                {"en": "scratches", "original": "Kratzern", "inf": "", "pos": [9]},
+                {"en": "on", "original": "auf", "inf": "", "pos": [10]},
+                {"en": "the", "original": "den", "inf": "", "pos": [11]},
+                {"en": "knees", "original": "Knien", "inf": "", "pos": [12]}
+            ]
+        },
+        {
+            "enTranslation": "I want to fall, to learn from mistakes and not for math and chemistry",
+            "words": [
+                {"en": "I", "original": "Ich", "inf": "", "pos": [1]},
+                {"en": "want", "original": "will", "inf": "wollen", "pos": [2]},
+                {"en": "to fall", "original": "fall'n", "inf": "fallen", "pos": [3]},
+                {"en": "to learn", "original": "lern'n", "inf": "lernen", "pos": [4]},
+                {"en": "from", "original": "aus", "inf": "", "pos": [5]},
+                {"en": "mistakes", "original": "Fehlern", "inf": "", "pos": [6]},
+                {"en": "and", "original": "und", "inf": "", "pos": [7]},
+                {"en": "not", "original": "nicht", "inf": "", "pos": [8]},
+                {"en": "for", "original": "für", "inf": "", "pos": [9]},
+                {"en": "math", "original": "Mathe", "inf": "", "pos": [10]},
+                {"en": "and", "original": "und", "inf": "", "pos": [11]},
+                {"en": "chemistry", "original": "Chemie", "inf": "", "pos": [12]}
+            ]
+        },
+        {
+            "enTranslation": "I want summer hot like fire and at the swimming pool fights again",
+            "words": [
+                {"en": "I", "original": "Ich", "inf": "", "pos": [1]},
+                {"en": "want", "original": "will", "inf": "wollen", "pos": [2]},
+                {"en": "the summer", "original": "den Sommer", "inf": "", "pos": [3, 4]},
+                {"en": "hot", "original": "heiß", "inf": "", "pos": [5]},
+                {"en": "like", "original": "wie", "inf": "", "pos": [6]},
+                {"en": "fire", "original": "Feuer", "inf": "", "pos": [7]},
+                {"en": "and", "original": "und", "inf": "", "pos": [8]},
+                {"en": "at", "original": "im", "inf": "", "pos": [9]},
+                {"en": "the", "original": "Schwimmbad", "inf": "", "pos": [10]},
+                {"en": "fights", "original": "Streit", "inf": "", "pos": [11]},
+                {"en": "again", "original": "wieder", "inf": "", "pos": [12]}
+            ]
+        },
+        {
+            "enTranslation": "Want the snow again like before, want the winter white again",
+            "words": [
+                {"en": "Want", "original": "Will", "inf": "wollen", "pos": [1]},
+                {"en": "the snow", "original": "den Schnee", "inf": "", "pos": [2, 3]},
+                {"en": "again", "original": "wieder", "inf": "", "pos": [4]},
+                {"en": "like", "original": "wie", "inf": "", "pos": [5]},
+                {"en": "before", "original": "früher", "inf": "", "pos": [6]},
+                {"en": "want", "original": "will", "inf": "wollen", "pos": [7]},
+                {"en": "the winter", "original": "den Winter", "inf": "", "pos": [8, 9]},
+                {"en": "white", "original": "weiß", "inf": "", "pos": [10]},
+                {"en": "again", "original": "wieder", "inf": "", "pos": [11]}
+            ]
+        },
+        {
+            "enTranslation": "I want albums on CD, I want the old BMW",
+            "words": [
+                {"en": "I", "original": "Ich", "inf": "", "pos": [1]},
+                {"en": "want", "original": "will", "inf": "wollen", "pos": [2]},
+                {"en": "albums", "original": "die Alben", "inf": "", "pos": [3, 4]},
+                {"en": "on", "original": "auf", "inf": "", "pos": [5]},
+                {"en": "CD", "original": "CD", "inf": "", "pos": [6]},
+                {"en": "I", "original": "ich", "inf": "", "pos": [7]},
+                {"en": "want", "original": "will", "inf": "wollen", "pos": [8]},
+                {"en": "the old", "original": "den alten", "inf": "", "pos": [9, 10]},
+                {"en": "BMW", "original": "BMW", "inf": "", "pos": [11]}
+            ]
+        },
+        {
+            "enTranslation": "And a friendship that lasts as long as my 3310",
+            "words": [
+                {"en": "And", "original": "Und", "inf": "", "pos": [1]},
+                {"en": "a friendship", "original": "eine Freundschaft", "inf": "", "pos": [2, 3]},
+                {"en": "that", "original": "die", "inf": "", "pos": [4]},
+                {"en": "lasts", "original": "hält", "inf": "halten", "pos": [5]},
+                {"en": "as long", "original": "so lang", "inf": "", "pos": [6, 7]},
+                {"en": "as", "original": "wie", "inf": "", "pos": [8]},
+                {"en": "my", "original": "mein", "inf": "", "pos": [9]},
+                {"en": "3310", "original": "3310", "inf": "", "pos": [10]}
+            ]
+        },
+        {
+            "enTranslation": "I want to look like in the mirror and want nothing that pimps my face",
+            "words": [
+                {"en": "I", "original": "Ich", "inf": "", "pos": [1]},
+                {"en": "want", "original": "will", "inf": "wollen", "pos": [2]},
+                {"en": "to look", "original": "ausseh'n", "inf": "aussehen", "pos": [3]},
+                {"en": "like", "original": "wie", "inf": "", "pos": [4]},
+                {"en": "in", "original": "im", "inf": "", "pos": [5]},
+                {"en": "the mirror", "original": "Spiegel", "inf": "", "pos": [6]},
+                {"en": "and", "original": "und", "inf": "", "pos": [7]},
+                {"en": "want", "original": "will", "inf": "wollen", "pos": [8]},
+                {"en": "nothing", "original": "nichts", "inf": "", "pos": [9]},
+                {"en": "that", "original": "was", "inf": "", "pos": [10]},
+                {"en": "pimps", "original": "pimpt", "inf": "pimpen", "pos": [11]},
+                {"en": "my face", "original": "meine Fresse", "inf": "", "pos": [12, 13]}
+            ]
+        },
+        {
+            "enTranslation": "Want photos without filters, want everyone to be ugly again",
+            "words": [
+                {"en": "Want", "original": "Will", "inf": "wollen", "pos": [1]},
+                {"en": "photos", "original": "Fotos", "inf": "", "pos": [2]},
+                {"en": "without", "original": "ohne", "inf": "", "pos": [3]},
+                {"en": "filters", "original": "Filter", "inf": "", "pos": [4]},
+                {"en": "want", "original": "will", "inf": "wollen", "pos": [5]},
+                {"en": "that", "original": "dass", "inf": "", "pos": [6]},
+                {"en": "everyone", "original": "alle", "inf": "", "pos": [7]},
+                {"en": "to be", "original": "wieder", "inf": "", "pos": [8]},
+                {"en": "ugly", "original": "hässlich", "inf": "", "pos": [9]},
+                {"en": "again", "original": "sind", "inf": "", "pos": [10]}
+            ]
+        },
+        {
+            "enTranslation": "The old people always say: 'Boy, things were much better in the past'",
+            "words": [
+                {"en": "The old people", "original": "Die Alten", "inf": "", "pos": [1, 2]},
+                {"en": "always", "original": "immer", "inf": "", "pos": [3]},
+                {"en": "say", "original": "sagen", "inf": "sagen", "pos": [4]},
+                {"en": "Boy", "original": "Junge", "inf": "", "pos": [5]},
+                {"en": "in the past", "original": "früher", "inf": "", "pos": [6]},
+                {"en": "was", "original": "war", "inf": "sein", "pos": [7]},
+                {"en": "much better", "original": "viel besser", "inf": "", "pos": [8, 9]}
+            ]
+        },
+        {
+            "enTranslation": "By now, I myself feel they might be right",
+            "words": [
+                {"en": "By now", "original": "Mittlerweile", "inf": "", "pos": [1]},
+                {"en": "I", "original": "ich", "inf": "", "pos": [2]},
+                {"en": "myself", "original": "selber", "inf": "", "pos": [3]},
+                {"en": "feel", "original": "hab'", "inf": "haben", "pos": [4]},
+                {"en": "they", "original": "die", "inf": "", "pos": [5]},
+                {"en": "might be", "original": "könnten", "inf": "können", "pos": [6]},
+                {"en": "right", "original": "recht", "inf": "", "pos": [7]},
+                {"en": "have", "original": "hab'n", "inf": "haben", "pos": [8]}
+            ]
+        },
+        {
+            "enTranslation": "I swing open the gullwing doors and speed supersonically into yesterday",
+            "words": [
+                {"en": "I", "original": "Ich", "inf": "", "pos": [1]},
+                {"en": "swing open", "original": "Reiß'", "inf": "reißen", "pos": [2]},
+                {"en": "the gullwing doors", "original": "die Flügeltür'n", "inf": "", "pos": [3, 4]},
+                {"en": "and", "original": "und", "inf": "", "pos": [5]},
+                {"en": "speed", "original": "heiz'", "inf": "heizen", "pos": [6]},
+                {"en": "supersonically", "original": "mit Überschall", "inf": "", "pos": [7, 8]},
+                {"en": "into", "original": "nach", "inf": "", "pos": [9]},
+                {"en": "yesterday", "original": "Gestern", "inf": "", "pos": [10]}
+            ]
+        },
+        {
+            "enTranslation": "I don't forget, but I miss the life when it was truly real",
+            "words": [
+                {"en": "I", "original": "Ich", "inf": "", "pos": [1]},
+                {"en": "don't forget", "original": "vergess'", "inf": "vergessen", "pos": [2]},
+                {"en": "but", "original": "doch", "inf": "", "pos": [3]},
+                {"en": "miss", "original": "vermiss'", "inf": "vermissen", "pos": [4]},
+                {"en": "the life", "original": "das Leben", "inf": "", "pos": [5, 6]},
+                {"en": "when", "original": "als", "inf": "", "pos": [7]},
+                {"en": "it", "original": "es", "inf": "", "pos": [8]},
+                {"en": "was", "original": "war", "inf": "sein", "pos": [9]},
+                {"en": "truly", "original": "wirklich", "inf": "", "pos": [10]},
+                {"en": "real", "original": "echt", "inf": "", "pos": [11]}
+            ]
+        },
+        {
+            "enTranslation": "The old people always say: 'Boy, things were much better in the past'",
+            "words": [
+              {
+                "en": "The old people",
+                "original": "Die Alten",
+                "inf": "",
+                "pos": [1, 2]
+              },
+              {
+                "en": "always",
+                "original": "immer",
+                "inf": "",
+                "pos": [3]
+              },
+              {
+                "en": "say",
+                "original": "sagen",
+                "inf": "sagen",
+                "pos": [4]
+              },
+              {
+                "en": "Boy",
+                "original": "Junge",
+                "inf": "",
+                "pos": [5]
+              },
+              {
+                "en": "in the past",
+                "original": "früher",
+                "inf": "",
+                "pos": [6]
+              },
+              {
+                "en": "was",
+                "original": "war",
+                "inf": "sein",
+                "pos": [7]
+              },
+              {
+                "en": "much better",
+                "original": "viel besser",
+                "inf": "",
+                "pos": [8, 9]
+              }
+            ]
+          },
+          {
+            "enTranslation": "By now, I myself feel they might be right",
+            "words": [
+              {
+                "en": "By now",
+                "original": "Mittlerweile",
+                "inf": "",
+                "pos": [1]
+              },
+              {
+                "en": "I",
+                "original": "ich",
+                "inf": "",
+                "pos": [2]
+              },
+              {
+                "en": "myself",
+                "original": "selber",
+                "inf": "",
+                "pos": [3]
+              },
+              {
+                "en": "feel",
+                "original": "hab'",
+                "inf": "haben",
+                "pos": [4]
+              },
+              {
+                "en": "they",
+                "original": "die",
+                "inf": "",
+                "pos": [5]
+              },
+              {
+                "en": "might be",
+                "original": "könnten",
+                "inf": "können",
+                "pos": [6]
+              },
+              {
+                "en": "right",
+                "original": "recht",
+                "inf": "",
+                "pos": [7]
+              },
+              {
+                "en": "have",
+                "original": "hab'n",
+                "inf": "haben",
+                "pos": [8]
+              }
+            ]
+          },
+          {
+            "enTranslation": "I swing open the gullwing doors and speed supersonically into yesterday",
+            "words": [
+              {
+                "en": "I",
+                "original": "Ich",
+                "inf": "",
+                "pos": [1]
+              },
+              {
+                "en": "swing open",
+                "original": "Reiß'",
+                "inf": "reißen",
+                "pos": [2]
+              },
+              {
+                "en": "the gullwing doors",
+                "original": "die Flügeltür'n",
+                "inf": "",
+                "pos": [3, 4]
+              },
+              {
+                "en": "and",
+                "original": "und",
+                "inf": "",
+                "pos": [5]
+              },
+              {
+                "en": "speed",
+                "original": "heiz'",
+                "inf": "heizen",
+                "pos": [6]
+              },
+              {
+                "en": "supersonically",
+                "original": "mit Überschall",
+                "inf": "",
+                "pos": [7, 8]
+              },
+              {
+                "en": "into",
+                "original": "nach",
+                "inf": "",
+                "pos": [9]
+              },
+              {
+                "en": "yesterday",
+                "original": "Gestern",
+                "inf": "",
+                "pos": [10]
+              }
+            ]
+          },
+          {
+            "enTranslation": "I don't forget, but I miss the life when it was truly real",
+            "words": [
+              {
+                "en": "I",
+                "original": "Ich",
+                "inf": "",
+                "pos": [1]
+              },
+              {
+                "en": "don't forget",
+                "original": "vergess'",
+                "inf": "vergessen",
+                "pos": [2]
+              },
+              {
+                "en": "but",
+                "original": "doch",
+                "inf": "",
+                "pos": [3]
+              },
+              {
+                "en": "miss",
+                "original": "vermiss'",
+                "inf": "vermissen",
+                "pos": [4]
+              },
+              {
+                "en": "the life",
+                "original": "das Leben",
+                "inf": "",
+                "pos": [5, 6]
+              },
+                {
+                    "en": "when",
+                    "original": "als",
+                    "inf": "",
+                    "pos": [7]
+                },
+                {
+                    "en": "it",
+                    "original": "es",
+                    "inf": "",
+                    "pos": [8]
+                },
+                {
+                    "en": "was",
+                    "original": "war",
+                    "inf": "sein",
+                    "pos": [9]
+                },
+                {
+                    "en": "truly",
+                    "original": "wirklich",
+                    "inf": "",
+                    "pos": [10]
+                },
+                {
+                    "en": "real",
+                    "original": "echt",
+                    "inf": "",
+                    "pos": [11]
+                }
+            ]
+        },
+        {
+            "enTranslation": "I just want to drive there and no screen that hinders me",
+            "words": [
+                {"en": "I", "original": "Ich", "inf": "", "pos": [1]},
+                {"en": "want", "original": "will", "inf": "wollen", "pos": [2]},
+                {"en": "just", "original": "einfach", "inf": "", "pos": [3]},
+                {"en": "to drive there", "original": "hinfahr'n", "inf": "hinfahren", "pos": [4]},
+                {"en": "and", "original": "und", "inf": "", "pos": [5]},
+                {"en": "no", "original": "kein'n", "inf": "keinen", "pos": [6]},
+                {"en": "screen", "original": "Bildschirm", "inf": "", "pos": [7]},
+                {"en": "that", "original": "der", "inf": "", "pos": [8]},
+                {"en": "hinders", "original": "hindert", "inf": "hindern", "pos": [9]},
+                {"en": "me", "original": "mich", "inf": "", "pos": [10]}
+            ]
+        },
+        {
+            "enTranslation": "I want to see the whole world in real life and not somewhere on Insta",
+            "words": [
+                {"en": "I", "original": "Ich", "inf": "", "pos": [1]},
+                {"en": "want", "original": "will", "inf": "wollen", "pos": [2]},
+                {"en": "to see", "original": "seh'n", "inf": "sehen", "pos": [3]},
+                {"en": "the whole world", "original": "die ganze Welt", "inf": "", "pos": [4, 5, 6]},
+                {"en": "in real life", "original": "in echt", "inf": "", "pos": [7, 8]},
+                {"en": "and", "original": "und", "inf": "", "pos": [9]},
+                {"en": "not", "original": "nicht", "inf": "", "pos": [10]},
+                {"en": "somewhere", "original": "irgendwo", "inf": "", "pos": [11]},
+                {"en": "on Insta", "original": "auf Insta", "inf": "", "pos": [12, 13]}
+            ]
+        },
+        {
+            "enTranslation": "I don't want Tinder, I want to dare with all the downs and highs",
+            "words": [
+                {"en": "I", "original": "Ich", "inf": "", "pos": [1]},
+                {"en": "don't want", "original": "kein", "inf": "", "pos": [2]},
+                {"en": "Tinder", "original": "Tinder", "inf": "", "pos": [3]},
+                {"en": "I", "original": "will", "inf": "wollen", "pos": [4]},
+                {"en": "to dare", "original": "mich trau'n", "inf": "trauen", "pos": [5, 6]},
+                {"en": "with", "original": "mit", "inf": "", "pos": [7]},
+                {"en": "all the downs", "original": "all den Downs", "inf": "", "pos": [8, 9, 10]},
+                {"en": "and", "original": "und", "inf": "", "pos": [11]},
+                {"en": "all the highs", "original": "all den Höh'n", "inf": "", "pos": [12, 13]}
+            ]
+        },
+        {
+            "enTranslation": "I want the tingling in my stomach when I tell you: 'You are beautiful'",
+            "words": [
+                {"en": "I", "original": "Ich", "inf": "", "pos": [1]},
+                {"en": "want", "original": "will", "inf": "wollen", "pos": [2]},
+                {"en": "the tingling", "original": "das Kribbeln", "inf": "", "pos": [3, 4]},
+                {"en": "in my stomach", "original": "in mei'm Bauch", "inf": "", "pos": [5, 6, 7]},
+                {"en": "when", "original": "wenn", "inf": "", "pos": [8]},
+                {"en": "I", "original": "ich", "inf": "", "pos": [9]},
+                {"en": "tell", "original": "sage", "inf": "sagen", "pos": [10]},
+                {"en": "you", "original": "dir", "inf": "", "pos": [11]},
+                {"en": "You are beautiful", "original": "„Du bist schön“", "inf": "", "pos": [12, 13, 14]}
+            ]
+        },
+        {
+            "enTranslation": "I want the sky to be empty again, only the stars and the moon",
+            "words": [
+                {"en": "I", "original": "Ich", "inf": "", "pos": [1]},
+                {"en": "want", "original": "will", "inf": "wollen", "pos": [2]},
+                {"en": "the sky", "original": "den Himmel", "inf": "", "pos": [3, 4]},
+                {"en": "to be", "original": "wieder", "inf": "", "pos": [5]},
+                {"en": "empty", "original": "leer", "inf": "", "pos": [6]},
+                {"en": "only", "original": "nur", "inf": "", "pos": [7]},
+                {"en": "the stars", "original": "die Sterne", "inf": "", "pos": [8, 9]},
+                {"en": "and", "original": "und", "inf": "", "pos": [10]},
+                {"en": "the moon", "original": "den Mond", "inf": "", "pos": [11, 12]}
+            ]
+        },
+        {
+            "enTranslation": "I don't need a bike with a motor, I can climb the hill without electricity",
+            "words": [
+                {"en": "I", "original": "Ich", "inf": "", "pos": [1]},
+                {"en": "don't need", "original": "brauch'", "inf": "brauchen", "pos": [2]},
+                {"en": "a bike", "original": "kein Fahrrad", "inf": "", "pos": [3, 4]},
+                {"en": "with", "original": "mit", "inf": "", "pos": [5]},
+                {"en": "a motor", "original": "'nem Motor", "inf": "", "pos": [6, 7]},
+                {"en": "I", "original": "ich", "inf": "", "pos": [8]},
+                {"en": "can", "original": "schaff'", "inf": "schaffen", "pos": [9]},
+                {"en": "the hill", "original": "den Berg", "inf": "", "pos": [10, 11]},
+                {"en": "without", "original": "auch ohne", "inf": "", "pos": [12, 13]},
+                {"en": "electricity", "original": "Strom", "inf": "", "pos": [14]}
+            ]
+        },
+        {
+            "enTranslation": "I don't want WhatsApp, I don't want to type and avoid talking",
+            "words": [
+                {"en": "I", "original": "Ich", "inf": "", "pos": [1]},
+                {"en": "don't want", "original": "will kein", "inf": "wollen", "pos": [2, 3]},
+                {"en": "WhatsApp", "original": "WhatsApp", "inf": "", "pos": [4]},
+                {"en": "I", "original": "ich", "inf": "", "pos": [5]},
+                {"en": "don't want", "original": "will nicht", "inf": "wollen", "pos": [6, 7]},
+                {"en": "to type", "original": "schreiben", "inf": "schreiben", "pos": [8]},
+                {"en": "and", "original": "und", "inf": "", "pos": [9]},
+                {"en": "avoid", "original": "vermeiden", "inf": "vermeiden", "pos": [10]},
+                {"en": "that", "original": "dass", "inf": "", "pos": [11]},
+                {"en": "we", "original": "wir", "inf": "", "pos": [12]},
+                {"en": "talk", "original": "sprechen", "inf": "sprechen", "pos": [13]}
+            ]
+        },
+        {
+            "enTranslation": "I don't want singles on Fridays, I want albums that blow me away",
+            "words": [
+                {"en": "I", "original": "Ich", "inf": "", "pos": [1]},
+                {"en": "don't want", "original": "will kein", "inf": "wollen", "pos": [2, 3]},
+                {"en": "singles", "original": "Singles", "inf": "", "pos": [4]},
+                {"en": "on Fridays", "original": "freitags", "inf": "", "pos": [5]},
+                {"en": "I", "original": "ich", "inf": "", "pos": [6]},
+                {"en": "want", "original": "will", "inf": "wollen", "pos": [7]},
+                {"en": "albums", "original": "Alben", "inf": "", "pos": [8]},
+                {"en": "that", "original": "die", "inf": "", "pos": [9]},
+                {"en": "blow me away", "original": "mich flashen", "inf": "flashen", "pos": [10, 11]}
+            ]
+        },
+        {
+            "enTranslation": "I don't want crypto in a wallet, cash copied on USB",
+            "words": [
+                {"en": "I", "original": "Ich", "inf": "", "pos": [1]},
+                {"en": "don't want", "original": "will kein", "inf": "wollen", "pos": [2, 3]},
+                {"en": "crypto", "original": "Krypto", "inf": "", "pos": [4]},
+                {"en": "in a wallet", "original": "in 'ner Wallet", "inf": "", "pos": [5, 6]},
+                {"en": "cash", "original": "Cash", "inf": "", "pos": [7]},
+                {"en": "copied", "original": "kopiert", "inf": "kopieren", "pos": [8]},
+                {"en": "on USB", "original": "auf USB", "inf": "", "pos": [9, 10]}
+            ]
+        },
+        {
+            "enTranslation": "I want the purple bill back, and as paper in the wallet",
+            "words": [
+                {"en": "I", "original": "Ich", "inf": "", "pos": [1]},
+                {"en": "want", "original": "will", "inf": "wollen", "pos": [2]},
+                {"en": "the purple bill", "original": "den lila Schein", "inf": "", "pos": [3, 4, 5]},
+                {"en": "back", "original": "zurück", "inf": "", "pos": [6]},
+                {"en": "and", "original": "und", "inf": "", "pos": [7]},
+                {"en": "as paper", "original": "als Papier", "inf": "", "pos": [8, 9]},
+                {"en": "in the wallet", "original": "im Portemonnaie", "inf": "", "pos": [10, 11]}
+            ]
+        },
+        {
+            "enTranslation": "I want to work, but retire much earlier than at eighty",
+            "words": [
+                {"en": "I", "original": "Ich", "inf": "", "pos": [1]},
+                {"en": "want", "original": "will", "inf": "wollen", "pos": [2]},
+                {"en": "to work", "original": "ackern", "inf": "ackern", "pos": [3]},
+                {"en": "but", "original": "doch", "inf": "", "pos": [4]},
+                {"en": "much earlier", "original": "viel früher", "inf": "", "pos": [5, 6]},
+                {"en": "than", "original": "als", "inf": "", "pos": [7]},
+                {"en": "at eighty", "original": "mit achtzig", "inf": "", "pos": [8, 9]},
+                {"en": "retire", "original": "in die Rente", "inf": "", "pos": [10, 11]}
+            ]
+        },
+        {
+            "enTranslation": "And I want to say 'asshole' without everyone canceling me after",
+            "words": [
+                {"en": "And", "original": "Und", "inf": "", "pos": [1]},
+                {"en": "I", "original": "ich", "inf": "", "pos": [2]},
+                {"en": "want", "original": "will", "inf": "wollen", "pos": [3]},
+                {"en": "to say", "original": "sagen", "inf": "sagen", "pos": [4]},
+                {"en": "'asshole'", "original": "„Arschloch“", "inf": "", "pos": [5]},
+                {"en": "without", "original": "ohne", "inf": "", "pos": [6]},
+                {"en": "everyone", "original": "dass mich jeder", "inf": "", "pos": [7, 8]},
+                {"en": "canceling", "original": "cancelt", "inf": "canceln", "pos": [9]},
+                {"en": "me", "original": "mich", "inf": "", "pos": [10]},
+                {"en": "after", "original": "danach", "inf": "", "pos": [11]}
+            ]
+        },
+        {
+            "enTranslation": "I don't want Amazon, I want to go to the store in the evening and get something",
+            "words": [
+                {"en": "I", "original": "Ich", "inf": "", "pos": [1]},
+                {"en": "don't want", "original": "will kein", "inf": "wollen", "pos": [2, 3]},
+                {"en": "Amazon", "original": "Amazon", "inf": "", "pos": [4]},
+                {"en": "I", "original": "ich", "inf": "", "pos": [5]},
+                {"en": "want", "original": "will", "inf": "wollen", "pos": [6]},
+                {"en": "in the evening", "original": "abends", "inf": "", "pos": [7]},
+                {"en": "to the store", "original": "in den Laden", "inf": "", "pos": [8, 9, 10]},
+                {"en": "and", "original": "und", "inf": "", "pos": [11]},
+                {"en": "get", "original": "mir hol'n", "inf": "holen", "pos": [12, 13]}
+            ]
+        },
+        {
+            "enTranslation": "I don't want autonomous driving and I want my speedometer analog",
+            "words": [
+                {"en": "I", "original": "Ich", "inf": "", "pos": [1]},
+                {"en": "don't want", "original": "will kein", "inf": "wollen", "pos": [2, 3]},
+                {"en": "autonomous driving", "original": "autonomes Fahr'n", "inf": "", "pos": [4, 5]},
+                {"en": "and", "original": "und", "inf": "", "pos": [6]},
+                {"en": "I", "original": "ich", "inf": "", "pos": [7]},
+                {"en": "want", "original": "will", "inf": "wollen", "pos": [8]},
+                {"en": "my speedometer", "original": "mein'n Tacho", "inf": "", "pos": [9, 10]},
+                {"en": "analog", "original": "analog", "inf": "", "pos": [11]}
+            ]
+        },
+        {
+            "enTranslation": "I want a handful of real friends, not traitors or liars",
+            "words": [
+                {"en": "I", "original": "Ich", "inf": "", "pos": [1]},
+                {"en": "want", "original": "will", "inf": "wollen", "pos": [2]},
+                {"en": "a handful", "original": "'ne Handvoll", "inf": "", "pos": [3, 4]},
+                {"en": "of real friends", "original": "echter Freunde", "inf": "", "pos": [5, 6]},
+                {"en": "not", "original": "nicht", "inf": "", "pos": [7]},
+                {"en": "traitors", "original": "Verräter", "inf": "", "pos": [8]},
+                {"en": "or", "original": "oder", "inf": "", "pos": [9]},
+                {"en": "liars", "original": "Lügner", "inf": "", "pos": [10]}
+            ]
+        },
+        {
+            "enTranslation": "I don't want the metaverse, but I know you want Metrickz like before",
+            "words": [
+                {"en": "I", "original": "Ich", "inf": "", "pos": [1]},
+                {"en": "don't want", "original": "will kein", "inf": "wollen", "pos": [2, 3]},
+                {"en": "metaverse", "original": "Metaverse", "inf": "", "pos": [4]},
+                {"en": "but", "original": "doch", "inf": "", "pos": [5]},
+                {"en": "I", "original": "ich", "inf": "", "pos": [6]},
+                {"en": "know", "original": "weiß", "inf": "wissen", "pos": [7]},
+                {"en": "you", "original": "ihr", "inf": "", "pos": [8]},
+                {"en": "want", "original": "wollt", "inf": "wollen", "pos": [9]},
+                {"en": "Metrickz", "original": "Metrickz", "inf": "", "pos": [10]},
+                {"en": "like before", "original": "so wie früher", "inf": "", "pos": [11, 12, 13]}
+            ]
+        }
+    ]
+}

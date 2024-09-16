@@ -1,0 +1,396 @@
+{
+    "Text": [
+        {
+            "enTranslation": "The dream here is from America",
+            "words": [
+                {"en": "The dream", "original": "Der Traum", "inf": "", "pos": [1, 2]},
+                {"en": "here", "original": "hier", "inf": "", "pos": [3]},
+                {"en": "is", "original": "ist", "inf": "sein", "pos": [4]},
+                {"en": "from America", "original": "aus Amerika", "inf": "", "pos": [5, 6]}
+            ]
+        },
+        {
+            "enTranslation": "Bourbon whiskey on ice",
+            "words": [
+                {"en": "Bourbon whiskey", "original": "Bourbon Whiskey", "inf": "", "pos": [1, 2]},
+                {"en": "on ice", "original": "auf Eis", "inf": "", "pos": [3, 4]}
+            ]
+        },
+        {
+            "enTranslation": "Chase it until it becomes real",
+            "words": [
+                {"en": "Chase", "original": "Jagen", "inf": "jagen", "pos": [1]},
+                {"en": "it", "original": "ihn", "inf": "", "pos": [2]},
+                {"en": "until", "original": "bis", "inf": "", "pos": [3]},
+                {"en": "it becomes real", "original": "er wahr wird", "inf": "werden", "pos": [4, 5, 6]}
+            ]
+        },
+        {
+            "enTranslation": "Or die trying",
+            "words": [
+                {"en": "Or", "original": "Oder", "inf": "", "pos": [1]},
+                {"en": "die", "original": "sterben", "inf": "sterben", "pos": [2]},
+                {"en": "trying", "original": "dabei", "inf": "", "pos": [3]}
+            ]
+        },
+        {
+            "enTranslation": "The dream here is from America",
+            "words": [
+                {"en": "The dream", "original": "Der Traum", "inf": "", "pos": [1, 2]},
+                {"en": "here", "original": "hier", "inf": "", "pos": [3]},
+                {"en": "is", "original": "ist", "inf": "sein", "pos": [4]},
+                {"en": "from America", "original": "aus Amerika", "inf": "", "pos": [5, 6]}
+            ]
+        },
+        {
+            "enTranslation": "Blue jeans on Nikes",
+            "words": [
+                {"en": "Blue jeans", "original": "Blaue Jeans", "inf": "", "pos": [1, 2]},
+                {"en": "on Nikes", "original": "auf den Nikes", "inf": "", "pos": [3, 4]}
+            ]
+        },
+        {
+            "enTranslation": "A thousand wars for nothing",
+            "words": [
+                {"en": "A thousand", "original": "Tausend", "inf": "", "pos": [1]},
+                {"en": "wars", "original": "Kriege", "inf": "", "pos": [2]},
+                {"en": "for nothing", "original": "für gar nichts", "inf": "", "pos": [3, 4]}
+            ]
+        },
+        {
+            "enTranslation": "May God forgive us",
+            "words": [
+                {"en": "May", "original": "Möge", "inf": "mögen", "pos": [1]},
+                {"en": "God", "original": "Gott", "inf": "", "pos": [2]},
+                {"en": "forgive", "original": "verzeih'n", "inf": "verzeihen", "pos": [3]},
+                {"en": "us", "original": "uns", "inf": "", "pos": [4]}
+            ]
+        },
+        {
+            "enTranslation": "Oh, even if the dream never comes true",
+            "words": [
+                {"en": "Oh", "original": "Oh", "inf": "", "pos": [1]},
+                {"en": "even if", "original": "auch wenn", "inf": "", "pos": [2, 3]},
+                {"en": "the dream", "original": "der Traum", "inf": "", "pos": [4, 5]},
+                {"en": "never", "original": "niemals", "inf": "", "pos": [6]},
+                {"en": "comes true", "original": "wahr wird", "inf": "werden", "pos": [7, 8]}
+            ]
+        },
+        {
+            "enTranslation": "We are in love with the lie",
+            "words": [
+                {"en": "We", "original": "Wir", "inf": "", "pos": [1]},
+                {"en": "are", "original": "sind", "inf": "sein", "pos": [2]},
+                {"en": "in love with", "original": "verliebt in", "inf": "verlieben", "pos": [3, 4]},
+                {"en": "the lie", "original": "die Lüge", "inf": "", "pos": [5, 6]}
+            ]
+        },
+        {
+            "enTranslation": "Looking for an oasis",
+            "words": [
+                {"en": "Looking for", "original": "Suchen nach", "inf": "suchen", "pos": [1, 2]},
+                {"en": "an oasis", "original": "'ner Oase", "inf": "", "pos": [3, 4]}
+            ]
+        },
+        {
+            "enTranslation": "Here in the vast desert",
+            "words": [
+                {"en": "Here", "original": "Hier", "inf": "", "pos": [1]},
+                {"en": "in the", "original": "in der", "inf": "", "pos": [2, 3]},
+                {"en": "vast desert", "original": "riesigen Wüste", "inf": "", "pos": [4, 5]}
+            ]
+        },
+        {
+            "enTranslation": "The movies are 3D",
+            "words": [
+                {"en": "The movies", "original": "Die Filme", "inf": "", "pos": [1, 2]},
+                {"en": "are", "original": "sind", "inf": "sein", "pos": [3]},
+                {"en": "3D", "original": "3D", "inf": "", "pos": [4]}
+            ]
+        },
+        {
+            "enTranslation": "The songs are sad",
+            "words": [
+                {"en": "The songs", "original": "Die Lieder", "inf": "", "pos": [1, 2]},
+                {"en": "are", "original": "sind", "inf": "sein", "pos": [3]},
+                {"en": "sad", "original": "traurig", "inf": "", "pos": [4]}
+            ]
+        },
+        {
+            "enTranslation": "Thirty Seconds To Mars",
+            "words": [
+                {"en": "Thirty Seconds To Mars", "original": "Thirty Seconds To Mars", "inf": "", "pos": [1]}
+            ]
+        },
+        {
+            "enTranslation": "Maybe Elon will build me a spaceship",
+            "words": [
+                {"en": "Maybe", "original": "Vielleicht", "inf": "", "pos": [1]},
+                {"en": "Elon", "original": "Elon", "inf": "", "pos": [2]},
+                {"en": "will build", "original": "baut", "inf": "bauen", "pos": [3]},
+                {"en": "me", "original": "mir", "inf": "", "pos": [4]},
+                {"en": "a spaceship", "original": "'n Raumschiff", "inf": "", "pos": [5, 6]}
+            ]
+        },
+        {
+            "enTranslation": "Childhood was once",
+            "words": [
+                {"en": "Childhood", "original": "Kindheit", "inf": "", "pos": [1]},
+                {"en": "was", "original": "war", "inf": "sein", "pos": [2]},
+                {"en": "once", "original": "ma'", "inf": "", "pos": [3]}
+            ]
+        },
+        {
+            "enTranslation": "I don't need contact with my father",
+            "words": [
+                {"en": "I", "original": "Ich", "inf": "", "pos": [1]},
+                {"en": "don't need", "original": "brauch kein'n", "inf": "brauchen", "pos": [2, 3]},
+                {"en": "contact", "original": "Kontakt", "inf": "", "pos": [4]},
+                {"en": "with", "original": "mit", "inf": "", "pos": [5]},
+                {"en": "my father", "original": "mei'm Vater", "inf": "", "pos": [6, 7]}
+            ]
+        },
+        {
+            "enTranslation": "Because Hollywood raised us",
+            "words": [
+                {"en": "Because", "original": "Denn", "inf": "", "pos": [1]},
+                {"en": "Hollywood", "original": "Hollywood", "inf": "", "pos": [2]},
+                {"en": "raised us", "original": "hat uns erzogen", "inf": "erziehen", "pos": [3, 4, 5]}
+            ]
+        },
+        {
+            "enTranslation": "Godless, Miss Liberty, and Peter Parker",
+            "words": [
+                {"en": "Godless", "original": "Godless", "inf": "", "pos": [1]},
+                {"en": "Miss Liberty", "original": "Miss Liberty", "inf": "", "pos": [2]},
+                {"en": "and", "original": "und", "inf": "", "pos": [3]},
+                {"en": "Peter Parker", "original": "Peter Parker", "inf": "", "pos": [4]}
+            ]
+        },
+        {
+            "enTranslation": "Miami Beach, Tony Montana, Hakuna Matata",
+            "words": [
+                {"en": "Miami Beach", "original": "Miami Beach", "inf": "", "pos": [1, 2]},
+                {"en": "Tony Montana", "original": "Tony Montana", "inf": "", "pos": [3, 4]},
+                {"en": "Hakuna Matata", "original": "Hakuna Matata", "inf": "", "pos": [5, 6]}
+            ]
+        },
+        {
+            "enTranslation": "Marlboro Light, my brothers from Afghanistan and Iraq",
+            "words": [
+                {"en": "Marlboro Light", "original": "Marlboro Light", "inf": "", "pos": [1, 2]},
+                {"en": "my brothers", "original": "meine Brüder", "inf": "", "pos": [3, 4]},
+                {"en": "from Afghanistan", "original": "Afghan'n", "inf": "", "pos": [5]},
+                {"en": "and Iraq", "original": "und Iraker", "inf": "", "pos": [6, 7]}
+            ]
+        },
+        {
+            "enTranslation": "Blue jeans on Air Max",
+            "words": [
+                {"en": "Blue jeans", "original": "Blaue Jeans", "inf": "", "pos": [1, 2]},
+                {"en": "on Air Max", "original": "auf den Air Max", "inf": "", "pos": [3, 4, 5]}
+            ]
+        },
+        {
+            "enTranslation": "Summer vibes in the city",
+            "words": [
+                {"en": "Summer vibes", "original": "Sommer-Vibes", "inf": "", "pos": [1]},
+                {"en": "in the city", "original": "in der Stadt", "inf": "", "pos": [2, 3, 4]}
+            ]
+        },
+        {
+            "enTranslation": "My boys are criminals",
+            "words": [
+                {"en": "My boys", "original": "Meine Jungs", "inf": "", "pos": [1, 2]},
+                {"en": "are", "original": "sind", "inf": "sein", "pos": [3]},
+                {"en": "criminals", "original": "Kriminelle", "inf": "", "pos": [4]}
+            ]
+        },
+        {
+            "enTranslation": "Forgive us our hatred",
+            "words": [
+                {"en": "Forgive", "original": "Vergib", "inf": "vergeben", "pos": [1]},
+                {"en": "us", "original": "uns", "inf": "", "pos": [2]},
+                {"en": "our hatred", "original": "unseren Hass", "inf": "", "pos": [3, 4]}
+            ]
+        },
+        {
+            "enTranslation": "They pick me up",
+            "words": [
+                {"en": "They", "original": "Sie", "inf": "", "pos": [1]},
+                {"en": "pick", "original": "holen", "inf": "holen", "pos": [2]},
+                {"en": "me", "original": "mich", "inf": "", "pos": [3]},
+                {"en": "up", "original": "ab", "inf": "abholen", "pos": [4]}
+            ]
+        },
+        {
+            "enTranslation": "In the GLB through the night",
+            "words": [
+                {"en": "In the GLB", "original": "Im GLB", "inf": "", "pos": [1, 2]},
+                {"en": "through the night", "original": "durch die Nacht", "inf": "", "pos": [3, 4, 5]}
+            ]
+        },
+        {
+            "enTranslation": "We say we will improve",
+            "words": [
+                {"en": "We say", "original": "Wir sagen", "inf": "sagen", "pos": [1, 2]},
+                {"en": "we will improve", "original": "wir bessern uns", "inf": "bessern", "pos": [3, 4, 5]}
+            ]
+        },
+        {
+            "enTranslation": "But they no longer believe us",
+            "words": [
+                {"en": "But", "original": "Aber", "inf": "", "pos": [1]},
+                {"en": "they", "original": "sie", "inf": "", "pos": [2]},
+                {"en": "no longer", "original": "nicht mehr", "inf": "", "pos": [3, 4]},
+                {"en": "believe", "original": "nehmen ... ab", "inf": "abnehmen", "pos": [5, 6]},
+                {"en": "us", "original": "uns", "inf": "", "pos": [7]}
+            ]
+        },
+        {
+            "enTranslation": "Oh, Death Valley",
+            "words": [
+                {"en": "Oh", "original": "Oh", "inf": "", "pos": [1]},
+                {"en": "Death Valley", "original": "Death Valley", "inf": "", "pos": [2]}
+            ]
+        },
+        {
+            "enTranslation": "Drive from Las Vegas to Cali",
+            "words": [
+                {"en": "Drive", "original": "Fahr", "inf": "fahren", "pos": [1]},
+                {"en": "from", "original": "von", "inf": "", "pos": [2]},
+                {"en": "Las Vegas", "original": "Las Vegas", "inf": "", "pos": [3, 4]},
+                {"en": "to Cali", "original": "nach Cali", "inf": "", "pos": [5, 6]}
+            ]
+        },
+        {
+            "enTranslation": "Machiavelli is playing on the radio",
+            "words": [
+                {"en": "Machiavelli", "original": "Machiavelli", "inf": "", "pos": [1]},
+                {"en": "is playing", "original": "läuft", "inf": "laufen", "pos": [2]},
+                {"en": "on the radio", "original": "im Radio", "inf": "", "pos": [3, 4]}
+            ]
+        },
+        {
+            "enTranslation": "The engine is V8 and the tires are Pirelli",
+            "words": [
+                {"en": "The engine", "original": "Der Motor", "inf": "", "pos": [1, 2]},
+                {"en": "is", "original": "ist", "inf": "sein", "pos": [3]},
+                {"en": "V8", "original": "V8", "inf": "", "pos": [4]},
+                {"en": "and", "original": "und", "inf": "", "pos": [5]},
+                {"en": "the tires", "original": "die Reifen", "inf": "", "pos": [6, 7]},
+                {"en": "are", "original": "sind", "inf": "sein", "pos": [8]},
+                {"en": "Pirelli", "original": "Pirelli", "inf": "", "pos": [9]}
+            ]
+        },
+        {
+            "enTranslation": "It's a Chevy",
+            "words": [
+                {"en": "It's", "original": "Ist", "inf": "sein", "pos": [1]},
+                {"en": "a Chevy", "original": "'n Chevvy", "inf": "", "pos": [2, 3]}
+            ]
+        },
+        {
+            "enTranslation": "The sun is high, I'm ready",
+            "words": [
+                {"en": "The sun", "original": "Die Sonne", "inf": "", "pos": [1, 2]},
+                {"en": "is", "original": "steht", "inf": "stehen", "pos": [3]},
+                {"en": "high", "original": "hoch", "inf": "", "pos": [4]},
+                {"en": "I'm ready", "original": "ich bin ready", "inf": "sein", "pos": [5, 6, 7]}
+            ]
+        },
+        {
+            "enTranslation": "It's hot, you can see the salt from the sweat on my cap",
+            "words": [
+                {"en": "It's hot", "original": "Ist heiß", "inf": "sein", "pos": [1, 2]},
+                {"en": "you can see", "original": "vom ... sieht man", "inf": "sehen", "pos": [3, 4, 5]},
+                {"en": "the salt", "original": "Salz", "inf": "", "pos": [6]},
+                {"en": "from the sweat", "original": "vom Schweiß", "inf": "", "pos": [7, 8]},
+                {"en": "on my cap", "original": "auf der Cappi", "inf": "", "pos": [9, 10]}
+            ]
+        },
+        {
+            "enTranslation": "The apple doesn't fall far from the tree",
+            "words": [
+                {"en": "The apple", "original": "Der Apfel", "inf": "", "pos": [1, 2]},
+                {"en": "doesn't fall", "original": "fällt nicht", "inf": "fallen", "pos": [3, 4]},
+                {"en": "far from the tree", "original": "weit vom Stamm", "inf": "", "pos": [5, 6]}
+            ]
+        },
+        {
+            "enTranslation": "But it appears white on the laptop",
+            "words": [
+                {"en": "But", "original": "Aber", "inf": "", "pos": [1]},
+                {"en": "it appears", "original": "scheint", "inf": "scheinen", "pos": [2]},
+                {"en": "white", "original": "weiß", "inf": "", "pos": [3]},
+                {"en": "on the laptop", "original": "aufm Lappi", "inf": "", "pos": [4, 5]}
+            ]
+        },
+        {
+            "enTranslation": "One is a golfer and one is a caddy",
+            "words": [
+                {"en": "One", "original": "Einer", "inf": "", "pos": [1]},
+                {"en": "is", "original": "ist", "inf": "sein", "pos": [2]},
+                {"en": "a golfer", "original": "Golfer", "inf": "", "pos": [3]},
+                {"en": "and", "original": "und", "inf": "", "pos": [4]},
+                {"en": "one", "original": "einer", "inf": "", "pos": [5]},
+                {"en": "is", "original": "ist", "inf": "sein", "pos": [6]},
+                {"en": "a caddy", "original": "Caddy", "inf": "", "pos": [7]}
+            ]
+        },
+        {
+            "enTranslation": "Yes, everyone here knows how it goes",
+            "words": [
+                {"en": "Yes", "original": "Ja", "inf": "", "pos": [1]},
+                {"en": "everyone", "original": "jeder", "inf": "", "pos": [2]},
+                {"en": "here", "original": "von uns hier", "inf": "", "pos": [3, 4, 5]},
+                {"en": "knows", "original": "weiß", "inf": "wissen", "pos": [6]},
+                {"en": "how it goes", "original": "wie es läuft", "inf": "laufen", "pos": [7, 8]}
+            ]
+        },
+        {
+            "enTranslation": "McDonald's coupons, yes, they love you",
+            "words": [
+                {"en": "McDonald's coupons", "original": "McDonald's-Coupons", "inf": "", "pos": [1]},
+                {"en": "yes", "original": "ja", "inf": "", "pos": [2]},
+                {"en": "they", "original": "sie", "inf": "", "pos": [3]},
+                {"en": "love", "original": "lieben", "inf": "lieben", "pos": [4]},
+                {"en": "you", "original": "euch", "inf": "", "pos": [5]}
+            ]
+        },
+        {
+            "enTranslation": "Feelings crossover like Beastie Boys",
+            "words": [
+                {"en": "Feelings", "original": "Gefühle", "inf": "", "pos": [1]},
+                {"en": "crossover", "original": "crossover", "inf": "", "pos": [2]},
+                {"en": "like", "original": "wie", "inf": "", "pos": [3]},
+                {"en": "Beastie Boys", "original": "Beastie Boys", "inf": "", "pos": [4]}
+            ]
+        },
+        {
+            "enTranslation": "We wonder how freedom tastes",
+            "words": [
+                {"en": "We", "original": "Fragen uns", "inf": "fragen", "pos": [1, 2]},
+                {"en": "wonder", "original": "wie", "inf": "", "pos": [3]},
+                {"en": "how", "original": "die Freiheit", "inf": "", "pos": [4]},
+                {"en": "freedom", "original": "schmeckt", "inf": "schmecken", "pos": [5]}
+            ]
+        },
+        {
+            "enTranslation": "Living in the Wild Wild West",
+            "words": [
+                {"en": "Living", "original": "Leben", "inf": "leben", "pos": [1]},
+                {"en": "in the", "original": "in dem", "inf": "", "pos": [2, 3]},
+                {"en": "Wild Wild West", "original": "Wild Wild West", "inf": "", "pos": [4, 5]}
+            ]
+        },
+        {
+            "enTranslation": "And we just want to get far, far away",
+            "words": [
+                {"en": "And", "original": "Und", "inf": "", "pos": [1]},
+                {"en": "we just want", "original": "wollen nur", "inf": "wollen", "pos": [2, 3]},
+                {"en": "to get far, far away", "original": "weit, weit weg", "inf": "", "pos": [4, 5]}
+            ]
+        }
+    ]
+}

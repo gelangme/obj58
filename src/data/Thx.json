@@ -1,0 +1,366 @@
+{
+    "Text": [
+        {
+            "enTranslation": "Thirty years have passed, and if not now, then when?",
+            "words": [
+                {"en": "Thirty years", "original": "Dreißig Jahre", "inf": "", "pos": [1, 2]},
+                {"en": "have passed", "original": "sind vergang'n", "inf": "vergehen", "pos": [3, 4]},
+                {"en": "and", "original": "und", "inf": "", "pos": [5]},
+                {"en": "if not now", "original": "wenn nicht jetzt", "inf": "", "pos": [6, 7]},
+                {"en": "then when", "original": "dann wann", "inf": "", "pos": [8, 9]}
+            ]
+        },
+        {
+            "enTranslation": "I think it's slowly time that I say thank you",
+            "words": [
+                {"en": "I think", "original": "Ich glaub'", "inf": "glauben", "pos": [1, 2]},
+                {"en": "it's slowly time", "original": "so langsam wird es Zeit", "inf": "", "pos": [3, 4, 5, 6]},
+                {"en": "that", "original": "dass", "inf": "", "pos": [7]},
+                {"en": "I say thank you", "original": "ich mich mal bedank'", "inf": "bedanken", "pos": [8, 9, 10]}
+            ]
+        },
+        {
+            "enTranslation": "And now don't interrupt, please just let me rap",
+            "words": [
+                {"en": "And now", "original": "Und jetzt", "inf": "", "pos": [1, 2]},
+                {"en": "don't interrupt", "original": "nicht unterbrechen", "inf": "unterbrechen", "pos": [3, 4]},
+                {"en": "please", "original": "bitte", "inf": "", "pos": [5]},
+                {"en": "just", "original": "lass mich einfach", "inf": "lassen", "pos": [6, 7, 8]},
+                {"en": "let me rap", "original": "rappen", "inf": "rappen", "pos": [9]}
+            ]
+        },
+        {
+            "enTranslation": "I need to focus a little so I don't forget anyone",
+            "words": [
+                {"en": "I need", "original": "Ich muss", "inf": "müssen", "pos": [1, 2]},
+                {"en": "to focus a little", "original": "mich etwas konzentrier'n", "inf": "konzentrieren", "pos": [3, 4, 5]},
+                {"en": "so", "original": "damit", "inf": "", "pos": [6]},
+                {"en": "I don't forget", "original": "ich kein'n vergesse", "inf": "vergessen", "pos": [7, 8, 9]}
+            ]
+        },
+        {
+            "enTranslation": "My first thanks go to the teachers at Johannes-Kepler",
+            "words": [
+                {"en": "My first thanks", "original": "Mein erster Dank", "inf": "", "pos": [1, 2, 3]},
+                {"en": "go to", "original": "geht an", "inf": "gehen", "pos": [4, 5]},
+                {"en": "the teachers", "original": "die Lehrer", "inf": "", "pos": [6, 7]},
+                {"en": "at Johannes-Kepler", "original": "vom Johannes-Kepler", "inf": "", "pos": [8, 9]}
+            ]
+        },
+        {
+            "enTranslation": "Because you didn't pass me, I became a rapper",
+            "words": [
+                {"en": "Because", "original": "Dass", "inf": "", "pos": [1]},
+                {"en": "you didn't pass me", "original": "ihr mich nicht versetzt habt", "inf": "versetzen", "pos": [2, 3, 4, 5]},
+                {"en": "I became", "original": "wurd ich", "inf": "werden", "pos": [6, 7]},
+                {"en": "a rapper", "original": "ein Rapper", "inf": "", "pos": [8, 9]}
+            ]
+        },
+        {
+            "enTranslation": "Not everyone who was down with me was a true friend",
+            "words": [
+                {"en": "Not everyone", "original": "Nicht jeder", "inf": "", "pos": [1, 2]},
+                {"en": "who", "original": "der", "inf": "", "pos": [3]},
+                {"en": "was down", "original": "mit mir mal down war", "inf": "sein", "pos": [4, 5, 6]},
+                {"en": "was", "original": "war", "inf": "sein", "pos": [7]},
+                {"en": "a true friend", "original": "ein wahrer Freund", "inf": "", "pos": [8, 9]}
+            ]
+        },
+        {
+            "enTranslation": "But now I'm immune in case something disappoints me",
+            "words": [
+                {"en": "But", "original": "Doch", "inf": "", "pos": [1]},
+                {"en": "now", "original": "jetzt", "inf": "", "pos": [2]},
+                {"en": "I'm immune", "original": "bin ich ... immun", "inf": "sein", "pos": [3, 4, 5]},
+                {"en": "in case", "original": "falls", "inf": "", "pos": [6]},
+                {"en": "something", "original": "mich ma' was", "inf": "", "pos": [7, 8]},
+                {"en": "disappoints me", "original": "enttäuscht", "inf": "enttäuschen", "pos": [9]}
+            ]
+        },
+        {
+            "enTranslation": "Thanks for 'I'll pay a million later', must have been well meant",
+            "words": [
+                {"en": "Thanks", "original": "Danke", "inf": "", "pos": [1]},
+                {"en": "for", "original": "für", "inf": "", "pos": [2]},
+                {"en": "'I'll pay a million later'", "original": "„Ich zahl' 'ne Mio nach“", "inf": "", "pos": [3, 4, 5]},
+                {"en": "must have been", "original": "war bestimmt", "inf": "sein", "pos": [6, 7]},
+                {"en": "well meant", "original": "lieb gemeint", "inf": "meinen", "pos": [8, 9]}
+            ]
+        },
+        {
+            "enTranslation": "Thanks to the tax office, because of you I know how to share",
+            "words": [
+                {"en": "Thanks", "original": "Danke", "inf": "", "pos": [1]},
+                {"en": "to", "original": "ans", "inf": "", "pos": [2]},
+                {"en": "the tax office", "original": "Finanzamt", "inf": "", "pos": [3]},
+                {"en": "because of you", "original": "wegen euch", "inf": "", "pos": [4, 5]},
+                {"en": "I know", "original": "weiß ich", "inf": "wissen", "pos": [6, 7]},
+                {"en": "how to share", "original": "wie man teilt", "inf": "teilen", "pos": [8, 9]}
+            ]
+        },
+        {
+            "enTranslation": "Thanks to the enemies, because of you I feel better",
+            "words": [
+                {"en": "Thanks", "original": "Ein Dank", "inf": "", "pos": [1, 2]},
+                {"en": "to", "original": "geht an", "inf": "gehen", "pos": [3, 4]},
+                {"en": "the enemies", "original": "die Feinde", "inf": "", "pos": [5, 6]},
+                {"en": "because of you", "original": "wegen euch", "inf": "", "pos": [7, 8]},
+                {"en": "I feel better", "original": "fühl' ich mich besser", "inf": "fühlen", "pos": [9, 10, 11]}
+            ]
+        },
+        {
+            "enTranslation": "And actually, I don't mean you, just you, you jerk",
+            "words": [
+                {"en": "And", "original": "Und", "inf": "", "pos": [1]},
+                {"en": "actually", "original": "eigentlich", "inf": "", "pos": [2]},
+                {"en": "I don't mean", "original": "mein' ich nicht", "inf": "meinen", "pos": [3, 4, 5]},
+                {"en": "you", "original": "euch", "inf": "", "pos": [6]},
+                {"en": "just", "original": "sondern nur", "inf": "", "pos": [7, 8]},
+                {"en": "you", "original": "dich", "inf": "", "pos": [9]},
+                {"en": "you jerk", "original": "du Penner", "inf": "", "pos": [10, 11]}
+            ]
+        },
+        {
+            "enTranslation": "Thanks for 'I can't afford to stop rapping anymore'",
+            "words": [
+                {"en": "Thanks", "original": "Danke", "inf": "", "pos": [1]},
+                {"en": "for", "original": "für", "inf": "", "pos": [2]},
+                {"en": "'I can't afford'", "original": "„Nie wieder Rappen kann ich mir jetzt nicht leisten“", "inf": "", "pos": [3, 4, 5, 6, 7]}
+            ]
+        },
+        {
+            "enTranslation": "Thanks for inflation, the electricity and gas prices",
+            "words": [
+                {"en": "Thanks", "original": "Danke", "inf": "", "pos": [1]},
+                {"en": "for", "original": "für", "inf": "", "pos": [2]},
+                {"en": "the inflation", "original": "die Inflation", "inf": "", "pos": [3, 4]},
+                {"en": "the electricity", "original": "die Strom-", "inf": "", "pos": [5]},
+                {"en": "and", "original": "und", "inf": "", "pos": [6]},
+                {"en": "gas prices", "original": "diese Spritpreise", "inf": "", "pos": [7, 8]}
+            ]
+        },
+        {
+            "enTranslation": "Thanks, 20-23, thanks for nothing",
+            "words": [
+                {"en": "Thanks", "original": "Danke", "inf": "", "pos": [1]},
+                {"en": "20-23", "original": "20-23", "inf": "", "pos": [2]},
+                {"en": "thanks", "original": "danke dir", "inf": "danken", "pos": [3, 4]},
+                {"en": "for nothing", "original": "für nichts", "inf": "", "pos": [5, 6]}
+            ]
+        },
+        {
+            "enTranslation": "Thanks for a year that wasn't really mine, brother, THX",
+            "words": [
+                {"en": "Thanks", "original": "Danke", "inf": "", "pos": [1]},
+                {"en": "for a year", "original": "für ein Jahr", "inf": "", "pos": [2, 3]},
+                {"en": "that wasn't really mine", "original": "das nicht so meins war", "inf": "sein", "pos": [4, 5, 6, 7]},
+                {"en": "brother", "original": "Bruder", "inf": "", "pos": [8]},
+                {"en": "THX", "original": "THX", "inf": "", "pos": [9]}
+            ]
+        },
+        {
+            "enTranslation": "I have to tell you something, something is weighing on my heart",
+            "words": [
+                {"en": "I have to", "original": "Ich muss", "inf": "müssen", "pos": [1, 2]},
+                {"en": "tell you something", "original": "dir etwas sagen", "inf": "sagen", "pos": [3, 4, 5]},
+                {"en": "something is", "original": "mir liegt was", "inf": "liegen", "pos": [6, 7]},
+                {"en": "weighing on my heart", "original": "auf dem Herzen", "inf": "", "pos": [8, 9]}
+            ]
+        },
+        {
+            "enTranslation": "All these years I tried to hide it",
+            "words": [
+                {"en": "All these years", "original": "Die ganzen Jahre", "inf": "", "pos": [1, 2, 3]},
+                {"en": "I tried", "original": "hab' ich ... versucht", "inf": "versuchen", "pos": [4, 5]},
+                {"en": "to hide it", "original": "das zu verbergen", "inf": "verbergen", "pos": [6, 7]}
+            ]
+        },
+        {
+            "enTranslation": "But today I woke up and pulled myself together",
+            "words": [
+                {"en": "But", "original": "Doch", "inf": "", "pos": [1]},
+                {"en": "today", "original": "heut", "inf": "", "pos": [2]},
+                {"en": "I woke up", "original": "bin ... aufgewacht", "inf": "aufwachen", "pos": [3, 4]},
+                {"en": "and", "original": "und", "inf": "", "pos": [5]},
+                {"en": "pulled myself together", "original": "hab' mich aufgerafft", "inf": "aufraffen", "pos": [6, 7]}
+            ]
+        },
+        {
+            "enTranslation": "I thought I would go straight to your house and tell you",
+            "words": [
+                {"en": "I thought", "original": "Hab' mir gedacht", "inf": "denken", "pos": [1, 2]},
+                {"en": "I would go", "original": "ich fahr'", "inf": "fahren", "pos": [3, 4]},
+                {"en": "straight to your house", "original": "direkt zu dir nachhaus", "inf": "", "pos": [5, 6]},
+                {"en": "and tell you", "original": "und sag'", "inf": "sagen", "pos": [7, 8]}
+            ]
+        },
+        {
+            "enTranslation": "No one has ever been as terrible as you",
+            "words": [
+                {"en": "No one", "original": "Noch nie war irgendwer", "inf": "", "pos": [1, 2]},
+                {"en": "has ever been", "original": "war", "inf": "sein", "pos": [3]},
+                {"en": "as terrible", "original": "so scheiße", "inf": "", "pos": [4, 5]},
+                {"en": "as you", "original": "wie du", "inf": "", "pos": [6, 7]}
+            ]
+        },
+        {
+            "enTranslation": "Maybe I've said it before, but I'd rather say it again",
+            "words": [
+                {"en": "Maybe", "original": "Kann sein", "inf": "", "pos": [1, 2]},
+                {"en": "I've said it before", "original": "ich hab's schon gesagt", "inf": "sagen", "pos": [3, 4, 5]},
+                {"en": "but", "original": "doch", "inf": "", "pos": [6]},
+                {"en": "I'd rather", "original": "lieber", "inf": "", "pos": [7]},
+                {"en": "say it again", "original": "sag' ich's noch mal", "inf": "sagen", "pos": [8, 9, 10]}
+            ]
+        },
+        {
+            "enTranslation": "I swear, no one has ever been as terrible as you",
+            "words": [
+                {"en": "I swear", "original": "Ich schwör'", "inf": "schwören", "pos": [1]},
+                {"en": "no one", "original": "noch nie war irgendwer", "inf": "", "pos": [2, 3]},
+                {"en": "has ever been", "original": "war", "inf": "sein", "pos": [4]},
+                {"en": "as terrible", "original": "so scheiße", "inf": "", "pos": [5, 6]},
+                {"en": "as you", "original": "wie du", "inf": "", "pos": [7, 8]}
+            ]
+        },
+        {
+            "enTranslation": "Maybe I've mentioned it before, but I want you to understand, I swear",
+            "words": [
+                {"en": "Maybe", "original": "Kann sein", "inf": "", "pos": [1, 2]},
+                {"en": "I've mentioned it before", "original": "ich hab's schon erwähnt", "inf": "erwähnen", "pos": [3, 4, 5]},
+                {"en": "but", "original": "doch", "inf": "", "pos": [6]},
+                {"en": "I want", "original": "ich will", "inf": "wollen", "pos": [7, 8]},
+                {"en": "you to understand", "original": "dass du's verstehst", "inf": "verstehen", "pos": [9, 10, 11]},
+                {"en": "I swear", "original": "ich schwör'", "inf": "schwören", "pos": [12, 13]}
+            ]
+        },
+        {
+            "enTranslation": "Thanks to Twitch for the fact that not every rapper raps anymore",
+            "words": [
+                {"en": "Thanks", "original": "Ein Dank", "inf": "", "pos": [1, 2]},
+                {"en": "to", "original": "an", "inf": "", "pos": [3]},
+                {"en": "Twitch", "original": "Twitch", "inf": "", "pos": [4]},
+                {"en": "for the fact that", "original": "dafür, dass", "inf": "", "pos": [5, 6]},
+                {"en": "not every", "original": "nicht mehr jeder", "inf": "", "pos": [7, 8]},
+                {"en": "rapper", "original": "Rapper", "inf": "", "pos": [9]},
+                {"en": "raps anymore", "original": "rappt", "inf": "rappen", "pos": [10]}
+            ]
+        },
+        {
+            "enTranslation": "Now there are only sixty-seven bad tracks on Fridays",
+            "words": [
+                {"en": "Now", "original": "Jetzt", "inf": "", "pos": [1]},
+                {"en": "there are", "original": "sind es", "inf": "sein", "pos": [2, 3]},
+                {"en": "only", "original": "nur noch", "inf": "", "pos": [4, 5]},
+                {"en": "sixty-seven", "original": "sieben'sechzig", "inf": "", "pos": [6]},
+                {"en": "bad", "original": "schlechte", "inf": "", "pos": [7]},
+                {"en": "tracks", "original": "Tracks", "inf": "", "pos": [8]},
+                {"en": "on Fridays", "original": "freitags", "inf": "", "pos": [9]}
+            ]
+        },
+        {
+            "enTranslation": "Thanks for no major deal, I am and remain signed to myself",
+            "words": [
+                {"en": "Thanks", "original": "Danke", "inf": "", "pos": [1]},
+                {"en": "for", "original": "für", "inf": "", "pos": [2]},
+                {"en": "no major deal", "original": "kein'n Major-Deal", "inf": "", "pos": [3, 4]},
+                {"en": "I am", "original": "ich bin", "inf": "sein", "pos": [5, 6]},
+                {"en": "and remain", "original": "und bleib'", "inf": "bleiben", "pos": [7, 8]},
+                {"en": "signed to myself", "original": "bei mir gesignt", "inf": "signen", "pos": [9, 10]}
+            ]
+        },
+        {
+            "enTranslation": "That means no split for them, and that's why I got pretty rich",
+            "words": [
+                {"en": "That means", "original": "Das heißt", "inf": "heißen", "pos": [1, 2]},
+                {"en": "no split", "original": "kein Split", "inf": "", "pos": [3, 4]},
+                {"en": "for them", "original": "für die", "inf": "", "pos": [5, 6]},
+                {"en": "and", "original": "und", "inf": "", "pos": [7]},
+                {"en": "that's why", "original": "deshalb", "inf": "", "pos": [8]},
+                {"en": "I got pretty rich", "original": "wurd ich ziemlich reich", "inf": "werden", "pos": [9, 10, 11]}
+            ]
+        },
+        {
+            "enTranslation": "Thanks to Meta, now Normies have a blue checkmark",
+            "words": [
+                {"en": "Thanks", "original": "Danke", "inf": "", "pos": [1]},
+                {"en": "to Meta", "original": "Meta", "inf": "", "pos": [2]},
+                {"en": "now", "original": "für die", "inf": "", "pos": [3]},
+                {"en": "Normies", "original": "Normies", "inf": "", "pos": [4]},
+                {"en": "have a blue checkmark", "original": "hab'n ein'n blau'n Haken", "inf": "haben", "pos": [5, 6, 7, 8]}
+            ]
+        },
+        {
+            "enTranslation": "Because earlier I felt so lonely with my blue checkmark",
+            "words": [
+                {"en": "Because", "original": "Denn", "inf": "", "pos": [1]},
+                {"en": "earlier", "original": "früher", "inf": "", "pos": [2]},
+                {"en": "I felt", "original": "fühlt ich mich", "inf": "fühlen", "pos": [3, 4, 5]},
+                {"en": "so lonely", "original": "so lonely", "inf": "", "pos": [6]},
+                {"en": "with my", "original": "mit mei'm", "inf": "", "pos": [7]},
+                {"en": "blue checkmark", "original": "blau'n Haken", "inf": "", "pos": [8, 9]}
+            ]
+        },
+        {
+            "enTranslation": "Thanks to every false love, thanks for 'My heart was dead'",
+            "words": [
+                {"en": "Thanks", "original": "Dank'", "inf": "", "pos": [1]},
+                {"en": "to every", "original": "jeder", "inf": "", "pos": [2]},
+                {"en": "false love", "original": "falschen Liebe", "inf": "", "pos": [3, 4]},
+                {"en": "thanks", "original": "danke", "inf": "danken", "pos": [5]},
+                {"en": "for", "original": "für", "inf": "", "pos": [6]},
+                {"en": "'My heart was dead'", "original": "„Mein Herz war tot“", "inf": "sein", "pos": [7, 8, 9]}
+            ]
+        },{
+            "enTranslation": "It was worth it, now I have golden tracks in my catalog",
+            "words": [
+                {"en": "It was worth it", "original": "Hat sich gelohnt", "inf": "lohnen", "pos": [1, 2]},
+                {"en": "now", "original": "jetzt", "inf": "", "pos": [3]},
+                {"en": "I have", "original": "hab' ich", "inf": "haben", "pos": [4, 5]},
+                {"en": "golden tracks", "original": "goldne Tracks", "inf": "", "pos": [6, 7]},
+                {"en": "in my catalog", "original": "im Katalog", "inf": "", "pos": [8, 9]}
+            ]
+        },
+        {
+            "enTranslation": "Thanks to the stalker in front of my house, don't think I hate you",
+            "words": [
+                {"en": "Thanks", "original": "Danke", "inf": "", "pos": [1]},
+                {"en": "to the stalker", "original": "an den Stalker", "inf": "", "pos": [2, 3]},
+                {"en": "in front of", "original": "vor", "inf": "", "pos": [4]},
+                {"en": "my house", "original": "mein' Haus", "inf": "", "pos": [5, 6]},
+                {"en": "don't think", "original": "glaub nicht", "inf": "glauben", "pos": [7, 8]},
+                {"en": "I hate you", "original": "ich find' dich scheiße", "inf": "finden", "pos": [9, 10, 11]}
+            ]
+        },
+        {
+            "enTranslation": "I don't need a bodyguard, because you never leave my side",
+            "words": [
+                {"en": "I don't need", "original": "Ich brauch' kein'n", "inf": "brauchen", "pos": [1, 2, 3]},
+                {"en": "a bodyguard", "original": "Bodyguard", "inf": "", "pos": [4]},
+                {"en": "because", "original": "denn", "inf": "", "pos": [5]},
+                {"en": "you never", "original": "du nie", "inf": "", "pos": [6]},
+                {"en": "leave", "original": "weichst", "inf": "weichen", "pos": [7]},
+                {"en": "my side", "original": "von meiner Seite", "inf": "", "pos": [8, 9, 10]}
+            ]
+        },
+        {
+            "enTranslation": "A big thank you to everyone in politics",
+            "words": [
+                {"en": "A big thank you", "original": "Ein Riesendankeschön", "inf": "", "pos": [1]},
+                {"en": "to", "original": "an", "inf": "", "pos": [2]},
+                {"en": "everyone", "original": "jeden", "inf": "", "pos": [3]},
+                {"en": "in politics", "original": "in der Politik", "inf": "", "pos": [4, 5]}
+            ]
+        },
+        {
+            "enTranslation": "For letting us soon vote again for who screws us",
+            "words": [
+                {"en": "For letting us", "original": "Dafür, dass wir", "inf": "", "pos": [1, 2]},
+                {"en": "soon", "original": "bald", "inf": "", "pos": [3]},
+                {"en": "vote again", "original": "wieder wähl'n dürfen", "inf": "wählen", "pos": [4, 5]},
+                {"en": "for who", "original": "wer", "inf": "", "pos": [6]},
+                {"en": "screws us", "original": "uns fickt", "inf": "ficken", "pos": [7, 8]}
+            ]
+        }
+    ]
+}
