@@ -112,7 +112,9 @@ export default function Word({
       {word.link ? (
         <Link href={word.link}>{word.original}</Link>
       ) : (
-        <span className={className + " cursor-pointer"}>{word.original}</span>
+        <span className={className + " cursor-pointer hover:bg-slate-400"}>
+          {word.original}
+        </span>
       )}
     </>
   ) : (
@@ -140,7 +142,9 @@ export default function Word({
           {word.original}
         </Link>
       ) : (
-        <span className={className + " cursor-pointer"}>{word.original}</span>
+        <span className={className + " cursor-pointer hover:bg-slate-400"}>
+          {word.original}
+        </span>
       )}
     </Tooltip>
   );
