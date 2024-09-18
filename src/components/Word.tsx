@@ -24,6 +24,14 @@ export default function Word({
   whiteSpace,
   className = "",
 }: iWordComponent) {
+  if (!word.hasOwnProperty("bold")) {
+    word.bold = false;
+  }
+
+  if (!word.hasOwnProperty("italic")) {
+    word.italic = false;
+  }
+
   const { i18n } = useTranslation();
   const checkIfAddedToVocab = () => {
     const vocab = localStorage.getItem("vocab");
@@ -110,9 +118,20 @@ export default function Word({
     <>
       {whiteSpace && " "}
       {word.link ? (
-        <Link href={word.link}>{word.original}</Link>
+        <Link
+          className={`${className} ${word.bold ? "font-bold" : ""} ${
+            word.italic ? "italic" : ""
+          } cursor-pointer hover:bg-slate-400`}
+          href={word.link}
+        >
+          {word.original}
+        </Link>
       ) : (
-        <span className={className + " cursor-pointer hover:bg-slate-400"}>
+        <span
+          className={`${className} ${word.bold ? "font-bold" : ""} ${
+            word.italic ? "italic" : ""
+          } cursor-pointer hover:bg-slate-400`}
+        >
           {word.original}
         </span>
       )}
@@ -136,13 +155,19 @@ export default function Word({
       {word.link ? (
         <Link
           target="_blank"
-          className={className + " cursor-pointer"}
+          className={`${className} ${word.bold ? "font-bold" : ""} ${
+            word.italic ? "italic" : ""
+          } cursor-pointer hover:bg-slate-400`}
           href={word.link}
         >
           {word.original}
         </Link>
       ) : (
-        <span className={className + " cursor-pointer hover:bg-slate-400"}>
+        <span
+          className={`${className} ${word.bold ? "font-bold" : ""} ${
+            word.italic ? "italic" : ""
+          } cursor-pointer hover:bg-slate-400`}
+        >
           {word.original}
         </span>
       )}

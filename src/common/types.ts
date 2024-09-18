@@ -13,6 +13,8 @@ export interface iWord {
   pos: number[];
   type: string;
   link: string;
+  bold?: boolean;
+  italic?: boolean;
 }
 
 interface iTCSentenceTitle {

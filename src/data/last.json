@@ -159,7 +159,8 @@
               "inf": "",
               "type": "article",
               "link": "",
-              "pos": [1]
+              "pos": [1],
+              "bold": true
             },
             {
               "en": "dream",
@@ -168,7 +169,8 @@
               "inf": "Traum",
               "type": "noun",
               "link": "",
-              "pos": [2]
+              "pos": [2],
+              "italic": true
             },
             {
               "en": "here",
@@ -177,7 +179,8 @@
               "inf": "hier",
               "type": "adverb",
               "link": "",
-              "pos": [3]
+              "pos": [3],
+              "italic": true
             },
             {
               "en": "is",
@@ -186,7 +189,9 @@
               "inf": "sein",
               "type": "verb",
               "link": "",
-              "pos": [4]
+              "pos": [4],
+              "bold": true,
+              "italic": true
             },
             {
               "en": "from",
