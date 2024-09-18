@@ -3,7 +3,6 @@ export interface iSentence {
   ukTranslation: string; // translation to Ukrainian
   words: iWord[];
   original?: string;
-  type?: "default" | "noTranslation" | "h2" | "space";
 }
 
 export interface iWord {
@@ -16,15 +15,6 @@ export interface iWord {
   link: string;
 }
 
-export interface iUl {
-  sentences: iSentence[];
-}
-
-interface iTCSentenceSpace {
-  data: null;
-  type: "space";
-}
-
 interface iTCSentenceTitle {
   data: iSentence;
   type: "h2";
@@ -35,19 +25,19 @@ interface iTCSentenceNoTranslation {
   type: "noTranslation";
 }
 
-interface iTCUl {
-  data: iUl;
-  type: "ul";
-}
-
 interface iTCSentence {
   data: iSentence;
   type: "default";
 }
 
 interface iTCUl {
-  data: iUl;
-  type: "ul";
+  data: iSentence[];
+  type: "list";
+}
+
+interface iTCSentenceSpace {
+  data: null;
+  type: "space";
 }
 
 export type iTextComponent =

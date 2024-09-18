@@ -1,5 +1,5 @@
 "use client";
-import { iSentence, iWord } from "@/common/types";
+import { iSentence, iTextComponent, iWord } from "@/common/types";
 import Sentence from "./Sentence";
 import { Button, Card, Modal, Select, Tooltip } from "antd";
 import { SettingFilled } from "@ant-design/icons";
@@ -10,12 +10,13 @@ import { useTranslation } from "react-i18next";
 import YouTubeVideo from "./YouTubeVideo";
 import { useAtom, useAtomValue } from "jotai";
 import { interfaceLocaleAtom, translationLocaleAtom } from "@/state/atoms";
+import TextComponent from "./TextComponent";
 
 export default function FilePageClient({
   text,
   videoLink,
 }: {
-  text: iSentence[];
+  text: iTextComponent[];
   videoLink: string;
 }) {
   const router = useRouter();
@@ -47,18 +48,34 @@ export default function FilePageClient({
     router.push(pathname.replace(`/${params.textLocale}`, `/${value}`));
   };
 
-  const calcUniqueWords = () => {
-    let allWords: iWord[] = text.reduce(
-      (acc: any, item) => [...acc, ...item.words],
-      []
-    );
-    allWords = allWords.reduce((acc: any, item) => [...acc, item.inf], []);
-    const uniqueWords = Array.from(new Set(allWords));
-    setNumOfUniqueWords(uniqueWords.length);
+  const calcUniqueWords = (textComponents: iTextComponent[]): number => {
+    const uniqueInfSet = new Set<string>();
+
+    textComponents.forEach((component) => {
+      // We only care about components that contain 'words'
+      if (component.data && "words" in component.data) {
+        component.data.words.forEach((word) => {
+          if (word.inf) {
+            uniqueInfSet.add(word.inf);
+          }
+        });
+      } else if (component.type === "list") {
+        // Handle the case where component is of type list
+        component.data.forEach((sentence) => {
+          sentence.words.forEach((word) => {
+            if (word.inf) {
+              uniqueInfSet.add(word.inf);
+            }
+          });
+        });
+      }
+    });
+
+    return uniqueInfSet.size;
   };
 
   useEffect(() => {
-    calcUniqueWords();
+    setNumOfUniqueWords(calcUniqueWords(text));
   }, []);
 
   return (
@@ -93,9 +110,15 @@ export default function FilePageClient({
       />
       <div className="flex flex:col-reverse lg:flex-row lg:justify-between gap-4 mt-3">
         <div className="flex flex-col">
-          {text.map((item, i) => (
+          {/* {text.map((item, i) => (
             <Sentence
               key={`${i.toString()}-${item.original}`}
+              sentence={item}
+            />
+          ))} */}
+          {text.map((item, i) => (
+            <TextComponent
+              key={`${i.toString()}-${JSON.stringify(item.data).toString()}`}
               sentence={item}
             />
           ))}
