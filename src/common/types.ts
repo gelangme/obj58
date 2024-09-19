@@ -32,9 +32,19 @@ interface iTCSentence {
   type: "default";
 }
 
+interface iTCQuote {
+  data: iSentence;
+  type: "quote";
+}
+
 interface iTCUl {
   data: iSentence[];
   type: "list";
+}
+
+interface iTCCheckList {
+  data: iSentence[];
+  type: "checklist";
 }
 
 interface iTCSentenceSpace {
@@ -42,12 +52,27 @@ interface iTCSentenceSpace {
   type: "space";
 }
 
+interface iTCImage {
+  data: string;
+  type: "image";
+}
+
 export type iTextComponent =
   | iTCSentence
   | iTCUl
   | iTCSentenceNoTranslation
   | iTCSentenceTitle
-  | iTCSentenceSpace;
+  | iTCSentenceSpace
+  | iTCCheckList
+  | iTCQuote
+  | iTCImage;
+
+export interface iText {
+  text: iTextComponent[];
+  videoLink: string;
+  title: string;
+  description: string;
+}
 
 export interface TextMenuItem {
   description: string;

@@ -52,22 +52,24 @@ export default function FilePageClient({
     const uniqueInfSet = new Set<string>();
 
     textComponents.forEach((component) => {
-      // We only care about components that contain 'words'
-      if (component.data && "words" in component.data) {
-        component.data.words.forEach((word) => {
-          if (word.inf) {
-            uniqueInfSet.add(word.inf);
-          }
-        });
-      } else if (component.type === "list") {
-        // Handle the case where component is of type list
-        component.data.forEach((sentence) => {
-          sentence.words.forEach((word) => {
+      if (component.type !== "image") {
+        // We only care about components that contain 'words'
+        if (component.data && "words" in component.data) {
+          component.data.words.forEach((word) => {
             if (word.inf) {
               uniqueInfSet.add(word.inf);
             }
           });
-        });
+        } else if (component.type === "list") {
+          // Handle the case where component is of type list
+          component.data.forEach((sentence) => {
+            sentence.words.forEach((word) => {
+              if (word.inf) {
+                uniqueInfSet.add(word.inf);
+              }
+            });
+          });
+        }
       }
     });
 

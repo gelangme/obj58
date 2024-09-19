@@ -1,7 +1,7 @@
 "use client";
 import { iSentence, iTextComponent } from "@/common/types";
 import Word from "./Word";
-import { Button, Modal } from "antd";
+import { Button, Card, Checkbox, Image, Modal } from "antd";
 import React, { useEffect, useState } from "react";
 const ignor_words = [".", ",", "?", "!", ":", ")"]; // Array of symbols and words which are not higlighted
 import { PlayCircleOutlined, PauseCircleOutlined } from "@ant-design/icons";
@@ -28,7 +28,8 @@ export default function TextComponent({
   const isDataOfiSentenceType =
     sentence.type === "default" ||
     sentence.type === "noTranslation" ||
-    sentence.type === "h2";
+    sentence.type === "h2" ||
+    sentence.type === "quote";
 
   const sentenceString = isDataOfiSentenceType
     ? sentence.data.words.reduce(
@@ -55,7 +56,12 @@ export default function TextComponent({
   }, [voices]);
 
   const getTranslation = (language: string) => {
-    if (sentence.type === "default" || sentence.type === "h2") {
+    console.log("Getting translation...");
+    if (
+      sentence.type === "default" ||
+      sentence.type === "h2" ||
+      sentence.type === "quote"
+    ) {
       switch (language) {
         case "en":
           return sentence.data.enTranslation;
@@ -234,6 +240,36 @@ export default function TextComponent({
               </div>
             </>
           );
+        case "quote":
+          return (
+            <>
+              <Card className="flex flex-col">
+                <span className="italic">
+                  "
+                  {sentence.data.words.map((item, item_index) => {
+                    const isIgnored = ignor_words.includes(item.inf);
+                    return (
+                      <span key={item_index}>
+                        <Word
+                          word={item}
+                          noTooltip={isIgnored}
+                          whiteSpace={item_index !== 0 && !isIgnored}
+                          className="text-base"
+                        />
+                      </span>
+                    );
+                  })}
+                  "
+                </span>
+                <div
+                  className="opacity-10 hover:opacity-50 transition-opacity duration-300"
+                  title="Translation"
+                >
+                  {translation}
+                </div>
+              </Card>
+            </>
+          );
         case "space":
           return <div className="mt-4 mb-4"></div>;
         case "list":
@@ -269,6 +305,47 @@ export default function TextComponent({
                 </>
               ))}
             </ul>
+          );
+        case "checklist":
+          return (
+            <div className="flex flex-col gap-2">
+              {sentence.data.map((item, sentence_i) => (
+                <>
+                  <div className="flex flex-row justify-start items-center gap-2">
+                    <Checkbox />
+                    <span>
+                      {sentence.data[sentence_i].words.map(
+                        (item, item_index) => {
+                          const isIgnored = ignor_words.includes(item.inf);
+                          return (
+                            <span key={item_index}>
+                              <Word
+                                word={item}
+                                noTooltip={isIgnored}
+                                whiteSpace={item_index !== 0 && !isIgnored}
+                                className="text-base"
+                              />
+                            </span>
+                          );
+                        }
+                      )}
+                    </span>
+                  </div>
+                  <div
+                    className="opacity-10 hover:opacity-50 transition-opacity duration-300"
+                    title="Translation"
+                  >
+                    {listTranslations ? listTranslations[sentence_i] : null}
+                  </div>
+                </>
+              ))}
+            </div>
+          );
+        case "image":
+          return (
+            <Image
+              src={`${process.env.NEXT_PUBLIC_BACK_URL}/${sentence.data}`}
+            />
           );
         default:
           <span>Something went wrong</span>;

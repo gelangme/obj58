@@ -282,6 +282,7 @@ export default function AntdLayout({
           },
         },
       }}
+      direction="rtl"
     >
       <StyleProvider hashPriority="high">
         {isLoggingIn ? (

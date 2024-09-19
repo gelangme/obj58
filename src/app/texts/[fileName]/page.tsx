@@ -12,10 +12,7 @@ export async function generateStaticParams() {
   // console.log("UPDATED_FILE_NAMES: ", updatedFileNames);
   // return updatedFileNames;
 
-  return [
-    { fileName: "66e338e80ed31be6ca900f46" },
-    { fileName: "66e338f00ed31be6ca900f47" },
-  ];
+  return [{ fileName: "66ec13cd1b24b302a5575e49" }];
 }
 
 export default async function FilePage({

@@ -277,7 +277,242 @@
         }
       ],
       "type": "list"
+    },
+    {
+      "data": [
+        {
+          "enTranslation": "Or die doing it",
+          "ukTranslation": "Або померти, роблячи це",
+          "words": [
+            {
+              "en": "Or",
+              "uk": "Або",
+              "original": "Oder",
+              "inf": "oder",
+              "type": "conjunction",
+              "link": "",
+              "pos": [1]
+            },
+            {
+              "en": "die",
+              "uk": "померти",
+              "original": "sterben",
+              "inf": "sterben",
+              "type": "verb",
+              "link": "",
+              "pos": [2]
+            },
+            {
+              "en": "doing",
+              "uk": "роблячи",
+              "original": "dabei",
+              "inf": "dabei",
+              "type": "adverb",
+              "link": "",
+              "pos": [3]
+            }
+          ],
+          "type": "default"
+        },
+        {
+          "enTranslation": "The dream here is from America",
+          "ukTranslation": "Мрія тут з Америки",
+          "words": [
+            {
+              "en": "The",
+              "uk": "Мрія",
+              "original": "Der",
+              "inf": "",
+              "type": "article",
+              "link": "",
+              "pos": [1],
+              "bold": true
+            },
+            {
+              "en": "dream",
+              "uk": "Мрія",
+              "original": "Traum",
+              "inf": "Traum",
+              "type": "noun",
+              "link": "",
+              "pos": [2],
+              "italic": true
+            },
+            {
+              "en": "here",
+              "uk": "тут",
+              "original": "hier",
+              "inf": "hier",
+              "type": "adverb",
+              "link": "",
+              "pos": [3],
+              "italic": true
+            },
+            {
+              "en": "is",
+              "uk": "є",
+              "original": "ist",
+              "inf": "sein",
+              "type": "verb",
+              "link": "",
+              "pos": [4],
+              "bold": true,
+              "italic": true
+            },
+            {
+              "en": "from",
+              "uk": "з",
+              "original": "aus",
+              "inf": "aus",
+              "type": "preposition",
+              "link": "",
+              "pos": [5]
+            },
+            {
+              "en": "America",
+              "uk": "Америка",
+              "original": "Amerika",
+              "inf": "Amerika",
+              "type": "noun",
+              "link": "",
+              "pos": [6]
+            }
+          ],
+          "type": "default"
+        },
+        {
+          "enTranslation": "The dream here is from America",
+          "ukTranslation": "Мрія тут з Америки",
+          "words": [
+            {
+              "en": "The",
+              "uk": "Мрія",
+              "original": "Der",
+              "inf": "",
+              "type": "article",
+              "link": "",
+              "pos": [1]
+            },
+            {
+              "en": "dream",
+              "uk": "Мрія",
+              "original": "Traum",
+              "inf": "Traum",
+              "type": "noun",
+              "link": "",
+              "pos": [2]
+            },
+            {
+              "en": "here",
+              "uk": "тут",
+              "original": "hier",
+              "inf": "hier",
+              "type": "adverb",
+              "link": "",
+              "pos": [3]
+            },
+            {
+              "en": "is",
+              "uk": "є",
+              "original": "ist",
+              "inf": "sein",
+              "type": "verb",
+              "link": "",
+              "pos": [4]
+            },
+            {
+              "en": "from",
+              "uk": "з",
+              "original": "aus",
+              "inf": "aus",
+              "type": "preposition",
+              "link": "",
+              "pos": [5]
+            },
+            {
+              "en": "America",
+              "uk": "Америка",
+              "original": "Amerika",
+              "inf": "Amerika",
+              "type": "noun",
+              "link": "test",
+              "pos": [6]
+            }
+          ],
+          "type": "default"
+        }
+      ],
+      "type": "checklist"
+    },
+    {
+      "data": "images/img1.jpg",
+      "type": "image"
+    },
+    {
+      "data": {
+        "enTranslation": "The dream here is from America",
+        "ukTranslation": "Мрія тут з Америки",
+        "words": [
+          {
+            "en": "The",
+            "uk": "Мрія",
+            "original": "Der",
+            "inf": "",
+            "type": "article",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "dream",
+            "uk": "Мрія",
+            "original": "Traum",
+            "inf": "Traum",
+            "type": "noun",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "here",
+            "uk": "тут",
+            "original": "hier",
+            "inf": "hier",
+            "type": "adverb",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "is",
+            "uk": "є",
+            "original": "ist",
+            "inf": "sein",
+            "type": "verb",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "from",
+            "uk": "з",
+            "original": "aus",
+            "inf": "aus",
+            "type": "preposition",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "America",
+            "uk": "Америка",
+            "original": "Amerika",
+            "inf": "Amerika",
+            "type": "noun",
+            "link": "",
+            "pos": [6]
+          }
+        ]
+      },
+      "type": "quote"
     }
   ],
-  "videoLink": ""
+  "videoLink": "",
+  "title": "Text 1",
+  "description": "Text 1 Description"
 }
