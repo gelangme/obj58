@@ -1,7 +1,7 @@
 "use client";
 
 import LocaleSelect from "@/components/LocaleSelect";
-import { Switch } from "antd";
+import { Form, Switch } from "antd";
 import { GlobalOutlined, MoonOutlined, SunOutlined } from "@ant-design/icons";
 import { useTranslation } from "react-i18next";
 import { atom, useAtom } from "jotai";
@@ -32,8 +32,8 @@ export default function SettingsPage() {
   );
 
   return (
-    <div className="flex flex-col gap-4">
-      <div className="flex flex-row items-center justify-start gap-3">
+    <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-1 md:flex-row md:items-center md:justify-start md:gap-3">
         <span>{t("interface-lang")}</span>
         <LocaleSelect
           value={interfaceLocale}
@@ -47,7 +47,7 @@ export default function SettingsPage() {
           isInterfaceLocale
         />
       </div>
-      <div className="flex flex-row items-center justify-start gap-3">
+      <div className="flex flex-col gap-1 md:flex-row md:items-center md:justify-start md:gap-3">
         <span>{t("translation-lang")}</span>
         <LocaleSelect
           value={translationLocale}

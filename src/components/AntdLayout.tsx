@@ -11,13 +11,14 @@ import {
   notification,
   Drawer,
   Space,
+  Modal,
 } from "antd";
 import {
   FileTextOutlined,
   HomeOutlined,
   SettingFilled,
-  MenuUnfoldOutlined,
-  MenuFoldOutlined,
+  LoginOutlined,
+  LogoutOutlined,
   BookOutlined,
 } from "@ant-design/icons";
 import { StyleProvider } from "@ant-design/cssinjs";
@@ -27,16 +28,20 @@ import { useTranslation } from "react-i18next";
 import { useAtomValue } from "jotai";
 import { isDarkModeAtom } from "@/state/atoms";
 import { useMediaQuery } from "react-responsive";
+import LoginForm from "./forms/LoginForm";
+import RegisterForm from "./forms/RegisterForm";
+import UserProfile from "./UserProfile";
+import { TextMenuItem } from "@/common/types";
 
 const { defaultAlgorithm, darkAlgorithm } = theme;
 const { Sider } = Layout;
 
 export default function AntdLayout({
   children,
-  directory,
+  fetchedMenuItems,
 }: {
   children: React.ReactNode;
-  directory: Directory;
+  fetchedMenuItems: TextMenuItem[];
 }) {
   const isMobile = useMediaQuery({ maxWidth: 768 });
 
@@ -45,51 +50,12 @@ export default function AntdLayout({
   } = theme.useToken();
   const { t } = useTranslation();
   const isDarkMode = useAtomValue(isDarkModeAtom);
-  const [isMobileSiderCollapsed, setIsMobileSiderCollapsed] = useState(true);
+  const [isLoggingIn, setIsLoggingIn] = useState(true);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-  const [api, contextHolder] = notification.useNotification();
+  const [modal, contextHolder] = Modal.useModal();
+
   let effectCounter = 0;
-
-  const mapDirectoryToMenuItems = (
-    directory: Directory,
-    parentPath: string = ""
-  ): MenuProps["items"] => {
-    const currentPath = parentPath
-      ? `${parentPath}/${directory.dirName}`
-      : directory.dirName;
-
-    const subDirectories = directory.directories
-      .map((subDir) => ({
-        key: subDir.dirName,
-        icon: React.createElement(FileTextOutlined),
-        label: subDir.dirName,
-        children: mapDirectoryToMenuItems(subDir, currentPath),
-      }))
-      .filter((subDir) => subDir.children && subDir.children.length > 0);
-
-    const files = directory.files.map((file) => {
-      const filePath = `${currentPath}/${file}`;
-      const encodedFilePath = encodeURIComponent(filePath);
-      console.log(encodedFilePath);
-      console.log(`Navigating to /texts/${encodeURIComponent(filePath)}`);
-      return {
-        key: file.replace(".json", ""),
-        icon: React.createElement(FileTextOutlined),
-        label: (
-          <Link
-            href={`/texts/${encodeURIComponent(filePath)
-              .replace(".json", "")
-              .replace("data%2F", "")}`}
-          >
-            {file.replace(".json", "")}
-          </Link>
-          // <Link href={`/texts/kek`}>{file.replace(".json", "")}</Link>
-        ),
-      };
-    });
-
-    return [...subDirectories, ...files];
-  };
 
   const menuItems: MenuProps["items"] = [
     {
@@ -97,11 +63,6 @@ export default function AntdLayout({
       icon: React.createElement(HomeOutlined),
       label: <Link href="/">{t("home")}</Link>,
     },
-    // {
-    //   key: "generate-new-text",
-    //   icon: React.createElement(PlayCircleOutlined),
-    //   label: <Link href="/generate-new-text">{t("generate-new-text")}</Link>,
-    // },
     {
       key: "vocabulary",
       icon: React.createElement(BookOutlined),
@@ -110,13 +71,28 @@ export default function AntdLayout({
     {
       key: "texts",
       icon: React.createElement(FileTextOutlined),
-      label: t("texts"),
-      children: mapDirectoryToMenuItems(directory),
+      label: <Link href="/texts">{t("texts")}</Link>,
     },
+
     {
-      key: t("settings"),
+      key: "settings",
       label: <Link href="/settings">{t("settings")}</Link>,
       icon: React.createElement(SettingFilled),
+    },
+    {
+      key: "login",
+      label: (
+        <Link
+          href="#"
+          onClick={() => {
+            setIsModalOpen(true);
+            return false;
+          }}
+        >
+          Log In
+        </Link>
+      ),
+      icon: React.createElement(LoginOutlined),
     },
   ];
 
@@ -162,6 +138,21 @@ export default function AntdLayout({
           href="/settings"
         >
           <SettingFilled style={{ fontSize: "20px" }} />
+        </Link>
+      ),
+    },
+    {
+      key: "login",
+      label: (
+        <Link
+          className="flex items-center justify-center h-full w-full"
+          href="#"
+          onClick={() => {
+            setIsModalOpen(true);
+            return false;
+          }}
+        >
+          <LoginOutlined style={{ fontSize: "20px" }} />
         </Link>
       ),
     },
@@ -213,16 +204,16 @@ export default function AntdLayout({
           <Breadcrumb.Item>Texts</Breadcrumb.Item>
           <Breadcrumb.Item>Text 1</Breadcrumb.Item>
         </Breadcrumb> */}
-              <Card
-                style={{
-                  margin: 0,
-                  minHeight: 280,
-                  borderRadius: borderRadiusLG,
-                }}
-                className="card-padding"
+              <Layout.Content
+              // style={{
+              //   margin: 0,
+              //   minHeight: 280,
+              //   borderRadius: borderRadiusLG,
+              // }}
+              // className="card-padding"
               >
                 {children}
-              </Card>
+              </Layout.Content>
               <Layout.Footer className="h-10 bottom-0 opacity-70">
                 © {new Date().getFullYear()} gelang.me
               </Layout.Footer>
@@ -258,16 +249,16 @@ export default function AntdLayout({
           <Breadcrumb.Item>Texts</Breadcrumb.Item>
           <Breadcrumb.Item>Text 1</Breadcrumb.Item>
         </Breadcrumb> */}
-            <Card
-              style={{
-                margin: 0,
-                minHeight: 280,
-                borderRadius: borderRadiusLG,
-                padding: 24,
-              }}
+            <Layout.Content
+            // style={{
+            //   margin: 0,
+            //   minHeight: 280,
+            //   borderRadius: borderRadiusLG,
+            //   padding: 24,
+            // }}
             >
               {children}
-            </Card>
+            </Layout.Content>
             <Layout.Footer className="h-10 bottom-0 opacity-70">
               © {new Date().getFullYear()} gelang.me
             </Layout.Footer>
@@ -293,6 +284,49 @@ export default function AntdLayout({
       }}
     >
       <StyleProvider hashPriority="high">
+        {isLoggingIn ? (
+          <Modal
+            title={t("log-in")}
+            open={isModalOpen}
+            onCancel={() => setIsModalOpen(false)}
+            footer={null}
+          >
+            <div className="flex flex-col gap-3">
+              <Link
+                className="mt-3 mb-3"
+                href="#"
+                onClick={() => {
+                  setIsLoggingIn(false);
+                  return false;
+                }}
+              >
+                Don't have an account? Register here
+              </Link>
+              <LoginForm />
+            </div>
+          </Modal>
+        ) : (
+          <Modal
+            title={t("sign-up")}
+            open={isModalOpen}
+            onCancel={() => setIsModalOpen(false)}
+            footer={null}
+          >
+            <div className="flex flex-col gap-3">
+              <Link
+                className="mt-3 mb-3"
+                href="#"
+                onClick={() => {
+                  setIsLoggingIn(true);
+                  return false;
+                }}
+              >
+                Already have an account? Log In here
+              </Link>
+              <RegisterForm />
+            </div>
+          </Modal>
+        )}
         <Drawer
           title={t("cookies-title")}
           placement={"bottom"}
@@ -320,7 +354,13 @@ export default function AntdLayout({
         >
           {t("cookies-body")}
         </Drawer>
-        {isMobile ? renderMobileLayout() : renderDesktopLayout()}
+        {/* {isMobile ? renderMobileLayout() : renderDesktopLayout()} */}
+        <div className="hidden md:flex min-h-[100vh] min-w-[100vw]">
+          {renderDesktopLayout()}
+        </div>
+        <div className="flex md:hidden min-h-[100vh] min-w-[100vw]">
+          {renderMobileLayout()}
+        </div>
         {contextHolder}
       </StyleProvider>
     </ConfigProvider>

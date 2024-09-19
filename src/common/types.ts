@@ -48,3 +48,9 @@ export type iTextComponent =
   | iTCSentenceNoTranslation
   | iTCSentenceTitle
   | iTCSentenceSpace;
+
+export interface TextMenuItem {
+  description: string;
+  title: string;
+  textID: string;
+}

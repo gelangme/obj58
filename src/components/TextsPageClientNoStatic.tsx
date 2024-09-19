@@ -7,7 +7,7 @@ import { Directory } from "@/utils/readFileData";
 import Link from "next/link";
 import { TextMenuItem } from "@/common/types";
 
-export default function TextsPageClient({
+export default function TextsPageClientNoStatic({
   menuItems,
 }: {
   menuItems: TextMenuItem[];
@@ -18,7 +18,7 @@ export default function TextsPageClient({
       dataSource={menuItems}
       renderItem={(item, index) => (
         <>
-          <Link href={`/texts/${encodeURIComponent(item.textID)}`}>
+          <Link href={`/texts/text?textID=${encodeURIComponent(item.textID)}`}>
             <List.Item>
               <List.Item.Meta
                 avatar={React.createElement(FileTextOutlined)}
