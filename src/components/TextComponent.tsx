@@ -79,7 +79,7 @@ export default function TextComponent({
   };
 
   const getListTranslations = (language: string) => {
-    if (sentence.type === "list") {
+    if (sentence.type === "list" || sentence.type === "checklist") {
       switch (language) {
         case "en":
           return sentence.data.map((item) => item.enTranslation);
@@ -108,7 +108,7 @@ export default function TextComponent({
       } else {
         return setTranslation(getTranslation(translationLocale));
       }
-    } else if (sentence.type === "list") {
+    } else if (sentence.type === "list" || sentence.type === "checklist") {
       if (lang) {
         return setListTranslations(getListTranslations(lang));
       }
@@ -344,6 +344,7 @@ export default function TextComponent({
         case "image":
           return (
             <Image
+              width={isMobile ? undefined : "500px"}
               src={`${process.env.NEXT_PUBLIC_BACK_URL}/${sentence.data}`}
             />
           );
