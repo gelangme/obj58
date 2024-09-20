@@ -25,13 +25,15 @@ import { StyleProvider } from "@ant-design/cssinjs";
 import Link from "next/link";
 import { Directory } from "@/utils/readFileData";
 import { useTranslation } from "react-i18next";
-import { useAtomValue } from "jotai";
-import { isDarkModeAtom } from "@/state/atoms";
+import { useAtom, useAtomValue } from "jotai";
+import { isDarkModeAtom, isLoggedInAtom, userAtom } from "@/state/atoms";
 import { useMediaQuery } from "react-responsive";
 import LoginForm from "./forms/LoginForm";
 import RegisterForm from "./forms/RegisterForm";
 import UserProfile from "./UserProfile";
-import { TextMenuItem } from "@/common/types";
+import { TextMenuItem, User } from "@/common/types";
+import { useHydrateAtoms } from "jotai/utils";
+import axios from "axios";
 
 const { defaultAlgorithm, darkAlgorithm } = theme;
 const { Sider } = Layout;
@@ -50,10 +52,37 @@ export default function AntdLayout({
   } = theme.useToken();
   const { t } = useTranslation();
   const isDarkMode = useAtomValue(isDarkModeAtom);
+  const [isLoggedIn, setIsLoggedIn] = useAtom(isLoggedInAtom);
+  const [user, setUser] = useAtom(userAtom);
   const [isLoggingIn, setIsLoggingIn] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [modal, contextHolder] = Modal.useModal();
+
+  const logout = async () => {
+    try {
+      const response = await axios.post(
+        "http://localhost:3001/logout",
+        {},
+        {
+          withCredentials: true,
+        }
+      );
+
+      if (response.status === 200) {
+        console.log("Logout successful");
+        setTimeout(() => window.location.reload(), 1000);
+        setIsLoggedIn(false);
+        setUser(undefined);
+      } else {
+        console.log("Logout is not successful");
+      }
+    } catch (error) {
+      console.error("Logout error:", error);
+      setIsLoggedIn(false);
+      setUser(undefined);
+    }
+  };
 
   let effectCounter = 0;
 
@@ -79,21 +108,48 @@ export default function AntdLayout({
       label: <Link href="/settings">{t("settings")}</Link>,
       icon: React.createElement(SettingFilled),
     },
-    {
-      key: "login",
-      label: (
-        <Link
-          href="#"
-          onClick={() => {
-            setIsModalOpen(true);
-            return false;
-          }}
-        >
-          Log In
-        </Link>
-      ),
-      icon: React.createElement(LoginOutlined),
-    },
+    isLoggedIn
+      ? null
+      : {
+          key: "login",
+          label: (
+            <Link
+              href="#"
+              onClick={() => {
+                setIsModalOpen(true);
+                return false;
+              }}
+            >
+              Log In
+            </Link>
+          ),
+          icon: React.createElement(LoginOutlined),
+        },
+    isLoggedIn
+      ? {
+          key: "profile",
+          label: <Link href="/profile">{t("profile")}</Link>,
+          icon: React.createElement(SettingFilled),
+        }
+      : null,
+    isLoggedIn
+      ? {
+          key: "logout",
+          label: (
+            <Link
+              href="#"
+              onClick={() => {
+                logout();
+                return false;
+              }}
+            >
+              Log Out
+            </Link>
+          ),
+          icon: React.createElement(LogoutOutlined),
+          danger: true,
+        }
+      : null,
   ];
 
   const menuItemsMobile: MenuProps["items"] = [
@@ -183,7 +239,33 @@ export default function AntdLayout({
     if (!localStorageConsentBoolean) {
       setIsDrawerOpen(true);
     }
-  });
+  }, []);
+
+  useEffect(() => {
+    async function checkLoginStatus() {
+      try {
+        const response = await axios.get("http://localhost:3001/auth/check", {
+          withCredentials: true,
+        });
+
+        if (response.status === 200) {
+          const data = response.data;
+          setIsLoggedIn(data.isLoggedIn);
+          setUser(data.user);
+        } else {
+          console.log("User is not authenticated");
+          setIsLoggedIn(false);
+          setUser(undefined);
+        }
+      } catch (error) {
+        console.error("Error checking login status:", error);
+        setIsLoggedIn(false);
+        setUser(undefined);
+      }
+    }
+
+    checkLoginStatus();
+  }, []);
 
   const renderMobileLayout = () => {
     return (

@@ -79,3 +79,8 @@ export interface TextMenuItem {
   title: string;
   textID: string;
 }
+
+export interface User {
+  name: string;
+  email: string;
+}

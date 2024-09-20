@@ -21,6 +21,8 @@ const LoginForm: React.FC = () => {
         credentials: "include",
       });
       console.log("fetchedUserData: ", fetchedUserData);
+
+      setTimeout(() => window.location.reload(), 1000);
     } catch (error: any) {
       message.error(error.response?.data?.message || "Login failed");
     } finally {

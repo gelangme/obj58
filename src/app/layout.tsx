@@ -22,6 +22,36 @@ export default async function RootLayout({ children }: PageProps) {
   const menuItems = await menuData.data;
   console.log("menuItems: ", { menuItems });
 
+  // async function checkLoginStatus() {
+  //   try {
+  //     const response = await axios.get("http://localhost:3001/auth/check", {
+  //       withCredentials: true,
+  //     });
+
+  //     console.log("USER_RESPONSE: ", { response });
+
+  //     if (response.status === 200) {
+  //       const data = response.data;
+  //       if (data.isLoggedIn) {
+  //         console.log("User is logged in");
+  //         return { isLoggedIn: data.isLoggedIn, user: data.user };
+  //       } else {
+  //         console.log("User is not logged in");
+  //         return { isLoggedIn: false, user: undefined };
+  //       }
+  //     } else {
+  //       console.log("User is not authenticated");
+  //       return { isLoggedIn: false, user: undefined };
+  //     }
+  //   } catch (error) {
+  //     console.error("Error checking login status:", error);
+  //     return { isLoggedIn: false, user: undefined };
+  //   }
+  // }
+
+  // const { isLoggedIn, user } = await checkLoginStatus();
+  // console.log("USER_DATA: ", { isLoggedIn, user });
+
   return (
     <html lang="en">
       <body className={inter.className + " flex min-h-screen flex-col"}>
