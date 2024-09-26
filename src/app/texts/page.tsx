@@ -9,11 +9,5 @@ export default async function TextsPage() {
   const menuItems = await menuData.data;
   console.log("menuItems: ", { menuItems });
 
-  return (
-    <>
-      <TextsPageClient menuItems={menuItems} />
-      No static menu:
-      <TextsPageClientNoStatic menuItems={menuItems} />
-    </>
-  );
+  return <TextsPageClient menuItems={menuItems} />;
 }

@@ -1,0 +1,3868 @@
+{
+  "text": [
+    {
+      "data": {
+        "enTranslation": "Song lyrics to 'Flügeltüren'",
+        "ukTranslation": "Текст пісні до 'Flügeltüren'",
+        "words": [
+          {
+            "en": "Song lyrics",
+            "uk": "Текст пісні",
+            "original": "Songtext",
+            "inf": "Songtext",
+            "type": "noun",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "to",
+            "uk": "до",
+            "original": "zu",
+            "inf": "zu",
+            "type": "preposition",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "Flügeltüren",
+            "uk": "Флюґельтюрен",
+            "original": "Flügeltüren",
+            "inf": "Flügeltüren",
+            "type": "noun",
+            "link": "",
+            "pos": [3]
+          }
+        ]
+      },
+      "type": "h2"
+    },
+    {
+      "data": "images/Flügeltüren.png",
+      "type": "image"
+    },
+    {
+      "data": {
+        "enTranslation": "",
+        "ukTranslation": "",
+        "words": [
+          {
+            "en": "",
+            "uk": "",
+            "original": "[Teil",
+            "inf": "Teil",
+            "type": "noun",
+            "link": "",
+            "pos": [1],
+            "bold": true
+          },
+          {
+            "en": "",
+            "uk": "",
+            "original": "1]",
+            "inf": "1",
+            "type": "number",
+            "link": "",
+            "pos": [2],
+            "bold": true
+          }
+        ]
+      },
+      "type": "noTranslation"
+    },
+    {
+      "data": {
+        "enTranslation": "I don’t want to stay home 24/7 because of viruses",
+        "ukTranslation": "Я не хочу сидіти вдома 24/7 через віруси",
+        "words": [
+          {
+            "en": "I",
+            "uk": "Я",
+            "original": "Ich",
+            "inf": "ich",
+            "type": "pronoun",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "don’t want",
+            "uk": "не хочу",
+            "original": "will kein",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "stay",
+            "uk": "сидіти",
+            "original": "sein",
+            "inf": "sein",
+            "type": "verb",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "home",
+            "uk": "вдома",
+            "original": "zuhause",
+            "inf": "zuhause",
+            "type": "adverb",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "because of",
+            "uk": "через",
+            "original": "wegen",
+            "inf": "wegen",
+            "type": "preposition",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "viruses",
+            "uk": "віруси",
+            "original": "Vir'n",
+            "inf": "Virus",
+            "type": "noun",
+            "link": "",
+            "pos": [6]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "No 2023, give me 2002 or 2003",
+        "ukTranslation": "Не 2023, дайте мені 2002 чи 2003",
+        "words": [
+          {
+            "en": "No",
+            "uk": "Не",
+            "original": "Kein",
+            "inf": "kein",
+            "type": "negative article",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "2023",
+            "uk": "2023",
+            "original": "'23",
+            "inf": "'23",
+            "type": "number",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "give",
+            "uk": "дайте",
+            "original": "gib",
+            "inf": "geben",
+            "type": "verb",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "me",
+            "uk": "мені",
+            "original": "mir",
+            "inf": "mir",
+            "type": "pronoun",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "2002",
+            "uk": "2002",
+            "original": "'2",
+            "inf": "'2",
+            "type": "number",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "or",
+            "uk": "або",
+            "original": "oder",
+            "inf": "oder",
+            "type": "conjunction",
+            "link": "",
+            "pos": [6]
+          },
+          {
+            "en": "2003",
+            "uk": "2003",
+            "original": "2003",
+            "inf": "2003",
+            "type": "number",
+            "link": "",
+            "pos": [7]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "I want dreams only for me, not in some feed",
+        "ukTranslation": "Я хочу мрії лише для себе, а не в якійсь стрічці",
+        "words": [
+          {
+            "en": "I want",
+            "uk": "Я хочу",
+            "original": "Will",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "dreams",
+            "uk": "мрії",
+            "original": "Träume",
+            "inf": "Traum",
+            "type": "noun",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "only",
+            "uk": "лише",
+            "original": "nur",
+            "inf": "nur",
+            "type": "adverb",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "for me",
+            "uk": "для мене",
+            "original": "für mich",
+            "inf": "mich",
+            "type": "pronoun",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "not",
+            "uk": "не",
+            "original": "nicht",
+            "inf": "nicht",
+            "type": "adverb",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "in",
+            "uk": "в",
+            "original": "in",
+            "inf": "in",
+            "type": "preposition",
+            "link": "",
+            "pos": [6]
+          },
+          {
+            "en": "some",
+            "uk": "якійсь",
+            "original": "irgendeinem",
+            "inf": "irgendein",
+            "type": "adjective",
+            "link": "",
+            "pos": [7]
+          },
+          {
+            "en": "feed",
+            "uk": "стрічка",
+            "original": "Feed",
+            "inf": "Feed",
+            "type": "noun",
+            "link": "",
+            "pos": [8]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "I want cars with gasoline, not toy batteries",
+        "ukTranslation": "Я хочу машини на бензині, а не на іграшкових батареях",
+        "words": [
+          {
+            "en": "I want",
+            "uk": "Я хочу",
+            "original": "Will",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "cars",
+            "uk": "машини",
+            "original": "Autos",
+            "inf": "Auto",
+            "type": "noun",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "with",
+            "uk": "на",
+            "original": "mit",
+            "inf": "mit",
+            "type": "preposition",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "gasoline",
+            "uk": "бензин",
+            "original": "Benzin",
+            "inf": "Benzin",
+            "type": "noun",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "not",
+            "uk": "не",
+            "original": "nicht",
+            "inf": "nicht",
+            "type": "adverb",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "toy",
+            "uk": "іграшкових",
+            "original": "Spielzeug",
+            "inf": "Spielzeug",
+            "type": "noun",
+            "link": "",
+            "pos": [6]
+          },
+          {
+            "en": "batteries",
+            "uk": "батареях",
+            "original": "Batterien",
+            "inf": "Batterie",
+            "type": "noun",
+            "link": "",
+            "pos": [7]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "I don’t want an iPhone and hang on the phone, I want ICQ and MSN",
+        "ukTranslation": "Я не хочу iPhone і зависати на телефоні, хочу ICQ та MSN",
+        "words": [
+          {
+            "en": "I",
+            "uk": "Я",
+            "original": "Ich",
+            "inf": "ich",
+            "type": "pronoun",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "don’t want",
+            "uk": "не хочу",
+            "original": "will kein",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "an",
+            "uk": "",
+            "original": "kein",
+            "inf": "kein",
+            "type": "article",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "iPhone",
+            "uk": "iPhone",
+            "original": "iPhone",
+            "inf": "iPhone",
+            "type": "noun",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "and",
+            "uk": "і",
+            "original": "und",
+            "inf": "und",
+            "type": "conjunction",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "hang",
+            "uk": "зависати",
+            "original": "häng'n",
+            "inf": "hängen",
+            "type": "verb",
+            "link": "",
+            "pos": [6]
+          },
+          {
+            "en": "on the phone",
+            "uk": "на телефоні",
+            "original": "am Handy",
+            "inf": "Handy",
+            "type": "noun",
+            "link": "",
+            "pos": [7]
+          },
+          {
+            "en": "I want",
+            "uk": "хочу",
+            "original": "will",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [8]
+          },
+          {
+            "en": "ICQ",
+            "uk": "ICQ",
+            "original": "ICQ",
+            "inf": "ICQ",
+            "type": "noun",
+            "link": "",
+            "pos": [9]
+          },
+          {
+            "en": "and",
+            "uk": "та",
+            "original": "und",
+            "inf": "und",
+            "type": "conjunction",
+            "link": "",
+            "pos": [10]
+          },
+          {
+            "en": "MSN",
+            "uk": "MSN",
+            "original": "MSN",
+            "inf": "MSN",
+            "type": "noun",
+            "link": "",
+            "pos": [11]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "I want sweatpants and if that doesn’t work, then baggy pants",
+        "ukTranslation": "Я хочу спортивні штани, а якщо це не підходить, тоді мішкуваті штани",
+        "words": [
+          {
+            "en": "I want",
+            "uk": "Я хочу",
+            "original": "Will",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "sweatpants",
+            "uk": "спортивні штани",
+            "original": "Jogginghose",
+            "inf": "Jogginghose",
+            "type": "noun",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "and",
+            "uk": "і",
+            "original": "und",
+            "inf": "und",
+            "type": "conjunction",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "if",
+            "uk": "якщо",
+            "original": "wenn",
+            "inf": "wenn",
+            "type": "conjunction",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "that",
+            "uk": "це",
+            "original": "das",
+            "inf": "das",
+            "type": "pronoun",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "doesn’t work",
+            "uk": "не підходить",
+            "original": "nicht geht",
+            "inf": "gehen",
+            "type": "verb",
+            "link": "",
+            "pos": [6]
+          },
+          {
+            "en": "then",
+            "uk": "тоді",
+            "original": "dann",
+            "inf": "dann",
+            "type": "adverb",
+            "link": "",
+            "pos": [7]
+          },
+          {
+            "en": "baggy pants",
+            "uk": "мішкуваті штани",
+            "original": "Baggy Pants",
+            "inf": "Baggy Pants",
+            "type": "noun",
+            "link": "",
+            "pos": [8]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "I want Quentin Tarantino, not on Netflix, but in the cinema",
+        "ukTranslation": "Я хочу Квентіна Тарантіно, не на Netflix, а в кінотеатрі",
+        "words": [
+          {
+            "en": "I want",
+            "uk": "Я хочу",
+            "original": "Will",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "Quentin Tarantino",
+            "uk": "Квентін Тарантіно",
+            "original": "Quentin Tarantino",
+            "inf": "Quentin Tarantino",
+            "type": "proper noun",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "not",
+            "uk": "не",
+            "original": "nicht",
+            "inf": "nicht",
+            "type": "adverb",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "on",
+            "uk": "на",
+            "original": "auf",
+            "inf": "auf",
+            "type": "preposition",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "Netflix",
+            "uk": "Netflix",
+            "original": "Netflix",
+            "inf": "Netflix",
+            "type": "proper noun",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "but",
+            "uk": "а",
+            "original": "sondern",
+            "inf": "sondern",
+            "type": "conjunction",
+            "link": "",
+            "pos": [6]
+          },
+          {
+            "en": "in the cinema",
+            "uk": "в кінотеатрі",
+            "original": "Kino",
+            "inf": "Kino",
+            "type": "noun",
+            "link": "",
+            "pos": [7]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "I don’t want playback, I want rap live again, even without a mic",
+        "ukTranslation": "Я не хочу фонограму, я хочу реп знову наживо, навіть без мікрофону",
+        "words": [
+          {
+            "en": "I want",
+            "uk": "Я хочу",
+            "original": "Will",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "no",
+            "uk": "не",
+            "original": "kein",
+            "inf": "kein",
+            "type": "negative article",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "playback",
+            "uk": "фонограма",
+            "original": "Playback",
+            "inf": "Playback",
+            "type": "noun",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "I want",
+            "uk": "я хочу",
+            "original": "ich will",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "rap",
+            "uk": "реп",
+            "original": "Rap",
+            "inf": "Rap",
+            "type": "noun",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "live again",
+            "uk": "знову наживо",
+            "original": "wieder direkt",
+            "inf": "direkt",
+            "type": "adverb",
+            "link": "",
+            "pos": [6]
+          },
+          {
+            "en": "even",
+            "uk": "навіть",
+            "original": "auch",
+            "inf": "auch",
+            "type": "adverb",
+            "link": "",
+            "pos": [7]
+          },
+          {
+            "en": "without",
+            "uk": "без",
+            "original": "ohne",
+            "inf": "ohne",
+            "type": "preposition",
+            "link": "",
+            "pos": [8]
+          },
+          {
+            "en": "a mic",
+            "uk": "мікрофону",
+            "original": "Mikro",
+            "inf": "Mikrofon",
+            "type": "noun",
+            "link": "",
+            "pos": [9]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "I want football on the asphalt, even with scratches on the knees",
+        "ukTranslation": "Я хочу футбол на асфальті, навіть із подряпинами на колінах",
+        "words": [
+          {
+            "en": "I want",
+            "uk": "Я хочу",
+            "original": "Ich will",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "football",
+            "uk": "футбол",
+            "original": "Fußball",
+            "inf": "Fußball",
+            "type": "noun",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "on the asphalt",
+            "uk": "на асфальті",
+            "original": "auf dem Asphalt",
+            "inf": "Asphalt",
+            "type": "noun",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "even",
+            "uk": "навіть",
+            "original": "auch",
+            "inf": "auch",
+            "type": "adverb",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "with",
+            "uk": "з",
+            "original": "mit",
+            "inf": "mit",
+            "type": "preposition",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "scratches",
+            "uk": "подряпини",
+            "original": "Kratzern",
+            "inf": "Kratzer",
+            "type": "noun",
+            "link": "",
+            "pos": [6]
+          },
+          {
+            "en": "on the knees",
+            "uk": "на колінах",
+            "original": "auf den Knien",
+            "inf": "Knie",
+            "type": "noun",
+            "link": "",
+            "pos": [7]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "I want to fall, learn from mistakes and not for math and chemistry",
+        "ukTranslation": "Я хочу падати, вчитися на помилках, а не на математиці і хімії",
+        "words": [
+          {
+            "en": "I want",
+            "uk": "Я хочу",
+            "original": "Ich will",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "to fall",
+            "uk": "падати",
+            "original": "fall'n",
+            "inf": "fallen",
+            "type": "verb",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "learn",
+            "uk": "вчитися",
+            "original": "lern'n",
+            "inf": "lernen",
+            "type": "verb",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "from mistakes",
+            "uk": "на помилках",
+            "original": "aus Fehlern",
+            "inf": "Fehler",
+            "type": "noun",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "and",
+            "uk": "і",
+            "original": "und",
+            "inf": "und",
+            "type": "conjunction",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "not for",
+            "uk": "не для",
+            "original": "nicht für",
+            "inf": "für",
+            "type": "preposition",
+            "link": "",
+            "pos": [6]
+          },
+          {
+            "en": "math",
+            "uk": "математика",
+            "original": "Mathe",
+            "inf": "Mathematik",
+            "type": "noun",
+            "link": "",
+            "pos": [7]
+          },
+          {
+            "en": "and chemistry",
+            "uk": "і хімія",
+            "original": "und Chemie",
+            "inf": "Chemie",
+            "type": "noun",
+            "link": "",
+            "pos": [8]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "I want the summer hot like fire and arguments at the swimming pool again",
+        "ukTranslation": "Я хочу, щоб літо було гарячим, як вогонь, і знову суперечки в басейні",
+        "words": [
+          {
+            "en": "I want",
+            "uk": "Я хочу",
+            "original": "Ich will",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "the",
+            "uk": "",
+            "original": "den",
+            "inf": "der",
+            "type": "article",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "summer",
+            "uk": "літо",
+            "original": "Sommer",
+            "inf": "Sommer",
+            "type": "noun",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "hot",
+            "uk": "гарячим",
+            "original": "heiß",
+            "inf": "heiß",
+            "type": "adjective",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "like fire",
+            "uk": "як вогонь",
+            "original": "wie Feuer",
+            "inf": "Feuer",
+            "type": "noun",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "and",
+            "uk": "і",
+            "original": "und",
+            "inf": "und",
+            "type": "conjunction",
+            "link": "",
+            "pos": [6]
+          },
+          {
+            "en": "arguments",
+            "uk": "суперечки",
+            "original": "Streit",
+            "inf": "Streit",
+            "type": "noun",
+            "link": "",
+            "pos": [7]
+          },
+          {
+            "en": "at the swimming pool",
+            "uk": "в басейні",
+            "original": "im Schwimmbad",
+            "inf": "Schwimmbad",
+            "type": "noun",
+            "link": "",
+            "pos": [8]
+          },
+          {
+            "en": "again",
+            "uk": "знову",
+            "original": "wieder",
+            "inf": "wieder",
+            "type": "adverb",
+            "link": "",
+            "pos": [9]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "I want the snow like before, I want the winter white again",
+        "ukTranslation": "Я хочу сніг, як раніше, я хочу, щоб зима знову була білою",
+        "words": [
+          {
+            "en": "I want",
+            "uk": "Я хочу",
+            "original": "Ich will",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "the",
+            "uk": "",
+            "original": "den",
+            "inf": "der",
+            "type": "article",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "snow",
+            "uk": "сніг",
+            "original": "Schnee",
+            "inf": "Schnee",
+            "type": "noun",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "like before",
+            "uk": "як раніше",
+            "original": "wie früher",
+            "inf": "früher",
+            "type": "adverb",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "I want",
+            "uk": "Я хочу",
+            "original": "ich will",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "the",
+            "uk": "",
+            "original": "den",
+            "inf": "der",
+            "type": "article",
+            "link": "",
+            "pos": [6]
+          },
+          {
+            "en": "winter",
+            "uk": "зима",
+            "original": "Winter",
+            "inf": "Winter",
+            "type": "noun",
+            "link": "",
+            "pos": [7]
+          },
+          {
+            "en": "white",
+            "uk": "білою",
+            "original": "weiß",
+            "inf": "weiß",
+            "type": "adjective",
+            "link": "",
+            "pos": [8]
+          },
+          {
+            "en": "again",
+            "uk": "знову",
+            "original": "wieder",
+            "inf": "wieder",
+            "type": "adverb",
+            "link": "",
+            "pos": [9]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "I want the albums on CD, I want the old BMW",
+        "ukTranslation": "Я хочу альбоми на CD, я хочу старий BMW",
+        "words": [
+          {
+            "en": "I want",
+            "uk": "Я хочу",
+            "original": "Ich will",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "the",
+            "uk": "",
+            "original": "die",
+            "inf": "die",
+            "type": "article",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "albums",
+            "uk": "альбоми",
+            "original": "Alben",
+            "inf": "Album",
+            "type": "noun",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "on CD",
+            "uk": "на CD",
+            "original": "auf CD",
+            "inf": "CD",
+            "type": "noun",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "I want",
+            "uk": "я хочу",
+            "original": "ich will",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "the",
+            "uk": "",
+            "original": "den",
+            "inf": "der",
+            "type": "article",
+            "link": "",
+            "pos": [6]
+          },
+          {
+            "en": "old",
+            "uk": "старий",
+            "original": "alten",
+            "inf": "alt",
+            "type": "adjective",
+            "link": "",
+            "pos": [7]
+          },
+          {
+            "en": "BMW",
+            "uk": "BMW",
+            "original": "BMW",
+            "inf": "BMW",
+            "type": "proper noun",
+            "link": "",
+            "pos": [8]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "And a friendship that lasts as long as my 3310",
+        "ukTranslation": "І дружбу, яка триває так довго, як мій 3310",
+        "words": [
+          {
+            "en": "And",
+            "uk": "І",
+            "original": "Und",
+            "inf": "und",
+            "type": "conjunction",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "a friendship",
+            "uk": "дружбу",
+            "original": "eine Freundschaft",
+            "inf": "Freundschaft",
+            "type": "noun",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "that",
+            "uk": "яка",
+            "original": "die",
+            "inf": "die",
+            "type": "pronoun",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "lasts",
+            "uk": "триває",
+            "original": "hält",
+            "inf": "halten",
+            "type": "verb",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "as long as",
+            "uk": "так довго, як",
+            "original": "so lang",
+            "inf": "lang",
+            "type": "adverb",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "my",
+            "uk": "мій",
+            "original": "mein",
+            "inf": "mein",
+            "type": "pronoun",
+            "link": "",
+            "pos": [6]
+          },
+          {
+            "en": "3310",
+            "uk": "3310",
+            "original": "3310",
+            "inf": "3310",
+            "type": "noun",
+            "link": "",
+            "pos": [7]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "I want to look like in the mirror and I don’t want anything that pimps my face",
+        "ukTranslation": "Я хочу виглядати так, як у дзеркалі, і не хочу нічого, що прикрашає моє обличчя",
+        "words": [
+          {
+            "en": "I want",
+            "uk": "Я хочу",
+            "original": "Ich will",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "to look",
+            "uk": "виглядати",
+            "original": "so ausseh'n",
+            "inf": "aussehen",
+            "type": "verb",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "like",
+            "uk": "як",
+            "original": "wie",
+            "inf": "wie",
+            "type": "conjunction",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "in the mirror",
+            "uk": "у дзеркалі",
+            "original": "im Spiegel",
+            "inf": "Spiegel",
+            "type": "noun",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "and",
+            "uk": "і",
+            "original": "und",
+            "inf": "und",
+            "type": "conjunction",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "I don’t want",
+            "uk": "не хочу",
+            "original": "will nichts",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [6]
+          },
+          {
+            "en": "anything",
+            "uk": "нічого",
+            "original": "nichts",
+            "inf": "nichts",
+            "type": "pronoun",
+            "link": "",
+            "pos": [7]
+          },
+          {
+            "en": "that pimps",
+            "uk": "що прикрашає",
+            "original": "was pimpt",
+            "inf": "pimpen",
+            "type": "verb",
+            "link": "",
+            "pos": [8]
+          },
+          {
+            "en": "my face",
+            "uk": "моє обличчя",
+            "original": "meine Fresse",
+            "inf": "Fresse",
+            "type": "noun",
+            "link": "",
+            "pos": [9]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "I want photos without filters, I want everyone to be ugly again",
+        "ukTranslation": "Я хочу фото без фільтрів, хочу, щоб всі знову були некрасивими",
+        "words": [
+          {
+            "en": "I want",
+            "uk": "Я хочу",
+            "original": "Ich will",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "photos",
+            "uk": "фото",
+            "original": "Fotos",
+            "inf": "Foto",
+            "type": "noun",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "without filters",
+            "uk": "без фільтрів",
+            "original": "ohne Filter",
+            "inf": "Filter",
+            "type": "noun",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "I want",
+            "uk": "я хочу",
+            "original": "will",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "everyone",
+            "uk": "всі",
+            "original": "alle",
+            "inf": "alle",
+            "type": "pronoun",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "to be ugly",
+            "uk": "бути некрасивими",
+            "original": "wieder hässlich",
+            "inf": "hässlich",
+            "type": "adjective",
+            "link": "",
+            "pos": [6]
+          },
+          {
+            "en": "are",
+            "uk": "є",
+            "original": "sind",
+            "inf": "sein",
+            "type": "verb",
+            "link": "",
+            "pos": [8]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": null,
+      "type": "space"
+    },
+    {
+      "data": {
+        "enTranslation": "",
+        "ukTranslation": "",
+        "words": [
+          {
+            "en": "",
+            "uk": "",
+            "original": "[Refrain]",
+            "inf": "Refrain",
+            "type": "noun",
+            "link": "",
+            "pos": [1],
+            "bold": true
+          }
+        ]
+      },
+      "type": "noTranslation"
+    },
+    {
+      "data": {
+        "enTranslation": "The old people always say: 'Boy, everything was much better in the past'",
+        "ukTranslation": "Старші завжди кажуть: 'Хлопче, раніше все було набагато краще'",
+        "words": [
+          {
+            "en": "The",
+            "uk": "",
+            "original": "Die",
+            "inf": "die",
+            "type": "article",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "old people",
+            "uk": "старші",
+            "original": "Alten",
+            "inf": "Alt",
+            "type": "noun",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "always say",
+            "uk": "завжди кажуть",
+            "original": "sagen immer",
+            "inf": "sagen",
+            "type": "verb",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "Boy",
+            "uk": "хлопче",
+            "original": "Junge",
+            "inf": "Junge",
+            "type": "noun",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "in the past",
+            "uk": "раніше",
+            "original": "früher",
+            "inf": "früher",
+            "type": "adverb",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "everything was much better",
+            "uk": "все було набагато краще",
+            "original": "war viel besser",
+            "inf": "sein",
+            "type": "verb",
+            "link": "",
+            "pos": [6]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "By now I myself have the feeling that they might be right",
+        "ukTranslation": "Зараз у мене самого таке відчуття, що вони можуть мати рацію",
+        "words": [
+          {
+            "en": "By now",
+            "uk": "Зараз",
+            "original": "Mittlerweile",
+            "inf": "Mittlerweile",
+            "type": "adverb",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "I myself",
+            "uk": "я сам",
+            "original": "ich selber",
+            "inf": "ich",
+            "type": "pronoun",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "have the feeling",
+            "uk": "маю відчуття",
+            "original": "hab' das Gefühl",
+            "inf": "haben",
+            "type": "verb",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "that",
+            "uk": "що",
+            "original": "die",
+            "inf": "die",
+            "type": "pronoun",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "they might be right",
+            "uk": "вони можуть мати рацію",
+            "original": "könnten recht hab'n",
+            "inf": "haben",
+            "type": "verb",
+            "link": "",
+            "pos": [5]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "Throw the wing doors open and speed at supersonic back to yesterday",
+        "ukTranslation": "Розкрий крильчасті двері та лети на надзвуковій швидкості назад у вчора",
+        "words": [
+          {
+            "en": "Throw",
+            "uk": "розкрий",
+            "original": "Reiß'",
+            "inf": "reißen",
+            "type": "verb",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "the wing doors",
+            "uk": "крильчасті двері",
+            "original": "die Flügeltür'n",
+            "inf": "Flügeltür",
+            "type": "noun",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "open",
+            "uk": "відкриті",
+            "original": "auf",
+            "inf": "auf",
+            "type": "adverb",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "and",
+            "uk": "і",
+            "original": "und",
+            "inf": "und",
+            "type": "conjunction",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "speed at supersonic",
+            "uk": "лети на надзвуковій швидкості",
+            "original": "heiz' mit Überschall",
+            "inf": "heizen",
+            "type": "verb",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "back to yesterday",
+            "uk": "назад у вчора",
+            "original": "nach Gestern",
+            "inf": "Gestern",
+            "type": "noun",
+            "link": "",
+            "pos": [6]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "I don't forget, but I miss the life when it was really real",
+        "ukTranslation": "Я не забуваю, але сумую за життям, коли воно було справді справжнім",
+        "words": [
+          {
+            "en": "I",
+            "uk": "Я",
+            "original": "Ich",
+            "inf": "ich",
+            "type": "pronoun",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "don't forget",
+            "uk": "не забуваю",
+            "original": "vergess' nicht",
+            "inf": "vergessen",
+            "type": "verb",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "but",
+            "uk": "але",
+            "original": "doch",
+            "inf": "doch",
+            "type": "conjunction",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "I miss",
+            "uk": "сумую",
+            "original": "vermiss'",
+            "inf": "vermissen",
+            "type": "verb",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "the life",
+            "uk": "життя",
+            "original": "das Leben",
+            "inf": "Leben",
+            "type": "noun",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "when",
+            "uk": "коли",
+            "original": "als",
+            "inf": "als",
+            "type": "conjunction",
+            "link": "",
+            "pos": [6]
+          },
+          {
+            "en": "it was",
+            "uk": "було",
+            "original": "es war",
+            "inf": "sein",
+            "type": "verb",
+            "link": "",
+            "pos": [7]
+          },
+          {
+            "en": "really real",
+            "uk": "справді справжнім",
+            "original": "wirklich echt",
+            "inf": "echt",
+            "type": "adjective",
+            "link": "",
+            "pos": [8]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "Because the old people always say: 'Boy, everything was much better in the past'",
+        "ukTranslation": "Бо старші завжди кажуть: 'Хлопче, раніше все було набагато краще'",
+        "words": [
+          {
+            "en": "Because",
+            "uk": "Бо",
+            "original": "Denn",
+            "inf": "denn",
+            "type": "conjunction",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "the",
+            "uk": "",
+            "original": "die",
+            "inf": "die",
+            "type": "article",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "old people",
+            "uk": "старші",
+            "original": "Alten",
+            "inf": "Alt",
+            "type": "noun",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "always say",
+            "uk": "завжди кажуть",
+            "original": "sagen immer",
+            "inf": "sagen",
+            "type": "verb",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "Boy",
+            "uk": "хлопче",
+            "original": "Junge",
+            "inf": "Junge",
+            "type": "noun",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "everything was much better",
+            "uk": "все було набагато краще",
+            "original": "war viel besser",
+            "inf": "sein",
+            "type": "verb",
+            "link": "",
+            "pos": [6]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "By now I myself have the feeling that they might be right",
+        "ukTranslation": "Зараз у мене самого таке відчуття, що вони можуть мати рацію",
+        "words": [
+          {
+            "en": "By now",
+            "uk": "Зараз",
+            "original": "Mittlerweile",
+            "inf": "Mittlerweile",
+            "type": "adverb",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "I myself",
+            "uk": "я сам",
+            "original": "ich selber",
+            "inf": "ich",
+            "type": "pronoun",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "have the feeling",
+            "uk": "маю відчуття",
+            "original": "hab' das Gefühl",
+            "inf": "haben",
+            "type": "verb",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "that",
+            "uk": "що",
+            "original": "die",
+            "inf": "die",
+            "type": "pronoun",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "they might be right",
+            "uk": "вони можуть мати рацію",
+            "original": "könnten recht hab'n",
+            "inf": "haben",
+            "type": "verb",
+            "link": "",
+            "pos": [5]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "Throw the wing doors open and speed at supersonic back to yesterday",
+        "ukTranslation": "Розкрий крильчасті двері та лети на надзвуковій швидкості назад у вчора",
+        "words": [
+          {
+            "en": "Throw",
+            "uk": "розкрий",
+            "original": "Reiß'",
+            "inf": "reißen",
+            "type": "verb",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "the wing doors",
+            "uk": "крильчасті двері",
+            "original": "die Flügeltür'n",
+            "inf": "Flügeltür",
+            "type": "noun",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "open",
+            "uk": "відкриті",
+            "original": "auf",
+            "inf": "auf",
+            "type": "adverb",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "and",
+            "uk": "і",
+            "original": "und",
+            "inf": "und",
+            "type": "conjunction",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "speed",
+            "uk": "лети",
+            "original": "heiz'",
+            "inf": "heizen",
+            "type": "verb",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "at supersonic",
+            "uk": "на надзвуковій швидкості",
+            "original": "mit Überschall",
+            "inf": "Überschall",
+            "type": "noun",
+            "link": "",
+            "pos": [6]
+          },
+          {
+            "en": "back to yesterday",
+            "uk": "назад у вчора",
+            "original": "nach Gestern",
+            "inf": "Gestern",
+            "type": "noun",
+            "link": "",
+            "pos": [7]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "I don't forget, but I miss the life when it was really real",
+        "ukTranslation": "Я не забуваю, але сумую за життям, коли воно було справді справжнім",
+        "words": [
+          {
+            "en": "I",
+            "uk": "Я",
+            "original": "Ich",
+            "inf": "ich",
+            "type": "pronoun",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "don't forget",
+            "uk": "не забуваю",
+            "original": "vergess' nicht",
+            "inf": "vergessen",
+            "type": "verb",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "but",
+            "uk": "але",
+            "original": "doch",
+            "inf": "doch",
+            "type": "conjunction",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "I miss",
+            "uk": "сумую",
+            "original": "vermiss'",
+            "inf": "vermissen",
+            "type": "verb",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "the life",
+            "uk": "життя",
+            "original": "das Leben",
+            "inf": "Leben",
+            "type": "noun",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "when",
+            "uk": "коли",
+            "original": "als",
+            "inf": "als",
+            "type": "conjunction",
+            "link": "",
+            "pos": [6]
+          },
+          {
+            "en": "it",
+            "uk": "воно",
+            "original": "es",
+            "inf": "es",
+            "type": "pronoun",
+            "link": "",
+            "pos": [7]
+          },
+          {
+            "en": "really real",
+            "uk": "справді справжнім",
+            "original": "wirklich echt",
+            "inf": "echt",
+            "type": "adjective",
+            "link": "",
+            "pos": [8]
+          },
+          {
+            "en": "was",
+            "uk": "було",
+            "original": "war",
+            "inf": "sein",
+            "type": "verb",
+            "link": "",
+            "pos": [9]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": null,
+      "type": "space"
+    },
+    {
+      "data": {
+        "enTranslation": "",
+        "ukTranslation": "",
+        "words": [
+          {
+            "en": "",
+            "uk": "",
+            "original": "[Teil",
+            "inf": "Teil",
+            "type": "noun",
+            "link": "",
+            "pos": [1],
+            "bold": true
+          },
+          {
+            "en": "",
+            "uk": "",
+            "original": "2]",
+            "inf": "2",
+            "type": "number",
+            "link": "",
+            "pos": [2],
+            "bold": true
+          }
+        ]
+      },
+      "type": "noTranslation"
+    },
+    {
+      "data": {
+        "enTranslation": "I just want to drive there and not a screen that hinders me",
+        "ukTranslation": "Я просто хочу поїхати туди і не екран, який мене заважає",
+        "words": [
+          {
+            "en": "I want",
+            "uk": "Я хочу",
+            "original": "Ich will",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "just",
+            "uk": "просто",
+            "original": "einfach",
+            "inf": "einfach",
+            "type": "adverb",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "to drive there",
+            "uk": "їхати туди",
+            "original": "hinfahr'n",
+            "inf": "hinfahren",
+            "type": "verb",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "and",
+            "uk": "і",
+            "original": "und",
+            "inf": "und",
+            "type": "conjunction",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "not",
+            "uk": "не",
+            "original": "kein'",
+            "inf": "kein",
+            "type": "negative article",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "a screen",
+            "uk": "екран",
+            "original": "Bildschirm",
+            "inf": "Bildschirm",
+            "type": "noun",
+            "link": "",
+            "pos": [6]
+          },
+          {
+            "en": "that",
+            "uk": "який",
+            "original": "der",
+            "inf": "der",
+            "type": "pronoun",
+            "link": "",
+            "pos": [7]
+          },
+          {
+            "en": "hinders me",
+            "uk": "мене заважає",
+            "original": "mich hindert",
+            "inf": "hindern",
+            "type": "verb",
+            "link": "",
+            "pos": [8]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "I want to see the whole world for real and not somewhere on Insta",
+        "ukTranslation": "Я хочу бачити весь світ по-справжньому, а не десь в Instagram",
+        "words": [
+          {
+            "en": "I want",
+            "uk": "Я хочу",
+            "original": "Will",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "the",
+            "uk": "",
+            "original": "die",
+            "inf": "die",
+            "type": "article",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "whole",
+            "uk": "весь",
+            "original": "ganze",
+            "inf": "ganz",
+            "type": "adjective",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "world",
+            "uk": "світ",
+            "original": "Welt",
+            "inf": "Welt",
+            "type": "noun",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "for real",
+            "uk": "по-справжньому",
+            "original": "in echt",
+            "inf": "echt",
+            "type": "adjective",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "see",
+            "uk": "бачити",
+            "original": "seh'n",
+            "inf": "sehen",
+            "type": "verb",
+            "link": "",
+            "pos": [6]
+          },
+          {
+            "en": "and",
+            "uk": "і",
+            "original": "und",
+            "inf": "und",
+            "type": "conjunction",
+            "link": "",
+            "pos": [7]
+          },
+          {
+            "en": "not",
+            "uk": "не",
+            "original": "nicht",
+            "inf": "nicht",
+            "type": "adverb",
+            "link": "",
+            "pos": [8]
+          },
+          {
+            "en": "somewhere",
+            "uk": "десь",
+            "original": "irgendwo",
+            "inf": "irgendwo",
+            "type": "adverb",
+            "link": "",
+            "pos": [9]
+          },
+          {
+            "en": "on Insta",
+            "uk": "в Instagram",
+            "original": "auf Insta",
+            "inf": "Instagram",
+            "type": "noun",
+            "link": "",
+            "pos": [10]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "I don't want Tinder, I want to dare with all the downs and all the ups",
+        "ukTranslation": "Я не хочу Tinder, я хочу наважитися з усіма падіннями та підйомами",
+        "words": [
+          {
+            "en": "I don't want",
+            "uk": "Я не хочу",
+            "original": "Will kein",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "Tinder",
+            "uk": "Tinder",
+            "original": "Tinder",
+            "inf": "Tinder",
+            "type": "proper noun",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "I want",
+            "uk": "я хочу",
+            "original": "will",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "to dare",
+            "uk": "наважитися",
+            "original": "mich trau'n",
+            "inf": "trauen",
+            "type": "verb",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "with",
+            "uk": "з",
+            "original": "mit",
+            "inf": "mit",
+            "type": "preposition",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "all the",
+            "uk": "усіма",
+            "original": "all den",
+            "inf": "alle",
+            "type": "adjective",
+            "link": "",
+            "pos": [6]
+          },
+          {
+            "en": "downs",
+            "uk": "падіннями",
+            "original": "Downs",
+            "inf": "Down",
+            "type": "noun",
+            "link": "",
+            "pos": [7]
+          },
+          {
+            "en": "and",
+            "uk": "і",
+            "original": "und",
+            "inf": "und",
+            "type": "conjunction",
+            "link": "",
+            "pos": [8]
+          },
+          {
+            "en": "all the",
+            "uk": "всіма",
+            "original": "all den",
+            "inf": "alle",
+            "type": "adjective",
+            "link": "",
+            "pos": [9]
+          },
+          {
+            "en": "ups",
+            "uk": "підйомами",
+            "original": "Höh'n",
+            "inf": "Höhe",
+            "type": "noun",
+            "link": "",
+            "pos": [10]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "I want the tingling in my stomach when I say to you: 'You are beautiful'",
+        "ukTranslation": "Я хочу лоскотання в моєму животі, коли кажу тобі: 'Ти прекрасна'",
+        "words": [
+          {
+            "en": "I want",
+            "uk": "Я хочу",
+            "original": "Will",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "the tingling",
+            "uk": "лоскотання",
+            "original": "das Kribbeln",
+            "inf": "Kribbeln",
+            "type": "noun",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "in",
+            "uk": "в",
+            "original": "in",
+            "inf": "in",
+            "type": "preposition",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "my",
+            "uk": "моєму",
+            "original": "mei'm",
+            "inf": "mein",
+            "type": "pronoun",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "stomach",
+            "uk": "животі",
+            "original": "Bauch",
+            "inf": "Bauch",
+            "type": "noun",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "when",
+            "uk": "коли",
+            "original": "wenn",
+            "inf": "wenn",
+            "type": "conjunction",
+            "link": "",
+            "pos": [6]
+          },
+          {
+            "en": "I say",
+            "uk": "я кажу",
+            "original": "ich dir sage",
+            "inf": "sagen",
+            "type": "verb",
+            "link": "",
+            "pos": [7]
+          },
+          {
+            "en": "You are beautiful",
+            "uk": "Ти прекрасна",
+            "original": "Du bist schön",
+            "inf": "sein",
+            "type": "verb",
+            "link": "",
+            "pos": [8]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "I want the sky empty again, I just want the stars and the moon",
+        "ukTranslation": "Я хочу, щоб небо знову було порожнім, я хочу лише зірки і місяць",
+        "words": [
+          {
+            "en": "I want",
+            "uk": "Я хочу",
+            "original": "Ich will",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "the sky",
+            "uk": "небо",
+            "original": "den Himmel",
+            "inf": "Himmel",
+            "type": "noun",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "empty again",
+            "uk": "знову порожнім",
+            "original": "wieder leer",
+            "inf": "leer",
+            "type": "adjective",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "I want",
+            "uk": "я хочу",
+            "original": "will",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "only",
+            "uk": "лише",
+            "original": "nur",
+            "inf": "nur",
+            "type": "adverb",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "the stars",
+            "uk": "зірки",
+            "original": "die Sterne",
+            "inf": "Stern",
+            "type": "noun",
+            "link": "",
+            "pos": [6]
+          },
+          {
+            "en": "and the moon",
+            "uk": "і місяць",
+            "original": "und den Mond",
+            "inf": "Mond",
+            "type": "noun",
+            "link": "",
+            "pos": [7]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "I don't need a bike with a motor, I can climb the mountain without electricity",
+        "ukTranslation": "Мені не потрібен велосипед з мотором, я можу піднятися на гору без електрики",
+        "words": [
+          {
+            "en": "I don't need",
+            "uk": "Мені не потрібно",
+            "original": "Brauch'",
+            "inf": "brauchen",
+            "type": "verb",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "a bike",
+            "uk": "велосипед",
+            "original": "kein Fahrrad",
+            "inf": "Fahrrad",
+            "type": "noun",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "with",
+            "uk": "з",
+            "original": "mit",
+            "inf": "mit",
+            "type": "preposition",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "a motor",
+            "uk": "мотором",
+            "original": "'nem Motor",
+            "inf": "Motor",
+            "type": "noun",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "I can climb",
+            "uk": "я можу піднятися",
+            "original": "schaff'",
+            "inf": "schaffen",
+            "type": "verb",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "the mountain",
+            "uk": "на гору",
+            "original": "den Berg",
+            "inf": "Berg",
+            "type": "noun",
+            "link": "",
+            "pos": [6]
+          },
+          {
+            "en": "without electricity",
+            "uk": "без електрики",
+            "original": "auch ohne Strom",
+            "inf": "Strom",
+            "type": "noun",
+            "link": "",
+            "pos": [7]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "I don't want WhatsApp, I don't want to write and avoid that we talk",
+        "ukTranslation": "Я не хочу WhatsApp, не хочу писати і уникати того, щоб ми говорили",
+        "words": [
+          {
+            "en": "I don't want",
+            "uk": "Я не хочу",
+            "original": "Will kein",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "WhatsApp",
+            "uk": "WhatsApp",
+            "original": "WhatsApp",
+            "inf": "WhatsApp",
+            "type": "proper noun",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "I don't want",
+            "uk": "не хочу",
+            "original": "will nicht",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "to write",
+            "uk": "писати",
+            "original": "schreiben",
+            "inf": "schreiben",
+            "type": "verb",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "and avoid",
+            "uk": "і уникати",
+            "original": "und vermeiden",
+            "inf": "vermeiden",
+            "type": "verb",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "that we talk",
+            "uk": "щоб ми говорили",
+            "original": "dass wir sprechen",
+            "inf": "sprechen",
+            "type": "verb",
+            "link": "",
+            "pos": [6]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "I don't want singles on Fridays, I want albums that blow me away",
+        "ukTranslation": "Я не хочу синглів у п'ятниці, я хочу альбоми, що мене вражають",
+        "words": [
+          {
+            "en": "I want",
+            "uk": "Я хочу",
+            "original": "Ich will",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "Fridays",
+            "uk": "п'ятниці",
+            "original": "freitags",
+            "inf": "Freitag",
+            "type": "noun",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "no singles",
+            "uk": "не синглів",
+            "original": "keine Singles",
+            "inf": "Single",
+            "type": "noun",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "I want",
+            "uk": "Я хочу",
+            "original": "ich will",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "albums",
+            "uk": "альбоми",
+            "original": "Alben",
+            "inf": "Album",
+            "type": "noun",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "that blow me away",
+            "uk": "що мене вражають",
+            "original": "die mich flashen",
+            "inf": "flashen",
+            "type": "verb",
+            "link": "",
+            "pos": [6]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "I don't want crypto in a wallet, cash copied to USB",
+        "ukTranslation": "Я не хочу криптовалюту в гаманці, готівка скопійована на USB",
+        "words": [
+          {
+            "en": "I don't want",
+            "uk": "Я не хочу",
+            "original": "Will kein",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "crypto",
+            "uk": "криптовалюта",
+            "original": "Krypto",
+            "inf": "Krypto",
+            "type": "noun",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "in a wallet",
+            "uk": "в гаманці",
+            "original": "in 'ner Wallet",
+            "inf": "Wallet",
+            "type": "noun",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "cash",
+            "uk": "готівка",
+            "original": "Cash",
+            "inf": "Cash",
+            "type": "noun",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "copied",
+            "uk": "скопійована",
+            "original": "kopiert",
+            "inf": "kopieren",
+            "type": "verb",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "to USB",
+            "uk": "на USB",
+            "original": "auf USB",
+            "inf": "USB",
+            "type": "noun",
+            "link": "",
+            "pos": [6]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "I want the purple bill back and as paper in my wallet",
+        "ukTranslation": "Я хочу, щоб повернулася фіолетова купюра, і як папірець в моєму гаманці",
+        "words": [
+          {
+            "en": "I want",
+            "uk": "Я хочу",
+            "original": "Will",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "the purple bill",
+            "uk": "фіолетова купюра",
+            "original": "den lila Schein",
+            "inf": "Schein",
+            "type": "noun",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "back",
+            "uk": "назад",
+            "original": "zurück",
+            "inf": "zurück",
+            "type": "adverb",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "and",
+            "uk": "і",
+            "original": "und",
+            "inf": "und",
+            "type": "conjunction",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "as paper",
+            "uk": "як папірець",
+            "original": "als Papier",
+            "inf": "Papier",
+            "type": "noun",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "in my wallet",
+            "uk": "в моєму гаманці",
+            "original": "im Portemonnaie",
+            "inf": "Portemonnaie",
+            "type": "noun",
+            "link": "",
+            "pos": [6]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "I want to work hard, but retire much earlier than at eighty",
+        "ukTranslation": "Я хочу важко працювати, але вийти на пенсію набагато раніше, ніж у вісімдесят",
+        "words": [
+          {
+            "en": "I want",
+            "uk": "Я хочу",
+            "original": "Ich will",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "to work hard",
+            "uk": "важко працювати",
+            "original": "ackern",
+            "inf": "ackern",
+            "type": "verb",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "but",
+            "uk": "але",
+            "original": "doch",
+            "inf": "doch",
+            "type": "conjunction",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "much earlier",
+            "uk": "набагато раніше",
+            "original": "viel früher",
+            "inf": "früh",
+            "type": "adverb",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "than at eighty",
+            "uk": "ніж у вісімдесят",
+            "original": "als mit achtzig",
+            "inf": "achtzig",
+            "type": "number",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "in retirement",
+            "uk": "на пенсію",
+            "original": "in die Rente",
+            "inf": "Rente",
+            "type": "noun",
+            "link": "",
+            "pos": [6]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "And I want to say 'asshole' without everyone canceling me after that",
+        "ukTranslation": "І я хочу сказати 'мудак', не боячись, що мене потім всі скасують",
+        "words": [
+          {
+            "en": "And",
+            "uk": "І",
+            "original": "Und",
+            "inf": "und",
+            "type": "conjunction",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "I want",
+            "uk": "я хочу",
+            "original": "will",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "to say",
+            "uk": "сказати",
+            "original": "sagen",
+            "inf": "sagen",
+            "type": "verb",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "'asshole'",
+            "uk": "'мудак'",
+            "original": "„Arschloch“",
+            "inf": "Arschloch",
+            "type": "noun",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "without",
+            "uk": "без",
+            "original": "ohne",
+            "inf": "ohne",
+            "type": "preposition",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "everyone",
+            "uk": "всі",
+            "original": "jeder",
+            "inf": "jeder",
+            "type": "pronoun",
+            "link": "",
+            "pos": [6]
+          },
+          {
+            "en": "canceling me",
+            "uk": "мене скасовують",
+            "original": "mich cancelt",
+            "inf": "canceln",
+            "type": "verb",
+            "link": "",
+            "pos": [7]
+          },
+          {
+            "en": "after that",
+            "uk": "після цього",
+            "original": "danach",
+            "inf": "danach",
+            "type": "adverb",
+            "link": "",
+            "pos": [8]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "I don't want Amazon, I want to go to the store in the evening and get something",
+        "ukTranslation": "Я не хочу Amazon, я хочу піти до магазину ввечері і щось купити",
+        "words": [
+          {
+            "en": "I don't want",
+            "uk": "Я не хочу",
+            "original": "Will kein",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "Amazon",
+            "uk": "Amazon",
+            "original": "Amazon",
+            "inf": "Amazon",
+            "type": "proper noun",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "I want",
+            "uk": "я хочу",
+            "original": "will",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "in the evening",
+            "uk": "ввечері",
+            "original": "abends",
+            "inf": "abends",
+            "type": "adverb",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "to the store",
+            "uk": "до магазину",
+            "original": "in den Laden",
+            "inf": "Laden",
+            "type": "noun",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "and",
+            "uk": "і",
+            "original": "und",
+            "inf": "und",
+            "type": "conjunction",
+            "link": "",
+            "pos": [6]
+          },
+          {
+            "en": "get something",
+            "uk": "щось купити",
+            "original": "mir was hol'n",
+            "inf": "holen",
+            "type": "verb",
+            "link": "",
+            "pos": [7]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "I don't want autonomous driving and I want my speedometer analog",
+        "ukTranslation": "Я не хочу автономного водіння, я хочу свій спідометр аналоговим",
+        "words": [
+          {
+            "en": "I don't want",
+            "uk": "Я не хочу",
+            "original": "Will kein",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "autonomous driving",
+            "uk": "автономного водіння",
+            "original": "autonomes Fahr'n",
+            "inf": "Fahren",
+            "type": "noun",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "and",
+            "uk": "і",
+            "original": "und",
+            "inf": "und",
+            "type": "conjunction",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "I want",
+            "uk": "я хочу",
+            "original": "will",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "my speedometer",
+            "uk": "мій спідометр",
+            "original": "mein'n Tacho",
+            "inf": "Tacho",
+            "type": "noun",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "analog",
+            "uk": "аналоговим",
+            "original": "analog",
+            "inf": "analog",
+            "type": "adjective",
+            "link": "",
+            "pos": [6]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "I want a handful of real friends, not traitors or liars",
+        "ukTranslation": "Я хочу жменьку справжніх друзів, не зрадників чи брехунів",
+        "words": [
+          {
+            "en": "I want",
+            "uk": "Я хочу",
+            "original": "Will",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "a handful",
+            "uk": "жменьку",
+            "original": "'ne Handvoll",
+            "inf": "Handvoll",
+            "type": "noun",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "of real friends",
+            "uk": "справжніх друзів",
+            "original": "echter Freunde",
+            "inf": "Freund",
+            "type": "noun",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "not traitors",
+            "uk": "не зрадників",
+            "original": "nicht Verräter",
+            "inf": "Verräter",
+            "type": "noun",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "or liars",
+            "uk": "або брехунів",
+            "original": "oder Lügner",
+            "inf": "Lügner",
+            "type": "noun",
+            "link": "",
+            "pos": [5]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "I don't want the Metaverse, but I know you want Metrickz like in the past",
+        "ukTranslation": "Я не хочу метавсесвіт, але знаю, що ви хочете Metrickz, як раніше",
+        "words": [
+          {
+            "en": "I don't want",
+            "uk": "Я не хочу",
+            "original": "Will kein",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "the Metaverse",
+            "uk": "метавсесвіт",
+            "original": "Metaverse",
+            "inf": "Metaverse",
+            "type": "noun",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "but",
+            "uk": "але",
+            "original": "doch",
+            "inf": "doch",
+            "type": "conjunction",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "I know",
+            "uk": "я знаю",
+            "original": "ich weiß",
+            "inf": "wissen",
+            "type": "verb",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "you want",
+            "uk": "ви хочете",
+            "original": "ihr wollt",
+            "inf": "wollen",
+            "type": "verb",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "Metrickz",
+            "uk": "Metrickz",
+            "original": "Metrickz",
+            "inf": "Metrickz",
+            "type": "proper noun",
+            "link": "",
+            "pos": [6]
+          },
+          {
+            "en": "like in the past",
+            "uk": "як раніше",
+            "original": "so wie früher",
+            "inf": "früher",
+            "type": "adverb",
+            "link": "",
+            "pos": [7]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": null,
+      "type": "space"
+    },
+    {
+      "data": {
+        "enTranslation": "",
+        "ukTranslation": "",
+        "words": [
+          {
+            "en": "",
+            "uk": "",
+            "original": "[Refrain]",
+            "inf": "Refrain",
+            "type": "noun",
+            "link": "",
+            "pos": [1],
+            "bold": true
+          }
+        ]
+      },
+      "type": "noTranslation"
+    },
+    {
+      "data": {
+        "enTranslation": "The old people always say: 'Boy, everything was much better in the past'",
+        "ukTranslation": "Старші завжди кажуть: 'Хлопче, раніше все було набагато краще'",
+        "words": [
+          {
+            "en": "The",
+            "uk": "",
+            "original": "Die",
+            "inf": "die",
+            "type": "article",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "old people",
+            "uk": "старші",
+            "original": "Alten",
+            "inf": "Alt",
+            "type": "noun",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "always say",
+            "uk": "завжди кажуть",
+            "original": "sagen immer",
+            "inf": "sagen",
+            "type": "verb",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "Boy",
+            "uk": "хлопче",
+            "original": "Junge",
+            "inf": "Junge",
+            "type": "noun",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "in the past",
+            "uk": "раніше",
+            "original": "früher",
+            "inf": "früher",
+            "type": "adverb",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "everything was much better",
+            "uk": "все було набагато краще",
+            "original": "war viel besser",
+            "inf": "sein",
+            "type": "verb",
+            "link": "",
+            "pos": [6]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "By now I myself have the feeling that they might be right",
+        "ukTranslation": "Зараз у мене самого таке відчуття, що вони можуть мати рацію",
+        "words": [
+          {
+            "en": "By now",
+            "uk": "Зараз",
+            "original": "Mittlerweile",
+            "inf": "Mittlerweile",
+            "type": "adverb",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "I myself",
+            "uk": "я сам",
+            "original": "ich selber",
+            "inf": "ich",
+            "type": "pronoun",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "have the feeling",
+            "uk": "маю відчуття",
+            "original": "hab' das Gefühl",
+            "inf": "haben",
+            "type": "verb",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "that",
+            "uk": "що",
+            "original": "die",
+            "inf": "die",
+            "type": "pronoun",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "they might be right",
+            "uk": "вони можуть мати рацію",
+            "original": "könnten recht hab'n",
+            "inf": "haben",
+            "type": "verb",
+            "link": "",
+            "pos": [5]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "Throw the wing doors open and speed at supersonic back to yesterday",
+        "ukTranslation": "Розкрий крильчасті двері та лети на надзвуковій швидкості назад у вчора",
+        "words": [
+          {
+            "en": "Throw",
+            "uk": "розкрий",
+            "original": "Reiß'",
+            "inf": "reißen",
+            "type": "verb",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "the wing doors",
+            "uk": "крильчасті двері",
+            "original": "die Flügeltür'n",
+            "inf": "Flügeltür",
+            "type": "noun",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "open",
+            "uk": "відкриті",
+            "original": "auf",
+            "inf": "auf",
+            "type": "adverb",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "and",
+            "uk": "і",
+            "original": "und",
+            "inf": "und",
+            "type": "conjunction",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "speed at supersonic",
+            "uk": "лети на надзвуковій швидкості",
+            "original": "heiz' mit Überschall",
+            "inf": "heizen",
+            "type": "verb",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "back to yesterday",
+            "uk": "назад у вчора",
+            "original": "nach Gestern",
+            "inf": "Gestern",
+            "type": "noun",
+            "link": "",
+            "pos": [6]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "I don't forget, but I miss the life when it was really real",
+        "ukTranslation": "Я не забуваю, але сумую за життям, коли воно було справді справжнім",
+        "words": [
+          {
+            "en": "I",
+            "uk": "Я",
+            "original": "Ich",
+            "inf": "ich",
+            "type": "pronoun",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "don't forget",
+            "uk": "не забуваю",
+            "original": "vergess' nicht",
+            "inf": "vergessen",
+            "type": "verb",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "but",
+            "uk": "але",
+            "original": "doch",
+            "inf": "doch",
+            "type": "conjunction",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "I miss",
+            "uk": "сумую",
+            "original": "vermiss'",
+            "inf": "vermissen",
+            "type": "verb",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "the life",
+            "uk": "життя",
+            "original": "das Leben",
+            "inf": "Leben",
+            "type": "noun",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "when",
+            "uk": "коли",
+            "original": "als",
+            "inf": "als",
+            "type": "conjunction",
+            "link": "",
+            "pos": [6]
+          },
+          {
+            "en": "it was",
+            "uk": "було",
+            "original": "es war",
+            "inf": "sein",
+            "type": "verb",
+            "link": "",
+            "pos": [7]
+          },
+          {
+            "en": "really real",
+            "uk": "справді справжнім",
+            "original": "wirklich echt",
+            "inf": "echt",
+            "type": "adjective",
+            "link": "",
+            "pos": [8]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "Because the old people always say: 'Boy, everything was much better in the past'",
+        "ukTranslation": "Бо старші завжди кажуть: 'Хлопче, раніше все було набагато краще'",
+        "words": [
+          {
+            "en": "Because",
+            "uk": "Бо",
+            "original": "Denn",
+            "inf": "denn",
+            "type": "conjunction",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "the",
+            "uk": "",
+            "original": "die",
+            "inf": "die",
+            "type": "article",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "old people",
+            "uk": "старші",
+            "original": "Alten",
+            "inf": "Alt",
+            "type": "noun",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "always say",
+            "uk": "завжди кажуть",
+            "original": "sagen immer",
+            "inf": "sagen",
+            "type": "verb",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "Boy",
+            "uk": "хлопче",
+            "original": "Junge",
+            "inf": "Junge",
+            "type": "noun",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "everything was much better",
+            "uk": "все було набагато краще",
+            "original": "war viel besser",
+            "inf": "sein",
+            "type": "verb",
+            "link": "",
+            "pos": [6]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "By now I myself have the feeling that they might be right",
+        "ukTranslation": "Зараз у мене самого таке відчуття, що вони можуть мати рацію",
+        "words": [
+          {
+            "en": "By now",
+            "uk": "Зараз",
+            "original": "Mittlerweile",
+            "inf": "Mittlerweile",
+            "type": "adverb",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "I myself",
+            "uk": "я сам",
+            "original": "ich selber",
+            "inf": "ich",
+            "type": "pronoun",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "have the feeling",
+            "uk": "маю відчуття",
+            "original": "hab' das Gefühl",
+            "inf": "haben",
+            "type": "verb",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "that",
+            "uk": "що",
+            "original": "die",
+            "inf": "die",
+            "type": "pronoun",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "they might be right",
+            "uk": "вони можуть мати рацію",
+            "original": "könnten recht hab'n",
+            "inf": "haben",
+            "type": "verb",
+            "link": "",
+            "pos": [5]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "Throw the wing doors open and speed at supersonic back to yesterday",
+        "ukTranslation": "Розкрий крильчасті двері та лети на надзвуковій швидкості назад у вчора",
+        "words": [
+          {
+            "en": "Throw",
+            "uk": "розкрий",
+            "original": "Reiß'",
+            "inf": "reißen",
+            "type": "verb",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "the wing doors",
+            "uk": "крильчасті двері",
+            "original": "die Flügeltür'n",
+            "inf": "Flügeltür",
+            "type": "noun",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "open",
+            "uk": "відкриті",
+            "original": "auf",
+            "inf": "auf",
+            "type": "adverb",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "and",
+            "uk": "і",
+            "original": "und",
+            "inf": "und",
+            "type": "conjunction",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "speed",
+            "uk": "лети",
+            "original": "heiz'",
+            "inf": "heizen",
+            "type": "verb",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "at supersonic",
+            "uk": "на надзвуковій швидкості",
+            "original": "mit Überschall",
+            "inf": "Überschall",
+            "type": "noun",
+            "link": "",
+            "pos": [6]
+          },
+          {
+            "en": "back to yesterday",
+            "uk": "назад у вчора",
+            "original": "nach Gestern",
+            "inf": "Gestern",
+            "type": "noun",
+            "link": "",
+            "pos": [7]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "I don't forget, but I miss the life when it was really real",
+        "ukTranslation": "Я не забуваю, але сумую за життям, коли воно було справді справжнім",
+        "words": [
+          {
+            "en": "I",
+            "uk": "Я",
+            "original": "Ich",
+            "inf": "ich",
+            "type": "pronoun",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "don't forget",
+            "uk": "не забуваю",
+            "original": "vergess' nicht",
+            "inf": "vergessen",
+            "type": "verb",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "but",
+            "uk": "але",
+            "original": "doch",
+            "inf": "doch",
+            "type": "conjunction",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "I miss",
+            "uk": "сумую",
+            "original": "vermiss'",
+            "inf": "vermissen",
+            "type": "verb",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "the life",
+            "uk": "життя",
+            "original": "das Leben",
+            "inf": "Leben",
+            "type": "noun",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "when",
+            "uk": "коли",
+            "original": "als",
+            "inf": "als",
+            "type": "conjunction",
+            "link": "",
+            "pos": [6]
+          },
+          {
+            "en": "it",
+            "uk": "воно",
+            "original": "es",
+            "inf": "es",
+            "type": "pronoun",
+            "link": "",
+            "pos": [7]
+          },
+          {
+            "en": "really real",
+            "uk": "справді справжнім",
+            "original": "wirklich echt",
+            "inf": "echt",
+            "type": "adjective",
+            "link": "",
+            "pos": [8]
+          },
+          {
+            "en": "was",
+            "uk": "було",
+            "original": "war",
+            "inf": "sein",
+            "type": "verb",
+            "link": "",
+            "pos": [9]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": null,
+      "type": "space"
+    },
+    {
+      "data": {
+        "enTranslation": "",
+        "ukTranslation": "",
+        "words": [
+          {
+            "en": "",
+            "uk": "",
+            "original": "[Outro]",
+            "inf": "Outro",
+            "type": "noun",
+            "link": "",
+            "pos": [1],
+            "bold": true
+          }
+        ]
+      },
+      "type": "noTranslation"
+    },
+    {
+      "data": {
+        "enTranslation": "The old people always say: 'Boy, everything was much better in the past'",
+        "ukTranslation": "Старші завжди кажуть: 'Хлопче, раніше все було набагато краще'",
+        "words": [
+          {
+            "en": "The",
+            "uk": "",
+            "original": "Die",
+            "inf": "die",
+            "type": "article",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "old people",
+            "uk": "старші",
+            "original": "Alten",
+            "inf": "Alt",
+            "type": "noun",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "always say",
+            "uk": "завжди кажуть",
+            "original": "sagen immer",
+            "inf": "sagen",
+            "type": "verb",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "Boy",
+            "uk": "хлопче",
+            "original": "Junge",
+            "inf": "Junge",
+            "type": "noun",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "was",
+            "uk": "було",
+            "original": "war",
+            "inf": "sein",
+            "type": "verb",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "much",
+            "uk": "набагато",
+            "original": "viel",
+            "inf": "viel",
+            "type": "adverb",
+            "link": "",
+            "pos": [6]
+          },
+          {
+            "en": "better",
+            "uk": "краще",
+            "original": "besser",
+            "inf": "besser",
+            "type": "adjective",
+            "link": "",
+            "pos": [7]
+          },
+          {
+            "en": "in the past",
+            "uk": "раніше",
+            "original": "früher",
+            "inf": "früher",
+            "type": "adverb",
+            "link": "",
+            "pos": [8]
+          }
+        ]
+      },
+      "type": "default"
+    },
+    {
+      "data": {
+        "enTranslation": "The old people always say: 'Boy, everything was much better in the past'",
+        "ukTranslation": "Старші завжди кажуть: 'Хлопче, раніше все було набагато краще'",
+        "words": [
+          {
+            "en": "The",
+            "uk": "",
+            "original": "Die",
+            "inf": "die",
+            "type": "article",
+            "link": "",
+            "pos": [1]
+          },
+          {
+            "en": "old people",
+            "uk": "старші",
+            "original": "Alten",
+            "inf": "Alt",
+            "type": "noun",
+            "link": "",
+            "pos": [2]
+          },
+          {
+            "en": "always say",
+            "uk": "завжди кажуть",
+            "original": "sagen immer",
+            "inf": "sagen",
+            "type": "verb",
+            "link": "",
+            "pos": [3]
+          },
+          {
+            "en": "Boy",
+            "uk": "хлопче",
+            "original": "Junge",
+            "inf": "Junge",
+            "type": "noun",
+            "link": "",
+            "pos": [4]
+          },
+          {
+            "en": "was",
+            "uk": "було",
+            "original": "war",
+            "inf": "sein",
+            "type": "verb",
+            "link": "",
+            "pos": [5]
+          },
+          {
+            "en": "much",
+            "uk": "набагато",
+            "original": "viel",
+            "inf": "viel",
+            "type": "adverb",
+            "link": "",
+            "pos": [6]
+          },
+          {
+            "en": "better",
+            "uk": "краще",
+            "original": "besser",
+            "inf": "besser",
+            "type": "adjective",
+            "link": "",
+            "pos": [7]
+          },
+          {
+            "en": "in the past",
+            "uk": "раніше",
+            "original": "früher",
+            "inf": "früher",
+            "type": "adverb",
+            "link": "",
+            "pos": [8]
+          }
+        ]
+      },
+      "type": "default"
+    }
+  ],
+  "videoLink": "",
+  "title": "Song Lyrics",
+  "description": "Song Lyrics Description"
+}
